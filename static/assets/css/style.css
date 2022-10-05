@@ -3087,7 +3087,7 @@ figcaption {
     }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1140px) {
     .padding-xlarge {
         padding: 3rem;
     }
@@ -3430,7 +3430,12 @@ figcaption {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 840px) {
+
+    .nav_right-wrapper {
+        display: none;
+    }
+
     h1 {
         font-size: 2.5rem;
     }
@@ -3573,6 +3578,7 @@ figcaption {
 
     .hide-mobile-landscape {
         display: none;
+        padding: 0.5rem;
     }
 
     .fs-styleguide_heading-large {
@@ -3739,7 +3745,7 @@ figcaption {
     }
 
     .nav_full-wrapper {
-        margin-top: 0rem;
+        padding: 0.5rem;
         border-radius: 0;
     }
 
@@ -4732,7 +4738,7 @@ figcaption {
     justify-self: start;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1030px) {
     #w-node-_2f6b6dc2-2cf0-e9a7-c501-01025beadbee-0541c3c1 {
         -ms-grid-column-align: stretch;
         justify-self: stretch;

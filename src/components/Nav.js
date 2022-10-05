@@ -13,7 +13,7 @@ export const menuItems = [
     {
         title: 'Wealth',
         url: '/wealth',
-        id: 'wealth',
+        id: '#wealth',
         className: 'nav_menu-links w-nav-menu'
         /*submenu: [
             {
@@ -33,7 +33,7 @@ export const menuItems = [
     {
         title: 'Bank',
         url: '/bank',
-        id: 'bank',
+        id: '#bank',
         className: 'nav_menu-links w-nav-menu'
         /*submenu: [
             {
@@ -49,7 +49,7 @@ export const menuItems = [
     {
         title: 'Wallet',
         url: '/wallet',
-        id: 'wallet',
+        id: '#wallet',
         className: 'nav_menu-links w-nav-menu'
         /*submenu: [
             {
@@ -77,35 +77,13 @@ export default function Navigation() {
                 <div className="nav_full-wrapper">
                     <div className="nav_left-wrapper">
                         <a className="nav_brandlink margin-right margin-small w-nav-brand"><img src={ChangeXLogoColor} loading="lazy" alt="ChangeX Logo in navigation bar" className="nav_logo"></img></a>
-                        <nav role="navigation" className="nav_menu-links w-nav-menu">
-
+                        <nav role="navigation" className="nav_menu-links w-nav-menu hide-mobile-landscape">
                             {menuItems.map((menu, index) => {
                                 return (
-
-                                    <a href="#wallet" className="nav_link w-nav-link" style={{maxWidth: "1376px"}} key={index}>Wallet</a>
+                                    <a href={menu.id} className="nav_link w-nav-link" style={{maxWidth: "1376px"}} key={index}>{menu.title}</a>
                                     /*<Dropdown placeholder={menu.title}  className={menu.className}/>*/
                                 );
                             })}
-                            <div className="hide-desktop">
-                                <div className="nav_right-wrapper margin-top margin-huge">
-                                    <div className="nav_stats-wrapper">
-                                        <div className="padding-small">
-                                            <div id="changexPrice2" className="text-size-tiny changexprice">$CHANGEprice</div>
-                                        </div>
-                                    </div>
-                                    <div className="nav_stats-wrapper">
-                                        <div className="padding-small">
-                                            <div id="changexApy2" className="text-size-tiny text-color-black changexapy">$CHANGEAPY<strong></strong></div>
-                                        </div>
-                                    </div>
-                                    <div className="button-group centered-items margin-top margin-large spread max-width-full-mobile-landscape">
-                                        <a href="https://apps.apple.com/bg/app/changex-wallet/id1613309180"  className="button is-store max-width-full-mobile-landscape w-inline-block"><img src={DwApple} loading="lazy" alt="Apple app store image" width="150"></img></a>
-                                        <a href="https://play.google.com/store/apps/details?id=io.changex.app"  className="button is-store max-width-full-mobile-landscape w-inline-block"><img src={DwGoogle} loading="lazy" width="150" alt="Google Play store image"></img></a>
-                                        <a href="https://urlgeni.us/changexapp"  className="button is-qr w-inline-block"><img src={QRBlack} loading="lazy" width="75" alt="QR Code" className="qr-small"></img>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
                         </nav>
                     </div>
                     <div className="nav_right-wrapper hide-mobile-landscape">
@@ -131,14 +109,12 @@ export default function Navigation() {
                             </li>
                         </ul>
                     </div>
-                    <div className="menu-button w-nav-button"><img src={MenuIcon} width="20" alt="" className="menu-icon"></img></div>
-                    {/*<div className="menu-button w-nav-button"  aria-label="menu" role="button" tabIndex="0"
+                    <div className="menu-button w-nav-button"  aria-label="menu" role="button" tabIndex="0"
                      aria-controls="w-nav-overlay-0" aria-haspopup="menu"
                      aria-expanded="false"><img src={MenuIcon} width="20" alt="ICON" className="menu-icon"></img>
-                </div>*/}
+                </div>
                 </div>
             </div>
         </div>
     </div>
-
 );}

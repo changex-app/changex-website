@@ -6,7 +6,7 @@ import DownloadQR from "/static/images/download-qr.svg"
 
 export default function Hero(){
     return (
-        <section id="hero" className="section_hero overflow-hidden"><img src={HeroBGImageMobile}
+        <section id="hero" className="section_hero "><img src={HeroBGImageMobile}
                                                                          loading="lazy"
                                                                          alt="Phones in perspective showing changex application"
                                                                          className="image-hero"></img>
@@ -17,18 +17,18 @@ export default function Hero(){
             <div className="padding-global">
                 <div className="container-large">
                     <div className="hero_content-wrapper padding-vertical padding-large">
-                        <div className="title_wrapper max-width-large align-center">
+                        <div className="title_wrapper max-width-large align-center" >
                             <div className="center-content z-index-1">
-                                <div className="overflow-hidden">
+                                <div className="">
                                     <div data-w-id="4e7d7ce0-612b-5363-0716-46922c664478"
                                          className="hero4 text-cut-off">
                                         <div
-                                            className="heading-style-h4 text-align-center text-color-primary text-left-mobile">Money
+                                            className="heading-style-h4 text-align-center text-color-primary text-left-mobile"  data-delay="1.55" >Money
                                             matters → Made Simple
                                         </div>
                                     </div>
                                 </div>
-                                <div className="text-align-center margin-vertical margin-small overflow-hidden">
+                                <div className="text-align-center margin-vertical margin-small ">
                                     <div data-w-id="efcf5b57-ab08-af36-3e4f-c82f3a613a0a"
                                          className="hero1 text-cut-off">
                                         <h1 className="heading-style-h1 text-left-mobile">Mobile banking meets
