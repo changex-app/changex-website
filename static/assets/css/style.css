@@ -2069,8 +2069,8 @@ figcaption {
     width: 50%;
     max-width: 1153px;
     min-height: 760px;
-    background-image: url('/static/images/bank/img-bank.jpeg'), -webkit-gradient(linear, left top, left bottom, from(#ebedf0), to(#ebedf0));
-
+    background-image: url('/images/bank/img-bank.jpeg'),-webkit-gradient(linear,left top,left bottom,from(#ebedf0),to(#ebedf0));
+    background-image: url('/images/bank/img-bank.jpeg'),linear-gradient(180deg,#ebedf0,#ebedf0);
     background-position: 50% 50%, 0 0;
     background-size: cover, auto;
     background-repeat: no-repeat, repeat;
@@ -2088,7 +2088,6 @@ figcaption {
     top: 0%;
     right: 0%;
     bottom: auto;
-    background-image: url('/static/images/card/img-card-bg.png'), -webkit-gradient(linear, left top, left bottom, from(#ebedf0), to(#ebedf0));
     background-image: url('/static/images/card/img-card-bg.png'), linear-gradient(180deg, #ebedf0, #ebedf0);
     background-size: 1153px, auto;
 }
@@ -3109,7 +3108,7 @@ figcaption {
     }
 
     .margin-large {
-        margin: 6.2rem;
+        margin: 2.5rem;
     }
 
     .padding-xxlarge {
@@ -3354,9 +3353,9 @@ figcaption {
         width: 50%;
     }
 
-    .image-holder {
+  /*  .image-holder {
         min-height: 600px;
-    }
+    }*/
 
     .section-image.is-rounded {
         max-width: 120%;
