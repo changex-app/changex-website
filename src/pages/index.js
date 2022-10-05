@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import MetaDecorator from "../Utils/MetaDecorator";
 import content from "../../static/assets/content/content.json";
 import Hero from "../components/Hero";
+import Bank from "../components/Bank";
 const imageUrl = "/assets/images/Changex-OG.jpeg"
 
 const IndexPage = () => {
@@ -19,6 +20,7 @@ const IndexPage = () => {
           <Header />
           <main className="nk-pages">
               <Hero/>
+              <Bank/>
               <Footer/>
           </main>
         </div>

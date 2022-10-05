@@ -24,7 +24,7 @@ export default function Hero(){
                                     <div data-w-id="4e7d7ce0-612b-5363-0716-46922c664478"
                                          className="hero4 text-cut-off">
                                         <div
-                                            className="heading-style-h4 text-align-center text-color-primary text-left-mobile  animate__animated animate__fadeInUp">Money
+                                            className="heading-style-h4 text-align-center text-color-primary text-left-mobile animate__animated animate__fadeInUp">Money
                                             matters → Made Simple
                                         </div>
                                     </div>
@@ -32,7 +32,7 @@ export default function Hero(){
                                 <div className="text-align-center margin-vertical margin-small ">
                                     <div data-w-id="efcf5b57-ab08-af36-3e4f-c82f3a613a0a"
                                          className="hero1 text-cut-off">
-                                        <h1 className="heading-style-h1 text-left-mobile  animate__animated animate__fadeInUp">Mobile banking meets
+                                        <h1 className="heading-style-h1 text-left-mobile animate__animated animate__fadeInUp">Mobile banking meets
                                             decentralized finance</h1>
                                     </div>
                                 </div>
