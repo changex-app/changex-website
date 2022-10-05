@@ -71,7 +71,7 @@ export const menuItems = [
 
 export default function Navigation() {
     return (
-    <div data-animation="default" className="nav_bar w-nav">
+    <div data-animation="default" className="nav_bar w-nav animate__animated animate__backInDown">
         <div className="padding-global nav-padding">
             <div className="container-large is-nav w-container">
                 <div className="nav_full-wrapper">
