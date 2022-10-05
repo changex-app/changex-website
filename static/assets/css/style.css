@@ -2715,7 +2715,6 @@ figcaption {
     left: auto;
     top: auto;
     right: 0%;
-    bottom: 11%;
 }
 
 .bank-image {
@@ -3086,7 +3085,7 @@ figcaption {
     }
 }
 
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1040px) {
     .padding-xlarge {
         padding: 3rem;
     }
@@ -3132,7 +3131,7 @@ figcaption {
     }
 
     .margin-xhuge {
-        margin: 6rem;
+        margin: 12rem;
     }
 
     .margin-medium {
@@ -3353,9 +3352,9 @@ figcaption {
         width: 50%;
     }
 
-  /*  .image-holder {
+    .image-holder {
         min-height: 600px;
-    }*/
+    }
 
     .section-image.is-rounded {
         max-width: 120%;

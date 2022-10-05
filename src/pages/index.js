@@ -5,6 +5,8 @@ import MetaDecorator from "../Utils/MetaDecorator";
 import content from "../../static/assets/content/content.json";
 import Hero from "../components/Hero";
 import Bank from "../components/Bank";
+import Card from "../components/Card";
+
 const imageUrl = "/assets/images/Changex-OG.jpeg"
 
 const IndexPage = () => {
@@ -21,6 +23,7 @@ const IndexPage = () => {
           <main className="nk-pages">
               <Hero/>
               <Bank/>
+              <Card/>
               <Footer/>
           </main>
         </div>
