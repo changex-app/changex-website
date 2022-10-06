@@ -3086,7 +3086,7 @@ figcaption {
     }
 }
 
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 991px) {
     .padding-xlarge {
         padding: 3rem;
     }
@@ -3257,8 +3257,8 @@ figcaption {
     }
 
     .padding-section-large {
-        padding-top: 6rem;
-        padding-bottom: 6rem;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
     }
 
     .fs-styleguide_3-col {
