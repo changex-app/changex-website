@@ -66,8 +66,32 @@ export const menuItems = [
             },
         ]*/
     }
-
 ];
+
+export const iconItems = [
+    {
+        src: AppleBlackIcon,
+        href: 'https://apps.apple.com/bg/app/changex-wallet/id1613309180' ,
+        class: 'nav_download-btn w-inline-block',
+        parentClass: 'nav_download-item',
+        id: 'apple'
+    },
+    {
+        src: PlaystoreBlackIcon,
+        href: 'https://play.google.com/store/apps/details?id=io.changex.app',
+        class: 'nav_download-btn w-inline-block',
+        parentClass: 'nav_download-item',
+        id: 'google'
+    },
+    {
+        src: QRBlack,
+        href: '' ,
+        class: 'nav_download-btn w-inline-block',
+        parentClass: 'nav_download-item qr-icon',
+        id: 'qrcode'
+    }
+]
+
 
 export default function Navigation() {
     return (
@@ -98,15 +122,14 @@ export default function Navigation() {
                             </div>
                         </div>
                         <ul className="nav_download-wrapper w-list-unstyled">
-                            <li className="nav_download-item">
-                                <a href="https://apps.apple.com/bg/app/changex-wallet/id1613309180"  className="nav_download-btn w-inline-block"><img src={AppleBlackIcon} loading="lazy" width="21"></img></a>
-                            </li>
-                            <li className="nav_download-item">
-                                <a href="https://play.google.com/store/apps/details?id=io.changex.app"  className="nav_download-btn w-inline-block"><img src={PlaystoreBlackIcon} loading="lazy" width="21"></img></a>
-                            </li>
-                            <li className="nav_download-item qr-icon">
-                                <a data-w-id="2d1d292f-3b75-27de-c295-652c0aa8248c" href="#" className="nav_download-btn w-inline-block"><img src={QRBlack} loading="lazy" width="21"></img></a>
-                            </li>
+
+                            {iconItems.map((icon, index) => {
+                                return (
+                                    <li id={icon.id} className="nav_download-item">
+                                        <a href={icon.href}  className={icon.class}><img src={icon.src} loading="lazy" width="21"></img></a>
+                                    </li>
+                                );
+                            })}
                         </ul>
                     </div>
                     <div className="menu-button w-nav-button"  aria-label="menu" role="button" tabIndex="0"
