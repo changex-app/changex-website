@@ -4,12 +4,15 @@ import { useState } from "react";
 
 export default function Waitlist(){
     const [isShown, setIsShown] = useState(true);
+    const [hasError, setHasError] = useState(false);
     const [formData, setFormData] = useState('');
 
-    const HandleSubmit  = () => {
+    const HandleSubmit  = (event) => {
 
         if(isValidEmail(formData)) {
-            setIsShown( current => !current);
+
+            event.preventDefault();
+
             fetch("http://localhost:8000", {
                 method: 'POST',
                 headers: {
@@ -20,11 +23,11 @@ export default function Waitlist(){
                 }),
             })
                 .then(data => {
-
+                    setIsShown( current => !current);
                     setFormData('');
                 })
                 .catch(err => {
-                    console.log();
+                    setHasError(current => !current)
                 });
         } else {
 
@@ -32,6 +35,7 @@ export default function Waitlist(){
     }
 
     const HandleChange = (event) => {
+        event.preventDefault();
         setFormData(event.target.value)
     }
 
@@ -61,19 +65,23 @@ export default function Waitlist(){
                                             <input type="submit"
                                                    value="Sign me in"
                                                    data-wait="Please wait..."
-                                                   className="email-submit w-button">
+                                                   className="email-submit w-button"
+                                                   disabled={!formData}>
                                             </input>
 
                                         </form>
                                     )}
-                                    {isShown === false && (
+                                    {!isShown && (
                                         <div className="w-form-done">
                                             Thank you! Your submission has been received!
                                         </div>
                                     )}
-                                    <div className="w-form-fail">
-                                        <div>Oops! Something went wrong while submitting the form.</div>
-                                    </div>
+
+                                    {hasError && (
+                                        <div className="w-form-fail">
+                                            <div>Oops! Something went wrong while submitting the form.</div>
+                                        </div>
+                                    )}
                                 </div>
                                 <div className="text-size-small">By subscribing you agree to ChangeX <a
                                     href="https://token.changex.io/terms-and-condition"
