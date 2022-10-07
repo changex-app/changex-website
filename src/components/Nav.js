@@ -8,6 +8,7 @@ import AppleBlackIcon from "/static/images/icn-apple-black.svg";
 import PlaystoreBlackIcon from "/static/images/icn-playstore-black.svg";
 import QRBlack from "/static/images/icn-qr-black.svg";
 import MenuIcon from "/static/images/Menu-Icon_1Menu Icon.png";
+import {useEffect, useState} from "react";
 
 export const menuItems = [
     {
@@ -94,6 +95,31 @@ export const iconItems = [
 
 
 export default function Navigation() {
+
+    const [value, setValue] = useState('$CurrentPrice');
+    const [apy, setApy] = useState('$CurrentAPY');
+
+    useEffect(() => {
+        fetchData().catch((err)=> {
+            console.warn('err: ', err)
+        })
+    }, [])
+
+    const fetchData = async () => {
+        const response = await fetch("https://changex-price-fetcher-xcl5j.ondigitalocean.app/coins/markets?ids=changex&vs_currency=usd");
+        const data = await response.json();
+
+        console.warn('data[0]' ,data[0].current_price);
+        setValue(data[0].current_price.toFixed(4))
+
+        const responseAPY = await fetch("https://hydra-dex-backend.changex.io/api/staking/apy?amount=1");
+        const dataAPY = await responseAPY.json();
+
+        console.warn('dataAPY' , dataAPY.inPercent);
+        setApy(dataAPY.inPercent)
+
+    }
+
     return (
     <div data-animation="default" className="nav_bar w-nav animate__animated animate__fadeInDown">
         <div className="padding-global nav-padding">
@@ -113,12 +139,12 @@ export default function Navigation() {
                     <div className="nav_right-wrapper hide-mobile-landscape">
                         <div className="nav_stats-wrapper">
                             <div className="padding-small">
-                                <div id="changexPrice" className="text-size-tiny changexprice">$CHANGprice</div>
+                                <div id="changexPrice" className="text-size-tiny changexprice">{value}</div>
                             </div>
                         </div>
                         <div className="nav_stats-wrapper">
                             <div className="padding-small">
-                                <div id="changexApy" className="text-size-tiny text-color-black changexapy">$CHANGAPY<strong></strong></div>
+                                <div id="changexApy" className="text-size-tiny text-color-black changexapy">APY:<strong> {apy}%</strong></div>
                             </div>
                         </div>
                         <ul className="nav_download-wrapper w-list-unstyled">

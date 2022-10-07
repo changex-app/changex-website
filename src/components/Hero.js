@@ -48,11 +48,12 @@ export default function Hero(){
                                         src={DownloadGoogle} loading="lazy" width="150"
                                         alt="Goole Play Store download image"></img></a>
                                     <a data-w-id="a77f28b0-f749-034d-c5c6-5f870664bf00" href="#"
-                                       className="button is-qr w-inline-block"><img src={DownloadQR}
-                                                                                    loading="lazy" width="75"
-                                                                                    alt="QR code image"
-                                                                                    className="qr-small">
-                                        </img>
+                                       className="button is-qr w-inline-block">
+                                        <img src={DownloadQR}
+                                             loading="lazy" width="75"
+                                             alt="QR code image"
+                                             className="qr-small">
+                                        </img><p className="text-align-left text-size-regular" style={{width: "min-content"}}>Scan To Download</p>
                                     </a>
                                 </div>
                             </div>

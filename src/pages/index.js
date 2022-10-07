@@ -9,6 +9,7 @@ import Card from "../components/Card";
 import Waitlist from "../components/Waitlist";
 import Press from "../components/Press";
 import Partners from "../components/Partners";
+import Cta from "../components/Cta";
 
 const imageUrl = "/assets/images/Changex-OG.jpeg"
 
@@ -30,6 +31,7 @@ const IndexPage = () => {
               <Waitlist/>
               <Partners/>
               <Press/>
+              <Cta/>
               <Footer/>
           </main>
         </div>

@@ -9,6 +9,7 @@
     grid-row-gap: 16px;
     grid-column-gap: 16px;
 }
+/*
 
 .w-checkbox {
     display: block;
@@ -124,6 +125,7 @@
     border-left-color: #3898ec;
     border-right-color: #3898ec;
 }
+*/
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
@@ -1164,7 +1166,8 @@ figcaption {
 .text-size-large {
     font-size: 1.425rem;
     font-weight: 400;
-    letter-spacing: -0.2px;
+    letter-spacing: -0.4px;
+    line-height: normal;
 }
 
 .fs-styleguide_header {
