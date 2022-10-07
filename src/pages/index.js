@@ -7,6 +7,8 @@ import Hero from "../components/Hero";
 import Bank from "../components/Bank";
 import Card from "../components/Card";
 import Waitlist from "../components/Waitlist";
+import Press from "../components/Press";
+import Partners from "../components/Partners";
 
 const imageUrl = "/assets/images/Changex-OG.jpeg"
 
@@ -26,6 +28,8 @@ const IndexPage = () => {
               <Bank/>
               <Card/>
               <Waitlist/>
+              <Partners/>
+              <Press/>
               <Footer/>
           </main>
         </div>

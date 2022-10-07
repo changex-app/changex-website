@@ -3,8 +3,6 @@ import { useState } from "react";
 /*
 const sgMail = require('@sendgrid/mail')
 */
-
-
 export default function Waitlist(){
     const [isShown, setIsShown] = useState(true);
     const [hasError, setHasError] = useState(false);
@@ -74,7 +72,6 @@ export default function Waitlist(){
                                                        maxLength="256" name="email"
                                                        placeholder="Email Address" onChange={HandleChange}  value={formData}
                                                        required="">
-
                                                 </input>
                                                 <input
                                                     type="submit"
@@ -123,16 +120,20 @@ export default function Waitlist(){
                             </div>
                             <div className="waitlist-wrapper-right max-width-medium max-width-full-tablet">
                                 <div className="waitlist-benefit-wrapper margin-vertical margin-medium">
-                                    <div className="icon-wrapper-48"><img src="/images/icn-takepart.svg" loading="lazy"
-                                                                          alt=""></img></div>
+                                    <div className="icon-wrapper-48">
+                                        <img src="/images/icn-takepart.svg" loading="lazy" alt=""></img>
+                                    </div>
                                     <p className="text-size-medium">Climb the ranks of the waitlist by taking part in
-                                        community activities and accumulating points!</p>
+                                        community activities and accumulating points!
+                                    </p>
                                 </div>
                                 <div className="waitlist-benefit-wrapper margin-vertical margin-medium">
-                                    <div className="icon-wrapper-48"><img src="/images/icn-starwithcheckmark.svg"
-                                                                          loading="lazy" alt=""></img></div>
+                                    <div className="icon-wrapper-48">
+                                        <img src="/images/icn-starwithcheckmark.svg" loading="lazy" alt=""></img>
+                                    </div>
                                     <p className="text-size-medium">The higher you rank, the more likely to be one of
-                                        the first to receive their card with multiple rewards and benefits.</p>
+                                        the first to receive their card with multiple rewards and benefits.
+                                    </p>
                                 </div>
                             </div>
                         </div>
