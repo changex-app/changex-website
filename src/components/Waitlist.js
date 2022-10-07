@@ -1,5 +1,8 @@
 import * as React from "react";
 import { useState } from "react";
+/*
+const sgMail = require('@sendgrid/mail')
+*/
 
 
 export default function Waitlist(){
@@ -12,23 +15,29 @@ export default function Waitlist(){
         if(isValidEmail(formData)) {
 
             event.preventDefault();
+            setIsShown(current => !current);
+/*
+            sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
-            fetch("http://localhost:8000", {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    email: formData, // Use your own property name / key
-                }),
-            })
-                .then(data => {
-                    setIsShown( current => !current);
-                    setFormData('');
+            const msg = {
+                to: formData, // Change to your recipient
+                from: 'changex.io', // Change to your verified sender
+                subject: 'Thank you for subscribing',
+                text: 'We re glad to add one more change maker to the community',
+                html: '<strong>See you soon</strong>',
+            }
+
+            sgMail
+                .send(msg)
+                .then((response) => {
+                    console.log(response[0].statusCode)
+                    console.log(response[0].headers)
                 })
-                .catch(err => {
-                    setHasError(current => !current)
-                });
+                .catch((error) => {
+                    console.error(error)
+                })*/
+
+
         } else {
 
         }
@@ -54,6 +63,29 @@ export default function Waitlist(){
                                 <h3 className="heading-style-h3 margin-bottom margin-medium">Join the Card Waitlist</h3>
                                 <div className="w-form">
                                     {isShown && (
+                                        <div className="sendgrid-subscription-widget widget-2368"
+                                             data-emailerror="Please enter a valid email address"
+                                             data-nameerror="Please enter your name"
+                                             data-checkboxerror="Please tick the box to accept our conditions">
+                                            <form onSubmit={HandleSubmit} data-token="0719662e9bb0cc2768bc17f2c5cfb745"
+                                                  id="email-form" name="email-form" data-name="Email Form" method="get"
+                                                  className="form">
+                                                <input type="email" className="email-field w-input"
+                                                       maxLength="256" name="email"
+                                                       placeholder="Email Address" onChange={HandleChange}  value={formData}
+                                                       required="">
+
+                                                </input>
+                                                <input
+                                                    type="submit"
+                                                    value="Sign me in"
+                                                    data-wait="Please wait..."
+                                                    className="email-submit w-button"
+                                                ></input>
+                                            </form>
+                                        </div>)}
+
+                                    {/*{isShown && (
                                         <form onSubmit={HandleSubmit} id="email-form" name="email-form" data-name="Email Form" method="get"
                                               className="form">
                                             <input type="email" className="email-field w-input"
@@ -70,7 +102,7 @@ export default function Waitlist(){
                                             </input>
 
                                         </form>
-                                    )}
+                                    )}*/}
                                     {!isShown && (
                                         <div className="w-form-done">
                                             Thank you! Your submission has been received!
