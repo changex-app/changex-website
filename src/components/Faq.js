@@ -5,6 +5,9 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import AddCircle from '@mui/icons-material/Add';
+import { SiAddthis } from "react-icons/si";
+import { FaPlusCircle } from "react-icons/fa";
 
 export const faqContent = [
     {
@@ -72,7 +75,7 @@ export default function Faq() {
                                     return (
                                         <Accordion className="faq-question-bar w-inline-block">
                                             <AccordionSummary
-                                                expandIcon={<ExpandMoreIcon />}
+                                                expandIcon={<AddCircle />}
                                                 aria-controls="panel1a-content"
                                                 id="panel1a-header"
                                             >
