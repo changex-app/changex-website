@@ -2626,6 +2626,10 @@ figcaption {
     grid-template-rows: auto;
 }
 
+.tabs-wealth {
+    min-height: 590px;
+}
+
 .tabs.margin-top.margin-huge {
     -webkit-box-align: stretch;
     -webkit-align-items: stretch;
@@ -3442,6 +3446,11 @@ figcaption {
 }
 
 @media screen and (max-width: 840px) {
+
+
+    .tabs-wealth {
+        min-height: auto;
+    }
 
     .nav_right-wrapper {
         display: none;

@@ -7,7 +7,6 @@ import Stablecoins from "/static/images/wealth/Lend-Stablecoins.svg"
 const menuTabs = [
     {
         id: "stake",
-        key: "isStakeClicked",
         title: "Stake",
         text: "Staking any Proof-of-Stake asset in Changex boosts your CHANGE staking APR. Stake more assets to stack your boost and retain access to the tokens with liquid staking.",
         img: Staking_1,
@@ -15,7 +14,6 @@ const menuTabs = [
     },
     {
         id: "apy",
-        key: "isAPYClicked",
         title: "Double your APY",
         text: "Use Changex's unique Leveraged Staking product to amplify the staking rewards of any Proof-of-Stake asset by 1.2-2x and earn like never before.",
         img: Doubleapy,
@@ -23,7 +21,6 @@ const menuTabs = [
     },
     {
         id: "stablecoins",
-        key: "isStableCoinsClicked",
         title: "Lend stablecoins",
         text: "Lend your stablecoins for 5-9.5% APR and power the Leveraged Staking economy. Everything is completely decentralized.",
         img: Stablecoins,
@@ -53,32 +50,17 @@ export default function Wealth() {
                                     with DeFi’s most powerful investment tools.</p>
                             </div>
                             <div data-current="Tabs"  data-easing="ease-out" data-duration-in="300"
-                                 data-duration-out="100" className="tabs margin-top margin-huge w-tabs">
+                                 data-duration-out="100" className="tabs tabs-wealth margin-top margin-huge w-tabs">
                                 <div className="tabs-menu w-tab-menu">
-
-                                    <a data-w-tab="Tab 1"
-                                       className={active === 'stake' ? 'tab-link w-inline-block w-tab-link w--current' : 'tab-link w-inline-block w-tab-link'}
-                                       onClick={() => handleClick('stake')}>
-                                        <div>Stake</div>
-                                    </a>
-                                    <a data-w-tab="Tab 2"
-                                       className={active === 'apy' ? 'tab-link w-inline-block w-tab-link w--current' : 'tab-link w-inline-block w-tab-link'}
-                                       onClick={() => handleClick( 'apy')}>
-                                        <div>Double your APY</div>
-                                    </a>
-                                    <a data-w-tab="Tab 3"
-                                       className={active === 'stablecoins' ? 'tab-link w-inline-block w-tab-link w--current' : 'tab-link w-inline-block w-tab-link'}
-                                       onClick={() => handleClick('stablecoins')}>
-                                        <div>Lend stablecoins</div>
-                                    </a>
-                                    {/*{menuTabs.map((item)=> {
+                                    {menuTabs.map((item)=> {
                                         return (
-                                            <a id={item.id} key={item.key} onClick={(item) => handleClick(true,item.currentTarget.id)}
-                                               className={isClicked ? 'tab-link w-inline-block w-tab-link w--current' : 'tab-link w-inline-block w-tab-link'}>
-                                                <div>{item.title}</div>
-                                            </a>
+                                             <a id={item.id}
+                                                onClick={() => handleClick(item.id)}
+                                                className={active === item.id ? 'tab-link w-inline-block w-tab-link w--current' : 'tab-link w-inline-block w-tab-link'}>
+                                                 <div>{item.title}</div>
+                                             </a>
                                         )
-                                    })}*/}
+                                    })}
                                 </div>
                                 <div className="max-width-full w-tab-content">
                                     {active === 'stake' &&
@@ -111,7 +93,6 @@ export default function Wealth() {
                                                         never
                                                         before.</p>
                                                 </div>
-                                            }
                                         </div>
                                     }
                                     {active === 'stablecoins' &&
