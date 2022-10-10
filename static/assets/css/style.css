@@ -253,7 +253,7 @@ figcaption {
     margin-top: 0.25rem;
     text-align: center;
 }
-
+/*
 .utility-page_component {
     display: -webkit-box;
     display: -webkit-flex;
@@ -333,7 +333,7 @@ figcaption {
     right: auto;
     bottom: auto;
     display: block;
-}
+}*/
 
 .margin-custom2 {
     margin: 2.5rem;
@@ -545,6 +545,7 @@ figcaption {
     align-items: center;
 }
 
+/*
 .form_checkbox-icon {
     width: 0.875rem;
     height: 0.875rem;
@@ -591,7 +592,9 @@ figcaption {
     border-width: 1px;
     border-color: rgba(0, 0, 0, 0.1);
 }
+*/
 
+/*
 .fs-styleguide_spacing {
     position: relative;
     display: -ms-grid;
@@ -618,6 +621,7 @@ figcaption {
     background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 115, 230, 0.1)), to(hsla(0, 0%, 100%, 0)));
     background-image: linear-gradient(0deg, rgba(0, 115, 230, 0.1), hsla(0, 0%, 100%, 0));
 }
+*/
 
 .icon-1x1-small {
     width: 1.4rem;
@@ -3017,8 +3021,8 @@ figcaption {
 
 .tab-link {
     margin-bottom: 1.4rem;
-    background-color: transparent;
-    color: #b0b7be;
+    background-color: transparent !important;
+    color: #b0b7be !important;
     font-weight: 600;
 }
 

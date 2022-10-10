@@ -7,6 +7,7 @@ import Hero from "../components/Hero";
 import Bank from "../components/Bank";
 import Card from "../components/Card";
 import Waitlist from "../components/Waitlist";
+import Wealth from "../components/Wealth";
 import Press from "../components/Press";
 import Partners from "../components/Partners";
 import Cta from "../components/Cta";
@@ -30,6 +31,7 @@ const IndexPage = () => {
               <Bank/>
               <Card/>
               <Waitlist/>
+              <Wealth/>
               <Partners/>
               <Faq/>
               <Press/>
