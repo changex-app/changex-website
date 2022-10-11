@@ -12,7 +12,6 @@ export default function Bank(){
                             <div className="bank_wrapper-left">
                                 <div className="image-holder"><img loading="lazy"
                                                                    srcSet="/images/bank/img-bank-p-500.jpeg 500w, /images/bank/img-bank-p-800.jpeg 800w, /images/bank/img-bank-p-1080.jpeg 1080w, /images/bank/img-bank-p-1600.jpeg 1600w, /images/bank/img-bank.jpeg 2306w"
-                                                                   alt="A family chilling in bed with a laptop"
                                                                    sizes="(max-width: 479px) 93vw, (max-width: 767px) 95vw, 100vw"
                                                                    className="bank-image margin-vertical margin-large"></img>
                                     <div className="image-circle bottom-right"></div>
@@ -28,7 +27,7 @@ export default function Bank(){
                                     keeping your crypto close. Pay for services. Shop. Changex removes the clutter while
                                     you focus on life.</p>
                                 <a href="https://firebasestorage.googleapis.com/v0/b/changex-io.appspot.com/o/changex-whitepaper-v4.pdf?alt=media&amp;token=85d7033d-ce62-4fd2-aefd-b50f2a758530"
-                                   target="_blank" className="button is-large with-icon width-260 w-inline-block">
+                                   className="button is-large with-icon width-260 w-inline-block">
                                     <div>Read Whitepaper</div>
                                     <img src="/images/partners/arrow-right-primary.svg" loading="lazy" alt=""></img>
                                 </a>

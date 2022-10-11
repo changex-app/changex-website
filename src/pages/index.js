@@ -8,6 +8,7 @@ import Bank from "../components/Bank";
 import Card from "../components/Card";
 import Waitlist from "../components/Waitlist";
 import Wealth from "../components/Wealth";
+import Wallet from "../components/Wallet";
 import Press from "../components/Press";
 import Partners from "../components/Partners";
 import Cta from "../components/Cta";
@@ -28,6 +29,7 @@ const IndexPage = () => {
           <Header />
           <main className="nk-pages">
               <Hero/>
+              <Wallet/>
               <Bank/>
               <Card/>
               <Waitlist/>

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `changex-site-gatsby`,
+    title: `changex-website`,
     siteUrl: `https://www.yourdomain.tld`
   },
   plugins: [{

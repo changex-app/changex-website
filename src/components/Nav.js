@@ -109,15 +109,12 @@ export default function Navigation() {
         const response = await fetch("https://changex-price-fetcher-xcl5j.ondigitalocean.app/coins/markets?ids=changex&vs_currency=usd");
         const data = await response.json();
 
-        console.warn('data[0]' ,data[0].current_price);
         setValue(data[0].current_price.toFixed(4))
 
         const responseAPY = await fetch("https://hydra-dex-backend.changex.io/api/staking/apy?amount=1");
         const dataAPY = await responseAPY.json();
 
-        console.warn('dataAPY' , dataAPY.inPercent);
         setApy(dataAPY.inPercent)
-
     }
 
     return (
@@ -139,7 +136,11 @@ export default function Navigation() {
                     <div className="nav_right-wrapper hide-mobile-landscape">
                         <div className="nav_stats-wrapper">
                             <div className="padding-small">
-                                <div id="changexPrice" className="text-size-tiny changexprice">{value}</div>
+                                <div id="changexPrice" className="text-size-tiny changexprice">$CHANGE:&nbsp;
+                                    <a className="price-highlight" href="https://www.coingecko.com/en/coins/changex" >
+                                        <span>{value}<img style={{marginLeft: '2px'}} src="/images/external_link.svg"/></span>
+
+                                    </a></div>
                             </div>
                         </div>
                         <div className="nav_stats-wrapper">

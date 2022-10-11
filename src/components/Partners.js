@@ -47,7 +47,7 @@ export default function Partners() {
                                 <div className="logos-wrapper r-marquee-wrapper-left">
                                     {logosParners.map((logo, index) => {
                                         return(
-                                            <a href={logo.href} target="_blank"
+                                            <a href={logo.href}
                                                className="logo-link w-inline-block">
                                                 <img src={logo.src}
                                                      loading="lazy" width="75"
@@ -60,7 +60,7 @@ export default function Partners() {
                                 <div className="logos-wrapper r-marquee-wrapper-left">
                                     {logosParners.map((logo, index) => {
                                         return(
-                                            <a href={logo.href} target="_blank"
+                                            <a href={logo.href}
                                                className="logo-link w-inline-block">
                                                 <img src={logo.src}
                                                      loading="lazy" width="75"

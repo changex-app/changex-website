@@ -11,7 +11,7 @@ export default function Footer(){
                     <div className="padding-section-small is-footer">
                         <div className="w-layout-grid footer-grid">
                             <a id="w-node-_1990efdd-2a98-fdc4-a28b-e4f59030e322-0541c3c1" href="#"
-                               className="footer_logo-wrapper w-inline-block"><img src={ChangeXLogoColor} alt="Logo"
+                               className="footer_logo-wrapper w-inline-block"><img src={ChangeXLogoColor}
                                                                                    loading="lazy"
                                                                                    ></img></a>
                             <div id="w-node-_2f6b6dc2-2cf0-e9a7-c501-01025beadbee-0541c3c1" className="button-group">

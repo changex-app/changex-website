@@ -1132,6 +1132,10 @@ figcaption {
     padding-bottom: 8rem;
 }
 
+.dding-section-large-slide {
+    padding-top: 0rem;
+}
+
 .padding-section-large.is-cta-section {
     padding-top: 16rem;
     padding-bottom: 16rem;
@@ -1241,7 +1245,7 @@ figcaption {
 
 .container-large {
     width: 100%;
-    max-width: 80rem;
+    max-width: 70rem;
     margin-right: auto;
     margin-left: auto;
 }
@@ -4862,4 +4866,15 @@ figcaption {
 .MuiSvgIcon-root {
     display: block;
     margin: auto;
+}
+
+.price-highlight {
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    background-color: #e9e9ff;
+    color: #121220;
+    font-size: .705rem;
+    line-height: 150%;
+    font-weight: 600;
+    text-decoration: none;
 }
