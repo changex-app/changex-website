@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Slide } from 'react-slideshow-image';
+import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 
 const scrollImages = [
@@ -44,10 +44,11 @@ const slideImages = [
 const properties = {
     duration: 5000,
     autoplay: true,
+    defaultIndex: 0,
     transitionDuration: 500,
     arrows: false,
     infinite: true,
-    easing: "",
+    easing: "linear",
 };
 
 
@@ -74,20 +75,19 @@ export default function Wallet() {
                                          data-disable-swipe="true" data-autoplay-limit="0" data-nav-spacing="0"
                                          data-duration="500" data-infinite="true">
                                         <div className="slide-container">
-                                            <Slide {...properties}>
+                                            <Fade {...properties}>
                                                 {slideImages.map((slide, index)=> {
                                                     return (
                                                         <div className="slide01 w-slide">
                                                             <img src={slide.src}
                                                                  loading="lazy" width="auto"
-                                                                 /*sizes="(max-width: 479px) 93vw, (max-width: 991px) 95vw, 50vw"*/
                                                                  className="image">
 
                                                             </img>
                                                         </div>
                                                     )
                                                 })}
-                                            </Slide>
+                                            </Fade>
                                         </div>
                                         {/*<div className="mask w-slider-mask">
                                             {slideImages.map((slide, index)=> {
