@@ -58,7 +58,7 @@ export default function Wallet() {
             <div className="background-color-black">
                 <div className="padding-global">
                     <div className="container-large">
-                        <div className="padding-section-large-slide">
+                        <div className="padding-section-large">
                             <div className="div-block">
                                 <div className="wallet_wrapper-left animate__animated animate__fadeInUp">
                                     <div className="label is-lime slide-from-bottom">Wallet</div>

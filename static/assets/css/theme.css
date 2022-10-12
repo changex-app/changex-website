@@ -1562,6 +1562,7 @@ textarea.w-select {
 }
 .w-nav {
     position: relative;
+    overflow: hidden;
     background: #fefefe;
 }
 .w-nav:before,

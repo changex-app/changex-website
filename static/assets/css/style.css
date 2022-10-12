@@ -135,9 +135,11 @@ body {
     font-weight: 400;
 }
 
-
-
 .nk-wrap {
+    overflow: hidden;
+}
+
+.nk-pages {
     overflow: hidden;
 }
 
@@ -1245,7 +1247,7 @@ figcaption {
 
 .container-large {
     width: 100%;
-    max-width: 70rem;
+    max-width: 80rem;
     margin-right: auto;
     margin-left: auto;
 }
@@ -1866,6 +1868,7 @@ figcaption {
 
 .section_hero {
     position: relative;
+    overflow: hidden;
 }
 
 .height-full {
@@ -1939,20 +1942,20 @@ figcaption {
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
     align-items: flex-start;
-    grid-column-gap: 10rem;
+    grid-column-gap: 7rem;
 }
 
 .wallet_wrapper-left {
     position: -webkit-sticky;
     position: sticky;
-    top: 40%;
+    top: 5%;
     z-index: 1;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    max-width: 600px;
+    max-width: 500px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;

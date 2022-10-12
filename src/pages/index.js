@@ -27,6 +27,7 @@ const IndexPage = () => {
                 imageUrl={imageUrl}
             />
           <Header />
+        </div>
           <main className="nk-pages">
               <Hero/>
               <Wallet/>
@@ -40,7 +41,6 @@ const IndexPage = () => {
               <Cta/>
               <Footer/>
           </main>
-        </div>
         <div className="preloader">
           <span className="spinner spinner-round"></span>
         </div>
