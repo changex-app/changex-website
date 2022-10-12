@@ -140,7 +140,7 @@ body {
 }
 
 .nk-pages {
-    overflow: hidden;
+    overflow: clip;
 }
 
 h1 {
@@ -1948,7 +1948,7 @@ figcaption {
 .wallet_wrapper-left {
     position: -webkit-sticky;
     position: sticky;
-    top: 5%;
+    top: 40%;
     z-index: 1;
     display: -webkit-box;
     display: -webkit-flex;
