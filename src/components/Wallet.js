@@ -11,14 +11,14 @@ const scrollImages = [
         urlText: 'Download the app'
     },
     {
-        src: 'images/slide_3.jpg',
+        src: 'images/wallet/scroll_3.svg',
         caption: 'Access multi-chain crypto',
         text: 'Get on top of some of the hottest cryptocurrencies with a focus on Proof-of-Stake tokens. Swap between networks with ease.',
         url: 'https://firebasestorage.googleapis.com/v0/b/changex-io.appspot.com/o/changex-whitepaper-v4.pdf?alt=media&amp;token=85d7033d-ce62-4fd2-aefd-b50f2a758530',
         urlText: 'Read the whitepaper'
     },
     {
-        src: 'images/slide_4.jpg',
+        src: 'images/wallet/scroll_4.svg',
         caption: 'Buy and sell crypto',
         text: 'Trade cryptocurrencies with the click of a button with vetted protocols and contracts.',
         url: 'Download the app',
@@ -89,27 +89,6 @@ export default function Wallet() {
                                                 })}
                                             </Fade>
                                         </div>
-                                        {/*<div className="mask w-slider-mask">
-                                            {slideImages.map((slide, index)=> {
-                                            return (
-                                                <div className="slide01 w-slide">
-                                                    <img src={slide.src}
-                                                         loading="lazy" width="579.5"
-                                                         sizes="(max-width: 479px) 93vw, (max-width: 991px) 95vw, 50vw"
-                                                         className="image">
-
-                                                    </img>
-                                                </div>
-                                            )
-                                            })}
-                                        </div>*/}
-{/*                                        <div className="left-arrow w-slider-arrow-left">
-                                            <div className="w-icon-slider-left"></div>
-                                        </div>
-                                        <div className="right-arrow w-slider-arrow-right">
-                                            <div className="w-icon-slider-right"></div>
-                                        </div>
-                                        <div className="slide-nav w-slider-nav"></div>*/}
                                     </div>
                                     <div className="wallet_benefits-container"></div>
 

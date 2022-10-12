@@ -1,14 +1,14 @@
 import * as React from "react";
-import Dropdown from 'react-dropdown';
+import { useEffect, useState } from "react";
+import { ScanQrModal } from "../Utils/scan-qr-modal";
+import { Modal } from "@mui/material";
 import 'react-dropdown/style.css';
 import ChangeXLogoColor from "/static/images/ChangeX-LogoColor.svg";
-import DwApple from "/static/images/DW-Apple.svg";
-import DwGoogle from "/static/images/DW-Google.svg";
 import AppleBlackIcon from "/static/images/icn-apple-black.svg";
 import PlaystoreBlackIcon from "/static/images/icn-playstore-black.svg";
 import QRBlack from "/static/images/icn-qr-black.svg";
 import MenuIcon from "/static/images/Menu-Icon_1Menu Icon.png";
-import {useEffect, useState} from "react";
+
 
 export const menuItems = [
     {
@@ -83,13 +83,6 @@ export const iconItems = [
         class: 'nav_download-btn w-inline-block',
         parentClass: 'nav_download-item',
         id: 'google'
-    },
-    {
-        src: QRBlack,
-        href: '' ,
-        class: 'nav_download-btn w-inline-block',
-        parentClass: 'nav_download-item qr-icon',
-        id: 'qrcode'
     }
 ]
 
@@ -104,6 +97,13 @@ export default function Navigation() {
             console.warn('err: ', err)
         })
     }, [])
+
+    const [showModal, setShowModal] = useState(false)
+
+    function openModal() {
+        setShowModal(true);
+    }
+
 
     const fetchData = async () => {
         const response = await fetch("https://changex-price-fetcher-xcl5j.ondigitalocean.app/coins/markets?ids=changex&vs_currency=usd");
@@ -152,11 +152,16 @@ export default function Navigation() {
 
                             {iconItems.map((icon, index) => {
                                 return (
-                                    <li id={icon.id} className="nav_download-item">
+                                    <li onClick={icon.onclick} id={icon.id} className="nav_download-item">
                                         <a href={icon.href}  className={icon.class}><img src={icon.src} loading="lazy" width="21"></img></a>
                                     </li>
                                 );
                             })}
+                            <li onClick={openModal} id="qrcode" className="nav_download-item">
+                                <a style={{cursor: "pointer"}} className="nav_download-btn w-inline-block">
+                                    <img src={QRBlack} loading="lazy" width="21"></img>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                     <div className="menu-button w-nav-button"  aria-label="menu" role="button" tabIndex="0"
@@ -167,5 +172,13 @@ export default function Navigation() {
             </div>
         </div>
         <div className="w-nav-overlay"></div>
+        <Modal open={showModal}>
+            <ScanQrModal className="section-scanpopup wf-section"
+                         showModal={showModal}
+                         setShowModal={setShowModal}
+                         aria-labelledby="modal-modal-title"
+                         aria-describedby="modal-modal-description">
+            </ScanQrModal>
+        </Modal>
     </div>
 );}

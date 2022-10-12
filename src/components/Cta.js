@@ -1,6 +1,16 @@
 import * as React from "react";
+import { ScanQrModal } from "../Utils/scan-qr-modal";
+import { Modal } from "@mui/material";
+import { useState } from "react";
 
 export default function Cta() {
+
+    const [showModal, setShowModal] = useState(false)
+
+    function openModal() {
+        setShowModal(true);
+    }
+
     return (
         <section className="section_cta">
             <div className="padding-global">
@@ -25,7 +35,7 @@ export default function Cta() {
                                     <img src="/images/DW-Google.svg" loading="lazy" width="150"
                                          alt="Google Play download image"></img>
                                 </a>
-                                <a data-w-id="fc206e65-714f-aaac-d081-2309765479aa" href="#"
+                                <a onClick={openModal} data-w-id="fc206e65-714f-aaac-d081-2309765479aa" href="#"
                                    className="button is-qr w-inline-block">
                                     <img src="/images/download-qr.svg" loading="lazy" width="75"
                                          alt="QR code image"
@@ -38,6 +48,14 @@ export default function Cta() {
                     </div>
                 </div>
             </div>
+            <Modal open={showModal}>
+                <ScanQrModal className="section-scanpopup wf-section"
+                             showModal={showModal}
+                             setShowModal={setShowModal}
+                             aria-labelledby="modal-modal-title"
+                             aria-describedby="modal-modal-description">
+                </ScanQrModal>
+            </Modal>
         </section>
     )
 }

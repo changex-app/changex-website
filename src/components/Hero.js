@@ -4,16 +4,24 @@ import HeroBGImageMobile from "/static/images/Hero-BGimg-mobile.png"
 import DownloadApple from "/static/images/DW-Apple.svg"
 import DownloadGoogle from "/static/images/DW-Google.svg"
 import DownloadQR from "/static/images/download-qr.svg"
+import Typography from "@mui/material/Typography";
+import {Box, Modal} from "@mui/material";
+import {useState} from "react";
+import {ScanQrModal} from "../Utils/scan-qr-modal";
 
 export default function Hero(){
+
+    const [showModal, setShowModal] = useState(false)
+
+    function openModal() {
+        setShowModal(true);
+    }
+
     return (
-        <section id="hero" className="section_hero"><img src={HeroBGImageMobile}
-                                                                         loading="lazy"
-                                                                         className="image-hero"></img>
-            <div data-w-id="c13eb82b-5b20-6413-5910-e34ac2c5a6d7"
-                 className="hero2 hero-background"></div>
-            <div data-w-id="f2f39ad6-3a44-9a39-8d1d-eefb6902e209"
-                 className="hero3 hero-background right"></div>
+        <section id="hero" className="section_hero">
+            <img src={HeroBGImageMobile} loading="lazy" className="image-hero"></img>
+            <div className="hero2 hero-background"></div>
+            <div className="hero3 hero-background right"></div>
             <div className="padding-global">
                 <div className="container-large">
                     <div className="hero_content-wrapper padding-vertical padding-large">
@@ -31,20 +39,22 @@ export default function Hero(){
                                 <div className="text-align-center margin-vertical margin-small ">
                                     <div data-w-id="efcf5b57-ab08-af36-3e4f-c82f3a613a0a"
                                          className="hero1 text-cut-off">
-                                        <h1 className="heading-style-h1 text-left-mobile animate__animated animate__fadeInUp">Mobile banking meets
-                                            decentralized finance</h1>
+                                        <h1 className="heading-style-h1 text-left-mobile animate__animated animate__fadeInUp">
+                                            Mobile banking meets decentralized finance
+                                        </h1>
                                     </div>
                                 </div>
                                 <div data-w-id="d49aa841-14fa-a4f0-05ef-cc82444d06cd" style={{opacity:1}}
                                      className=" animate__animated animate__zoomIn button-group centered-items margin-top margin-large spread max-width-full-mobile-landscape">
                                     <a href="https://apps.apple.com/bg/app/changex-wallet/id1613309180"
-                                       className="button is-store max-width-full-mobile-landscape w-inline-block"><img
-                                        src={DownloadApple} loading="lazy"
-                                        width="150"></img></a>
+                                       className="button is-store max-width-full-mobile-landscape w-inline-block">
+                                        <img src={DownloadApple} loading="lazy" width="150"></img>
+                                    </a>
                                     <a href="https://play.google.com/store/apps/details?id=io.changex.app"
-                                       className="button is-store max-width-full-mobile-landscape w-inline-block"><img
-                                        src={DownloadGoogle} loading="lazy" width="150"></img></a>
-                                    <a data-w-id="a77f28b0-f749-034d-c5c6-5f870664bf00" href="#"
+                                       className="button is-store max-width-full-mobile-landscape w-inline-block">
+                                        <img src={DownloadGoogle} loading="lazy" width="150"></img>
+                                    </a>
+                                    <a onClick={openModal} data-w-id="a77f28b0-f749-034d-c5c6-5f870664bf00" href="#"
                                        className="button is-qr w-inline-block">
                                         <img src={DownloadQR}
                                              loading="lazy" width="75"
@@ -59,13 +69,22 @@ export default function Hero(){
                             <p data-w-id="a20e1489-4544-68cd-4c9e-a22080e2671d" style={{opacity:1}}
                                className="max-width-large align-center text-align-center text-size-medium text-left-mobile">Manage,
                                 invest, and grow your wealth with a Euro bank account, access to crypto, and DeFi
-                                investment tools. Spend anywhere with the Changex <a href="#card"
-                                                                                     className="text-style-link">Crypto
-                                    Debit Card</a>.</p>
+                                investment tools. Spend anywhere with the Changex
+                                <a href="" className="text-style-link">Crypto Debit Card.</a>
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
+            <Modal open={showModal}>
+                <ScanQrModal className="section-scanpopup wf-section"
+                    showModal={showModal}
+                    setShowModal={setShowModal}
+                    aria-labelledby="modal-modal-title"
+                    aria-describedby="modal-modal-description"
+                >
+                </ScanQrModal>
+            </Modal>
         </section>
     );
 }
