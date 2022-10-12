@@ -74,7 +74,7 @@ export default function Footer(){
                         <div className="footer-bottom w-row">
                             <div className="w-col w-col-6 w-col-stack">
                                 <div className="text-size-small text-color-darkgrey">Copyright © 2022, Olympus Capital
-                                    JSC, All trademarks and copyrights belong to their respective owners.</div>
+                                    JSC,<br/> All trademarks and copyrights belong to their respective owners.</div>
                             </div>
                             <div className="w-col w-col-6 w-col-stack">
                                 <div className="button-group align-right">
