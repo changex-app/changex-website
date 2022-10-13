@@ -8,6 +8,9 @@ import AppleBlackIcon from "/static/images/icn-apple-black.svg";
 import PlaystoreBlackIcon from "/static/images/icn-playstore-black.svg";
 import QRBlack from "/static/images/icn-qr-black.svg";
 import MenuIcon from "/static/images/Menu-Icon_1Menu Icon.png";
+import AppleIcon from "/static/images/DW-Apple.svg"
+import GoogleIcon from "/static/images/DW-Google.svg"
+
 
 
 export const menuItems = [
@@ -86,11 +89,29 @@ export const iconItems = [
     }
 ]
 
+export const mobileIcon = [
+    {
+        src: AppleIcon,
+        href: 'https://apps.apple.com/bg/app/changex-wallet/id1613309180' ,
+        class: 'nav_download-btn w-inline-block',
+        parentClass: 'nav_download-item',
+        id: 'apple'
+    },
+    {
+        src: GoogleIcon,
+        href: 'https://play.google.com/store/apps/details?id=io.changex.app',
+        class: 'nav_download-btn w-inline-block',
+        parentClass: 'nav_download-item',
+        id: 'google'
+    }
+]
+
 
 export default function Navigation() {
 
     const [value, setValue] = useState('$CurrentPrice');
     const [apy, setApy] = useState('$CurrentAPY');
+    const [openNav, setIsNavOpen] = useState(false);
 
     useEffect(() => {
 
@@ -103,6 +124,10 @@ export default function Navigation() {
 
     function openModal() {
         setShowModal(true);
+    }
+
+    function openNavDropDown() {
+        setIsNavOpen(current => !current);
     }
 
 
@@ -167,7 +192,7 @@ export default function Navigation() {
                             </li>
                         </ul>
                     </div>
-                    <div className="menu-button w-nav-button"  aria-label="menu" role="button" tabIndex="0"
+                    <div  onClick={openNavDropDown} className="menu-button w-nav-button"  aria-label="menu" role="button" tabIndex="0"
                          aria-controls="w-nav-overlay-0" aria-haspopup="menu"
                          aria-expanded="false">
                         <img src={MenuIcon} width="20" alt="ICON" className="menu-icon"></img>
@@ -175,14 +200,20 @@ export default function Navigation() {
                 </div>
             </div>
         </div>
-        <div className="w_nav-overlay">
+        {openNav &&  <div className="w_nav-overlay">
             <nav role="navigation" className="nav_menu-links w-nav-menu" data-nav-menu-open=""
                  style={{transform: 'translateY(0px)', transition: 'transform 400ms ease 0s'}}>
-                <a href="#wallet" className="nav_link w-nav-link w--nav-link-open" style={{maxWidth: "1376px"}}>Wallet</a>
+                {menuItems.map((menu, index) => {
+                    return (
+                        <a href={menu.id} className="nav_link w-nav-link w--nav-link-open" style={{maxWidth: "1376px"}} key={index}>{menu.title}</a>
+                    );
+                })}
+                {/*<a href="#wallet" className="nav_link w-nav-link w--nav-link-open" style={{maxWidth: "1376px"}}>Wallet</a>
                 <a href="#bank" className="nav_link w-nav-link w--nav-link-open" style={{maxWidth: "1376px"}}>Bank</a>
-                <a href="#wealth" className="nav_link w-nav-link w--nav-link-open" style={{maxWidth: "1376px"}}>Wealth</a>
+                <a href="#wealth" className="nav_link w-nav-link w--nav-link-open" style={{maxWidth: "1376px"}}>Wealth</a>*/}
                 <div className="hide-desktop">
                     <div className="nav_right-wrapper margin-top margin-huge">
+
                         <div className="nav_stats-wrapper">
                             <div className="padding-small">
                                 <div id="changexPrice2" className="text-size-tiny changexprice">$CHANGE:
@@ -197,30 +228,30 @@ export default function Navigation() {
                                 </div>
                             </div>
                         </div>
+
                         <div className="nav_stats-wrapper">
                             <div className="padding-small">
                                 <div id="changexApy2" className="text-size-tiny text-color-black changexapy">APY: <b>63.08%<b></b></b>
                                 </div>
                             </div>
                         </div>
+
                         <div className="button-group centered-items margin-top margin-large spread max-width-full-mobile-landscape">
-                            <a href="https://apps.apple.com/bg/app/changex-wallet/id1613309180" target="_blank"
-                               className="button is-store max-width-full-mobile-landscape w-inline-block">
-                                <img src="https://uploads-ssl.webflow.com/63315e7a42bc6afd0341c3bd/633567b0a4aeaa8a0a9665e2_DW%20Apple.svg"
-                                     loading="lazy" alt="Apple app store image" width="150">
-                                </img>
-                            </a>
-                            <a href="https://play.google.com/store/apps/details?id=io.changex.app" target="_blank"
-                               className="button is-store max-width-full-mobile-landscape w-inline-block">
-                                <img src="https://uploads-ssl.webflow.com/63315e7a42bc6afd0341c3bd/633567c7abf65b25583feb49_DW%20Google.svg"
-                                     loading="lazy" width="150" alt="Google Play store image">
-                                </img>
-                            </a>
+                            {mobileIcon.map((icon, index) => {
+                                return (
+                                    <a href={icon.href} id={icon.id} target="_blank"
+                                       className="button is-store max-width-full-mobile-landscape w-inline-block">
+                                        <img src={icon.src}
+                                             loading="lazy" alt={icon.id} width="150">
+                                        </img>
+                                    </a>
+                                );
+                            })}
                         </div>
                     </div>
                 </div>
             </nav>
-        </div>
+        </div>}
         <Modal open={showModal}>
             <ScanQrModal className="section-scanpopup wf-section"
                          showModal={showModal}
