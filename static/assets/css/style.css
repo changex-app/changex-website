@@ -792,9 +792,7 @@ figcaption {
 }
 
 .w_nav-overlay {
-    position: absolute;
     overflow: hidden;
-    display: none;
     top: 10%;
     left: 0;
     right: 0;
@@ -3476,9 +3474,9 @@ figcaption {
         min-height: auto;
     }
 
-    .nav_right-wrapper {
+/*    .nav_right-wrapper {
         display: none;
-    }
+    }*/
 
     h1 {
         font-size: 2.5rem;

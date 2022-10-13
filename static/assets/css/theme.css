@@ -1604,14 +1604,13 @@ textarea.w-select {
 }
 [data-nav-menu-open] {
     display: block !important;
-    position: absolute;
     top: 100%;
     left: 0;
     right: 0;
-    background: #C8C8C8;
+    background: #ffffff;
     text-align: center;
     overflow: visible;
-    min-width: 200px;
+    width: 100%
 }
 .w--nav-link-open {
     display: block;
@@ -1683,6 +1682,14 @@ textarea.w-select {
 .w--nav-dropdown-list-open {
     position: static;
 }
+
+@media screen and (min-width: 991px) {
+
+    .w_nav-overlay {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 991px) {
     .w-nav[data-collapse="medium"] .w-nav-menu {
         display: none;
