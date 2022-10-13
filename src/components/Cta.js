@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ScanQrModal } from "../Utils/scan-qr-modal";
+import { ScanQrModal } from "../Utils/ScanQrCode";
 import { Modal } from "@mui/material";
 import { useState } from "react";
 
@@ -25,12 +25,12 @@ export default function Cta() {
                                     investment tools.</p>
                             </div>
                             <div className="button-group centered-items margin-top margin-large spread align-left">
-                                <a href="https://apps.apple.com/bg/app/changex-wallet/id1613309180"
+                                <a target="_blank" href="https://apps.apple.com/bg/app/changex-wallet/id1613309180"
                                    className="button is-store w-inline-block">
                                     <img src="/images/DW-Apple.svg" loading="lazy" alt="App Store download image"
                                          width="150"></img>
                                     </a>
-                                <a href="https://play.google.com/store/apps/details?id=io.changex.app"
+                                <a target="_blank" href="https://play.google.com/store/apps/details?id=io.changex.app"
                                    className="button is-store max-width-full-mobile-portrait w-inline-block">
                                     <img src="/images/DW-Google.svg" loading="lazy" width="150"
                                          alt="Google Play download image"></img>

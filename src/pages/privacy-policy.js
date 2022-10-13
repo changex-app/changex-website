@@ -157,7 +157,7 @@ const IndexPage = () => {
                   stored in a computer system via an Internet browser. More
                   detailed information on cookies and how they work can be found
                   at:{" "}
-                  <a href="https://www.allaboutcookies.org">
+                  <a target="_blank" href="https://www.allaboutcookies.org">
                     https://www.allaboutcookies.org
                   </a>
                   .

@@ -791,6 +791,16 @@ figcaption {
     letter-spacing: -2px;
 }
 
+.w_nav-overlay {
+    position: absolute;
+    overflow: hidden;
+    display: none;
+    top: 10%;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
 .text-rich-text h1 {
     margin-top: 1.5rem;
     margin-bottom: 1rem;
@@ -3114,6 +3124,10 @@ figcaption {
         padding: 3rem;
     }
 
+    .cookiesText{
+        font-size: 18px !important;
+    }
+
     .margin-xlarge {
         margin: 3rem;
     }
@@ -3454,7 +3468,10 @@ figcaption {
 
 @media screen and (max-width: 840px) {
 
-
+    .cookies {
+        height: 100px !important;
+        display: inline-table !important;
+    }
     .tabs-wealth {
         min-height: auto;
     }
@@ -4880,4 +4897,58 @@ figcaption {
     line-height: 150%;
     font-weight: 600;
     text-decoration: none;
+}
+
+.cookies {
+    align-items: baseline;
+    justify-content: space-between;
+    left: 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    font-size: 17px;
+    bottom: 0px;
+    overflow: auto;
+    background: #e9e9ff !important;
+    color: #333333 !important;
+    height: 100px;
+    display: flex;
+}
+
+.cookiesText {
+    align-self: center;
+    font-size: 18px;
+}
+
+.btnWrrapper {
+    display: flex;
+    flex: 1;
+    align-self: center;
+    justify-content: center;
+}
+
+.accept {
+    width: 200px !important;
+    height: 50px !important;
+    color: #333333 !important;
+    font-weight: 600;
+    border-radius: 6px !important;
+    background: #C6E56A !important;
+}
+
+.declineBtn {
+    display: block;
+    flex: 1;
+    align-self: center;
+    justify-content: center;
+    background: #00266E !important;
+    box-shadow: none;
+    font-weight: 600;
+    color: #fefefe !important;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 15px;
+    font-size: 13px;
+    height: 50px;
+    width: 100px;
 }

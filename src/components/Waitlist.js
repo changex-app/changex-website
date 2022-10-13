@@ -113,7 +113,7 @@ export default function Waitlist(){
                                     )}
                                 </div>
                                 <div className="text-size-small">By subscribing you agree to ChangeX <a
-                                    href="https://token.changex.io/terms-and-condition"
+                                    target="_blank" href="https://changex-io.web.app/terms.html"
                                     className="link">Terms of Service</a> and provide consent to receive marketing
                                     communication and emails for special offers
                                 </div>

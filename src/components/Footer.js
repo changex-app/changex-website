@@ -15,25 +15,25 @@ export default function Footer(){
                                                                                    loading="lazy"
                                                                                    ></img></a>
                             <div id="w-node-_2f6b6dc2-2cf0-e9a7-c501-01025beadbee-0541c3c1" className="button-group">
-                                <a href="https://firebasestorage.googleapis.com/v0/b/changex-io.appspot.com/o/changex-whitepaper-v4.pdf?alt=media&amp;token=85d7033d-ce62-4fd2-aefd-b50f2a758530"
+                                <a target="_blank" href="https://firebasestorage.googleapis.com/v0/b/changex-io.appspot.com/o/changex-whitepaper-v4.pdf?alt=media&amp;token=85d7033d-ce62-4fd2-aefd-b50f2a758530"
                                    className="button is-link w-inline-block">
                                     <div className="text-color-black">Whitepaper</div>
                                 </a>
-                                <a href="https://legacy.changex.io/"
+                                <a target="_blank" href="https://legacy.changex.io/"
                                    className="button is-link w-inline-block">
                                     <div className="text-color-black">ICO Information</div>
                                 </a>
-                                <a href="https://token.changex.io/"
+                                <a target="_blank" href="https://token.changex.io/"
                                    className="button is-secondary w-inline-block">
                                     <div>Investor&#x27;s Portal</div>
                                 </a>
                             </div>
                             <div id="w-node-f705b1d1-499b-76bd-5b9d-1e8f47b5f990-0541c3c1"
                                  className="button-group align-right">
-                                <a href="https://t.me/changex_official"
+                                <a target="_blank" href="https://t.me/changex_official"
                                    className="button social-link w-inline-block"><img
                                     src={TelegramPlane} loading="lazy"></img></a>
-                                <a href="https://twitter.com/ChangeXapp"
+                                <a target="_blank" href="https://twitter.com/ChangeXapp"
                                    className="button social-link w-inline-block">
                                     <div className="icon-1x1-small text-color-black w-embed">
                                         <svg aria-hidden="true" role="img" fill="currentColor"
@@ -44,10 +44,10 @@ export default function Footer(){
                                         </svg>
                                     </div>
                                 </a>
-                                <a href="https://changex.medium.com/"
+                                <a target="_blank" href="https://changex.medium.com/"
                                    className="button social-link w-inline-block"><img
                                     src={CarbonLogo} loading="lazy"></img></a>
-                                <a href="https://www.facebook.com/ChangeXapp"
+                                <a target="_blank" href="https://www.facebook.com/ChangeXapp"
                                    className="button social-link w-inline-block">
                                     <div className="icon-1x1-small text-color-black w-embed">
                                         <svg aria-hidden="true" role="img" fill="currentColor"
@@ -58,7 +58,7 @@ export default function Footer(){
                                         </svg>
                                     </div>
                                 </a>
-                                <a href="https://www.linkedin.com/company/changexapp"
+                                <a target="_blank" href="https://www.linkedin.com/company/changexapp"
                                    className="button social-link w-inline-block">
                                     <div className="icon-1x1-small text-color-black w-embed">
                                         <svg aria-hidden="true" role="img" fill="currentColor" viewBox="0 0 24 24"
@@ -78,9 +78,9 @@ export default function Footer(){
                             </div>
                             <div className="w-col w-col-6 w-col-stack">
                                 <div className="button-group align-right">
-                                    <a href="https://token.changex.io/privacy-policy"
+                                    <a target="_blank" href="https://changex-io.web.app/privacy.html"
                                        className="legal_links text-size-small">Privacy Policy</a>
-                                    <a href="https://token.changex.io/terms-and-condition"
+                                    <a target="_blank" href="https://changex-io.web.app/terms.html"
                                        className="legal_links text-size-small">Terms of Service</a>
                                 </div>
                             </div>

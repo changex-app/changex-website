@@ -1,4 +1,6 @@
 import * as React from "react";
+import { Cookies, getCookieConsentValue } from "react-cookie-consent";
+import CookieConsentModal from "../Utils/CookieConsent"
 import Header from "../components/header";
 import Footer from "../components/Footer";
 import MetaDecorator from "../Utils/MetaDecorator";
@@ -17,6 +19,7 @@ import Faq from "../components/Faq";
 const imageUrl = "/assets/images/Changex-OG.jpeg"
 
 const IndexPage = () => {
+    console.warn('cookie value',getCookieConsentValue());
   return (
       <>
         <div className="nk-wrap">
@@ -28,6 +31,7 @@ const IndexPage = () => {
             />
           <Header />
         </div>
+          <CookieConsentModal/>
           <main className="nk-pages">
               <Hero/>
               <Wallet/>

@@ -7,7 +7,7 @@ import DownloadQR from "/static/images/download-qr.svg"
 import Typography from "@mui/material/Typography";
 import {Box, Modal} from "@mui/material";
 import {useState} from "react";
-import {ScanQrModal} from "../Utils/scan-qr-modal";
+import {ScanQrModal} from "../Utils/ScanQrCode";
 
 export default function Hero(){
 
@@ -20,8 +20,8 @@ export default function Hero(){
     return (
         <section id="hero" className="section_hero">
             <img src={HeroBGImageMobile} loading="lazy" className="image-hero"></img>
-            <div className="hero2 hero-background"></div>
-            <div className="hero3 hero-background right"></div>
+            <div className="hero2 hero-background animate__animated animate__fadeInLeft"></div>
+            <div className="hero3 hero-background right animate__animated animate__fadeInRight"></div>
             <div className="padding-global">
                 <div className="container-large">
                     <div className="hero_content-wrapper padding-vertical padding-large">
@@ -46,11 +46,11 @@ export default function Hero(){
                                 </div>
                                 <div data-w-id="d49aa841-14fa-a4f0-05ef-cc82444d06cd" style={{opacity:1}}
                                      className=" animate__animated animate__zoomIn button-group centered-items margin-top margin-large spread max-width-full-mobile-landscape">
-                                    <a href="https://apps.apple.com/bg/app/changex-wallet/id1613309180"
+                                    <a target="_blank" href="https://apps.apple.com/bg/app/changex-wallet/id1613309180"
                                        className="button is-store max-width-full-mobile-landscape w-inline-block">
                                         <img src={DownloadApple} loading="lazy" width="150"></img>
                                     </a>
-                                    <a href="https://play.google.com/store/apps/details?id=io.changex.app"
+                                    <a target="_blank" href="https://play.google.com/store/apps/details?id=io.changex.app"
                                        className="button is-store max-width-full-mobile-landscape w-inline-block">
                                         <img src={DownloadGoogle} loading="lazy" width="150"></img>
                                     </a>

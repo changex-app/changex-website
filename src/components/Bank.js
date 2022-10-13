@@ -26,7 +26,7 @@ export default function Bank(){
                                     send, receive, and spend Euro in 36 countries from your SEPA bank account, while
                                     keeping your crypto close. Pay for services. Shop. Changex removes the clutter while
                                     you focus on life.</p>
-                                <a href="https://firebasestorage.googleapis.com/v0/b/changex-io.appspot.com/o/changex-whitepaper-v4.pdf?alt=media&amp;token=85d7033d-ce62-4fd2-aefd-b50f2a758530"
+                                <a target="_blank" href="https://firebasestorage.googleapis.com/v0/b/changex-io.appspot.com/o/changex-whitepaper-v4.pdf?alt=media&amp;token=85d7033d-ce62-4fd2-aefd-b50f2a758530"
                                    className="button is-large with-icon width-260 w-inline-block">
                                     <div>Read Whitepaper</div>
                                     <img src="/images/partners/arrow-right-primary.svg" loading="lazy" alt=""></img>
