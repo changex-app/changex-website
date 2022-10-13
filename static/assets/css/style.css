@@ -3464,7 +3464,7 @@ figcaption {
     }
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 845px) {
 
     .cookies {
         height: 100px !important;
@@ -3473,10 +3473,6 @@ figcaption {
     .tabs-wealth {
         min-height: auto;
     }
-
-/*    .nav_right-wrapper {
-        display: none;
-    }*/
 
     h1 {
         font-size: 2.5rem;
