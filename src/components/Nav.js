@@ -205,7 +205,7 @@ export default function Navigation() {
                  style={{transform: 'translateY(0px)', transition: 'transform 400ms ease 0s'}}>
                 {menuItems.map((menu, index) => {
                     return (
-                        <a href={menu.id} className="nav_link w-nav-link w--nav-link-open" style={{maxWidth: "1376px"}} key={index}>{menu.title}</a>
+                        <a  onClick={openNavDropDown} href={menu.id} className="nav_link w-nav-link w--nav-link-open" style={{maxWidth: "1376px"}} key={index}>{menu.title}</a>
                     );
                 })}
 
