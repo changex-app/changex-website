@@ -186,9 +186,9 @@ export default function Navigation() {
                                 );
                             })}
                             <li onClick={openModal} id="qrcode" className="nav_download-item">
-                                <a style={{cursor: "pointer"}} className="nav_download-btn w-inline-block">
+                                <div style={{cursor: "pointer"}} className="nav_download-btn w-inline-block">
                                     <img src={QRBlack} loading="lazy" width="21"></img>
-                                </a>
+                                </div>
                             </li>
                         </ul>
                     </div>

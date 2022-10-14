@@ -12,7 +12,7 @@ export default function Cta() {
     }
 
     return (
-        <section className="section_cta">
+        <section id="cta" className="section_cta">
             <div className="padding-global">
                 <div className="container-large">
                     <div className="padding-section-large is-cta-section">
@@ -35,13 +35,13 @@ export default function Cta() {
                                     <img src="/images/DW-Google.svg" loading="lazy" width="150"
                                          alt="Google Play download image"></img>
                                 </a>
-                                <a onClick={openModal}  href="#"
+                                <button onClick={openModal}
                                    className="button is-qr w-inline-block">
                                     <img src="/images/download-qr.svg" loading="lazy" width="75"
                                          alt="QR code image"
                                          className="qr-small">
                                         </img><p className="text-align-left text-size-regular">Scan To Download</p>
-                                </a>
+                                </button>
 
                             </div>
                         </div>

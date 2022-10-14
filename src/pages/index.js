@@ -19,7 +19,6 @@ import Faq from "../components/Faq";
 const imageUrl = "/assets/images/Changex-OG.jpeg"
 
 const IndexPage = () => {
-    console.warn('cookie value',getCookieConsentValue());
   return (
       <>
         <div className="nk-wrap">
