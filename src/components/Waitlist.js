@@ -14,27 +14,6 @@ export default function Waitlist(){
 
             event.preventDefault();
             setIsShown(current => !current);
-/*
-            sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-
-            const msg = {
-                to: formData, // Change to your recipient
-                from: 'changex.io', // Change to your verified sender
-                subject: 'Thank you for subscribing',
-                text: 'We re glad to add one more change maker to the community',
-                html: '<strong>See you soon</strong>',
-            }
-
-            sgMail
-                .send(msg)
-                .then((response) => {
-                    console.log(response[0].statusCode)
-                    console.log(response[0].headers)
-                })
-                .catch((error) => {
-                    console.error(error)
-                })*/
-
 
         } else {
 
@@ -81,25 +60,6 @@ export default function Waitlist(){
                                                 ></input>
                                             </form>
                                         </div>)}
-
-                                    {/*{isShown && (
-                                        <form onSubmit={HandleSubmit} id="email-form" name="email-form" data-name="Email Form" method="get"
-                                              className="form">
-                                            <input type="email" className="email-field w-input"
-                                                   maxLength="256" name="email"
-                                                   placeholder="Email Address"  value={formData}
-                                                   onChange={HandleChange} required="">
-                                            </input>
-
-                                            <input type="submit"
-                                                   value="Sign me in"
-                                                   data-wait="Please wait..."
-                                                   className="email-submit w-button"
-                                                   disabled={!formData}>
-                                            </input>
-
-                                        </form>
-                                    )}*/}
                                     {!isShown && (
                                         <div className="w-form-done">
                                             Thank you! Your submission has been received!
@@ -112,16 +72,18 @@ export default function Waitlist(){
                                         </div>
                                     )}
                                 </div>
-                                <div className="text-size-small">By subscribing you agree to ChangeX <a
-                                    target="_blank" href="https://changex-io.web.app/terms.html"
-                                    className="link">Terms of Service</a> and provide consent to receive marketing
+                                <div className="text-size-small">By subscribing you agree to ChangeX&nbsp;
+                                    <a target="_blank" href="https://changex-io.web.app/terms.html"
+                                       className="link">Terms of Service
+                                    </a>
+                                    &nbsp; and provide consent to receive marketing
                                     communication and emails for special offers
                                 </div>
                             </div>
                             <div className="waitlist-wrapper-right max-width-medium max-width-full-tablet">
                                 <div className="waitlist-benefit-wrapper margin-vertical margin-medium">
                                     <div className="icon-wrapper-48">
-                                        <img src="/images/icn-takepart.svg" loading="lazy" alt=""></img>
+                                        <img src="/images/icn-takepart.svg" loading="lazy" alt="take part"></img>
                                     </div>
                                     <p className="text-size-medium">Climb the ranks of the waitlist by taking part in
                                         community activities and accumulating points!
@@ -129,7 +91,7 @@ export default function Waitlist(){
                                 </div>
                                 <div className="waitlist-benefit-wrapper margin-vertical margin-medium">
                                     <div className="icon-wrapper-48">
-                                        <img src="/images/icn-starwithcheckmark.svg" loading="lazy" alt=""></img>
+                                        <img src="/images/icn-starwithcheckmark.svg" loading="lazy" alt="starwithcheckmark"></img>
                                     </div>
                                     <p className="text-size-medium">The higher you rank, the more likely to be one of
                                         the first to receive their card with multiple rewards and benefits.

@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 const scrollImages = [
     {
@@ -60,7 +61,7 @@ export default function Wallet() {
                     <div className="container-large">
                         <div className="padding-section-large">
                             <div className="div-block">
-                                <div className="wallet_wrapper-left animate__animated animate__fadeInUp">
+                                <AnimationOnScroll  animateIn="animate__fadeInUp" animateOnce={true} className="wallet_wrapper-left animate__animated animate__fadeInUp">
                                     <div className="label is-lime slide-from-bottom">Wallet</div>
                                     <h2 className="heading-style-h2 margin-bottom margin-large slide-from-bottom">Decentralized
                                         Crypto <span className="highlight is-green">Wallet</span></h2>
@@ -68,7 +69,8 @@ export default function Wallet() {
                                         any point on Earth and stay in control with Changex’s
                                         highly-secure, <span>non-custodial</span><span
                                             className="info-icn hide">ⓘ</span> crypto wallet. No KYC required.</p>
-                                </div>
+                                </AnimationOnScroll>
+
                                 <div className="wallet_wrapper-right">
                                     <div data-delay="4000" data-animation="fade" className="slider"
                                          data-autoplay="true" data-easing="ease-out" data-hide-arrows="false"
@@ -103,7 +105,7 @@ export default function Wallet() {
                                                         <h3 className="heading-style-h4 margin-vertical margin-medium slide-from-bottom">{item.caption}</h3>
                                                         <p className="text-color-grey text-size-medium slide-from-bottom">{item.text}</p>
                                                     </div>
-                                                    <a href={item.url} target="_blank"
+                                                    <a href={item.url} target="_blank" alt={item.caption}
                                                        className="button is-link w-inline-block">
                                                         <div
                                                             className="text-style-link text-size-medium is-green slide-from-bottom">{item.urlText}

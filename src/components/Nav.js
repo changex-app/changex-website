@@ -192,10 +192,10 @@ export default function Navigation() {
                             </li>
                         </ul>
                     </div>
-                    <div  onClick={openNavDropDown} className="menu-button w-nav-button"  aria-label="menu" role="button" tabIndex="0"
+                    <div   className="menu-button w-nav-button"  aria-label="menu" role="button" tabIndex="0"
                          aria-controls="w-nav-overlay-0" aria-haspopup="menu"
                          aria-expanded="false">
-                        <img src={MenuIcon} width="20" alt="ICON" className="menu-icon"></img>
+                        <img onClick={openNavDropDown} src={MenuIcon} width="20" alt="ICON" className="menu-icon"></img>
                     </div>
                 </div>
             </div>

@@ -116,7 +116,7 @@ export default function Faq() {
                                      className="button-group centered-items">
                                     <a id="w-node-ed6b061c-b0a7-01e0-7684-22ee82e02d75-0541c3c1"
                                        href="mailto:support@changex.io?subject=changex%20website"
-                                       className="button is-large is-secondary max-width-full-mobile-portrait w-button">Contact
+                                       className="button is-large is-secondary  w-button">Contact
                                         Us</a>
                                 </div>
                             </div>

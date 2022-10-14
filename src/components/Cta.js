@@ -31,11 +31,11 @@ export default function Cta() {
                                          width="150"></img>
                                     </a>
                                 <a target="_blank" href="https://play.google.com/store/apps/details?id=io.changex.app"
-                                   className="button is-store max-width-full-mobile-portrait w-inline-block">
+                                   className="button is-store w-inline-block">
                                     <img src="/images/DW-Google.svg" loading="lazy" width="150"
                                          alt="Google Play download image"></img>
                                 </a>
-                                <a onClick={openModal} data-w-id="fc206e65-714f-aaac-d081-2309765479aa" href="#"
+                                <a onClick={openModal}  href="#"
                                    className="button is-qr w-inline-block">
                                     <img src="/images/download-qr.svg" loading="lazy" width="75"
                                          alt="QR code image"
