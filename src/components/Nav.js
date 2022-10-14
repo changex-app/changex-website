@@ -208,9 +208,7 @@ export default function Navigation() {
                         <a href={menu.id} className="nav_link w-nav-link w--nav-link-open" style={{maxWidth: "1376px"}} key={index}>{menu.title}</a>
                     );
                 })}
-                {/*<a href="#wallet" className="nav_link w-nav-link w--nav-link-open" style={{maxWidth: "1376px"}}>Wallet</a>
-                <a href="#bank" className="nav_link w-nav-link w--nav-link-open" style={{maxWidth: "1376px"}}>Bank</a>
-                <a href="#wealth" className="nav_link w-nav-link w--nav-link-open" style={{maxWidth: "1376px"}}>Wealth</a>*/}
+
                 <div className="hide-desktop">
                     <div className="nav_right-wrapper margin-top margin-huge">
 

@@ -2193,21 +2193,6 @@ figcaption {
     display: none;
 }
 
-.flexed {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    grid-column-gap: 2rem;
-}
-
-.flexed.overflow-hidden {
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
 .icon-wrapper-100 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2531,13 +2516,6 @@ figcaption {
 
     .image-2.slide-from-bottom {
         position: relative;
-    }
-
-    .flexed.overflow-hidden {
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
     }
 
     .icon-wrapper {

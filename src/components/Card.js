@@ -39,7 +39,7 @@ export default function Card() {
                         <h3 className="heading-style-h3 margin-vertical margin-large">More than a card - it’s
                             freedom</h3>
                         <div className="w-layout-grid grid-4">
-                            <div id="w-node-_395fc692-4e07-3f55-8af4-eee5b76b040f-0541c3c1" className="box-container">
+                            <div  className="box-container">
                                 <div className="padding-medium">
                                     <div className="icon-wrapper margin-bottom margin-medium"><img
                                         src="/images/currency.svg" loading="lazy" alt="" className="icon"></img></div>
@@ -47,7 +47,7 @@ export default function Card() {
                                         Euro or any available token.</p>
                                 </div>
                             </div>
-                            <div id="w-node-_395fc692-4e07-3f55-8af4-eee5b76b0415-0541c3c1" className="box-container">
+                            <div className="box-container">
                                 <div className="padding-medium">
                                     <div className="icon-wrapper margin-bottom margin-medium"><img
                                         src="/images/staking.svg" loading="lazy" alt="" width="102" className="icon"></img>
@@ -56,7 +56,7 @@ export default function Card() {
                                         flow of rewards.</p>
                                 </div>
                             </div>
-                            <div id="w-node-_395fc692-4e07-3f55-8af4-eee5b76b041b-0541c3c1" className="box-container">
+                            <div className="box-container">
                                 <div className="padding-medium">
                                     <div className="icon-wrapper margin-bottom margin-medium"><img
                                         src="/images/cashback.svg" loading="lazy" alt="" width="116.5" className="icon"></img>
@@ -65,7 +65,7 @@ export default function Card() {
                                         benefits in the app.</p>
                                 </div>
                             </div>
-                            <div id="w-node-_395fc692-4e07-3f55-8af4-eee5b76b0421-0541c3c1" className="box-container">
+                            <div className="box-container">
                                 <div className="padding-medium">
                                     <div className="icon-wrapper margin-bottom margin-medium"><img
                                         src="/images/your-money.svg" loading="lazy" alt="" width="103.5"
