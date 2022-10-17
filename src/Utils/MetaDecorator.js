@@ -40,7 +40,7 @@ const MetaDecorator = ({ title, description, imageAlt, imageUrl }) => (
         <link rel="stylesheet" href="/assets/css/style.css"/>
         <link rel="stylesheet" href="/assets/css/theme.css"/>
         <link rel="stylesheet" href="/assets/css/normalize.css"/>
-
+        <script type="text/javascript" src="//app.sgwidget.com/js/sg-widget-v2.js"></script>
     </Helmet>
 );
 

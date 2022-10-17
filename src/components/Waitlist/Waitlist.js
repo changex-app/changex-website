@@ -1,8 +1,7 @@
 import * as React from "react";
 import { useState } from "react";
-/*
-const sgMail = require('@sendgrid/mail')
-*/
+import {waitlistItems} from "./waitlistItem";
+
 export default function Waitlist(){
     const [isShown, setIsShown] = useState(true);
     const [hasError, setHasError] = useState(false);
@@ -36,8 +35,8 @@ export default function Waitlist(){
                     <div className="padding-section-large">
                         <div className="waitlist-wrapper">
                             <div className="waitlist-wrapper-left max-width-large">
-                                <div className="label is-green">Coming: Q1 2023</div>
-                                <h3 className="heading-style-h3 margin-bottom margin-medium">Join the Card Waitlist</h3>
+                                <div className="label is-green">{waitlistItems.coming}</div>
+                                <h3 className="heading-style-h3 margin-bottom margin-medium">{waitlistItems.head1}</h3>
                                 <div className="w-form">
                                     {isShown && (
                                         <div className="sendgrid-subscription-widget widget-2368"
@@ -62,18 +61,18 @@ export default function Waitlist(){
                                         </div>)}
                                     {!isShown && (
                                         <div className="w-form-done">
-                                            Thank you! Your submission has been received!
+                                            {waitlistItems.received}
                                         </div>
                                     )}
 
                                     {hasError && (
                                         <div className="w-form-fail">
-                                            <div>Oops! Something went wrong while submitting the form.</div>
+                                            <div>{waitlistItems.error}</div>
                                         </div>
                                     )}
                                 </div>
                                 <div className="text-size-small">By subscribing you agree to ChangeX&nbsp;
-                                    <a target="_blank" href="https://changex-io.web.app/terms.html"
+                                    <a target="_blank" href={waitlistItems.terms}
                                        className="link">Terms of Service
                                     </a>
                                     &nbsp; and provide consent to receive marketing
@@ -85,16 +84,14 @@ export default function Waitlist(){
                                     <div className="icon-wrapper-48">
                                         <img src="/images/icn-takepart.svg" loading="lazy" alt="take part"></img>
                                     </div>
-                                    <p className="text-size-medium">Climb the ranks of the waitlist by taking part in
-                                        community activities and accumulating points!
+                                    <p className="text-size-medium">{waitlistItems.paragraph1}
                                     </p>
                                 </div>
                                 <div className="waitlist-benefit-wrapper margin-vertical margin-medium">
                                     <div className="icon-wrapper-48">
                                         <img src="/images/icn-starwithcheckmark.svg" loading="lazy" alt="starwithcheckmark"></img>
                                     </div>
-                                    <p className="text-size-medium">The higher you rank, the more likely to be one of
-                                        the first to receive their card with multiple rewards and benefits.
+                                    <p className="text-size-medium">{waitlistItems.paragraph2}
                                     </p>
                                 </div>
                             </div>

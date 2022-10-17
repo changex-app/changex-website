@@ -8,7 +8,7 @@ import content from "../../static/assets/content/content.json";
 import Hero from "../components/Hero/Hero";
 import Bank from "../components/Bank/Bank";
 import Card from "../components/Card/Card";
-import Waitlist from "../components/Waitlist";
+import Waitlist from "../components/Waitlist/Waitlist";
 import Wealth from "../components/Wealth/Wealth";
 import Wallet from "../components/Wallet/Wallet";
 import Press from "../components/Press";
