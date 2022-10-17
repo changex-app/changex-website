@@ -9,12 +9,12 @@ import Hero from "../components/Hero/Hero";
 import Bank from "../components/Bank/Bank";
 import Card from "../components/Card/Card";
 import Waitlist from "../components/Waitlist";
-import Wealth from "../components/Wealth";
+import Wealth from "../components/Wealth/Wealth";
 import Wallet from "../components/Wallet/Wallet";
 import Press from "../components/Press";
 import Partners from "../components/Partners";
 import Cta from "../components/Cta/Cta";
-import Faq from "../components/Faq";
+import Faq from "../components/Faq/Faq";
 
 const imageUrl = "/assets/images/Changex-OG.jpeg"
 

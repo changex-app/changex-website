@@ -3,7 +3,7 @@ import * as React from "react";
 import { Helmet } from "react-helmet";
 import Footer from "../components/Footer";
 
-import Navigation from "../components/Nav";
+import Navigation from "../components/Navbar/Nav";
 
 // markup
 const IndexPage = () => {

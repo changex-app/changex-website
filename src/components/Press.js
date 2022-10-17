@@ -1,5 +1,5 @@
 import * as React from "react";
-import {iconItems} from "./Nav";
+import {iconItems} from "./Navbar/Nav";
 import 'animate.css';
 
 import Cointelegraph from "/static/images/press/Cointelegraph_logo-p-500.png";
