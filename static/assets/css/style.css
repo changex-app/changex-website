@@ -1,3 +1,15 @@
+:root {
+    --font: 'Source Sans Pro', sans-serif;
+    --white: #ffffff;
+    --blackColor: #222222;
+    --current: #1b10be;
+    --current: #1b10be;
+    --btnBackground: #f5f5ff;
+    --walletItemColor: #11d482;
+
+}
+
+
 .w-layout-grid {
     display: -ms-grid;
     display: grid;
@@ -11,8 +23,8 @@
 }
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
-    color: #000;
+    font-family: var(--font);
+    color: var(--blackColor);
     font-size: 1rem;
     line-height: 1.5;
     font-weight: 400;
@@ -29,7 +41,7 @@ body {
 h1 {
     margin-top: 0rem;
     margin-bottom: 0rem;
-    font-family: Lexend, sans-serif;
+    font-family: var(--font);
     font-size: 4.125rem;
     line-height: 1.1;
     font-weight: 600;
@@ -40,7 +52,7 @@ h1 {
 h2 {
     margin-top: 0rem;
     margin-bottom: 0rem;
-    font-family: Lexend, sans-serif;
+    font-family: var(--font);
     font-size: 3.8rem;
     line-height: 1.2;
     font-weight: 500;
@@ -50,7 +62,7 @@ h2 {
 h3 {
     margin-top: 0rem;
     margin-bottom: 0rem;
-    font-family: Lexend, sans-serif;
+    font-family: var(--font);
     font-size: 2.85rem;
     line-height: 1.2;
     font-weight: 500;
@@ -60,7 +72,7 @@ h3 {
 h4 {
     margin-top: 0rem;
     margin-bottom: 0rem;
-    font-family: Lexend, sans-serif;
+    font-family: var(--font);
     font-size: 2rem;
     line-height: 1.4;
     font-weight: 500;
@@ -70,7 +82,7 @@ h4 {
 h5 {
     margin-top: 0rem;
     margin-bottom: 0rem;
-    font-family: Lexend, sans-serif;
+    font-family: var(--font);
     font-size: 1.625rem;
     line-height: 1.5;
     font-weight: 500;
@@ -80,7 +92,7 @@ h5 {
 h6 {
     margin-top: 0rem;
     margin-bottom: 0rem;
-    font-family: Lexend, sans-serif;
+    font-family: var(--font);
     font-size: 1.3rem;
     line-height: 1.5;
     font-weight: 500;
@@ -413,7 +425,7 @@ figcaption {
 }
 
 .heading-style-h3 {
-    font-family: Lexend, sans-serif;
+    font-family: var(--font);
     font-size: 2.85rem;
     line-height: 1.2;
     font-weight: 500;
@@ -540,7 +552,7 @@ figcaption {
 }
 
 .text-size-tiny.text-color-black.price {
-    color: #1b10be;
+    color: var(--current);
     font-weight: 600;
 }
 
@@ -693,7 +705,7 @@ figcaption {
 }
 
 .text-style-link.is-green {
-    color: #11d482;
+    color: var(--walletItemColor);
 }
 
 .text-size-large {
@@ -730,7 +742,7 @@ figcaption {
 }
 
 .container-large.is-nav {
-    max-width: 86rem;
+    max-width: 80rem;
 }
 
 .icon-height-medium {
@@ -799,10 +811,10 @@ figcaption {
 .button {
     padding: 0.6rem 1.4rem;
     border-radius: 8px;
-    background-color: #e9e9ff;
+    background-color: var(--btnBackground);
     -webkit-transition: all 200ms ease;
     transition: all 200ms ease;
-    color: #1b10be;
+    color: var(--current);
     font-weight: 600;
     text-align: center;
 }
@@ -864,7 +876,7 @@ figcaption {
 }
 
 .button.is-secondary {
-    color: #1b10be;
+    color: var(--current);
     text-decoration: none;
 }
 
@@ -1213,11 +1225,11 @@ figcaption {
 }
 
 .nav_link:hover {
-    color: #1b10be;
+    color: var(--current);
 }
 
 .nav_link.w--current {
-    color: #1b10be;
+    color: var(--current);
 }
 
 .nav_left-wrapper {
@@ -1402,7 +1414,7 @@ figcaption {
 }
 
 .label {
-    font-family: Lexend, sans-serif;
+    font-family: var(--font);
     font-size: 1.2rem;
     font-weight: 500;
     text-transform: capitalize;
@@ -1427,7 +1439,7 @@ figcaption {
 }
 
 .label.is-green {
-    color: #11d482;
+    color: var(--walletItemColor);
 }
 
 .wallet_wrapper-right {
@@ -1733,7 +1745,7 @@ figcaption {
 }
 
 .plus-icon {
-    color: #11d482;
+    color: var(--walletItemColor);
 }
 
 .faq-circle {
@@ -1754,7 +1766,7 @@ figcaption {
     -ms-flex-align: center;
     align-items: center;
     border-radius: 100%;
-    background-color: #f5f5ff;
+    background-color: var(--btnBackground);
 }
 
 .faq-content {
@@ -1796,21 +1808,21 @@ figcaption {
 }
 
 .highlight.is-green {
-    color: #11d482;
+    color: var(--walletItemColor);
 }
 
 .highlight.is-purple {
-    color: #1b10be;
+    color: var(--current);
 }
 
 .text-span {
-    color: #11d482;
+    color: var(--walletItemColor);
     text-decoration: underline;
 }
 
 .info-icn {
     margin-left: 0.2rem;
-    color: #11d482;
+    color: var(--walletItemColor);
     font-size: 0.9rem;
 }
 
@@ -2103,7 +2115,7 @@ figcaption {
 
 .tab-link-tab-1.w--current {
     border-left-width: 2px;
-    border-left-color: #11d482;
+    border-left-color: var(--walletItemColor);
     background-color: transparent;
     color: #fff;
 }
@@ -2213,7 +2225,7 @@ figcaption {
 }
 
 .icon-wrapper-100.is-green {
-    background-color: #11d482;
+    background-color: var(--walletItemColor);
 }
 
 .icon-wrapper-100.is-light {
@@ -2252,7 +2264,7 @@ figcaption {
 }
 
 .section_waitlist {
-    background-color: #f5f5ff;
+    background-color: var(--btnBackground);
 }
 
 .waitlist-wrapper {
@@ -2461,7 +2473,7 @@ figcaption {
 }
 
 .tab-link.w--current {
-    border-left: 2px solid #11d482;
+    border-left: 2px solid var(--walletItemColor);
     background-color: transparent;
     color: #fff;
 }
@@ -3014,7 +3026,7 @@ figcaption {
         padding-left: 1.25rem;
     }
 
-    .padding-global.nav-padding {
+    .padding-global.is-nav {
         padding-right: 0rem;
         padding-left: 0rem;
     }
@@ -3493,9 +3505,9 @@ figcaption {
         text-align: left;
     }
 
-    .padding-global {
-        padding-right: 1rem;
-        padding-left: 1rem;
+    .padding-global.is-nav {
+        padding-right: 0rem;
+        padding-left: 0rem;
     }
 
     .hide-mobile-portrait {
@@ -3678,29 +3690,6 @@ figcaption {
     }
 }
 
-.hero1 {
-    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-    transform-style: preserve-3d;
-}
-
-
-.hero2 {
-    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-    opacity: 1;
-    transform-style: preserve-3d;
-
-}
-
-.hero4 {
-    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-    transform-style: preserve-3d;
-}
-
-.hero3 {
-    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-    opacity: 1;
-    transform-style: preserve-3d;
-}
 
 .Dropdown-control {
     border: none;
@@ -3758,7 +3747,7 @@ figcaption {
 }
 
 .css-ahj2mt-MuiTypography-root {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: var(--font)
 }
 
 .css-1elwnq4-MuiPaper-root-MuiAccordion-root {
@@ -3766,7 +3755,7 @@ figcaption {
 }
 
 .css-yw020d-MuiAccordionSummary-expandIconWrapper {
-    background: #f5f5ff;
+    background: var(--btnBackground);
     border-radius: 100%;
     min-width: 50px;
     min-height: 50px;
@@ -3780,7 +3769,7 @@ figcaption {
 .price-highlight {
     padding: 0.2rem 0.5rem;
     border-radius: 3px;
-    background-color: #e9e9ff;
+    background-color: var(--btnBackground);
     color: #121220;
     font-size: .705rem;
     line-height: 150%;

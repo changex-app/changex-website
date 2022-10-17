@@ -472,23 +472,8 @@ textarea.w-select {
 .w-icon-file-upload-uploading {
     height: 20px;
 }
-.w-container {
-    margin-left: auto;
-    margin-right: auto;
-}
-.w-container:before,
-.w-container:after {
-    content: " ";
-    display: table;
-    grid-column-start: 1;
-    grid-row-start: 1;
-    grid-column-end: 2;
-    grid-row-end: 2;
-}
-.w-container:after {
-    clear: both;
-}
-.w-container .w-row {
+
+.w-row {
     margin-left: -10px;
     margin-right: -10px;
 }
@@ -560,10 +545,6 @@ textarea.w-select {
     display: none !important;
 }
 @media screen and (max-width: 991px) {
-
-    .w-container {
-        max-width: 728px;
-    }
     .w-hidden-main {
         display: inherit !important;
     }
@@ -623,8 +604,7 @@ textarea.w-select {
     .w-hidden-small {
         display: none !important;
     }
-    .w-row,
-    .w-container .w-row {
+    .w-row, .w-row {
         margin-left: 0;
         margin-right: 0;
     }
@@ -671,9 +651,6 @@ textarea.w-select {
     }
 }
 @media screen and (max-width: 479px) {
-    .w-container {
-        max-width: none;
-    }
     .w-hidden-main {
         display: inherit !important;
     }
@@ -960,7 +937,7 @@ textarea.w-select {
     background-color: rgba(34, 34, 34, 0.4);
 }
 .w-slider-nav-invert > div.w-active {
-    background-color: #222;
+    background-color: var(--blackColor);
 }
 .w-slider-dot {
     position: relative;
@@ -1057,7 +1034,7 @@ textarea.w-select {
     position: relative;
     vertical-align: top;
     text-decoration: none;
-    color: #222222;
+    color: var(--blackColor);
     padding: 20px;
     text-align: left;
     margin-left: auto;
@@ -1098,7 +1075,7 @@ textarea.w-select {
 .w-dropdown-link {
     padding: 10px 20px;
     display: block;
-    color: #222222;
+    color: var(--blackColor);
 }
 .w-dropdown-link.w--current {
     color: #0082f3;
@@ -1333,7 +1310,7 @@ textarea.w-select {
 .w-lightbox-thumbnail {
     position: relative;
     height: 10vh;
-    background: #222;
+    background: var(--blackColor);
     overflow: hidden;
 }
 .w-lightbox-thumbnail-image {
@@ -1589,7 +1566,7 @@ textarea.w-select {
     display: inline-block;
     vertical-align: text-top;
     text-decoration: none;
-    color: #222222;
+    color: var(--blackColor);
     padding: 16px 20px 16px 20px;
     text-align: left;
     margin-left: auto;
@@ -1675,12 +1652,10 @@ textarea.w-select {
     padding: 9px 30px;
     text-align: left;
     cursor: pointer;
-    color: #222222;
+    color: var(--blackColor);
     background-color: #dddddd;
 }
-.w-tab-link.w--current {
-    background-color: #C8C8C8;
-}
+
 .w-tab-link:focus {
     outline: 0;
 }

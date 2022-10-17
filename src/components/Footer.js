@@ -7,7 +7,7 @@ export default function Footer(){
     return(
         <div className="section_footer wf-section">
             <div className="padding-global">
-                <div className="container-large w-container">
+                <div className="container-large">
                     <div className="padding-section-small is-footer">
                         <div className="w-layout-grid footer-grid">
                             <a id="w-node-_1990efdd-2a98-fdc4-a28b-e4f59030e322-0541c3c1" href="#"

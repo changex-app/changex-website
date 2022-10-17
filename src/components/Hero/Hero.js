@@ -1,12 +1,12 @@
 import * as React from "react";
-import 'animate.css';
-import HeroBGImageMobile from "/static/images/Hero-BGimg-mobile.png"
-import DownloadApple from "/static/images/DW-Apple.svg"
-import DownloadGoogle from "/static/images/DW-Google.svg"
-import DownloadQR from "/static/images/download-qr.svg"
+import '../../../node_modules/animate.css/animate.css';
+import HeroBGImageMobile from "../../../static/images/Hero-BGimg-mobile.png"
+import DownloadApple from "../../../static/images/DW-Apple.svg"
+import DownloadGoogle from "../../../static/images/DW-Google.svg"
+import DownloadQR from "../../../static/images/download-qr.svg"
 import { Modal } from "@mui/material";
 import { useState } from "react";
-import { ScanQrModal } from "../Utils/ScanQrCode";
+import { ScanQrModal } from "../../Utils/ScanQrCode";
 
 export default function Hero(){
 
@@ -19,15 +19,15 @@ export default function Hero(){
     return (
         <section id="hero" className="section_hero">
             <img src={HeroBGImageMobile} loading="lazy" className="image-hero"></img>
-            <div className="hero2 hero-background animate__animated animate__fadeInLeft animate__delay-800ms"></div>
-            <div className="hero3 hero-background right animate__animated animate__fadeInRight animate__delay-800ms"></div>
+            <div className="hero-background animate__animated animate__fadeInLeft animate__delay-800ms"></div>
+            <div className="hero-background right animate__animated animate__fadeInRight animate__delay-800ms"></div>
             <div className="padding-global">
                 <div className="container-large">
                     <div className="hero_content-wrapper padding-vertical padding-large">
                         <div className="title_wrapper max-width-large align-center" >
                             <div className="center-content z-index-1">
                                 <div className="">
-                                    <div className="hero4 text-cut-off">
+                                    <div className="text-cut-off">
                                         <div
                                             className="heading-style-h4 text-align-center text-color-primary text-left-mobile animate__animated animate__fadeInUp animate__delay-1s">Money
                                             matters → Made Simple
@@ -36,7 +36,7 @@ export default function Hero(){
                                 </div>
                                 <div className="text-align-center margin-vertical margin-small ">
                                     <div
-                                         className="hero1 text-cut-off">
+                                         className="text-cut-off">
                                         <h1 className="heading-style-h1 text-left-mobile animate__animated animate__fadeInUp animate__delay-1s">
                                             Mobile banking meets decentralized finance
                                         </h1>
@@ -52,7 +52,7 @@ export default function Hero(){
                                        className="button is-store max-width-full-mobile-landscape w-inline-block">
                                         <img src={DownloadGoogle} loading="lazy" width="150"></img>
                                     </a>
-                                    <a onClick={openModal}  href="#"
+                                    <a onClick={openModal}  href="src/components/Hero/Hero#"
                                        className="button is-qr w-inline-block">
                                         <img src={DownloadQR}
                                              loading="lazy" width="75"
@@ -68,7 +68,7 @@ export default function Hero(){
                                className="max-width-large align-center text-align-center text-size-medium text-left-mobile">Manage,
                                 invest, and grow your wealth with a Euro bank account, access to crypto, and DeFi
                                 investment tools. Spend anywhere with the Changex
-                                <a href="" className="text-style-link">Crypto Debit Card.</a>
+                                <a href="src/components/Hero/Hero" className="text-style-link">Crypto Debit Card.</a>
                             </p>
                         </div>
                     </div>

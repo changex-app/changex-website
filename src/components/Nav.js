@@ -16,47 +16,11 @@ import {GatsbyImage, StaticImage} from "gatsby-plugin-image";
 
 export const menuItems = [
     {
-        title: 'Wealth',
-        url: '/wealth',
-        id: '#wealth',
-        className: 'nav_menu-links w-nav-menu'
-        /*submenu: [
-            {
-                title: 'Staking',
-                url: 'staking',
-            },
-            {
-                title: 'Lending',
-                url: 'lending',
-            },
-            {
-                title: 'Savings',
-                url: 'savings',
-            },
-        ]*/
-    },
-    {
-        title: 'Bank',
-        url: '/bank',
-        id: '#bank',
-        className: 'nav_menu-links w-nav-menu'
-        /*submenu: [
-            {
-                title: 'Debit card',
-                url: 'debit-card',
-            },
-            {
-                title: 'SEPA Bank Account',
-                url: 'sepa-bank-account',
-            }
-        ]*/
-    },
-    {
         title: 'Wallet',
         url: '/wallet',
         id: '#wallet',
-        className: 'nav_menu-links w-nav-menu'
-        /*submenu: [
+        className: 'nav_menu-links w-nav-menu',
+        submenu: [
             {
                 title: 'DeFy Crypto Wallet',
                 url: 'defy-crypto-wallet',
@@ -69,7 +33,43 @@ export const menuItems = [
                 title: 'Buy and Sell crypto',
                 url: 'buy-sell-crypto',
             },
-        ]*/
+        ]
+    },
+    {
+        title: 'Bank',
+        url: '/bank',
+        id: '#bank',
+        className: 'nav_menu-links w-nav-menu',
+        submenu: [
+            {
+                title: 'Debit card',
+                url: 'debit-card',
+            },
+            {
+                title: 'SEPA Bank Account',
+                url: 'sepa-bank-account',
+            }
+        ]
+    },
+    {
+        title: 'Wealth',
+        url: '/wealth',
+        id: '#wealth',
+        className: 'nav_menu-links w-nav-menu',
+        submenu: [
+            {
+                title: 'Staking',
+                url: 'staking',
+            },
+            {
+                title: 'Lending',
+                url: 'lending',
+            },
+            {
+                title: 'Savings',
+                url: 'savings',
+            },
+        ]
     }
 ];
 
@@ -114,6 +114,7 @@ export default function Navigation() {
     const [apy, setApy] = useState('$CurrentAPY');
     const [openNav, setIsNavOpen] = useState(false);
     const [showModal, setShowModal] = useState(false)
+    const [dropdown, setDropdown] = useState(false)
 
     useEffect(() => {
         fetchData()
@@ -129,18 +130,29 @@ export default function Navigation() {
         setIsNavOpen(current => !current);
     }
 
+    function onMouseEnter() {
+        console.warn('onMouseEnter')
+        setDropdown(current => !current)
+    }
+
+    function onMouseLeave() {
+        console.warn('onMouseLeave')
+        setDropdown(current => !current)
+    }
+
 
     const fetchData = async () => {
-        const response = await fetch("https://changex-price-fetcher-xcl5j.ondigitalocean.app/coins/markets?ids=changex&vs_currency=usd");
-        const data = await response.json();
+        const promise = await fetch("https://changex-price-fetcher-xcl5j.ondigitalocean.app/coins/markets?ids=changex&vs_currency=usd");
+        const data = await promise.json();
 
+        console.warn('data', data)
         if (data) {
             setValue(data[0].current_price.toFixed(4))
         }
 
-        const responseAPY = await fetch("https://hydra-dex-backend.changex.io/api/staking/apy?amount=1");
-        const dataAPY = await responseAPY.json();
-
+        const promiseAPY = await fetch("https://hydra-dex-backend.changex.io/api/staking/apy?amount=1");
+        const dataAPY = await promiseAPY.json();
+        console.warn('dataAPY', dataAPY)
         if (dataAPY) {
             setApy(dataAPY.inPercent)
         }
@@ -149,8 +161,8 @@ export default function Navigation() {
 
     return (
     <div data-animation="default" className="nav_bar w-nav animate__animated animate__fadeInDown">
-        <div className="padding-global nav-padding">
-            <div className="container-large is-nav w-container">
+        <div className="padding-global is-nav">
+            <div className="container-large is-nav">
                 <div className="nav_full-wrapper">
                     <div className="nav_left-wrapper">
                         <a className="nav_brandlink margin-right margin-small w-nav-brand">
@@ -158,10 +170,19 @@ export default function Navigation() {
                         </a>
                         <nav role="navigation" className="nav_menu-links w-nav-menu hide-mobile-landscape">
                             {menuItems.map((menu, index) => {
-                                return (
-                                    <a href={menu.id} className="nav_link w-nav-link" style={{maxWidth: "1376px"}} key={index}>{menu.title}</a>
+                                  return (
+                                      <a
+                                        onMouseEnter={onMouseEnter}
+                                        onMouseLeave={onMouseLeave}
+                                        href={menu.id}
+                                        className="nav_link w-nav-link"
+                                        style={{maxWidth: "1376px"}}
+                                        key={index}>{menu.title}
+                                    </a>
+                                  )
+
                                     /*<Dropdown placeholder={menu.title}  className={menu.className}/>*/
-                                );
+
                             })}
                         </nav>
                     </div>

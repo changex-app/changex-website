@@ -1,5 +1,5 @@
 import * as React from "react";
-import "animate.css";
+import "../../../node_modules/animate.css/animate.css";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 const bankItems = [
