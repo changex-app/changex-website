@@ -117,7 +117,8 @@ export default function Navigation() {
 
     useEffect(() => {
         fetchData()
-            .catch((err)=> {})
+            .catch((err)=> {console.warn('err: ', err)})
+
     }, [])
 
     function openModal() {
@@ -203,7 +204,7 @@ export default function Navigation() {
             </div>
         </div>
         {openNav &&  <div className="w_nav-overlay">
-            <Nav role="navigation" className="nav_menu-links w-nav-menu" data-nav-menu-open=""
+            <nav role="navigation" className="nav_menu-links w-nav-menu" data-nav-menu-open=""
                  style={{transform: 'translateY(0px)', transition: 'transform 400ms ease 0s'}}>
                 {menuItems.map((menu, index) => {
                     return (
@@ -250,7 +251,7 @@ export default function Navigation() {
                         </div>
                     </div>
                 </div>
-            </Nav>
+            </nav>
         </div>}
         <Modal open={showModal}>
             <ScanQrModal className="section-scanpopup wf-section"
