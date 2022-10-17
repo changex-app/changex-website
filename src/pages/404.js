@@ -10,8 +10,8 @@ const NotFoundPage = () => {
         <main class="nk-pages nk-pages-centered tc-light px-0 text-center">
           <header class="pt-5">
             <a href="./" class="d-inline-block logo-lg">
-              <StaticImage
-                src="../../static//assets/images/logo.svg"
+              <img
+                src="/src/assets/images/icon.png"
                 alt="logo"
               />
             </a>

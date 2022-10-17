@@ -10,6 +10,7 @@ import QRBlack from "/static/images/icn-qr-black.svg";
 import MenuIcon from "/static/images/Menu-Icon_1Menu Icon.png";
 import AppleIcon from "/static/images/DW-Apple.svg"
 import GoogleIcon from "/static/images/DW-Google.svg"
+import {GatsbyImage, StaticImage} from "gatsby-plugin-image";
 
 
 
@@ -112,15 +113,12 @@ export default function Navigation() {
     const [value, setValue] = useState('$CurrentPrice');
     const [apy, setApy] = useState('$CurrentAPY');
     const [openNav, setIsNavOpen] = useState(false);
+    const [showModal, setShowModal] = useState(false)
 
     useEffect(() => {
-
         fetchData()
-            .catch((err)=> {console.warn('err: ', err)})
-
+            .catch((err)=> {})
     }, [])
-
-    const [showModal, setShowModal] = useState(false)
 
     function openModal() {
         setShowModal(true);
@@ -135,13 +133,16 @@ export default function Navigation() {
         const response = await fetch("https://changex-price-fetcher-xcl5j.ondigitalocean.app/coins/markets?ids=changex&vs_currency=usd");
         const data = await response.json();
 
-        setValue(data[0].current_price.toFixed(4))
+        if (data) {
+            setValue(data[0].current_price.toFixed(4))
+        }
 
         const responseAPY = await fetch("https://hydra-dex-backend.changex.io/api/staking/apy?amount=1");
         const dataAPY = await responseAPY.json();
 
-        setApy(dataAPY.inPercent)
-
+        if (dataAPY) {
+            setApy(dataAPY.inPercent)
+        }
         setTimeout(fetchData, 30000);
     }
 
@@ -151,7 +152,9 @@ export default function Navigation() {
             <div className="container-large is-nav w-container">
                 <div className="nav_full-wrapper">
                     <div className="nav_left-wrapper">
-                        <a className="nav_brandlink margin-right margin-small w-nav-brand"><img src={ChangeXLogoColor} loading="lazy" alt="ChangeX Logo in navigation bar" className="nav_logo"></img></a>
+                        <a className="nav_brandlink margin-right margin-small w-nav-brand">
+                            <img src={ChangeXLogoColor} loading="lazy" alt="ChangeX Logo in navigation bar" className="nav_logo"></img>
+                        </a>
                         <nav role="navigation" className="nav_menu-links w-nav-menu hide-mobile-landscape">
                             {menuItems.map((menu, index) => {
                                 return (
@@ -192,16 +195,15 @@ export default function Navigation() {
                             </li>
                         </ul>
                     </div>
-                    <div   className="menu-button w-nav-button"  aria-label="menu" role="button" tabIndex="0"
-                         aria-controls="w-nav-overlay-0" aria-haspopup="menu"
-                         aria-expanded="false">
+                    <div className="menu-button w-nav-button" aria-label="menu" role="button" tabIndex="0"
+                         aria-controls="w-nav-overlay-0" aria-haspopup="menu">
                         <img onClick={openNavDropDown} src={MenuIcon} width="20" alt="ICON" className="menu-icon"></img>
                     </div>
                 </div>
             </div>
         </div>
         {openNav &&  <div className="w_nav-overlay">
-            <nav role="navigation" className="nav_menu-links w-nav-menu" data-nav-menu-open=""
+            <Nav role="navigation" className="nav_menu-links w-nav-menu" data-nav-menu-open=""
                  style={{transform: 'translateY(0px)', transition: 'transform 400ms ease 0s'}}>
                 {menuItems.map((menu, index) => {
                     return (
@@ -248,7 +250,7 @@ export default function Navigation() {
                         </div>
                     </div>
                 </div>
-            </nav>
+            </Nav>
         </div>}
         <Modal open={showModal}>
             <ScanQrModal className="section-scanpopup wf-section"
