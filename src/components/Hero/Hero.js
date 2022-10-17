@@ -7,6 +7,7 @@ import DownloadQR from "../../../static/images/download-qr.svg"
 import { Modal } from "@mui/material";
 import { useState } from "react";
 import { ScanQrModal } from "../../Utils/ScanQrCode";
+import {StaticImage} from "gatsby-plugin-image";
 
 export default function Hero(){
 
@@ -18,7 +19,7 @@ export default function Hero(){
 
     return (
         <section id="hero" className="section_hero">
-            <img src={HeroBGImageMobile} loading="lazy" className="image-hero"></img>
+            <StaticImage src={HeroBGImageMobile} loading="lazy" className="image-hero"></StaticImage>
             <div className="hero-background animate__animated animate__fadeInLeft animate__delay-800ms"></div>
             <div className="hero-background right animate__animated animate__fadeInRight animate__delay-800ms"></div>
             <div className="padding-global">

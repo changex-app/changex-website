@@ -10,10 +10,10 @@ import Bank from "../components/Bank/Bank";
 import Card from "../components/Card/Card";
 import Waitlist from "../components/Waitlist";
 import Wealth from "../components/Wealth";
-import Wallet from "../components/Wallet";
+import Wallet from "../components/Wallet/Wallet";
 import Press from "../components/Press";
 import Partners from "../components/Partners";
-import Cta from "../components/Cta";
+import Cta from "../components/Cta/Cta";
 import Faq from "../components/Faq";
 
 const imageUrl = "/assets/images/Changex-OG.jpeg"

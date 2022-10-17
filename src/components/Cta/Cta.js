@@ -1,7 +1,8 @@
 import * as React from "react";
-import { ScanQrModal } from "../Utils/ScanQrCode";
+import { ScanQrModal } from "../../Utils/ScanQrCode";
 import { Modal } from "@mui/material";
 import { useState } from "react";
+
 
 export default function Cta() {
 
@@ -25,22 +26,33 @@ export default function Cta() {
                                     investment tools.</p>
                             </div>
                             <div className="button-group centered-items margin-top margin-large spread align-left">
+
                                 <a target="_blank" href="https://apps.apple.com/bg/app/changex-wallet/id1613309180"
                                    className="button is-store w-inline-block">
-                                    <img src="/images/DW-Apple.svg" loading="lazy" alt="App Store download image"
-                                         width="150"></img>
-                                    </a>
+                                    <img src="/images/DW-Apple.svg"
+                                         loading="lazy"
+                                         alt="App Store download image"
+                                         width="150">
+                                    </img>
+                                </a>
+
+
                                 <a target="_blank" href="https://play.google.com/store/apps/details?id=io.changex.app"
                                    className="button is-store w-inline-block">
-                                    <img src="/images/DW-Google.svg" loading="lazy" width="150"
-                                         alt="Google Play download image"></img>
+                                    <img src="/images/DW-Google.svg"
+                                         loading="lazy"
+                                         width="150"
+                                         alt="Google Play download image">
+                                    </img>
                                 </a>
+
                                 <button onClick={openModal}
                                    className="button is-qr w-inline-block">
                                     <img src="/images/download-qr.svg" loading="lazy" width="75"
                                          alt="QR code image"
                                          className="qr-small">
-                                        </img><p className="text-align-left text-size-regular">Scan To Download</p>
+                                        </img>
+                                    <p className="text-align-left text-size-regular">Scan To Download</p>
                                 </button>
 
                             </div>

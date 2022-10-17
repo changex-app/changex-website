@@ -712,7 +712,7 @@ figcaption {
     font-size: 1.425rem;
     font-weight: 400;
     letter-spacing: -0.4px;
-    line-height: normal;
+    line-height: 1.5;
 }
 
 .heading-style-h2 {
