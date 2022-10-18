@@ -9,7 +9,7 @@ import Navigation from "../components/Navbar/Nav";
 const IndexPage = () => {
   return (
     <>
-      <div className="nk-wrap">
+      <div className="wrap">
         <Helmet
           bodyAttributes={{
             class: "nk-body body-wider theme-dark mode-onepage",
@@ -35,7 +35,7 @@ const IndexPage = () => {
         >
           <Navigation />
         </header>
-        <main className="nk-pages">
+        <main className="pages">
           <section className="section bg-theme-alt ov-h pb-0 tc-light mt-50">
             <div className="container">
               <div className="section-head section-head-s4 wide-auto-sm text-center">

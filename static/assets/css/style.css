@@ -30,11 +30,11 @@ body {
     font-weight: 400;
 }
 
-.nk-wrap {
+.wrap {
     overflow: hidden;
 }
 
-.nk-pages {
+.pages {
     overflow: clip;
 }
 

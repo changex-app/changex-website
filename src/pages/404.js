@@ -5,9 +5,9 @@ import { Helmet } from "react-helmet";
 // markup
 const NotFoundPage = () => {
   return (
-    <div class="nk-wrap ov-h">
+    <div class="wrap ov-h">
       <div class="container">
-        <main class="nk-pages nk-pages-centered tc-light px-0 text-center">
+        <main class="pages nk-pages-centered tc-light px-0 text-center">
           <header class="pt-5">
             <a href="./" class="d-inline-block logo-lg">
               <img

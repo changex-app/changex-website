@@ -15,13 +15,14 @@ import Press from "../components/Press";
 import Partners from "../components/Partners";
 import Cta from "../components/Cta/Cta";
 import Faq from "../components/Faq/Faq";
+import {useEffect, useState} from "react";
 
 const imageUrl = "/assets/images/Changex-OG.jpeg"
 
 const IndexPage = () => {
   return (
       <>
-        <div className="nk-wrap">
+        <div className="wrap">
             <MetaDecorator
                 description={content.pageDescription}
                 title={content.pageTitle}
@@ -31,7 +32,7 @@ const IndexPage = () => {
           <Header />
         </div>
           <CookieConsentModal/>
-          <main className="nk-pages">
+          <main className="pages">
               <Hero/>
               <Wallet/>
               <Bank/>
@@ -44,10 +45,7 @@ const IndexPage = () => {
               <Cta/>
               <Footer/>
           </main>
-        <div className="preloader">
-          <span className="spinner spinner-round"></span>
-        </div>
-      </>
+         </>
   );
 };
 

@@ -7,7 +7,7 @@ import ChangeXLogoColor from "../../../static/images/ChangeX-LogoColor.svg";
 import QRBlack from "../../../static/images/icn-qr-black.svg";
 import MenuIcon from "../../../static/images/Menu-Icon_1Menu Icon.png";
 import { iconItems, menuItems, mobileIcon } from "./navItems";
-
+import {fetchData} from "../../api/fetch";
 
 export default function Navigation() {
 
@@ -19,9 +19,17 @@ export default function Navigation() {
 
     useEffect(() => {
         fetchData()
-            .catch((err)=> {console.warn('err: ', err)})
+            .then(res => {
+                setValue(res.price.current_price.toFixed(4));
+                setApy(res.apy.inPercent);
+            })
+            .catch(function(error) {
+               throw Error(error)
+            })
 
-    }, [])
+        setTimeout(fetchData, 30000);
+
+    },[])
 
     function openModal() {
         setShowModal(true);
@@ -39,25 +47,6 @@ export default function Navigation() {
     function onMouseLeave() {
         console.warn('onMouseLeave')
         setDropdown(current => !current)
-    }
-
-
-    const fetchData = async () => {
-        const promise = await fetch("https://changex-price-fetcher-xcl5j.ondigitalocean.app/coins/markets?ids=changex&vs_currency=usd");
-        const data = await promise.json();
-
-        console.warn('data', data)
-        if (data) {
-            setValue(data[0].current_price.toFixed(4))
-        }
-
-        const promiseAPY = await fetch("https://hydra-dex-backend.changex.io/api/staking/apy?amount=1");
-        const dataAPY = await promiseAPY.json();
-        console.warn('dataAPY', dataAPY)
-        if (dataAPY) {
-            setApy(dataAPY.inPercent)
-        }
-        setTimeout(fetchData, 30000);
     }
 
     return (
