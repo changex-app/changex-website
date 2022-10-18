@@ -1,6 +1,7 @@
 import * as React from "react";
 import {useState} from "react";
 import { doubleApy, menuTabs, stake, stablecoins} from "./wealthItems";
+import {StaticImage} from "gatsby-plugin-image";
 
 
 export default function Wealth() {
@@ -43,11 +44,11 @@ export default function Wealth() {
                                     {active === 'stake' &&
                                         <div id="Tab 1" className="w-tab-pane w--tab-active">
                                             <div className="tabwrapper animate__animated animate__fadeIn">
-                                                <img
+                                                <StaticImage
                                                     loading="lazy"
-                                                    src={stake.src}
+                                                    src={'../../../static/images/wealth/Lend-Stablecoins.png'}
                                                     alt={stake.alt}>
-                                                </img>
+                                                </StaticImage>
                                                 <p className="text-size-regular margin-vertical margin-medium">
                                                     {stake.text}
                                                 </p>
@@ -58,11 +59,11 @@ export default function Wealth() {
                                     {active === 'apy' &&
                                         <div data-w-tab="Tab 2" className="w-tab-pane w--tab-active">
                                                 <div className="tabwrapper animate__animated animate__fadeIn">
-                                                    <img
+                                                    <StaticImage
                                                         loading="lazy"
-                                                        src={doubleApy.src}
+                                                        src={'../../../static/images/wealth/Doubleapy.png'}
                                                         alt={doubleApy.alt}>
-                                                    </img>
+                                                    </StaticImage>
                                                     <p className="text-size-regular margin-vertical margin-medium">
                                                         {doubleApy.text}
                                                     </p>
@@ -73,11 +74,11 @@ export default function Wealth() {
                                     {active === 'stablecoins' &&
                                         <div data-w-tab="Tab 3" className="w-tab-pane w--tab-active">
                                             <div className="tabwrapper animate__animated animate__fadeIn">
-                                                <img
+                                                <StaticImage
                                                     loading="lazy"
-                                                    src={stablecoins.src}
+                                                    src={'../../../static/images/wealth/Lend-Stablecoins.png'}
                                                     alt={stablecoins.alt}>
-                                                </img>
+                                                </StaticImage>
                                                 <p className="text-size-regular margin-vertical margin-medium">
                                                     {stablecoins.text}
                                                 </p>

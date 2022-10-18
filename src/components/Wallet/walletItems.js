@@ -1,6 +1,6 @@
 export const scrollImages = [
     {
-        src: '/images/icn-40x40-wallet.svg',
+        src: '/images/wallet/icn-40x40-wallet.svg',
         caption: 'A wallet just for you',
         text: 'Own your crypto - Changex has no control over your wallet and can never access your funds. All information is kept safely on the blockchain',
         url: '"https://changex.io',

@@ -17,14 +17,13 @@ export default function Navigation() {
     const [showModal, setShowModal] = useState(false)
     const [dropdown, setDropdown] = useState(false)
 
-    useEffect(() => {
+    useEffect( () => {
         fetchData()
             .then(res => {
-                setValue(res.price.current_price.toFixed(4));
-                setApy(res.apy.inPercent);
-            })
-            .catch(function(error) {
-               throw Error(error)
+                if (res) {
+                    setValue(res.price.current_price.toFixed(4));
+                    setApy(res.apy.inPercent);
+                }
             })
 
         setTimeout(fetchData, 30000);

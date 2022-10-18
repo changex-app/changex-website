@@ -28,21 +28,18 @@ export const menuTabs = [
 
 export const stake = {
     id: "Tab 1",
-    src: "/images/wealth/Staking_1.svg",
     alt: "Investment Slider image for stake",
     text: "Staking any Proof-of-Stake asset in Changex boosts your CHANGE staking APR. Stake more assets to stack your boost and retain access to the tokens with liquid staking."
 }
 
 export const doubleApy = {
     id: "Tab 2",
-    src: "/images/wealth/Doubleapy.svg",
     alt: "Investment Slider image for double your APY",
     text: "Use Changex's unique Leveraged Staking product to amplify the staking rewards of any Proof-of-Stake asset by 1.2-2x and earn like never before."
 }
 
 export const stablecoins = {
     id: "Tab 3",
-    src: "/images/wealth/Lend-Stablecoins.svg",
     alt: "Investment Slider image for lend stablecoins",
     text: "Lend your stablecoins for 5-9.5% APR and power the Leveraged Staking economy. Everything is completely decentralized."
 }

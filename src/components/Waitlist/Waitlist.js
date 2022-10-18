@@ -8,15 +8,31 @@ export default function Waitlist(){
     const [formData, setFormData] = useState('');
 
     const HandleSubmit  = (event) => {
-
         if(isValidEmail(formData)) {
-
             event.preventDefault();
-            setIsShown(current => !current);
+
+            fetch('https://app.sgwidget.com/v2/api/newsletter-signup', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    email: formData,
+                    first_name: '',
+                    last_name: '',
+                    token: '0719662e9bb0cc2768bc17f2c5cfb745',
+                })
+            })
+                .then(res => setIsShown(current => !current))
+                .catch((err) => {
+                    throw new Error(err)
+                });
 
         } else {
 
         }
+
     }
 
     const HandleChange = (event) => {
