@@ -561,10 +561,6 @@ figcaption {
     text-decoration: none;
 }
 
-.max-width-xxlarge {
-    width: 100%;
-    max-width: 80rem;
-}
 
 .overflow-visible {
     overflow: visible;
@@ -736,13 +732,13 @@ figcaption {
 
 .container-large {
     width: 100%;
-    max-width: 80rem;
+    max-width: 77rem;
     margin-right: auto;
     margin-left: auto;
 }
 
 .container-large.is-nav {
-    max-width: 80rem;
+    max-width: 77rem;
 }
 
 .icon-height-medium {

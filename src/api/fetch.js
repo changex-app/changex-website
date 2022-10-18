@@ -1,33 +1,35 @@
 import * as React from 'react'
 import axios from "axios";
 
-export const fetchData = async () => {
+export const fetchPrice = async () => {
     let dataPrice;
-    let dataAPY;
 
-    await axios("https://changex-price-fetcher-xcl5j.ondigitalocean.app/coins/markets?ids=changex&vs_currency=usd")
+    await axios.get("https://changex-price-fetcher-xcl5j.ondigitalocean.app/coins/markets?ids=changex&vs_currency=usd")
         .then((res)=> {
             if(res.status === 200) {
                 dataPrice = res.data[0];
             }
         })
         .catch(err => {
-            throw new Error('Error fetching data', err);
+            console.warn('err.response',err.response)
+
         });
 
-    await axios("https://hydra-dex-backend.changex.io/api/staking/apy?amount=1")
+    return {price: dataPrice}
+}
+
+export const fetchApy = async () => {
+    let dataApy;
+
+    await axios.get("https://hydra-dex-backend.changex.io/api/staking/apy?amount=1")
         .then((res)=> {
             if(res.status === 200) {
-                dataAPY = res.data;
+                dataApy = res.data;
             }
         })
         .catch(err => {
-            throw new Error('Error fetching data', err);
+            console.warn('err.response',err.response)
         });
 
-    return {
-        price: dataPrice,
-        apy: dataAPY
-    }
-
+    return {apy: dataApy}
 }

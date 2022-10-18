@@ -7,7 +7,7 @@ import ChangeXLogoColor from "../../../static/images/ChangeX-LogoColor.svg";
 import QRBlack from "../../../static/images/icn-qr-black.svg";
 import MenuIcon from "../../../static/images/Menu-Icon_1Menu Icon.png";
 import { iconItems, menuItems, mobileIcon } from "./navItems";
-import {fetchData} from "../../api/fetch";
+import {fetchApy, fetchData, fetchPrice} from "../../api/fetch";
 
 export default function Navigation() {
 
@@ -18,10 +18,16 @@ export default function Navigation() {
     const [dropdown, setDropdown] = useState(false)
 
     useEffect( () => {
-        fetchData()
+        fetchPrice()
             .then(res => {
-                if (res) {
+                if (res && res.price) {
                     setValue(res.price.current_price.toFixed(4));
+                }
+            })
+
+        fetchApy()
+            .then(res => {
+                if (res && res.apy) {
                     setApy(res.apy.inPercent);
                 }
             })
@@ -38,16 +44,6 @@ export default function Navigation() {
         setIsNavOpen(current => !current);
     }
 
-    function onMouseEnter() {
-        console.warn('onMouseEnter')
-        setDropdown(current => !current)
-    }
-
-    function onMouseLeave() {
-        console.warn('onMouseLeave')
-        setDropdown(current => !current)
-    }
-
     return (
     <div data-animation="default" className="nav_bar w-nav animate__animated animate__fadeInDown">
         <div className="padding-global is-nav">
@@ -61,8 +57,6 @@ export default function Navigation() {
                             {menuItems.map((menu, index) => {
                                   return (
                                       <a
-                                        onMouseEnter={onMouseEnter}
-                                        onMouseLeave={onMouseLeave}
                                         href={menu.id}
                                         className="nav_link w-nav-link"
                                         style={{maxWidth: "1376px"}}
