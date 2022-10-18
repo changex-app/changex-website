@@ -11,8 +11,7 @@ export const fetchPrice = async () => {
             }
         })
         .catch(err => {
-            console.warn('err.response',err.response)
-
+            throw new Error(err);
         });
 
     return {price: dataPrice}
@@ -28,7 +27,7 @@ export const fetchApy = async () => {
             }
         })
         .catch(err => {
-            console.warn('err.response',err.response)
+            throw new Error(err);
         });
 
     return {apy: dataApy}

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `changex-website`,
+    title: `/changex-website`,
     siteUrl: `https://www.changex.io`
   },
   plugins: [{

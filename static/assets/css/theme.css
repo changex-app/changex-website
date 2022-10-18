@@ -874,61 +874,6 @@ textarea.w-select {
     text-align: left;
 }
 
-
-.w-dropdown {
-    display: inline-block;
-    position: relative;
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 900;
-}
-.w-dropdown-btn,
-.w-dropdown-toggle,
-.w-dropdown-link {
-    position: relative;
-    vertical-align: top;
-    text-decoration: none;
-    color: var(--blackColor);
-    padding: 20px;
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-    white-space: nowrap;
-}
-.w-dropdown-toggle {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    display: inline-block;
-    cursor: pointer;
-    padding-right: 40px;
-}
-.w-dropdown-toggle:focus {
-    outline: 0;
-}
-
-.w-dropdown-list {
-    position: absolute;
-    background: #dddddd;
-    display: none;
-    min-width: 100%;
-}
-.w-dropdown-list.w--open {
-    display: block;
-}
-.w-dropdown-link {
-    padding: 10px 20px;
-    display: block;
-    color: var(--blackColor);
-}
-.w-dropdown-link.w--current {
-    color: #0082f3;
-}
-.w-dropdown-link:focus {
-    outline: 0;
-}
 @media screen and (max-width: 767px) {
     .w-nav-brand {
         padding-left: 10px;

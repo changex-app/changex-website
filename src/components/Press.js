@@ -45,6 +45,7 @@ export default function Press() {
                                     {logos.map((logo, index) => {
                                         return(
                                                 <a href={logo.href}
+                                                   id={index.toString()}
                                                    className="logo-link w-inline-block">
                                                     <img
                                                         src={logo.src}
@@ -61,6 +62,7 @@ export default function Press() {
                                     {logos.map((logo, index) => {
                                         return(
                                             <a href={logo.href}
+                                               id={index.toString()}
                                                className="logo-link w-inline-block">
                                                 <img
                                                     src={logo.src}

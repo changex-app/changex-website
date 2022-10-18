@@ -30,7 +30,7 @@ export default function Wealth() {
                             <div data-current="Tabs"  data-easing="ease-out" data-duration-in="300"
                                  data-duration-out="100" className="tabs tabs-wealth margin-top margin-huge w-tabs">
                                 <div className="tabs-menu w-tab-menu">
-                                    {menuTabs.map((item)=> {
+                                    {menuTabs.map((item, index)=> {
                                         return (
                                              <a id={item.id}
                                                 onClick={() => handleClick(item.id)}
