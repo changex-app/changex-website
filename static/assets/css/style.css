@@ -9,9 +9,9 @@
     --containerLargeWidth: 76rem;
     --containerSmallWidth: 48rem;
     --backgroundColorBlack: #121220;
+    --heading1FontSize: 4.2rem;
     --heading2FontSize: 3.6rem;
     --heading3FontSize: 2.85rem;
-
 }
 
 
@@ -265,7 +265,7 @@ figcaption {
 }
 
 .margin-small {
-    margin: 1rem;
+    margin: 0;
 }
 
 .margin-medium {
@@ -504,9 +504,11 @@ figcaption {
 }
 
 .heading-style-h1 {
-    font-size: 4.4rem;
+    font-size: var(--heading1FontSize);
     line-height: 1.1;
     font-weight: 600;
+    font-family: Lexend,sans-serif !important;
+    color: #000000 !important;
 }
 
 .padding-global {
@@ -621,10 +623,9 @@ figcaption {
 }
 
 .heading-style-h4 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 1.4;
     font-weight: 500;
-    letter-spacing: -1px;
 }
 
 .max-width-xlarge {
