@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Cookies, getCookieConsentValue } from "react-cookie-consent";
 import CookieConsentModal from "../Utils/CookieConsent"
 import Header from "../components/header";
 import Footer from "../components/Footer";
@@ -15,7 +14,6 @@ import Press from "../components/Press/Press";
 import Partners from "../components/Partners/Partners";
 import Cta from "../components/Cta/Cta";
 import Faq from "../components/Faq/Faq";
-import {useEffect, useState} from "react";
 
 const imageUrl = "/assets/images/Changex-OG.jpeg"
 

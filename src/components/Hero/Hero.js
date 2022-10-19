@@ -18,7 +18,7 @@ export default function Hero(){
 
     return (
         <section id="hero" className="section_hero">
-            <StaticImage src={"../../../static/images/Hero-BGimg-mobile.png"} loading="lazy" className="image-hero"></StaticImage>
+            <StaticImage src={"../../../static/images/Hero-BGimg-mobile.png"} loading="lazy" className="image-hero" alt=""></StaticImage>
             <div className="hero-background animate__animated animate__fadeInLeft animate__delay-800ms"></div>
             <div className="hero-background right animate__animated animate__fadeInRight animate__delay-800ms"></div>
             <div className="padding-global">
