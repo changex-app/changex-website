@@ -2,7 +2,7 @@ import * as React from "react";
 import { ScanQrModal } from "../../Utils/ScanQrCode";
 import { Modal } from "@mui/material";
 import { useState } from "react";
-
+import DownloadQR from "../../../static/images/download-qr.svg"
 
 export default function Cta() {
 

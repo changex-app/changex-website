@@ -6,6 +6,11 @@
     --current: #1b10be;
     --btnBackground: #f5f5ff;
     --walletItemColor: #11d482;
+    --containerLargeWidth: 76rem;
+    --containerSmallWidth: 48rem;
+    --backgroundColorBlack: #121220;
+    --heading2FontSize: 3.6rem;
+    --heading3FontSize: 2.85rem;
 
 }
 
@@ -53,7 +58,7 @@ h2 {
     margin-top: 0rem;
     margin-bottom: 0rem;
     font-family: var(--font);
-    font-size: 3.8rem;
+    font-size: var(--heading2FontSize);
     line-height: 1.2;
     font-weight: 500;
     letter-spacing: -3px;
@@ -63,7 +68,7 @@ h3 {
     margin-top: 0rem;
     margin-bottom: 0rem;
     font-family: var(--font);
-    font-size: 2.85rem;
+    font-size: var(--heading3FontSize);
     line-height: 1.2;
     font-weight: 500;
     letter-spacing: -2px;
@@ -403,7 +408,7 @@ figcaption {
 }
 
 .background-color-black {
-    background-color: #121220;
+    background-color: var(--backgroundColorBlack);
     color: #f5f5f5;
 }
 
@@ -426,7 +431,7 @@ figcaption {
 
 .heading-style-h3 {
     font-family: var(--font);
-    font-size: 2.85rem;
+    font-size: var(--heading3FontSize);
     line-height: 1.2;
     font-weight: 500;
     letter-spacing: -2px;
@@ -484,7 +489,7 @@ figcaption {
 
 .container-small {
     width: 100%;
-    max-width: 48rem;
+    max-width: var(--containerSmallWidth);
     margin-right: auto;
     margin-left: auto;
 }
@@ -705,14 +710,14 @@ figcaption {
 }
 
 .text-size-large {
-    font-size: 1.425rem;
+    font-size: 1.225rem;
     font-weight: 400;
     letter-spacing: -0.4px;
     line-height: 1.5;
 }
 
 .heading-style-h2 {
-    font-size: 3.8rem;
+    font-size: var(--heading2FontSize);
     line-height: 1;
     font-weight: 550;
     letter-spacing: -3px;
@@ -732,13 +737,13 @@ figcaption {
 
 .container-large {
     width: 100%;
-    max-width: 77rem;
+    max-width: var(--containerLargeWidth);
     margin-right: auto;
     margin-left: auto;
 }
 
 .container-large.is-nav {
-    max-width: 77rem;
+    max-width: var(--containerLargeWidth);;
 }
 
 .icon-height-medium {
@@ -950,7 +955,7 @@ figcaption {
     display: flex;
     padding: 0.5rem 1rem;
     border-radius: 6px;
-    background-color: #121220;
+    background-color:var(--backgroundColorBlack);
     -webkit-transition: opacity 200ms ease;
     transition: opacity 200ms ease;
 }
@@ -980,12 +985,13 @@ figcaption {
     border-color: #d9d9df;
     border-radius: 6px;
     background-color: transparent;
-    color: #121220;
+    color: var(--backgroundColorBlack);
     text-decoration: none;
 }
 
 .text-size-medium {
-    font-size: 1.0rem;
+    font-size: 1.2rem;
+    font-size: 1.2rem;
     font-weight: 400;
     letter-spacing: -0.2px;
 }
@@ -2035,7 +2041,7 @@ figcaption {
 }
 
 .legal_links {
-    color: #121220;
+    color: var(--backgroundColorBlack);
     text-decoration: none;
 }
 
@@ -2293,13 +2299,12 @@ figcaption {
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
     background-color: #c6e56a !important;
-    color: #121220 !important;
+    color: var(--backgroundColorBlack) !important;
     font-size: 1.1rem;
     font-weight: 600;
 }
 
 .email-submit:hover {
-    background-color: #c6e56a;
     cursor: pointer;
 }
 
@@ -2320,31 +2325,31 @@ figcaption {
 }
 
 .email-field::-webkit-input-placeholder {
-    color: #121220;
+    color: var(--backgroundColorBlack);
     font-size: 1.3rem;
     font-weight: 400;
 }
 
 .email-field:-ms-input-placeholder {
-    color: #121220;
+    color: var(--backgroundColorBlack);
     font-size: 1.3rem;
     font-weight: 400;
 }
 
 .email-field::-ms-input-placeholder {
-    color: #121220;
+    color: var(--backgroundColorBlack);
     font-size: 1.3rem;
     font-weight: 400;
 }
 
 .email-field::placeholder {
-    color: #121220;
+    color: var(--backgroundColorBlack);
     font-size: 1.3rem;
     font-weight: 400;
 }
 
 .link {
-    color: #121220;
+    color: var(--backgroundColorBlack);
 }
 
 .logos-wrapper {
@@ -3766,7 +3771,7 @@ figcaption {
     padding: 0.2rem 0.5rem;
     border-radius: 3px;
     background-color: var(--btnBackground);
-    color: #121220;
+    color:var(--backgroundColorBlack);
     font-size: .705rem;
     line-height: 150%;
     font-weight: 600;
@@ -3805,6 +3810,7 @@ figcaption {
     width: 200px !important;
     height: 50px !important;
     color: #333333 !important;
+    font-size: 20px;
     font-weight: 600;
     border-radius: 6px !important;
     background: #C6E56A !important;

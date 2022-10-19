@@ -1,6 +1,5 @@
 import * as React from "react";
 import '../../../node_modules/animate.css/animate.css';
-import HeroBGImageMobile from "../../../static/images/Hero-BGimg-mobile.png"
 import DownloadApple from "../../../static/images/DW-Apple.svg"
 import DownloadGoogle from "../../../static/images/DW-Google.svg"
 import DownloadQR from "../../../static/images/download-qr.svg"
@@ -19,7 +18,7 @@ export default function Hero(){
 
     return (
         <section id="hero" className="section_hero">
-            <StaticImage src={HeroBGImageMobile} loading="lazy" className="image-hero"></StaticImage>
+            <StaticImage src={"../../../static/images/Hero-BGimg-mobile.png"} loading="lazy" className="image-hero"></StaticImage>
             <div className="hero-background animate__animated animate__fadeInLeft animate__delay-800ms"></div>
             <div className="hero-background right animate__animated animate__fadeInRight animate__delay-800ms"></div>
             <div className="padding-global">
@@ -56,7 +55,7 @@ export default function Hero(){
                                     <a onClick={openModal}  href="src/components/Hero/Hero#"
                                        className="button is-qr w-inline-block">
                                         <img src={DownloadQR}
-                                             loading="lazy" width="75"
+                                             loading="lazy" width="75" height="50"
                                              alt="QR code image"
                                              className="qr-small">
                                         </img><p className="text-align-left text-size-regular" style={{width: "min-content"}}>Scan To Download</p>

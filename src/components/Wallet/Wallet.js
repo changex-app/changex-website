@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Fade } from 'react-slideshow-image';
+import '../../../node_modules/animate.css/animate.css';
 import 'react-slideshow-image/dist/styles.css'
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { properties, scrollImages, slideImages } from "./walletItems";
@@ -14,12 +15,17 @@ export default function Wallet() {
                             <div className="div-block">
                                 <AnimationOnScroll  animateIn="animate__fadeInUp" animateOnce={true} className="wallet_wrapper-left animate__animated animate__fadeInUp">
                                     <div className="label is-lime slide-from-bottom">Wallet</div>
-                                    <h2 className="heading-style-h2 margin-bottom margin-large slide-from-bottom">Decentralized
-                                        Crypto <span className="highlight is-green">Wallet</span></h2>
+                                    <h2 className="heading-style-h2 margin-bottom margin-large slide-from-bottom">
+                                        Decentralized <br/>Crypto &nbsp;
+                                        <span className="highlight is-green">Wallet</span>
+                                    </h2>
                                     <p className="text-color-grey text-size-large slide-from-bottom">Access crypto from
                                         any point on Earth and stay in control with Changex’s
-                                        highly-secure, <span>non-custodial</span><span
-                                            className="info-icn hide">ⓘ</span> crypto wallet. No KYC required.</p>
+                                        highly-secure,
+                                        <span>non-custodial</span>
+                                        <span className="info-icn hide">ⓘ</span>
+                                        crypto wallet. <br/>No KYC required.
+                                    </p>
                                 </AnimationOnScroll>
 
                                 <div className="wallet_wrapper-right">
@@ -43,19 +49,18 @@ export default function Wallet() {
                                     {scrollImages.map((item, index)=> {
                                         return(
                                             <div id={index.toString()} className="wallet_benefits-container with-border">
+                                                {/*AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true}*/}
                                                 <div className="wallet_benefit-wrapper margin-vertical margin-large">
-                                                    <div
+                                                    <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true}
                                                         className="icon-wrapper-100 is-green margin-bottom margin-xhuge slide-from-bottom">
-                                                        <img src={item.src} loading="lazy"></img></div>
-                                                    <div className="margin-bottom margin-huge">
+                                                        <img src={item.src} loading="lazy"></img>
+                                                    </AnimationOnScroll>
+                                                    <AnimationOnScroll animateIn="animate__fadeInUp" className="margin-bottom margin-huge">
                                                         <h3 className="heading-style-h4 margin-vertical margin-medium slide-from-bottom">{item.caption}</h3>
                                                         <p className="text-color-grey text-size-medium slide-from-bottom">{item.text}</p>
-                                                    </div>
-                                                    <a href={item.url} target="_blank" alt={item.caption}
-                                                       className="button is-link w-inline-block">
-                                                        <div
-                                                            className="text-style-link text-size-medium is-green slide-from-bottom">{item.urlText}
-                                                        </div>
+                                                    </AnimationOnScroll>
+                                                    <a href={item.url} target="_blank" alt={item.caption} className="button is-link w-inline-block">
+                                                        <div className="text-style-link text-size-medium is-green slide-from-bottom">{item.urlText}</div>
                                                     </a>
                                                 </div>
                                             </div>

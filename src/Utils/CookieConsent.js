@@ -10,7 +10,7 @@ export default function CookieConsentModal(){
         <CookieConsent containerClasses="cookies animate__animated animate__fadeInUp"
                        overlayClasses="content"
             location="bottom"
-            buttonText="Accept"
+            buttonText="Continue"
             cookieName="changex.io-cookie-concent"
 /*            enableDeclineButton='true'*/
             cookieSecurity='true'
@@ -31,8 +31,8 @@ export default function CookieConsentModal(){
             <div className='cookies_wrappers'>
                 <div style={{paddingLeft: "2.5rem"}}>
                     <p className="cookiesText">
-                               Our website uses "Cookies" so that we can provide services at the highest level to our customers. By continuing, you agree to their use.
-                               <br/>To find out more information see our <a style={{color: "#3418d8"}} target="_blank" href="https://changex-io.web.app/privacy.html">"Privacy policy".</a>
+                               Our website uses "Cookies" so that we can provide services at the highest level to our customers.<br/> By continuing, you agree to their use.
+                               <br/>To find out more information see our <a style={{color: "#3418d8"}} target="_blank" href="https://changex-io.web.app/privacy.html">Privacy policy.</a>
                     </p>
                 </div>
             </div>

@@ -56,9 +56,7 @@ export default function Waitlist(){
                                 <div className="w-form">
                                     {isShown && (
                                         <div className="sendgrid-subscription-widget widget-2368"
-                                             data-emailerror="Please enter a valid email address"
-                                             data-nameerror="Please enter your name"
-                                             data-checkboxerror="Please tick the box to accept our conditions">
+                                             data-emailerror="Please enter a valid email address">
                                             <form onSubmit={HandleSubmit} data-token="0719662e9bb0cc2768bc17f2c5cfb745"
                                                   id="email-form" name="email-form" data-name="Email Form" method="get"
                                                   className="form">
