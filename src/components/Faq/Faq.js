@@ -2,9 +2,11 @@ import * as React from "react";
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 import Typography from '@mui/material/Typography';
 import AddCircle from '@mui/icons-material/Add';
-import {faqContent} from "./faqItems";
+import { faqContent } from "./faqItems";
+
 
 export default function Faq() {
     return(
@@ -12,7 +14,7 @@ export default function Faq() {
             <div className="padding-global background-color-grey">
                 <div className="container-small">
                     <div className="padding-section-large">
-                        <div>
+                        <AnimationOnScroll  animateIn="animate__fadeInUp" animateOnce={true}>
                             <div className="slide-from-bottom">
                                 <h2 className="heading-style-h2 text-align-center margin-vertical margin-medium">
                                     Frequently Asked
@@ -24,26 +26,26 @@ export default function Faq() {
                                     </a>
                                     - we’d love to hear from you.</p>
                             </div>
-                            <div className="w-layout-grid faq-grid margin-vertical margin-huge slide-from-bottom">
-                                {faqContent.map((faq, index) => {
-                                    return (
-                                        <Accordion className="faq-question-bar w-inline-block">
-                                            <AccordionSummary
-                                                expandIcon={<AddCircle />}
-                                                aria-controls="panel1a-content"
-                                                id="panel1a-header">
-                                                <Typography className="heading-style-h5">
-                                                    {faq.title}
-                                                </Typography>
-                                            </AccordionSummary>
-                                            <AccordionDetails>
-                                                <Typography className="text-size-medium text-color-darkgrey">
-                                                    {faq.content}
-                                                </Typography>
-                                            </AccordionDetails>
-                                        </Accordion>
-                                    )})}
-                            </div>
+                                <div className="w-layout-grid faq-grid margin-vertical margin-huge slide-from-bottom">
+                                    {faqContent.map((faq, index) => {
+                                        return (
+                                            <Accordion className="faq-question-bar w-inline-block">
+                                                <AccordionSummary
+                                                    expandIcon={<AddCircle />}
+                                                    aria-controls="panel1a-content"
+                                                    id="panel1a-header">
+                                                    <Typography className="heading-style-h5">
+                                                        {faq.title}
+                                                    </Typography>
+                                                </AccordionSummary>
+                                                <AccordionDetails>
+                                                    <Typography className="text-size-medium text-color-darkgrey">
+                                                        {faq.content}
+                                                    </Typography>
+                                                </AccordionDetails>
+                                            </Accordion>
+                                        )})}
+                                </div>
                             <div className="slide-from-bottom">
                                 <h3 className="heading-style-h3 text-align-center">Still got questions?</h3>
                                 <p className="text-size-medium text-align-center margin-vertical margin-small">
@@ -61,7 +63,7 @@ export default function Faq() {
                                     </a>
                                 </div>
                             </div>
-                        </div>
+                        </AnimationOnScroll>>
                     </div>
                 </div>
             </div>
