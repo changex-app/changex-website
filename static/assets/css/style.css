@@ -1635,6 +1635,7 @@ figcaption {
 .nav_logo {
     width: 100%;
     max-width: 132px;
+    cursor: pointer;
 }
 
 .hide-desktop {

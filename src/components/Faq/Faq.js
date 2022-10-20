@@ -10,7 +10,7 @@ import { faqContent } from "./faqItems";
 
 export default function Faq() {
     return(
-        <section className="section_faq">
+        <section id="faqs" className="section_faq">
             <div className="padding-global background-color-grey">
                 <div className="container-small">
                     <div className="padding-section-large">

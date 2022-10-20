@@ -7,7 +7,7 @@ export const menuItems = [
     {
         title: 'Wallet',
         url: '/wallet',
-        id: '#wallet',
+        id: 'wallet',
         className: 'nav_menu-links w-nav-menu',
         submenu: [
             {
@@ -27,7 +27,7 @@ export const menuItems = [
     {
         title: 'Bank',
         url: '/bank',
-        id: '#bank',
+        id: 'bank',
         className: 'nav_menu-links w-nav-menu',
         submenu: [
             {
@@ -43,7 +43,7 @@ export const menuItems = [
     {
         title: 'Wealth',
         url: '/wealth',
-        id: '#wealth',
+        id: 'wealth',
         className: 'nav_menu-links w-nav-menu',
         submenu: [
             {
@@ -59,6 +59,13 @@ export const menuItems = [
                 url: 'savings',
             },
         ]
+    },
+    {
+        title: 'FAQs',
+        url: '/faqs',
+        id: 'faqs',
+        className: 'nav_menu-links w-nav-menu',
+        submenu: []
     }
 ];
 

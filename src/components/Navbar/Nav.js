@@ -8,6 +8,7 @@ import QRBlack from "../../../static/images/icn-qr-black.svg";
 import MenuIcon from "../../../static/images/Menu-Icon_1Menu Icon.png";
 import { iconItems, menuItems, mobileIcon } from "./navItems";
 import {fetchApy, fetchData, fetchPrice} from "../../api/fetch";
+import { Link } from "react-scroll";
 
 export default function Navigation() {
 
@@ -50,18 +51,19 @@ export default function Navigation() {
             <div className="container-large is-nav">
                 <div className="nav_full-wrapper">
                     <div className="nav_left-wrapper">
-                        <a  href={"#hero"} className="nav_brandlink margin-right margin-small w-nav-brand">
-                            <img src={ChangeXLogoColor} loading="lazy" alt="ChangeX Logo in navigation bar" className="nav_logo"></img>
-                        </a>
+                        <Link to="hero"  smooth={true} className="nav_brandlink margin-right margin-small w-nav-brand">
+                           <img src={ChangeXLogoColor} loading="lazy" alt="ChangeX Logo in navigation bar" className="nav_logo"></img>
+                        </Link>
                         <nav role="navigation" className="nav_menu-links w-nav-menu hide-mobile-landscape">
                             {menuItems.map((menu, index) => {
                                   return (
-                                      <a
-                                        href={menu.id}
-                                        className="nav_link w-nav-link"
-                                        style={{maxWidth: "1376px"}}
-                                        key={index}>{menu.title}
-                                    </a>
+                                      <Link
+                                          to={menu.id}
+                                          smooth={true}
+                                          className="nav_link w-nav-link"
+                                          style={{maxWidth: "1376px"}}
+                                          key={index}>{menu.title}
+                                    </Link>
                                   )
 
                                     /*<Dropdown placeholder={menu.title}  className={menu.className}/>*/
