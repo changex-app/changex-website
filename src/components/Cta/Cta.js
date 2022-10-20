@@ -27,7 +27,7 @@ export default function Cta() {
                             </div>
                             <div className="button-group centered-items margin-top margin-large spread align-left">
 
-                                <a target="_blank" href="https://apps.apple.com/bg/app/changex-wallet/id1613309180"
+                                <a target="_blank"  rel="noreferrer" href="https://apps.apple.com/bg/app/changex-wallet/id1613309180"
                                    className="button is-store w-inline-block">
                                     <img src="/images/DW-Apple.svg"
                                          loading="lazy"
@@ -37,7 +37,7 @@ export default function Cta() {
                                 </a>
 
 
-                                <a target="_blank" href="https://play.google.com/store/apps/details?id=io.changex.app"
+                                <a target="_blank"  rel="noreferrer" href="https://play.google.com/store/apps/details?id=io.changex.app"
                                    className="button is-store w-inline-block">
                                     <img src="/images/DW-Google.svg"
                                          loading="lazy"

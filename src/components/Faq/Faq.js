@@ -20,9 +20,9 @@ export default function Faq() {
                                     Frequently Asked
                                 </h2>
                                 <p className="text-size-medium text-align-center">
-                                    Did we miss something? Drop us a line at
+                                    Did we miss something? Drop us a line at&nbsp;
                                     <a href="mailto:support@changex.io?subject=changex%20website"
-                                       className="text-style-link">support@changex.io
+                                       className="text-style-link">support@changex.io&nbsp;
                                     </a>
                                     - we’d love to hear from you.</p>
                             </div>
@@ -49,16 +49,14 @@ export default function Faq() {
                             <div className="slide-from-bottom">
                                 <h3 className="heading-style-h3 text-align-center">Still got questions?</h3>
                                 <p className="text-size-medium text-align-center margin-vertical margin-small">
-                                    Drop us a line at
+                                    Drop us a line at&nbsp;
                                     <a href="mailto:support@changex.io?subject=changex%20website"
                                        className="text-style-link">support@changex.io
                                     </a>
                                     , we’d love to hear from you.
                                 </p>
-                                <div id="w-node-a04bfb96-6220-1485-08a2-45cfc46a9303-0541c3c1"
-                                     className="button-group centered-items">
-                                    <a id="w-node-ed6b061c-b0a7-01e0-7684-22ee82e02d75-0541c3c1"
-                                       href="mailto:support@changex.io?subject=changex%20website"
+                                <div className="button-group centered-items">
+                                    <a href="mailto:support@changex.io?subject=changex%20website"
                                        className="button is-large is-secondary  w-button">Contact Us
                                     </a>
                                 </div>

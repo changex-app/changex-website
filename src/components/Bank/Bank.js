@@ -27,7 +27,7 @@ export default function Bank(){
                                 <h2 className="heading-style-h2 slide-from-bottom">{bankContent.head2}</h2>
                                 <h3 className="heading-style-h5 margin-vertical margin-small slide-from-bottom">Wherever you are</h3>
                                 <p className="text-color-darkgrey text-size-medium margin-bottom margin-huge slide-from-bottom">{bankContent.paragraph}</p>
-                                <a target="_blank" href={bankContent.firebasePage}
+                                <a target="_blank"  rel="noreferrer" href={bankContent.firebasePage}
                                    className="button is-large with-icon width-260 w-inline-block">
                                     <div>Read Whitepaper</div>
                                     <img src="/images/partners/arrow-right-primary.svg" loading="lazy" alt=""></img>

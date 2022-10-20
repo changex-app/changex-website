@@ -86,7 +86,7 @@ export default function Waitlist(){
                                     )}
                                 </div>
                                 <div className="text-size-small">By subscribing you agree to ChangeX&nbsp;
-                                    <a target="_blank" href={waitlistItems.terms}
+                                    <a target="_blank" rel="noreferrer" href={waitlistItems.terms}
                                        className="link">Terms of Service
                                     </a>
                                     &nbsp; and provide consent to receive marketing

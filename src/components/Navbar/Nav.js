@@ -50,7 +50,7 @@ export default function Navigation() {
             <div className="container-large is-nav">
                 <div className="nav_full-wrapper">
                     <div className="nav_left-wrapper">
-                        <a className="nav_brandlink margin-right margin-small w-nav-brand">
+                        <a  href={"#hero"} className="nav_brandlink margin-right margin-small w-nav-brand">
                             <img src={ChangeXLogoColor} loading="lazy" alt="ChangeX Logo in navigation bar" className="nav_logo"></img>
                         </a>
                         <nav role="navigation" className="nav_menu-links w-nav-menu hide-mobile-landscape">
@@ -73,7 +73,7 @@ export default function Navigation() {
                         <div className="nav_stats-wrapper">
                             <div className="padding-small">
                                 <div id="changexPrice" className="text-size-tiny changexprice">$CHANGE:&nbsp;
-                                    <a target="_blank" className="price-highlight" href="https://www.coingecko.com/en/coins/changex" >
+                                    <a target="_blank" rel="noreferrer" className="price-highlight" href="https://www.coingecko.com/en/coins/changex" >
                                         <span>{value}<img style={{marginLeft: '2px'}} src="/images/external_link.svg"/></span>
 
                                     </a></div>
@@ -122,7 +122,7 @@ export default function Navigation() {
                         <div className="nav_stats-wrapper">
                             <div className="padding-small">
                                 <div id="changexPrice2" className="text-size-tiny changexprice">$CHANGE:
-                                    <a href="https://www.coingecko.com/en/coins/changex" target="_blank"
+                                    <a href="https://www.coingecko.com/en/coins/changex" rel="noreferrer" target="_blank"
                                        className="price-highlight">
                                         <span>0.0252
                                             <img src="https://uploads-ssl.webflow.com/63315e7a42bc6afd0341c3bd/633af48efed1b8c1674e5f3e_icn-externallink.svg"
@@ -144,7 +144,7 @@ export default function Navigation() {
                         <div className="button-group centered-items margin-top margin-large spread max-width-full-mobile-landscape">
                             {mobileIcon.map((icon, index) => {
                                 return (
-                                    <a href={icon.href} id={icon.id} target="_blank"
+                                    <a href={icon.href} id={icon.id} target="_blank"  rel="noreferrer"
                                        className="button is-store max-width-full-mobile-landscape w-inline-block">
                                         <img src={icon.src}
                                              loading="lazy" alt={icon.id} width="150">

@@ -44,19 +44,19 @@ export default function Hero(){
                                 </div>
                                 <div style={{opacity:1}}
                                      className=" animate__animated animate__zoomIn animate__delay-1s button-group centered-items margin-top margin-large spread max-width-full-mobile-landscape">
-                                    <a target="_blank" href="https://apps.apple.com/bg/app/changex-wallet/id1613309180"
+                                    <a target="_blank"  rel="noreferrer" href="https://apps.apple.com/bg/app/changex-wallet/id1613309180"
                                        className="button is-store max-width-full-mobile-landscape w-inline-block">
-                                        <img src={DownloadApple} loading="lazy" width="150"></img>
+                                        <img src={DownloadApple} alt="Apple" loading="lazy" width="150"></img>
                                     </a>
-                                    <a target="_blank" href="https://play.google.com/store/apps/details?id=io.changex.app"
+                                    <a target="_blank" rel="noreferrer" href="https://play.google.com/store/apps/details?id=io.changex.app"
                                        className="button is-store max-width-full-mobile-landscape w-inline-block">
-                                        <img src={DownloadGoogle} loading="lazy" width="150"></img>
+                                        <img src={DownloadGoogle} alt="Google" loading="lazy" width="150"></img>
                                     </a>
                                     <a onClick={openModal}  href="src/components/Hero/Hero#"
                                        className="button is-qr w-inline-block">
                                         <img src={DownloadQR}
                                              loading="lazy" width="75" height="50"
-                                             alt="QR code image"
+                                             alt="QR code"
                                              className="qr-small">
                                         </img><p className="text-align-left text-size-regular" style={{width: "min-content"}}>Scan To Download</p>
                                     </a>
@@ -67,7 +67,7 @@ export default function Hero(){
                             <p  style={{opacity:1}}
                                className="max-width-large align-center text-align-center text-size-medium text-left-mobile">Manage,
                                 invest, and grow your wealth with a Euro bank account, access to crypto, and DeFi
-                                investment tools. Spend anywhere with the Changex
+                                investment tools. Spend anywhere with the Changex&nbsp;
                                 <a href="src/components/Hero/Hero" className="text-style-link">Crypto Debit Card.</a>
                             </p>
                         </div>

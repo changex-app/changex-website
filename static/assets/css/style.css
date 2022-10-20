@@ -33,6 +33,7 @@ body {
     font-size: 1rem;
     line-height: 1.5;
     font-weight: 400;
+    margin: 0;
 }
 
 .wrap {
@@ -265,7 +266,7 @@ figcaption {
 }
 
 .margin-small {
-    margin: 0;
+    margin: 1rem;
 }
 
 .margin-medium {
@@ -619,7 +620,7 @@ figcaption {
 }
 
 .text-size-small {
-    font-size: 0.875rem;
+    font-size: 0.725rem;
 }
 
 .heading-style-h4 {
@@ -991,8 +992,7 @@ figcaption {
 }
 
 .text-size-medium {
-    font-size: 1.2rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 400;
     letter-spacing: -0.2px;
 }
@@ -1840,6 +1840,10 @@ figcaption {
     align-items: center;
 }
 
+.footer_logo-wrapper{
+    max-width: 120px;
+}
+
 .text-block-2 {
     color: #e74e2c;
     font-size: 16px;
@@ -1962,12 +1966,6 @@ figcaption {
     margin-bottom: 20px;
     color: #fff;
     font-size: 16px;
-    font-weight: 400;
-}
-
-.body {
-    font-size: 18px;
-    line-height: 1.4;
     font-weight: 400;
 }
 
@@ -2708,7 +2706,7 @@ figcaption {
     }
 
     .text-size-medium {
-        font-size: 1.0rem;
+        font-size: 1.1rem;
     }
 
     .button-group.align-right {
@@ -3111,7 +3109,7 @@ figcaption {
     }
 
     .text-size-medium {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     .button-group.centered-items.margin-top.margin-large {
@@ -3525,7 +3523,7 @@ figcaption {
     }
 
     .text-size-small {
-        font-size: 0.825rem;
+        font-size: 0.725rem;
     }
 
     .heading-style-h4 {

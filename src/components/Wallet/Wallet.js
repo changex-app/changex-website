@@ -36,6 +36,7 @@ export default function Wallet() {
                                                     return (
                                                         <div className="slide01 w-slide">
                                                             <img src={slide.src}
+                                                                 alt=""
                                                                  loading="lazy" width="auto"
                                                                  className="image">
                                                             </img>
@@ -53,13 +54,13 @@ export default function Wallet() {
                                                 <div className="wallet_benefit-wrapper margin-vertical margin-large">
                                                     <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true}
                                                         className="icon-wrapper-100 is-green margin-bottom margin-xhuge slide-from-bottom">
-                                                        <img src={item.src} loading="lazy"></img>
+                                                        <img src={item.src} loading="lazy" alt={item.caption}></img>
                                                     </AnimationOnScroll>
-                                                    <AnimationOnScroll animateIn="animate__fadeInUp" className="margin-bottom margin-huge">
+                                                    <AnimationOnScroll animateIn="animate__fadeInUp"  animateOnce={true} className="margin-bottom margin-huge">
                                                         <h3 className="heading-style-h4 margin-vertical margin-medium slide-from-bottom">{item.caption}</h3>
                                                         <p className="text-color-grey text-size-medium slide-from-bottom">{item.text}</p>
                                                     </AnimationOnScroll>
-                                                    <a href={item.url} target="_blank" alt={item.caption} className="button is-link w-inline-block">
+                                                    <a href={item.url} rel="noreferrer" target="_blank" className="button is-link w-inline-block">
                                                         <div className="text-style-link text-size-medium is-green slide-from-bottom">{item.urlText}</div>
                                                     </a>
                                                 </div>

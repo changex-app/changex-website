@@ -32,7 +32,7 @@ export default function CookieConsentModal(){
                 <div style={{paddingLeft: "2.5rem"}}>
                     <p className="cookiesText">
                                Our website uses "Cookies" so that we can provide services at the highest level to our customers.<br/> By continuing, you agree to their use.
-                               <br/>To find out more information see our <a style={{color: "#3418d8"}} target="_blank" href="https://changex-io.web.app/privacy.html">Privacy policy.</a>
+                               <br/>To find out more information see our <a style={{color: "#3418d8"}} rel="noreferrer"  target="_blank" href="https://changex-io.web.app/privacy.html">Privacy policy.</a>
                     </p>
                 </div>
             </div>
