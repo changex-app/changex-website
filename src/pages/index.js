@@ -27,8 +27,8 @@ const IndexPage = () => {
                 imageAlt={content.metaImageAlt}
                 imageUrl={imageUrl}
             />
-          <Header />
         </div>
+          <Header />
           <CookieConsentModal/>
           <main className="pages">
               <Hero/>

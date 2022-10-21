@@ -2483,6 +2483,13 @@ figcaption {
     display: none;
 }
 
+@media screen and (max-width: 1025px) {
+    .padding-global {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+}
+
 @media screen and (min-width: 1280px) {
     .button.is-qr {
         padding-top: 0.6rem;
@@ -2541,6 +2548,11 @@ figcaption {
 @media screen and (max-width: 991px) {
     .padding-xlarge {
         padding: 3rem;
+    }
+
+    .padding-global {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
     }
 
     .cookiesText{
@@ -2680,11 +2692,6 @@ figcaption {
         font-size: 4rem;
         font-weight: 500;
         letter-spacing: -3.2px;
-    }
-
-    .padding-global {
-        padding-right: 1.5rem;
-        padding-left: 1.5rem;
     }
 
     .heading-style-h4 {
@@ -2857,6 +2864,10 @@ figcaption {
 
     .w-nav-button {
         display: block !important;
+    }
+
+    .is-nav {
+        height: 72px !important;
     }
 
     .cookies {
@@ -3831,4 +3842,12 @@ figcaption {
     font-size: 13px;
     height: 50px;
     width: 100px;
+}
+
+.rs-navbar-brand {
+    padding: 0px 18px !important;
+}
+
+.rs-navbar-item {
+    font-size: 14px;
 }

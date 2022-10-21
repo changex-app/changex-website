@@ -7,8 +7,11 @@ import ChangeXLogoColor from "../../../static/images/ChangeX-LogoColor.svg";
 import QRBlack from "../../../static/images/icn-qr-black.svg";
 import MenuIcon from "../../../static/images/Menu-Icon_1Menu Icon.png";
 import { iconItems, menuItems, mobileIcon } from "./navItems";
-import {fetchApy, fetchData, fetchPrice} from "../../api/fetch";
+import {fetchApy, fetchPrice} from "../../api/fetch";
 import { Link } from "react-scroll";
+
+import {Dropdown, Nav, Navbar} from "rsuite";
+import {CustomNavbar} from "./navcustom";
 
 export default function Navigation() {
 
@@ -33,7 +36,7 @@ export default function Navigation() {
                 }
             })
 
-        setTimeout(fetchData, 30000);
+        setTimeout(fetchPrice,fetchApy, 30000);
 
     },[])
 
@@ -45,32 +48,16 @@ export default function Navigation() {
         setIsNavOpen(current => !current);
     }
 
+    const [activeKey, setActiveKey] = React.useState(null);
+
     return (
+
     <div data-animation="default" className="nav_bar w-nav animate__animated animate__fadeInDown">
         <div className="padding-global is-nav">
-            <div className="container-large is-nav">
+        <div className={'container-large'} >
+            <div style={{height: '200px'}} className="is-nav">
                 <div className="nav_full-wrapper">
-                    <div className="nav_left-wrapper">
-                        <Link to="hero"  smooth={true} className="nav_brandlink margin-right margin-small w-nav-brand">
-                           <img src={ChangeXLogoColor} loading="lazy" alt="ChangeX Logo in navigation bar" className="nav_logo"></img>
-                        </Link>
-                        <nav role="navigation" className="nav_menu-links w-nav-menu hide-mobile-landscape">
-                            {menuItems.map((menu, index) => {
-                                  return (
-                                      <Link
-                                          to={menu.id}
-                                          smooth={true}
-                                          className="nav_link w-nav-link"
-                                          style={{maxWidth: "1376px"}}
-                                          key={index}>{menu.title}
-                                    </Link>
-                                  )
-
-                                    /*<Dropdown placeholder={menu.title}  className={menu.className}/>*/
-
-                            })}
-                        </nav>
-                    </div>
+                    <CustomNavbar activeKey={activeKey} onSelect={setActiveKey} />
                     <div className="nav_right-wrapper hide-mobile-landscape">
                         <div className="nav_stats-wrapper">
                             <div className="padding-small">
@@ -167,5 +154,6 @@ export default function Navigation() {
                          aria-describedby="modal-modal-description">
             </ScanQrModal>
         </Modal>
+    </div>
     </div>
 );}

@@ -51,6 +51,7 @@
     "react-scroll": "^1.8.8",
     "react-slideshow-image": "^4.0.5",
     "react-spinners": "^0.13.6",
+    "rsuite": "^5.20.0",
     "scrollable-component": "^1.2.1",
     "styled-components": "^5.3.6"
   }

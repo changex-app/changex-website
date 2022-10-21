@@ -67,6 +67,20 @@ export const menuItems = [
         className: 'nav_menu-links w-nav-menu',
         submenu: []
     }
+/*    {
+        title: 'Company',
+        url: '/company',
+        id: 'company',
+        className: 'nav_menu-links w-nav-menu',
+        submenu: []
+    },
+    {
+        title: 'Learn',
+        url: '/learn',
+        id: 'learn',
+        className: 'nav_menu-links w-nav-menu',
+        submenu: []
+    }*/
 ];
 
 export const iconItems = [
