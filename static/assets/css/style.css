@@ -1653,9 +1653,6 @@ figcaption {
     cursor: pointer;
 }
 
-.hide-desktop {
-    display: none;
-}
 
 .image {
     width: 100%;
@@ -2885,6 +2882,23 @@ figcaption {
         display: none;
     }
 
+    .is-nav {
+        height: 72px !important;
+    }
+
+    .nav_right-wrapper {
+        flex-direction: column;
+    }
+
+    .nav_stats-wrapper {
+        text-align: left;
+    }
+
+    .nav_menu-links {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
 }
 
 @media screen and (max-width: 845px) {
@@ -3205,7 +3219,7 @@ figcaption {
         position: absolute;
         height: 80vh;
         padding-right: 1rem;
-        /*padding-left: 1rem;*/
+        padding-left: 1rem;
         background-color: #fff;
     }
 
