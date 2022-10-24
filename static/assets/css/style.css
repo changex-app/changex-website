@@ -29,7 +29,7 @@
 body {
     font-family: var(--font);
     color: var(--blackColor);
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 1.5;
     font-weight: 400;
     margin: 0;
@@ -2475,7 +2475,7 @@ figcaption {
 .tab-link.w--current {
     border-left: 2px solid var(--walletItemColor);
     background-color: transparent;
-    color: #fff;
+    color: #fff !important;
 }
 
 .image-hero {

@@ -48,7 +48,7 @@ export default function Card() {
                         <div className="w-layout-grid grid-4">
                             {cardItems.map((card, index)=> {
                                 return (
-                                    <div  className="box-container">
+                                    <div id={index.toString()} className="box-container">
                                         <div className="padding-medium">
                                             <div className="icon-wrapper margin-bottom margin-medium">
                                                 <img src={card.src} loading="lazy" alt="" width={card.width} className="icon"></img>

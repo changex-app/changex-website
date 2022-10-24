@@ -32,11 +32,11 @@ export default function Wealth() {
                                 <div className="tabs-menu w-tab-menu">
                                     {menuTabs.map((item, index)=> {
                                         return (
-                                             <a id={item.id}
+                                             <span id={item.id}
                                                 onClick={() => handleClick(item.id)}
                                                 className={active === item.id ? 'tab-link w-inline-block w-tab-link w--current' : 'tab-link w-inline-block w-tab-link'}>
                                                  <div>{item.title}</div>
-                                             </a>
+                                             </span>
                                         )
                                     })}
                                 </div>

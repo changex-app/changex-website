@@ -29,7 +29,7 @@ export default function Faq() {
                                 <div className="w-layout-grid faq-grid margin-vertical margin-huge slide-from-bottom">
                                     {faqContent.map((faq, index) => {
                                         return (
-                                            <Accordion className="faq-question-bar w-inline-block">
+                                            <Accordion id={index.toString()} className="faq-question-bar w-inline-block">
                                                 <AccordionSummary
                                                     expandIcon={<AddCircle />}
                                                     aria-controls="panel1a-content"

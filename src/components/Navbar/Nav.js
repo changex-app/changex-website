@@ -64,13 +64,12 @@ export default function Navigation() {
                         </Navbar.Brand>
                         <Nav activeKey={activeKey}>
                             {menuItems.map((menu, index) => {
-                                console.warn(menu.id)
                                 if(menu.dropdown === true) {
                                     return (
-                                        <Nav.Menu title={menu.title}>
+                                        <Nav.Menu id={index.toString()} title={menu.title}>
                                             {menu.submenu.map((item, index) => {
                                                 return (
-                                                    <Nav.Item eventKey={index.toString()}>
+                                                    <Nav.Item id={index.toString()} eventKey={index.toString()}>
                                                         {item.title}
                                                     </Nav.Item>
                                                 )
@@ -79,7 +78,7 @@ export default function Navigation() {
                                     )
                                 } else {
                                     return (
-                                        <div style={{display: "inline-block"}}>
+                                        <div id={index.toString()} style={{display: "inline-block"}}>
                                             <Link to={menu.id} smooth={true} style={{color: "#222222"}}>
                                                 <Nav.Item eventKey={index.toString()}>
                                                     {menu.title}
@@ -107,10 +106,9 @@ export default function Navigation() {
                             </div>
                         </div>
                         <ul className="nav_download-wrapper w-list-unstyled">
-
                             {iconItems.map((icon, index) => {
                                 return (
-                                    <li onClick={icon.onclick} id={icon.id} className="nav_download-item">
+                                    <li id={index.toString()} onClick={icon.onclick} id={icon.id} className="nav_download-item">
                                         <a href={icon.href}  className={icon.class}><img src={icon.src} loading="lazy" width="21"></img></a>
                                     </li>
                                 );
@@ -134,7 +132,7 @@ export default function Navigation() {
                  style={{transform: 'translateY(0px)', transition: 'transform 400ms ease 0s'}}>
                 {menuItems.map((menu, index) => {
                     return (
-                        <a  onClick={openNavDropDown} href={menu.id} className="nav_link w-nav-link w--nav-link-open" style={{maxWidth: "1376px"}} key={index}>{menu.title}</a>
+                        <a id={index.toString()} onClick={openNavDropDown} href={menu.id} className="nav_link w-nav-link w--nav-link-open" style={{maxWidth: "1376px"}} key={index}>{menu.title}</a>
                     );
                 })}
 
@@ -166,7 +164,7 @@ export default function Navigation() {
                         <div className="button-group centered-items margin-top margin-large spread max-width-full-mobile-landscape">
                             {mobileIcon.map((icon, index) => {
                                 return (
-                                    <a href={icon.href} id={icon.id} target="_blank"  rel="noreferrer"
+                                    <a id={index.toString()} href={icon.href} id={icon.id} target="_blank"  rel="noreferrer"
                                        className="button is-store max-width-full-mobile-landscape w-inline-block">
                                         <img src={icon.src}
                                              loading="lazy" alt={icon.id} width="150">
@@ -179,7 +177,7 @@ export default function Navigation() {
                 </div>
             </nav>
         </div>}
-        <Modal open={showModal}>
+        <Modal id="modal" open={showModal}>
             <ScanQrModal className="section-scanpopup wf-section"
                          showModal={showModal}
                          setShowModal={setShowModal}

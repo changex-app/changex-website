@@ -520,9 +520,7 @@ textarea.w-select {
     margin-right: auto;
     cursor: pointer;
 }
-.w-nav-link.w--current {
-    color: #0082f3;
-}
+
 .w-nav-menu {
     position: relative;
     float: right;
