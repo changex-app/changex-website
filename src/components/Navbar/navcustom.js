@@ -6,7 +6,7 @@ import { menuItems } from "./navItems";
 
 export const CustomNavbar = ({ onSelect, activeKey, ...props }) => {
     return (
-        <Navbar {...props} style={{background: 'transparent'}} className="nav_menu-links w-nav-menu hide-mobile-landscape">
+        <Navbar {...props} style={{background: 'transparent', height: "57px"}} className="nav_menu-links w-nav-menu hide-mobile-landscape">
             <Navbar.Brand href="#" className="nav_left-wrapper">
                 <Link to="hero"  smooth={true} className="nav_brandlink margin-right margin-small w-nav-brand">
                     <img src={ChangeXLogoColor} loading="lazy" alt="ChangeX Logo in navigation bar" className="nav_logo"></img>
