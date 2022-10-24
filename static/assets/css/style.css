@@ -3,7 +3,6 @@
     --white: #ffffff;
     --blackColor: #222222;
     --current: #1b10be;
-    --current: #1b10be;
     --btnBackground: #f5f5ff;
     --walletItemColor: #11d482;
     --containerLargeWidth: 76rem;
@@ -3848,6 +3847,33 @@ figcaption {
     padding: 0px 18px !important;
 }
 
+/*.rs-dropdown-menu {
+    : -moz-available;
+}*/
+
 .rs-navbar-item {
     font-size: 14px;
+    font-family: Lexend, sans-serif !important;
+}
+
+.rs-navbar-item:focus, .rs-navbar-item:hover {
+    color: var(--current) !important;
+    background: transparent !important;
+}
+
+.rs-dropdown-item {
+    color: var(--blackColor);
+}
+
+.rs-dropdown-item:focus, .rs-dropdown-item:hover {
+    color: var(--current) !important;
+    background: transparent !important;
+}
+
+.rs-navbar-default {
+    color: var(--blackColor);
+}
+
+.rs-navbar-default .rs-navbar-item.rs-navbar-item-active {
+    color: var(--blackColor);
 }

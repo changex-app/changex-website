@@ -14,17 +14,30 @@ export const CustomNavbar = ({ onSelect, activeKey, ...props }) => {
             </Navbar.Brand>
             <Nav onSelect={onSelect} activeKey={activeKey}>
                 {menuItems.map((menu, index) => {
-                    return (
-                        <Nav.Menu title={menu.title}>
-                            {menu.submenu? menu.submenu.map((item, index) => {
-                               return (
-                                   <Nav.Item eventKey={index.toString()}>
-                                       {item.title}
-                                   </Nav.Item>
-                               )
-                            }) : null }
-                        </Nav.Menu>
-                    )
+                    console.warn(menu.id)
+                    if(menu.dropdown === true) {
+                        return (
+                            <Nav.Menu title={menu.title}>
+                                {menu.submenu.map((item, index) => {
+                                    return (
+                                        <Nav.Item eventKey={index.toString()}>
+                                            {item.title}
+                                        </Nav.Item>
+                                    )
+                                })}
+                            </Nav.Menu>
+                        )
+                    } else {
+                        return (
+                            <div style={{display: "inline-block"}}>
+                                <Link to={menu.id} smooth={true} style={{color: "#222222"}}>
+                                    <Nav.Item eventKey={index.toString()}>
+                                        {menu.title}
+                                    </Nav.Item>
+                                </Link>
+                            </div>
+                        )
+                    }
                 })}
             </Nav>
         </Navbar>

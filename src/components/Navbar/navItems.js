@@ -9,6 +9,7 @@ export const menuItems = [
         url: '/wallet',
         id: 'wallet',
         className: 'nav_menu-links w-nav-menu',
+        dropdown: true,
         submenu: [
             {
                 title: 'DeFy Crypto Wallet',
@@ -29,6 +30,7 @@ export const menuItems = [
         url: '/bank',
         id: 'bank',
         className: 'nav_menu-links w-nav-menu',
+        dropdown: true,
         submenu: [
             {
                 title: 'Debit card',
@@ -45,6 +47,7 @@ export const menuItems = [
         url: '/wealth',
         id: 'wealth',
         className: 'nav_menu-links w-nav-menu',
+        dropdown: true,
         submenu: [
             {
                 title: 'Staking',
@@ -65,6 +68,7 @@ export const menuItems = [
         url: '/faqs',
         id: 'faqs',
         className: 'nav_menu-links w-nav-menu',
+        dropdown: false,
         submenu: []
     }
 /*    {
