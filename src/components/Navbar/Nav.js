@@ -56,13 +56,13 @@ export default function Navigation() {
         <div className={'container-large'} >
             <div style={{height: '200px'}} className="is-nav">
                 <div className="nav_full-wrapper">
-                    <Navbar style={{background: 'transparent', height: "57px"}} className="nav_menu-links w-nav-menu hide-mobile-landscape">
+                    <Navbar style={{background: 'transparent', height: "57px"}} className="nav_menu-links w-nav-menu">
                         <Navbar.Brand href="#" className="nav_left-wrapper">
                             <Link to="hero"  smooth={true} className="nav_brandlink margin-right w-nav-brand">
                                 <img src={ChangeXLogoColor} loading="lazy" alt="ChangeX Logo in navigation bar" className="nav_logo"></img>
                             </Link>
                         </Navbar.Brand>
-                        <Nav activeKey={activeKey}>
+                        <Nav activeKey={activeKey} className={'hide-mobile-landscape'}>
                             {menuItems.map((menu, index) => {
                                 if(menu.dropdown === true) {
                                     return (

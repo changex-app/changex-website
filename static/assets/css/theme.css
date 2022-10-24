@@ -554,24 +554,6 @@ textarea.w-select {
     top: 0;
 }
 
-.w-nav-button {
-    position: relative;
-    float: right;
-    padding: 18px;
-    font-size: 24px;
-    display: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    tap-highlight-color: rgba(0, 0, 0, 0);
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.w-nav-button:focus {
-    outline: 0;
-}
-
 .w-tabs {
     position: relative;
 }

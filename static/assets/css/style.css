@@ -146,6 +146,24 @@ blockquote {
 
 }
 
+.w-nav-button {
+    position: relative;
+    float: right;
+    padding: 18px;
+    font-size: 24px;
+    display: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.w-nav-button:focus {
+    outline: 0;
+}
+
 figure {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -438,7 +456,6 @@ figcaption {
 }
 
 .w_nav-overlay {
-    overflow: hidden;
     top: 10%;
     left: 0;
     right: 0;
@@ -2740,8 +2757,8 @@ figcaption {
     }
 
     .nav_full-wrapper {
-        padding-right: 0.685rem;
-        padding-left: 0.685rem;
+        padding-right: 0px;
+        padding-left: 0px;
     }
 
     .hero-background {
@@ -2857,6 +2874,17 @@ figcaption {
         margin-right: auto;
         margin-left: auto;
     }
+}
+
+@media screen and (max-width: 907px) {
+    .w-nav-button {
+        display: block !important;
+    }
+
+    .hide-mobile-landscape {
+        display: none;
+    }
+
 }
 
 @media screen and (max-width: 845px) {
@@ -3170,7 +3198,6 @@ figcaption {
     }
 
     .nav_full-wrapper {
-        padding: 0.5rem;
         border-radius: 0;
     }
 
@@ -3178,8 +3205,12 @@ figcaption {
         position: absolute;
         height: 80vh;
         padding-right: 1rem;
-        padding-left: 1rem;
+        /*padding-left: 1rem;*/
         background-color: #fff;
+    }
+
+    .rs-navbar-brand {
+        padding: 0px !important;
     }
 
     .nav_stats-wrapper {
