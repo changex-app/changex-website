@@ -3,15 +3,15 @@ import { useEffect, useState } from "react";
 import { ScanQrModal } from "../../Utils/ScanQrCode";
 import { Modal } from "@mui/material";
 import 'react-dropdown/style.css';
+import { Link } from "react-scroll";
 import ChangeXLogoColor from "../../../static/images/Logo_navigation.svg";
 import QRBlack from "../../../static/images/icn-qr-black.svg";
 import MenuIcon from "../../../static/images/Menu-Icon_1Menu Icon.png";
 import { iconItems, menuItems, mobileIcon } from "./navItems";
-import {fetchApy, fetchPrice} from "../../api/fetch";
-import { Link } from "react-scroll";
+import { fetchApy, fetchPrice } from "../../api/fetch";
 
-import {Dropdown, Nav, Navbar} from "rsuite";
-import {CustomNavbar} from "./navcustom";
+
+import { Nav, Navbar } from "rsuite";
 
 export default function Navigation() {
 
@@ -19,7 +19,6 @@ export default function Navigation() {
     const [apy, setApy] = useState('$CurrentAPY');
     const [openNav, setIsNavOpen] = useState(false);
     const [showModal, setShowModal] = useState(false)
-    const [dropdown, setDropdown] = useState(false)
 
     useEffect( () => {
         fetchPrice()
