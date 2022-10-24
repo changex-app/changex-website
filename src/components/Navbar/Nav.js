@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { ScanQrModal } from "../../Utils/ScanQrCode";
 import { Modal } from "@mui/material";
 import 'react-dropdown/style.css';
-import ChangeXLogoColor from "../../../static/images/ChangeX-LogoColor.svg";
+import ChangeXLogoColor from "../../../static/images/Logo_navigation.svg";
 import QRBlack from "../../../static/images/icn-qr-black.svg";
 import MenuIcon from "../../../static/images/Menu-Icon_1Menu Icon.png";
 import { iconItems, menuItems, mobileIcon } from "./navItems";
@@ -57,7 +57,41 @@ export default function Navigation() {
         <div className={'container-large'} >
             <div style={{height: '200px'}} className="is-nav">
                 <div className="nav_full-wrapper">
-                    <CustomNavbar activeKey={activeKey} onSelect={setActiveKey} />
+                    <Navbar style={{background: 'transparent', height: "57px"}} className="nav_menu-links w-nav-menu hide-mobile-landscape">
+                        <Navbar.Brand href="#" className="nav_left-wrapper">
+                            <Link to="hero"  smooth={true} className="nav_brandlink margin-right w-nav-brand">
+                                <img src={ChangeXLogoColor} loading="lazy" alt="ChangeX Logo in navigation bar" className="nav_logo"></img>
+                            </Link>
+                        </Navbar.Brand>
+                        <Nav activeKey={activeKey}>
+                            {menuItems.map((menu, index) => {
+                                console.warn(menu.id)
+                                if(menu.dropdown === true) {
+                                    return (
+                                        <Nav.Menu title={menu.title}>
+                                            {menu.submenu.map((item, index) => {
+                                                return (
+                                                    <Nav.Item eventKey={index.toString()}>
+                                                        {item.title}
+                                                    </Nav.Item>
+                                                )
+                                            })}
+                                        </Nav.Menu>
+                                    )
+                                } else {
+                                    return (
+                                        <div style={{display: "inline-block"}}>
+                                            <Link to={menu.id} smooth={true} style={{color: "#222222"}}>
+                                                <Nav.Item eventKey={index.toString()}>
+                                                    {menu.title}
+                                                </Nav.Item>
+                                            </Link>
+                                        </div>
+                                    )
+                                }
+                            })}
+                        </Nav>
+                    </Navbar>
                     <div className="nav_right-wrapper hide-mobile-landscape">
                         <div className="nav_stats-wrapper">
                             <div className="padding-small">

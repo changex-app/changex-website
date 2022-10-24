@@ -1,10 +1,11 @@
+/*
 import * as React from 'react'
 import { Navbar, Nav } from 'rsuite';
 import ChangeXLogoColor from "../../../static/images/ChangeX-LogoColor.svg";
 import {Link} from "react-scroll";
 import { menuItems } from "./navItems";
 
-export const CustomNavbar = ({ onSelect, activeKey, ...props }) => {
+export const RightNavbar = ({ onSelect, activeKey, ...props }) => {
     return (
         <Navbar {...props} style={{background: 'transparent', height: "57px"}} className="nav_menu-links w-nav-menu hide-mobile-landscape">
             <Navbar.Brand href="#" className="nav_left-wrapper">
@@ -43,3 +44,4 @@ export const CustomNavbar = ({ onSelect, activeKey, ...props }) => {
         </Navbar>
     );
 };
+*/

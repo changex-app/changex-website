@@ -1,7 +1,8 @@
 import * as React from "react";
-import ChangeXLogoColor from "/static/images/ChangeX_Logo.svg";
+import ChangeXLogoColor from "/static/images/Logo_footer.svg";
 import TelegramPlane from "/static/images/cib_telegram-plane.svg";
 import CarbonLogo from "/static/images/carbon_logo-medium.svg";
+import { Link } from "react-scroll";
 
 export default function Footer(){
     return(
@@ -10,10 +11,9 @@ export default function Footer(){
                 <div className="container-large">
                     <div className="padding-section-small is-footer">
                         <div className="w-layout-grid footer-grid">
-                            <a  href="#"
-                               className="footer_logo-wrapper w-inline-block"><img src={ChangeXLogoColor}
-                                                                                   loading="lazy"
-                                                                                   ></img></a>
+                           <Link to="hero" smooth={true} className="footer_logo-wrapper w-inline-block">
+                                   <img src={ChangeXLogoColor} loading="lazy"></img>
+                           </Link>
                             <div className="button-group">
                                 <a target="_blank" rel="noreferrer"  href="https://firebasestorage.googleapis.com/v0/b/changex-io.appspot.com/o/changex-whitepaper-v4.pdf?alt=media&amp;token=85d7033d-ce62-4fd2-aefd-b50f2a758530"
                                    className="button is-link w-inline-block">

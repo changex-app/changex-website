@@ -1238,7 +1238,7 @@ figcaption {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex;
+    display: flex !important;
 }
 
 .nav_bar {
@@ -1841,6 +1841,7 @@ figcaption {
 
 .footer_logo-wrapper{
     max-width: 120px;
+    align-self: center;
 }
 
 .text-block-2 {

@@ -52,14 +52,15 @@ export default function Hero(){
                                        className="button is-store max-width-full-mobile-landscape w-inline-block">
                                         <img src={DownloadGoogle} alt="Google" loading="lazy" width="150"></img>
                                     </a>
-                                    <a onClick={openModal}  href="src/components/Hero/Hero#"
+                                    <button onClick={openModal}
                                        className="button is-qr w-inline-block">
                                         <img src={DownloadQR}
                                              loading="lazy" width="75" height="50"
                                              alt="QR code"
                                              className="qr-small">
-                                        </img><p className="text-align-left text-size-regular" style={{width: "min-content"}}>Scan To Download</p>
-                                    </a>
+                                        </img>
+                                        <p className="text-align-left text-size-regular" style={{width: "min-content"}}>Scan To Download</p>
+                                    </button>
                                 </div>
                             </div>
                         </div>

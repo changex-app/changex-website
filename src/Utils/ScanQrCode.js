@@ -20,12 +20,12 @@ export const ScanQrModal = ({showModal, setShowModal}) =>{
                                 <div>Close</div>
                             </button>
                         </div>
-                        <a onClick={() => setShowModal(prev => !prev)}  href="#" className="close-link w-inline-block">
+                        <button onClick={() => setShowModal(prev => !prev)}  className="close-link w-inline-block">
                             <img
                                 src="https://uploads-ssl.webflow.com/63315e7a42bc6afd0341c3bd/63366db0841f5102c5002c07_icn-close.svg"
                                 loading="lazy" alt="">
                             </img>
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div> : null}</>
