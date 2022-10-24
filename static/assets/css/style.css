@@ -2878,6 +2878,12 @@ figcaption {
         display: block !important;
     }
 
+    .padding-global {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+
     .hide-mobile-landscape {
         display: none;
     }
@@ -2897,6 +2903,11 @@ figcaption {
     .nav_menu-links {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
+    }
+
+    .w-nav-menu {
+        float: left !important;
+        height: auto !important;
     }
 
 }
@@ -3921,4 +3932,10 @@ figcaption {
 
 .rs-navbar-default .rs-navbar-item.rs-navbar-item-active {
     color: var(--blackColor);
+}
+
+.rs-navbar-mobile {
+    display: flex;
+    flex-direction: column;
+    float: left;
 }

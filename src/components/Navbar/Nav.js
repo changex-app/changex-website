@@ -138,13 +138,36 @@ export default function Navigation() {
         {openNav &&  <div className="w_nav-overlay">
             <nav role="navigation" className="nav_menu-links w-nav-menu" data-nav-menu-open=""
                  style={{transform: 'translateY(0px)', transition: 'transform 400ms ease 0s'}}>
-                {menuItems.map((menu, index) => {
-                    return (
-                        <Link to={menu.id} smooth={true} id={index.toString()} onClick={openNavDropDown} href={menu.id} className="nav_link w-nav-link w--nav-link-open" style={{maxWidth: "1376px"}} key={index}>{menu.title}</Link>
-                    );
-                })}
-
-                <div className="hide-desktop">
+                        <Navbar style={{background: 'transparent', height: "57px"}} className="nav_menu-links w-nav-menu">
+                            <Nav activeKey={activeKey} className="rs-navbar-mobile">
+                                {menuItems.map((menu, index) => {
+                                    if(menu.dropdown === true) {
+                                        return (
+                                            <Nav.Menu placement={"rightStart"} id={index.toString()} title={menu.title}>
+                                                {menu.submenu.map((item, index) => {
+                                                    return (
+                                                        <Nav.Item id={index.toString()} eventKey={index.toString()}>
+                                                            {item.title}
+                                                        </Nav.Item>
+                                                    )
+                                                })}
+                                            </Nav.Menu>
+                                        )
+                                    } else {
+                                        return (
+                                            <div id={index.toString()} style={{display: "inline-block"}}>
+                                                <Link to={menu.id}  smooth={true} style={{color: "#222222"}}>
+                                                    <Nav.Item  onClick={openNavDropDown} eventKey={index.toString()}>
+                                                        {menu.title}
+                                                    </Nav.Item>
+                                                </Link>
+                                            </div>
+                                        )
+                                    }
+                                })}
+                            </Nav>
+                        </Navbar>
+                <div className="infotainment">
                     <div className="nav_right-wrapper margin-top margin-huge">
 
                         <div className="nav_stats-wrapper">

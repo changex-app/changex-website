@@ -470,6 +470,8 @@ textarea.w-select {
         padding-left: 10px;
     }
 }
+
+w-nav-menu-mobile
 /**
  * ## Note
  * Safari (on both iOS and OS X) does not handle viewport units (vh, vw) well.
@@ -528,7 +530,8 @@ textarea.w-select {
     font-size: 1.0rem;
 }
 [data-nav-menu-open] {
-    display: block !important;
+    display: grid !important;
+    flex-direction: column;
     top: 100%;
     left: 0;
     right: 0;
