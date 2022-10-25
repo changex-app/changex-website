@@ -3,7 +3,6 @@ import CookieConsentModal from "../Utils/CookieConsent"
 import Header from "../components/header";
 import Footer from "../components/Footer";
 import MetaDecorator from "../Utils/MetaDecorator";
-import content from "../../static/assets/content/content.json";
 import Hero from "../components/Hero/Hero";
 import Bank from "../components/Bank/Bank";
 import Card from "../components/Card/Card";
@@ -14,12 +13,15 @@ import Press from "../components/Press/Press";
 import Partners from "../components/Partners/Partners";
 import Cta from "../components/Cta/Cta";
 import Faq from "../components/Faq/Faq";
-
+import content from "../../static/assets/content/content.json";
+import Layout from "../components/Layout/Layout";
 const imageUrl = "/assets/images/Changex-OG.jpeg"
 
 const IndexPage = () => {
   return (
+
       <>
+      <Layout>
         <div className="wrap">
             <MetaDecorator
                 description={content.pageDescription}
@@ -28,7 +30,6 @@ const IndexPage = () => {
                 imageUrl={imageUrl}
             />
         </div>
-          <Header />
           <CookieConsentModal/>
           <main className="pages">
               <Hero/>
@@ -41,8 +42,8 @@ const IndexPage = () => {
               <Faq/>
               <Press/>
               <Cta/>
-              <Footer/>
-          </main>
+        </main>
+      </Layout>
          </>
   );
 };

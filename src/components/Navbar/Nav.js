@@ -9,14 +9,12 @@ import QRBlack from "../../../static/images/icn-qr-black.svg";
 import MenuIcon from "../../../static/images/Menu-Icon_1Menu Icon.png";
 import { iconItems, menuItems, mobileIcon } from "./navItems";
 import { fetchApy, fetchPrice } from "../../api/fetch";
-
-
 import { Nav, Navbar } from "rsuite";
 
 export default function Navigation() {
 
-    const [value, setValue] = useState('$CurrentPrice');
-    const [apy, setApy] = useState('$CurrentAPY');
+    const [value, setValue] = useState('$CHANGE Price');
+    const [apy, setApy] = useState('$CHANGE');
     const [openNav, setIsNavOpen] = useState(false);
     const [showModal, setShowModal] = useState(false)
 
@@ -77,9 +75,11 @@ export default function Navigation() {
                                         <Nav.Menu id={index.toString()} title={menu.title}>
                                             {menu.submenu.map((item, index) => {
                                                 return (
-                                                    <Nav.Item id={index.toString()} eventKey={index.toString()}>
-                                                        {item.title}
-                                                    </Nav.Item>
+                                                    <a href={item.url}>
+                                                        <Nav.Item id={index.toString()} eventKey={index.toString()}>
+                                                            {item.title}
+                                                        </Nav.Item>
+                                                    </a>
                                                 )
                                             })}
                                         </Nav.Menu>
@@ -146,9 +146,12 @@ export default function Navigation() {
                                             <Nav.Menu className="mobileNavBtns" placement={"rightStart"} id={index.toString()} title={menu.title}>
                                                 {menu.submenu.map((item, index) => {
                                                     return (
-                                                        <Nav.Item id={index.toString()} eventKey={index.toString()}>
-                                                            {item.title}
-                                                        </Nav.Item>
+                                                        <a href={item.url}>
+                                                            <Nav.Item id={index.toString()} eventKey={index.toString()}>
+                                                                {item.title}
+                                                            </Nav.Item>
+                                                        </a>
+
                                                     )
                                                 })}
                                             </Nav.Menu>

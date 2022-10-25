@@ -2060,6 +2060,7 @@ figcaption {
 
 .legal_links:hover {
     text-decoration: underline;
+    color: var(--backgroundColorBlack);
 }
 
 .tabs-menu {
