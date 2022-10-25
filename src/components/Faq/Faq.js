@@ -61,7 +61,7 @@ export default function Faq() {
                                     </a>
                                 </div>
                             </div>
-                        </AnimationOnScroll>>
+                        </AnimationOnScroll>
                     </div>
                 </div>
             </div>
