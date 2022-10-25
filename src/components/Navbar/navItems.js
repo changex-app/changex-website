@@ -13,15 +13,15 @@ export const menuItems = [
         submenu: [
             {
                 title: 'DeFy Crypto Wallet',
-                url: 'wallet/defycryptowallet',
+                url: 'defycryptowallet',
             },
             {
                 title: 'Swap Crypto',
-                url: 'wallet/swapcrypto',
+                url: 'swapcrypto',
             },
             {
                 title: 'Buy and Sell crypto',
-                url: 'wallet/buysellcrypto',
+                url: 'buysellcrypto',
             },
         ]
     },
@@ -34,11 +34,11 @@ export const menuItems = [
         submenu: [
             {
                 title: 'Debit card',
-                url: 'bank/debitcard',
+                url: 'debitcard',
             },
             {
                 title: 'SEPA Bank Account',
-                url: 'bank/sepabankaccount',
+                url: 'sepabankaccount',
             }
         ]
     },
@@ -51,15 +51,15 @@ export const menuItems = [
         submenu: [
             {
                 title: 'Staking',
-                url: 'wealth/staking',
+                url: 'staking',
             },
             {
                 title: 'Lending',
-                url: 'wealth/sending',
+                url: 'lending',
             },
             {
                 title: 'Savings',
-                url: 'wealth/savings'
+                url: 'savings'
             },
         ]
     },

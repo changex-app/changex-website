@@ -63,10 +63,10 @@ export default function Navigation() {
             <div style={{height: '200px'}} className="is-nav">
                 <div className="nav_full-wrapper">
                     <Navbar style={{background: 'transparent', height: "57px"}} className="nav_menu-links w-nav-menu">
-                        <Navbar.Brand href="#" className="nav_left-wrapper">
-                            <Link to="hero"  smooth={true} className="nav_brandlink margin-right w-nav-brand">
+                        <Navbar.Brand href="/" className="nav_left-wrapper">
+                            <a  href='/'  className="nav_brandlink margin-right w-nav-brand">
                                 <img src={ChangeXLogoColor} loading="lazy" alt="ChangeX Logo in navigation bar" className="nav_logo"></img>
-                            </Link>
+                            </a>
                         </Navbar.Brand>
                         <Nav activeKey={activeKey} className={'hide-mobile-landscape'}>
                             {menuItems.map((menu, index) => {
@@ -75,7 +75,7 @@ export default function Navigation() {
                                         <Nav.Menu id={index.toString()} title={menu.title}>
                                             {menu.submenu.map((item, index) => {
                                                 return (
-                                                    <a href={item.url}>
+                                                    <a href={'/'+ menu.id +`/`+ item.url}>
                                                         <Nav.Item id={index.toString()} eventKey={index.toString()}>
                                                             {item.title}
                                                         </Nav.Item>
