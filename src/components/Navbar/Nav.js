@@ -143,7 +143,7 @@ export default function Navigation() {
                                 {menuItems.map((menu, index) => {
                                     if(menu.dropdown === true) {
                                         return (
-                                            <Nav.Menu placement={"rightStart"} id={index.toString()} title={menu.title}>
+                                            <Nav.Menu className="mobileNavBtns" placement={"rightStart"} id={index.toString()} title={menu.title}>
                                                 {menu.submenu.map((item, index) => {
                                                     return (
                                                         <Nav.Item id={index.toString()} eventKey={index.toString()}>
@@ -155,7 +155,7 @@ export default function Navigation() {
                                         )
                                     } else {
                                         return (
-                                            <div id={index.toString()} style={{display: "inline-block"}}>
+                                            <div  className="mobileNavBtns" id={index.toString()} style={{display: "inline-block"}}>
                                                 <Link to={menu.id}  smooth={true} style={{color: "#222222"}}>
                                                     <Nav.Item  onClick={openNavDropDown} eventKey={index.toString()}>
                                                         {menu.title}
@@ -169,7 +169,6 @@ export default function Navigation() {
                         </Navbar>
                 <div className="infotainment">
                     <div className="nav_right-wrapper margin-top margin-huge">
-
                         <div className="nav_stats-wrapper">
                             <div className="padding-small">
                                 <div id="changexPrice2" className="text-size-tiny changexprice">$CHANGE:
@@ -184,14 +183,12 @@ export default function Navigation() {
                                 </div>
                             </div>
                         </div>
-
                         <div className="nav_stats-wrapper">
                             <div className="padding-small">
                                 <div id="changexApy2" className="text-size-tiny text-color-black changexapy">APY: <b>63.08%<b></b></b>
                                 </div>
                             </div>
                         </div>
-
                         <div className="button-group centered-items margin-top margin-large spread max-width-full-mobile-landscape">
                             {mobileIcon.map((icon, index) => {
                                 return (

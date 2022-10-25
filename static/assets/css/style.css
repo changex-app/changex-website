@@ -3942,3 +3942,16 @@ figcaption {
     flex-direction: column;
     float: left;
 }
+
+.infotainment {
+    margin-bottom: 1.3rem;
+}
+
+.mobileNavBtns  a {
+    padding-left: 0 !important;
+    color: var(--blackColor);
+}
+.mobileNavBtns > div > a > a {
+    padding-left: 0 !important;
+    color: var(--blackColor);
+}
