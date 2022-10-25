@@ -146,7 +146,7 @@ export default function Navigation() {
                                             <Nav.Menu className="mobileNavBtns" placement={"rightStart"} id={index.toString()} title={menu.title}>
                                                 {menu.submenu.map((item, index) => {
                                                     return (
-                                                        <a href={item.url}>
+                                                        <a href={'/'+ menu.id +`/`+ item.url}>
                                                             <Nav.Item id={index.toString()} eventKey={index.toString()}>
                                                                 {item.title}
                                                             </Nav.Item>
