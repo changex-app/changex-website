@@ -2910,6 +2910,9 @@ figcaption {
         height: auto !important;
     }
 
+    .nav_full-wrapper {
+        margin-top: 0 !important;
+    }
 }
 
 @media screen and (max-width: 845px) {
