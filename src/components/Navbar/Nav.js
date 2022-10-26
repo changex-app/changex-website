@@ -17,6 +17,7 @@ export default function Navigation() {
     const [apy, setApy] = useState('$CHANGE');
     const [openNav, setIsNavOpen] = useState(false);
     const [showModal, setShowModal] = useState(false)
+    const [activeKey, setActiveKey] = React.useState(null);
 
     useEffect( () => {
         fetchPrice()
@@ -52,8 +53,6 @@ export default function Navigation() {
     function openNavDropDown() {
         setIsNavOpen(current => !current);
     }
-
-    const [activeKey, setActiveKey] = React.useState(null);
 
     return (
 

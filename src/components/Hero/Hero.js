@@ -8,7 +8,7 @@ import { useState } from "react";
 import { ScanQrModal } from "../../Utils/ScanQrCode";
 import {StaticImage} from "gatsby-plugin-image";
 
-export default function Hero(){
+export default function Hero({title}){
 
     const [showModal, setShowModal] = useState(false)
 
@@ -38,7 +38,7 @@ export default function Hero(){
                                     <div
                                          className="text-cut-off">
                                         <h1 className="heading-style-h1 text-left-mobile animate__animated animate__fadeInUp animate__delay-1s">
-                                            Mobile banking meets decentralized finance
+                                            {title}
                                         </h1>
                                     </div>
                                 </div>

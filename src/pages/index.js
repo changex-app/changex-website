@@ -1,7 +1,5 @@
 import * as React from "react";
 import CookieConsentModal from "../Utils/CookieConsent"
-import Header from "../components/header";
-import Footer from "../components/Footer";
 import MetaDecorator from "../Utils/MetaDecorator";
 import Hero from "../components/Hero/Hero";
 import Bank from "../components/Bank/Bank";
@@ -32,7 +30,7 @@ const IndexPage = () => {
         </div>
           <CookieConsentModal/>
           <main className="pages">
-              <Hero/>
+              <Hero title='Mobile Banking Meets Decantralized Finance'/>
               <Wallet/>
               <Bank/>
               <Card/>
