@@ -1,12 +1,12 @@
 import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
-import {Link} from "react-router-dom";
 import Navigation from "../components/Navbar/Nav";
+import MetaDecorator from "../Utils/MetaDecorator";
 
 const NotFoundPage = () => {
   return (
       <>
-      <Navigation/>
+      <MetaDecorator/>
       <main className="pages">
       <section id="#404" className="section_hero">
         <StaticImage src={"../../../static/images/Hero-BGimg-mobile.png"} loading="lazy" className="image-hero" alt=""></StaticImage>
@@ -32,9 +32,8 @@ const NotFoundPage = () => {
         </div>
       </section>
       </main>
-
-      </>
-  );
+    </>
+  )
 };
 
 export default NotFoundPage;

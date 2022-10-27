@@ -1,5 +1,5 @@
 import * as React from "react";
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import CookieConsentModal from "../Utils/CookieConsent"
 import MetaDecorator from "../Utils/MetaDecorator";
@@ -16,12 +16,13 @@ import Lending from "./wealth/lending";
 import Staking from "./wealth/staking";
 import Savings from "./wealth/savings";
 import NotFoundPage from "./404";
+import {NotFound} from "./NotFound";
 const imageUrl = "/assets/images/Changex-OG.jpeg"
 
 const IndexPage = () => {
 
     return (
-      <BrowserRouter>
+      <Router>
           <MetaDecorator
               description={content.pageDescription}
               title={content.pageTitle}
@@ -32,7 +33,7 @@ const IndexPage = () => {
               <Navigation/>
               <main className="pages">
                   <Routes >
-                          <Route path="/*" element={ <Home/> } />
+                          <Route path="/" element={ <Home/> } />
                           <Route path="/home" element={ <Home/> } />
                           <Route path="/bank/debitcard/" element={ <DebitCard/> } />
                           <Route path="/bank/sepabankaccount/" element={ <SepaBankAccount/> } />
@@ -42,11 +43,11 @@ const IndexPage = () => {
                           <Route path="/wealth/lending/" element={ <Lending/> } />
                           <Route path="/wealth/savings/" element={ <Savings/> } />
                           <Route path="/wealth/staking/" element={ <Staking/> } />
-                          <Route path="*" element={ <NotFoundPage/> }/>
+                          <Route path="*" element={ <NotFound/> }/>
                   </Routes>
               </main>
               <Footer/>
-      </BrowserRouter>
+      </Router>
 
   );
 };
