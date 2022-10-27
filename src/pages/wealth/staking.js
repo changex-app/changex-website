@@ -1,6 +1,6 @@
 import * as React from "react";
-import Layout from "../../components/Layout/Layout";
 import Hero from "../../components/Hero/Hero";
+import Layout from "../../components/Layout/Layout";
 
 export default function Staking(){
     return (

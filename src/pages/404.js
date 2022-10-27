@@ -1,9 +1,14 @@
 import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
+import {Link} from "react-router-dom";
+import Navigation from "../components/Navbar/Nav";
 
-export function NotFoundPage() {
+const NotFoundPage = () => {
   return (
-      <section id="#404" className="section_404">
+      <>
+      <Navigation/>
+      <main className="pages">
+      <section id="#404" className="section_hero">
         <StaticImage src={"../../../static/images/Hero-BGimg-mobile.png"} loading="lazy" className="image-hero" alt=""></StaticImage>
         <div className="hero-background"></div>
         <div className="hero-background right"></div>
@@ -16,7 +21,7 @@ export function NotFoundPage() {
                     <div
                         className="text-cut-off">
                       <h1 className="heading-style-h1 text-left-mobile">
-                        Page Does Not Exists Yet , or never did !
+                        Page Does Not Exists Yet or never did !
                       </h1>
                     </div>
                   </div>
@@ -26,5 +31,10 @@ export function NotFoundPage() {
           </div>
         </div>
       </section>
-  )
-}
+      </main>
+
+      </>
+  );
+};
+
+export default NotFoundPage;

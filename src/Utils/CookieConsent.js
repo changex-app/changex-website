@@ -1,32 +1,20 @@
 import * as React from "react";
 import CookieConsent from "react-cookie-consent";
-import {containerClasses} from "@mui/material";
 
 export default function CookieConsentModal(){
     return (
         <div>
-
-
         <CookieConsent containerClasses="cookies animate__animated animate__fadeInUp"
                        overlayClasses="content"
             location="bottom"
             buttonText="Continue"
             cookieName="changex.io-cookie-concent"
-/*            enableDeclineButton='true'*/
             cookieSecurity='true'
             flipButtons='true'
             declineButtonClasses="declineBtn"
             expires={30}
             buttonClasses="accept"
             buttonWrapperClasses="btnWrrapper"
-            onDecline={() => {
-            }}
-            onAccept={(acceptedByScrolling) => {
-                if (acceptedByScrolling) {
-                    // triggered if user scrolls past threshold
-                } else {
-                }
-            }}
         >
             <div className='cookies_wrappers'>
                 <div style={{paddingLeft: "2.5rem"}}>

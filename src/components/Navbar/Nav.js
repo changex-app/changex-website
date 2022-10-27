@@ -18,6 +18,7 @@ export default function Navigation() {
     const [apy, setApy] = useState('$CHANGE');
     const [openNav, setIsNavOpen] = useState(false);
     const [showModal, setShowModal] = useState(false)
+    const [navItem, setNavItem] = useState('/')
     const [activeKey, setActiveKey] = React.useState(null);
 
     useEffect( () => {
@@ -64,9 +65,9 @@ export default function Navigation() {
                 <div className="nav_full-wrapper">
                     <Navbar style={{background: 'transparent', height: "57px"}} className="nav_menu-links w-nav-menu">
                         <Navbar.Brand href="/" className="nav_left-wrapper">
-                            <a  href='/'  className="nav_brandlink margin-right w-nav-brand">
-                                <img src={ChangeXLogoColor} loading="lazy" alt="ChangeX Logo in navigation bar" className="nav_logo"></img>
-                            </a>
+                            <div className="nav_brandlink margin-right w-nav-brand">
+                                <Link to="/home"><img src={ChangeXLogoColor} loading="lazy" alt="ChangeX Logo in navigation bar" className="nav_logo"></img></Link>
+                            </div>
                         </Navbar.Brand>
                         <Nav activeKey={activeKey} className={'hide-mobile-landscape'}>
                             {menuItems.map((menu, index) => {
@@ -75,7 +76,7 @@ export default function Navigation() {
                                         <Nav.Menu id={index.toString()} title={menu.title}>
                                             {menu.submenu.map((item, index) => {
                                                 return (
-                                                    <Link to={'/'+ menu.id +`/`+ item.url}>
+                                                    <Link to={menu.id +`/`+ item.url}>
                                                         <Nav.Item id={index.toString()} eventKey={index.toString()}>
                                                             {item.title}
                                                         </Nav.Item>

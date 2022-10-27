@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `/changex-website`,
-    siteUrl: `https://www.changex.io`
+    title: `changex`,
+    siteUrl: `https://www.changex.io`,
+    description: `Non-custodial DeFi wallet with integrated banking and Visa Debit Card. Buy crypto, invest, and grow your wealth on easy mode.`
   },
   plugins: [{
     resolve: 'gatsby-plugin-google-analytics',
