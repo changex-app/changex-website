@@ -4,12 +4,10 @@ import Hero from "../../components/Hero/Hero";
 
 export default function Lending(){
     return (
-        <Layout>
-            <main className="pages">
-                <Hero title={'Lending'}/>
-                <section id="lending">Lending</section>
-            </main>
-        </Layout>
+        <>
+            <Hero title={'Lending'}/>
+            <section id="lending"></section>
+        </>
 
     )
 }

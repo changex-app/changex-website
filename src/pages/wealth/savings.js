@@ -4,11 +4,9 @@ import Hero from "../../components/Hero/Hero";
 
 export default function Savings(){
     return (
-        <Layout>
-            <main className="pages">
-                <Hero title={'Savings'}/>
-                <section id="savings"></section>
-            </main>
-        </Layout>
+       <>
+           <Hero title={'Savings'}/>
+           <section id="savings"/>
+       </>
     )
 }

@@ -4,11 +4,9 @@ import Hero from "../../components/Hero/Hero";
 
 export default function Staking(){
     return (
-        <Layout>
-            <main className="pages">
-                <Hero title={'Staking'}/>
-                <section id="staking"></section>
-            </main>
-        </Layout>
+        <>
+            <Hero title={'Staking'}/>
+            <section id="staking"></section>
+        </>
     )
 }

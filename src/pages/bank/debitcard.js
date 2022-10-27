@@ -4,11 +4,9 @@ import Hero from "../../components/Hero/Hero";
 
 export default function DebitCard(){
     return (
-        <Layout>
-            <main className="pages">
-                <Hero title={'Debit Card'}/>
-                <section id="debitCard"></section>
-            </main>
-        </Layout>
+        <>
+            <Hero title={'Debit Card'}/>
+            <section id="debitCard"></section>
+        </>
     )
 }

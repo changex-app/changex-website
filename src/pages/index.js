@@ -1,48 +1,49 @@
 import * as React from "react";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import CookieConsentModal from "../Utils/CookieConsent"
 import MetaDecorator from "../Utils/MetaDecorator";
-import Hero from "../components/Hero/Hero";
-import Bank from "../components/Bank/Bank";
-import Card from "../components/Card/Card";
-import Waitlist from "../components/Waitlist/Waitlist";
-import Wealth from "../components/Wealth/Wealth";
-import Wallet from "../components/Wallet/Wallet";
-import Press from "../components/Press/Press";
-import Partners from "../components/Partners/Partners";
-import Cta from "../components/Cta/Cta";
-import Faq from "../components/Faq/Faq";
+import Home from "../components/Home/Home";
 import content from "../../static/assets/content/content.json";
-import Layout from "../components/Layout/Layout";
+import Navigation from "../components/Navbar/Nav";
+import Footer from "../components/Footer";
+import DebitCard from "./bank/debitcard";
+import SepaBankAccount from "./bank/sepabankaccount";
+import BuySellCrypto from "./wallet/buysellcrypto";
+import DefyCryptoWallet from "./wallet/defycryptowallet";
+import SwapCrypto from "./wallet/swapcrypto";
+import Lending from "./wealth/lending";
+import Staking from "./wealth/staking";
+import Savings from "./wealth/savings";
 const imageUrl = "/assets/images/Changex-OG.jpeg"
 
 const IndexPage = () => {
-  return (
 
-      <>
-      <Layout>
-        <div className="wrap">
-            <MetaDecorator
-                description={content.pageDescription}
-                title={content.pageTitle}
-                imageAlt={content.metaImageAlt}
-                imageUrl={imageUrl}
-            />
-        </div>
+  return (
+      <BrowserRouter>
+          <MetaDecorator
+              description={content.pageDescription}
+              title={content.pageTitle}
+              imageAlt={content.metaImageAlt}
+              imageUrl={imageUrl}
+          />
           <CookieConsentModal/>
-          <main className="pages">
-              <Hero title='Mobile Banking Meets Decantralized Finance'/>
-              <Wallet/>
-              <Bank/>
-              <Card/>
-              <Waitlist/>
-              <Wealth/>
-              <Partners/>
-              <Faq/>
-              <Press/>
-              <Cta/>
-        </main>
-      </Layout>
-         </>
+              <Navigation/>
+              <main className="pages">
+                  <Routes >
+                          <Route path="/" element={ <Home/> } />
+                          <Route path="/bank/debitcard" element={ <DebitCard/> } />
+                          <Route path="/bank/sepabankaccount" element={ <SepaBankAccount/> } />
+                          <Route path="/wallet/buysellcrypto" element={ <BuySellCrypto />} />
+                          <Route path="/wallet/defycryptowallet" element={ <DefyCryptoWallet/> } />
+                          <Route path="/wallet/swapcrypto" element={ <SwapCrypto/> } />
+                          <Route path="/wealth/lending" element={ <Lending/> } />
+                          <Route path="/wealth/savings" element={ <Savings/> } />
+                          <Route path="/wealth/staking" element={ <Staking/> } />
+                  </Routes>
+              </main>
+              <Footer/>
+      </BrowserRouter>
+
   );
 };
 

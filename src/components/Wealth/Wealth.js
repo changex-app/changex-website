@@ -1,7 +1,7 @@
 import * as React from "react";
 import {useState} from "react";
 import { doubleApy, menuTabs, stake, stablecoins} from "./wealthItems";
-import {StaticImage} from "gatsby-plugin-image";
+import { StaticImage } from "gatsby-plugin-image";
 
 
 export default function Wealth() {

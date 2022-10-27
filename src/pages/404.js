@@ -1,10 +1,9 @@
 import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 
-const NotFoundPage = () => {
+export function NotFoundPage() {
   return (
-      <main className="pages">
-      <section id="#404" className="section_hero">
+      <section id="#404" className="section_404">
         <StaticImage src={"../../../static/images/Hero-BGimg-mobile.png"} loading="lazy" className="image-hero" alt=""></StaticImage>
         <div className="hero-background"></div>
         <div className="hero-background right"></div>
@@ -27,8 +26,5 @@ const NotFoundPage = () => {
           </div>
         </div>
       </section>
-      </main>
-  );
-};
-
-export default NotFoundPage;
+  )
+}

@@ -3,7 +3,8 @@ import { useEffect, useState } from "react";
 import { ScanQrModal } from "../../Utils/ScanQrCode";
 import { Modal } from "@mui/material";
 import 'react-dropdown/style.css';
-import { Link } from "react-scroll";
+import { Link } from 'react-router-dom';
+import { Link as SmoothLink } from 'react-scroll';
 import ChangeXLogoColor from "../../../static/images/Logo_navigation.svg";
 import QRBlack from "../../../static/images/icn-qr-black.svg";
 import MenuIcon from "../../../static/images/Menu-Icon_1Menu Icon.png";
@@ -56,7 +57,7 @@ export default function Navigation() {
 
     return (
 
-    <div data-animation="default" className="nav_bar w-nav animate__animated animate__fadeInDown">
+    <div id="navigation" className="nav_bar w-nav animate__animated animate__fadeInDown">
         <div className="padding-global is-nav">
         <div className={'container-large'} >
             <div style={{height: '200px'}} className="is-nav">
@@ -74,11 +75,11 @@ export default function Navigation() {
                                         <Nav.Menu id={index.toString()} title={menu.title}>
                                             {menu.submenu.map((item, index) => {
                                                 return (
-                                                    <a href={'/'+ menu.id +`/`+ item.url}>
+                                                    <Link to={'/'+ menu.id +`/`+ item.url}>
                                                         <Nav.Item id={index.toString()} eventKey={index.toString()}>
                                                             {item.title}
                                                         </Nav.Item>
-                                                    </a>
+                                                    </Link>
                                                 )
                                             })}
                                         </Nav.Menu>
@@ -86,11 +87,11 @@ export default function Navigation() {
                                 } else {
                                     return (
                                         <div id={index.toString()} style={{display: "inline-block"}}>
-                                            <Link to={menu.id} smooth={true} style={{color: "#222222"}}>
+                                            <SmoothLink to={menu.id} smooth={true} style={{color: "#222222"}}>
                                                 <Nav.Item eventKey={index.toString()}>
                                                     {menu.title}
                                                 </Nav.Item>
-                                            </Link>
+                                            </SmoothLink>
                                         </div>
                                     )
                                 }
@@ -135,6 +136,7 @@ export default function Navigation() {
             </div>
         </div>
         {openNav &&  <div className="w_nav-overlay">
+
             <nav role="navigation" className="nav_menu-links w-nav-menu" data-nav-menu-open=""
                  style={{transform: 'translateY(0px)', transition: 'transform 400ms ease 0s'}}>
                         <Navbar style={{background: 'transparent', height: "57px"}} className="nav_menu-links w-nav-menu">
@@ -145,17 +147,17 @@ export default function Navigation() {
                                             <Nav.Menu className="mobileNavBtns" placement={"rightStart"} id={index.toString()} title={menu.title}>
                                                 {menu.submenu.map((item, index) => {
                                                     return (
-                                                        <a href={'/'+ menu.id +`/`+ item.url}>
+                                                        <Link to={'/'+ menu.id +`/`+ item.url}>
                                                             <Nav.Item id={index.toString()} eventKey={index.toString()}>
                                                                 {item.title}
                                                             </Nav.Item>
-                                                        </a>
+                                                        </Link>
 
                                                     )
                                                 })}
                                             </Nav.Menu>
                                         )
-                                    } else {
+                                    } /*else {
                                         return (
                                             <div  className="mobileNavBtns" id={index.toString()} style={{display: "inline-block"}}>
                                                 <Link to={menu.id}  smooth={true} style={{color: "#222222"}}>
@@ -165,7 +167,7 @@ export default function Navigation() {
                                                 </Link>
                                             </div>
                                         )
-                                    }
+                                    }*/
                                 })}
                             </Nav>
                         </Navbar>

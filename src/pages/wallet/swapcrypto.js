@@ -4,11 +4,9 @@ import Hero from "../../components/Hero/Hero";
 
 export default function SwapCrypto(){
     return (
-        <Layout>
-            <main className="pages">
-                <Hero title={'Swap Crypto'}/>
-                <section id="swapcrypto"></section>
-            </main>
-        </Layout>
+        <>
+            <Hero title={'Swap Crypto'}/>
+            <section id="swapcrypto"></section>
+        </>
     )
 }

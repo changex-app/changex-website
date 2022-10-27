@@ -4,11 +4,9 @@ import Hero from "../../components/Hero/Hero";
 
 export default function DefyCryptoWallet(){
     return (
-        <Layout>
-            <main className="pages">
-                <Hero title={'Defy Crypto Wallet'}/>
-                <section id="defyCryptoWallet"></section>
-            </main>
-        </Layout>
+        <>
+            <Hero title={'Defy Crypto Wallet'}/>
+            <section id="defyCryptoWallet"></section>
+        </>
     )
 }
