@@ -1,6 +1,5 @@
 import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
-import Navigation from "../components/Navbar/Nav";
 import MetaDecorator from "../Utils/MetaDecorator";
 
 const NotFoundPage = () => {
@@ -23,6 +22,7 @@ const NotFoundPage = () => {
                       <h1 className="heading-style-h1 text-left-mobile">
                         Page Does Not Exists Yet or never did !
                       </h1>
+                      <a href="/"><button>Go to Home page</button></a>
                     </div>
                   </div>
                 </div>

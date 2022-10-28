@@ -1,4 +1,3 @@
-/*
 import React from "react";
 import PropTypes from "prop-types";
 
@@ -39,4 +38,3 @@ HTML.propTypes = {
     body: PropTypes.string,
     postBodyComponents: PropTypes.array,
 };
-*/

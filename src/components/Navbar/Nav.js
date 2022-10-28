@@ -19,7 +19,7 @@ export default function Navigation() {
     const [openNav, setIsNavOpen] = useState(false);
     const [showModal, setShowModal] = useState(false)
     const [navItem, setNavItem] = useState('/')
-    const [activeKey, setActiveKey] = React.useState(null);
+    const [activeKey, setActiveKey] = useState(null);
 
     useEffect( () => {
         fetchPrice()
@@ -117,7 +117,7 @@ export default function Navigation() {
                         <ul className="nav_download-wrapper w-list-unstyled">
                             {iconItems.map((icon, index) => {
                                 return (
-                                    <li id={index.toString()} onClick={icon.onclick} id={icon.id} className="nav_download-item">
+                                    <li id={index.toString()}  className="nav_download-item">
                                         <a href={icon.href}  className={icon.class}><img src={icon.src} loading="lazy" width="21"></img></a>
                                     </li>
                                 );
@@ -197,7 +197,7 @@ export default function Navigation() {
                         <div className="button-group centered-items margin-top margin-large spread max-width-full-mobile-landscape">
                             {mobileIcon.map((icon, index) => {
                                 return (
-                                    <a id={index.toString()} href={icon.href} id={icon.id} target="_blank"  rel="noreferrer"
+                                    <a href={icon.href} id={icon.id} target="_blank"  rel="noreferrer"
                                        className="button is-store max-width-full-mobile-landscape w-inline-block">
                                         <img src={icon.src}
                                              loading="lazy" alt={icon.id} width="150">
