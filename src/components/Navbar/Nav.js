@@ -66,12 +66,12 @@ export default function Navigation() {
                     <Navbar style={{background: 'transparent', height: "57px"}} className="nav_menu-links w-nav-menu">
                         <Navbar.Brand href="/" className="nav_left-wrapper">
                             <div className="nav_brandlink margin-right w-nav-brand">
-                                <Link to="/home"><img src={ChangeXLogoColor} loading="lazy" alt="ChangeX Logo in navigation bar" className="nav_logo"></img></Link>
+                                <SmoothLink smooth={true} to="hero"><img src={ChangeXLogoColor} loading="lazy" alt="ChangeX Logo in navigation bar" className="nav_logo"></img></SmoothLink>
                             </div>
                         </Navbar.Brand>
                         <Nav activeKey={activeKey} className={'hide-mobile-landscape'}>
                             {menuItems.map((menu, index) => {
-                                if(menu.dropdown === true) {
+                               /*if(menu.dropdown === true) {
                                     return (
                                         <Nav.Menu id={index.toString()} title={menu.title}>
                                             {menu.submenu.map((item, index) => {
@@ -85,7 +85,7 @@ export default function Navigation() {
                                             })}
                                         </Nav.Menu>
                                     )
-                                } else {
+                                } else {*/
                                     return (
                                         <div id={index.toString()} style={{display: "inline-block"}}>
                                             <SmoothLink to={menu.id} smooth={true} style={{color: "#222222"}}>
@@ -95,7 +95,7 @@ export default function Navigation() {
                                             </SmoothLink>
                                         </div>
                                     )
-                                }
+                               /* }*/
                             })}
                         </Nav>
                     </Navbar>
@@ -143,7 +143,7 @@ export default function Navigation() {
                         <Navbar style={{background: 'transparent', height: "57px"}} className="nav_menu-links w-nav-menu">
                             <Nav activeKey={activeKey} className="rs-navbar-mobile">
                                 {menuItems.map((menu, index) => {
-                                    if(menu.dropdown === true) {
+                                   /* if(menu.dropdown === true) {
                                         return (
                                             <Nav.Menu className="mobileNavBtns" placement={"rightStart"} id={index.toString()} title={menu.title}>
                                                 {menu.submenu.map((item, index) => {
@@ -158,17 +158,17 @@ export default function Navigation() {
                                                 })}
                                             </Nav.Menu>
                                         )
-                                    } /*else {
+                                    } else {*/
                                         return (
                                             <div  className="mobileNavBtns" id={index.toString()} style={{display: "inline-block"}}>
-                                                <Link to={menu.id}  smooth={true} style={{color: "#222222"}}>
+                                                <SmoothLink to={menu.id}  smooth={true} style={{color: "#222222"}}>
                                                     <Nav.Item  onClick={openNavDropDown} eventKey={index.toString()}>
                                                         {menu.title}
                                                     </Nav.Item>
-                                                </Link>
+                                                </SmoothLink>
                                             </div>
                                         )
-                                    }*/
+                                    /*}*/
                                 })}
                             </Nav>
                         </Navbar>
