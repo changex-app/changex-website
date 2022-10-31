@@ -1,12 +1,13 @@
 import * as React from "react";
-import '../../../node_modules/animate.css/animate.css';
-import DownloadApple from "../../../static/images/DW-Apple.svg"
-import DownloadGoogle from "../../../static/images/DW-Google.svg"
-import DownloadQR from "../../../static/images/download-qr.svg"
+import { Link as SmoothLink } from 'react-scroll';
 import { Modal } from "@mui/material";
 import { useState } from "react";
 import { ScanQrModal } from "../../Utils/ScanQrCode";
 import {StaticImage} from "gatsby-plugin-image";
+import '../../../node_modules/animate.css/animate.css';
+import DownloadApple from "../../../static/images/DW-Apple.svg"
+import DownloadGoogle from "../../../static/images/DW-Google.svg"
+import DownloadQR from "../../../static/images/download-qr.svg"
 
 export default function Hero({title}){
 
@@ -69,7 +70,7 @@ export default function Hero({title}){
                                className="max-width-large align-center text-align-center text-size-medium text-left-mobile">Manage,
                                 invest, and grow your wealth with a Euro bank account, access to crypto, and DeFi
                                 investment tools. Spend anywhere with the Changex&nbsp;
-                                <a href="src/components/Hero/Hero" className="text-style-link">Crypto Debit Card.</a>
+                                <SmoothLink to="card" smooth={true} className="text-style-link">Crypto Debit Card.</SmoothLink>
                             </p>
                         </div>
                     </div>

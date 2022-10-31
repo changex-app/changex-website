@@ -46,7 +46,7 @@ export default function Cta() {
                                 </a>
 
                                 <button onClick={openModal}
-                                   className="button is-qr w-inline-block" style={{maxWidth: "160px"}}>
+                                   className="button is-qr w-inline-block" style={{maxWidth: "160px", paddingBottom: "0"}}>
                                     <img src="/images/download-qr.svg" loading="lazy" width="75"
                                          alt="QR code image"
                                          className="qr-small">
