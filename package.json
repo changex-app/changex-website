@@ -58,6 +58,5 @@
     "styled-components": "^5.3.6"
   },
   "devDependencies": {
-    "webpack": "^5.74.0"
   }
 }
