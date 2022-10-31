@@ -3,7 +3,7 @@ export const scrollImages = [
         src: '/images/wallet/icn-40x40-wallet.svg',
         caption: 'A wallet just for you',
         text: 'Own your crypto - Changex has no control over your wallet and can never access your funds. All information is kept safely on the blockchain',
-        url: '"https://changex.io',
+        url: 'https://changex.io',
         urlText: 'Download the app'
     },
     {
@@ -17,7 +17,7 @@ export const scrollImages = [
         src: 'images/wallet/scroll_4.svg',
         caption: 'Buy and sell crypto',
         text: 'Trade cryptocurrencies with the click of a button with vetted protocols and contracts.',
-        url: 'Download the app',
+        url: 'https://changex.io',
         urlText: "https://changex.io"
     },
 ];
