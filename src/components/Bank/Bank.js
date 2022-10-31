@@ -14,7 +14,7 @@ export default function Bank(){
                         <div className="bank_wrapper margin-bottom margin-xhuge">
                             <div className="bank_wrapper-left">
                                 <div className="image-holder">
-                                    <img loading="lazy"
+                                    <img loading="lazy" alt="changex bank"
                                          srcSet="/images/bank/img-bank-p-500.jpeg 500w, /images/bank/img-bank-p-800.jpeg 800w, /images/bank/img-bank-p-1080.jpeg 1080w, /images/bank/img-bank-p-1600.jpeg 1600w, /images/bank/img-bank.jpeg 2306w"
                                          sizes="(max-width: 479px) 93vw, (max-width: 767px) 95vw, 100vw"
                                          className="bank-image margin-vertical margin-large">

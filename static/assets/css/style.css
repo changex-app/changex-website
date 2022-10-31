@@ -143,7 +143,7 @@ blockquote {
 }
 
 .nav_download-item {
-
+    cursor: pointer;
 }
 
 .w-nav-button {
@@ -1006,6 +1006,7 @@ figcaption {
     background-color: transparent;
     color: var(--backgroundColorBlack);
     text-decoration: none;
+    max-width: 160px;
 }
 
 .text-size-medium {
@@ -1300,6 +1301,14 @@ figcaption {
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
+}
+
+.navDisplay {
+    display: inline-block;
+}
+
+.navDisplay a {
+    color: var(--blackColor);
 }
 
 .nav_download-wrapper {
@@ -3943,6 +3952,7 @@ figcaption {
     display: flex;
     flex-direction: column;
     float: left;
+    margin-left: 16px;
 }
 
 .infotainment {
@@ -3956,4 +3966,21 @@ figcaption {
 .mobileNavBtns > div > a > a {
     padding-left: 0 !important;
     color: var(--blackColor);
+}
+
+.navbar-main {
+    background: transparent !important;
+    height: 3.5625rem;
+}
+
+.navHeight {
+    height: 12.5rem;
+}
+
+.scan {
+    width: min-content;
+}
+
+.coingecko {
+    margin-left: 2px;
 }

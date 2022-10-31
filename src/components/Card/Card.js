@@ -29,12 +29,12 @@ export default function Card() {
                                          loading="lazy"
                                          srcSet="/images/card/img-card-bg-p-500.png 500w, /images/card/img-card-bg-p-800.png 800w, /images/card/img-card-bg-p-1080.png 1080w, /images/img-card-bg-p-1600.png 1600w,  /images/card/img-card-bg-p-2000.png 2000w, /images/card/img-card-bg.png 2306w"
                                          sizes="(max-width: 479px) 93vw, (max-width: 767px) 95vw, 100vw"
-                                         alt=""
+                                         alt="changex card"
                                          className="image-card margin-vertical margin-large">
 
                                     </img>
                                     <div className="image-circle is-bigger top-left"></div>
-                                    <img src="../../static/images/card/cards-img.png" loading="lazy"
+                                    <img src="../../static/images/card/cards-img.png" loading="lazy" alt="changex cards"
                                          sizes="(max-width: 479px) 93vw, (max-width: 767px) 95vw, 50vw"
                                          srcSet="/images/card/cards-img-p-500.png 500w, /images/card/cards-img.png 729w" alt=""
                                          className="image-2">

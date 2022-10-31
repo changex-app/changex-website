@@ -10,7 +10,7 @@ export const ScanQrModal = ({showModal, setShowModal}) =>{
                             <div
                                 className="modal-scan-imgwrap"><img
                                 src="https://uploads-ssl.webflow.com/63315e7a42bc6afd0341c3bd/633668ff7172a17634704dfb_download-qr.svg"
-                                loading="lazy" alt="qr code"></img></div>
+                                loading="lazy" alt="changex qr code"></img></div>
                             <div
                                 className="modal-scan-heading max-width-small"><h3
                                 className="heading-style-h5 margin-vertical margin-small">Scan to Download Changex</h3>

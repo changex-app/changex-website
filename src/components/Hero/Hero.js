@@ -57,10 +57,10 @@ export default function Hero({title}){
                                        className="button is-qr w-inline-block">
                                         <img src={DownloadQR}
                                              loading="lazy" width="75" height="50"
-                                             alt="QR code"
+                                             alt="Changex QR code"
                                              className="qr-small">
                                         </img>
-                                        <p className="text-align-left text-size-regular" style={{width: "min-content"}}>Scan To Download</p>
+                                        <p className="text-align-left text-size-regular scan">Scan To Download</p>
                                     </button>
                                 </div>
                             </div>
