@@ -26,6 +26,7 @@ export default function Waitlist(){
             })
                 .then(res => setIsShown(current => !current))
                 .catch((err) => {
+                    setHasError(true)
                     throw new Error(err)
                 });
 

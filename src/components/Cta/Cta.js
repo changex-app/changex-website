@@ -48,7 +48,7 @@ export default function Cta() {
                                 <button onClick={openModal}
                                    className="button is-qr w-inline-block">
                                     <img src="/images/download-qr.svg" loading="lazy" width="75"
-                                         alt="Changex QR code image"
+                                         alt="Changex QR code"
                                          className="qr-small">
                                         </img>
                                     <p className="text-align-left text-size-regular">Scan To Download</p>

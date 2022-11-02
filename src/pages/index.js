@@ -6,6 +6,15 @@ import Home from "../components/Home/Home";
 import Navigation from "../components/Navbar/Nav";
 import Footer from "../components/Footer";
 import content from "../../static/assets/content/content.json";
+import DebitCard from "./bank/debitcard";
+import SepaBankAccount from "./bank/sepabankaccount";
+import BuySellCrypto from "./wallet/buysellcrypto";
+import DefyCryptoWallet from "./wallet/defycryptowallet";
+import SwapCrypto from "./wallet/swapcrypto";
+import Lending from "./wealth/lending";
+import Savings from "./wealth/savings";
+import Staking from "./wealth/staking";
+import NotFoundPage from "./404";
 const imageUrl = "/assets/images/Changex-OG.jpeg";
 
 const IndexPage = () => {
@@ -31,7 +40,7 @@ const IndexPage = () => {
                           <Route path="/wealth/lending/" element={ <Lending/> } />
                           <Route path="/wealth/savings/" element={ <Savings/> } />
                           <Route path="/wealth/staking/" element={ <Staking/> } />
-                          <Route path="*" element={ <NotFound/> }/>
+                          <Route path="*" element={ <NotFoundPage/> }/>
                   </Routes>
               </main>
               <Footer/>
