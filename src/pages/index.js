@@ -1,6 +1,5 @@
 import * as React from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { createBrowserHistory } from 'history';
 import CookieConsentModal from "../Utils/CookieConsent"
 import MetaDecorator from "../Utils/MetaDecorator";
 import Home from "../components/Home/Home";
@@ -34,7 +33,6 @@ const IndexPage = () => {
               <main className="pages">
                   <Routes >
                           <Route path="/" element={ <Home/> } />
-                          <Route path="/home" element={ <Home/> } />
                           <Route path="/bank/debitcard/" element={ <DebitCard/> } />
                           <Route path="/bank/sepabankaccount/" element={ <SepaBankAccount/> } />
                           <Route path="/wallet/buysellcrypto/" element={ <BuySellCrypto />} />

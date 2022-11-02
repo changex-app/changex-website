@@ -64,7 +64,7 @@ export default function Navigation() {
             <div style={{height: '200px'}} className="is-nav">
                 <div className="nav_full-wrapper">
                     <Navbar style={{background: 'transparent', height: "57px"}} className="nav_menu-links w-nav-menu">
-                        <Navbar.Brand href="/" className="nav_left-wrapper">
+                        <Navbar.Brand  className="nav_left-wrapper">
                             <div className="nav_brandlink margin-right w-nav-brand">
                                 <SmoothLink smooth={true} to="hero"><img src={ChangeXLogoColor} loading="lazy" alt="ChangeX Logo in navigation bar" className="nav_logo"></img></SmoothLink>
                             </div>
