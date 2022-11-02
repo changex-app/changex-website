@@ -1,27 +1,17 @@
 import * as React from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import CookieConsentModal from "../Utils/CookieConsent"
+import CookieConsentModal from "../Utils/CookieConsent";
 import MetaDecorator from "../Utils/MetaDecorator";
 import Home from "../components/Home/Home";
-import content from "../../static/assets/content/content.json";
 import Navigation from "../components/Navbar/Nav";
 import Footer from "../components/Footer";
-import DebitCard from "./bank/debitcard";
-import SepaBankAccount from "./bank/sepabankaccount";
-import BuySellCrypto from "./wallet/buysellcrypto";
-import DefyCryptoWallet from "./wallet/defycryptowallet";
-import SwapCrypto from "./wallet/swapcrypto";
-import Lending from "./wealth/lending";
-import Staking from "./wealth/staking";
-import Savings from "./wealth/savings";
-import NotFoundPage from "./404";
-import {NotFound} from "./NotFound";
-const imageUrl = "/assets/images/Changex-OG.jpeg"
+import content from "../../static/assets/content/content.json";
+const imageUrl = "/assets/images/Changex-OG.jpeg";
 
 const IndexPage = () => {
 
     return (
-      <Router>
+        <Router>
           <MetaDecorator
               description={content.pageDescription}
               title={content.pageTitle}
@@ -45,9 +35,8 @@ const IndexPage = () => {
                   </Routes>
               </main>
               <Footer/>
-      </Router>
-
-  );
+        </Router>
+    )
 };
 
 export default IndexPage;

@@ -30,7 +30,7 @@ export default function Cta() {
                                    className="button is-store w-inline-block">
                                     <img src="/images/DW-Apple.svg"
                                          loading="lazy"
-                                         alt="App Store download image"
+                                         alt="Changex App Store download"
                                          width="150">
                                     </img>
                                 </a>
@@ -41,14 +41,14 @@ export default function Cta() {
                                     <img src="/images/DW-Google.svg"
                                          loading="lazy"
                                          width="150"
-                                         alt="Google Play download image">
+                                         alt="Changex Google Play download">
                                     </img>
                                 </a>
 
                                 <button onClick={openModal}
-                                   className="button is-qr w-inline-block" style={{maxWidth: "160px"}}>
+                                   className="button is-qr w-inline-block">
                                     <img src="/images/download-qr.svg" loading="lazy" width="75"
-                                         alt="QR code image"
+                                         alt="Changex QR code image"
                                          className="qr-small">
                                         </img>
                                     <p className="text-align-left text-size-regular">Scan To Download</p>

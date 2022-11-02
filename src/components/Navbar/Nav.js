@@ -14,12 +14,12 @@ import { Nav, Navbar } from "rsuite";
 
 export default function Navigation() {
 
-    const [value, setValue] = useState('$CHANGE Price');
+    const [value, setValue] = useState('$CHANGE');
     const [apy, setApy] = useState('$CHANGE');
     const [openNav, setIsNavOpen] = useState(false);
     const [showModal, setShowModal] = useState(false)
     const [navItem, setNavItem] = useState('/')
-    const [activeKey, setActiveKey] = React.useState(null);
+    const [activeKey, setActiveKey] = useState(null);
 
     useEffect( () => {
         fetchPrice()
@@ -61,12 +61,19 @@ export default function Navigation() {
     <div id="navigation" className="nav_bar w-nav animate__animated animate__fadeInDown">
         <div className="padding-global is-nav">
         <div className={'container-large'} >
-            <div style={{height: '200px'}} className="is-nav">
+            <div className="is-nav navHeight">
                 <div className="nav_full-wrapper">
+<<<<<<< HEAD
                     <Navbar style={{background: 'transparent', height: "57px"}} className="nav_menu-links w-nav-menu">
                         <Navbar.Brand  className="nav_left-wrapper">
+=======
+                    <Navbar className="nav_menu-links w-nav-menu navbar-main">
+                        <Navbar.Brand href="/" className="nav_left-wrapper">
+>>>>>>> 23c010872c43692fdb9830cae1e8d80024b921fc
                             <div className="nav_brandlink margin-right w-nav-brand">
-                                <SmoothLink smooth={true} to="hero"><img src={ChangeXLogoColor} loading="lazy" alt="ChangeX Logo in navigation bar" className="nav_logo"></img></SmoothLink>
+                                <SmoothLink smooth={true} to="hero">
+                                    <img src={ChangeXLogoColor} loading="lazy" alt="ChangeX Logo" className="nav_logo"></img>
+                                </SmoothLink>
                             </div>
                         </Navbar.Brand>
                         <Nav activeKey={activeKey} className={'hide-mobile-landscape'}>
@@ -87,8 +94,8 @@ export default function Navigation() {
                                     )
                                 } else {*/
                                     return (
-                                        <div id={index.toString()} style={{display: "inline-block"}}>
-                                            <SmoothLink to={menu.id} smooth={true} style={{color: "#222222"}}>
+                                        <div className="nav_menu-links navDisplay" id={index.toString()}>
+                                            <SmoothLink to={menu.id} smooth={true}>
                                                 <Nav.Item eventKey={index.toString()}>
                                                     {menu.title}
                                                 </Nav.Item>
@@ -104,7 +111,7 @@ export default function Navigation() {
                             <div className="padding-small">
                                 <div id="changexPrice" className="text-size-tiny changexprice">$CHANGE:&nbsp;
                                     <a target="_blank" rel="noreferrer" className="price-highlight" href="https://www.coingecko.com/en/coins/changex" >
-                                        <span>{value}<img style={{marginLeft: '2px'}} src="/images/external_link.svg"/></span>
+                                        <span>{value}<img alt="changex coingecko" className="coingecko" src="/images/external_link.svg"/></span>
 
                                     </a></div>
                             </div>
@@ -117,30 +124,31 @@ export default function Navigation() {
                         <ul className="nav_download-wrapper w-list-unstyled">
                             {iconItems.map((icon, index) => {
                                 return (
-                                    <li id={index.toString()} onClick={icon.onclick} id={icon.id} className="nav_download-item">
-                                        <a href={icon.href}  className={icon.class}><img src={icon.src} loading="lazy" width="21"></img></a>
+                                    <li id={index.toString()}  className="nav_download-item">
+                                        <a href={icon.href}  className={icon.class}>
+                                            <img src={icon.src} alt="changex icon" loading="lazy" width="21"></img>
+                                        </a>
                                     </li>
                                 );
                             })}
                             <li onClick={openModal} id="qrcode" className="nav_download-item">
-                                <div style={{cursor: "pointer"}} className="nav_download-btn w-inline-block">
-                                    <img src={QRBlack} loading="lazy" width="21"></img>
+                                <div className="nav_download-btn w-inline-block">
+                                    <img src={QRBlack} alt="changex qr" loading="lazy" width="21"></img>
                                 </div>
                             </li>
                         </ul>
                     </div>
                     <div className="menu-button w-nav-button" aria-label="menu" role="button" tabIndex="0"
                          aria-controls="w-nav-overlay-0" aria-haspopup="menu">
-                        <img onClick={openNavDropDown} src={MenuIcon} width="20" alt="ICON" className="menu-icon"></img>
+                        <img onClick={openNavDropDown} src={MenuIcon} width="20" alt="changex qr" className="menu-icon"></img>
                     </div>
                 </div>
             </div>
         </div>
         {openNav &&  <div className="w_nav-overlay">
 
-            <nav role="navigation" className="nav_menu-links w-nav-menu" data-nav-menu-open=""
-                 style={{transform: 'translateY(0px)', transition: 'transform 400ms ease 0s'}}>
-                        <Navbar style={{background: 'transparent', height: "57px"}} className="nav_menu-links w-nav-menu">
+            <nav role="navigation" className="nav_menu-links" data-nav-menu-open="">
+                        <Navbar className="navbar-main w-nav-menu" >
                             <Nav activeKey={activeKey} className="rs-navbar-mobile">
                                 {menuItems.map((menu, index) => {
                                    /* if(menu.dropdown === true) {
@@ -160,8 +168,8 @@ export default function Navigation() {
                                         )
                                     } else {*/
                                         return (
-                                            <div  className="mobileNavBtns" id={index.toString()} style={{display: "inline-block"}}>
-                                                <SmoothLink to={menu.id}  smooth={true} style={{color: "#222222"}}>
+                                            <div  className="mobileNavBtns navDisplay" id={index.toString()}>
+                                                <SmoothLink to={menu.id}  smooth={true}>
                                                     <Nav.Item  onClick={openNavDropDown} eventKey={index.toString()}>
                                                         {menu.title}
                                                     </Nav.Item>
@@ -197,7 +205,7 @@ export default function Navigation() {
                         <div className="button-group centered-items margin-top margin-large spread max-width-full-mobile-landscape">
                             {mobileIcon.map((icon, index) => {
                                 return (
-                                    <a id={index.toString()} href={icon.href} id={icon.id} target="_blank"  rel="noreferrer"
+                                    <a href={icon.href} id={icon.id} target="_blank"  rel="noreferrer"
                                        className="button is-store max-width-full-mobile-landscape w-inline-block">
                                         <img src={icon.src}
                                              loading="lazy" alt={icon.id} width="150">

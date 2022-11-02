@@ -12,7 +12,7 @@ export default function Footer(){
                     <div className="padding-section-small is-footer">
                         <div className="w-layout-grid footer-grid">
                            <Link to="hero" smooth={true} className="footer_logo-wrapper w-inline-block">
-                                   <img src={ChangeXLogoColor} loading="lazy"></img>
+                                   <img src={ChangeXLogoColor} alt="changex logo" loading="lazy"></img>
                            </Link>
                             <div className="button-group">
                                 <a target="_blank" rel="noreferrer"  href="https://firebasestorage.googleapis.com/v0/b/changex-io.appspot.com/o/changex-whitepaper-v4.pdf?alt=media&amp;token=85d7033d-ce62-4fd2-aefd-b50f2a758530"
@@ -29,9 +29,9 @@ export default function Footer(){
                                 </a>
                             </div>
                             <div className="button-group align-right">
-                                <a target="_blank" rel="noreferrer" href="https://t.me/changex_official"
+                                <a target="_blank"  rel="noreferrer" href="https://t.me/changex_official"
                                    className="button social-link w-inline-block"><img
-                                    src={TelegramPlane} loading="lazy"></img></a>
+                                    src={TelegramPlane} alt="changex telegram" loading="lazy"></img></a>
                                 <a target="_blank" rel="noreferrer" href="https://twitter.com/ChangeXapp"
                                    className="button social-link w-inline-block">
                                     <div className="icon-1x1-small text-color-black w-embed">
@@ -45,7 +45,7 @@ export default function Footer(){
                                 </a>
                                 <a target="_blank" rel="noreferrer" href="https://changex.medium.com/"
                                    className="button social-link w-inline-block"><img
-                                    src={CarbonLogo} loading="lazy"></img></a>
+                                    src={CarbonLogo} alt="changex" loading="lazy"></img></a>
                                 <a target="_blank"  rel="noreferrer" href="https://www.facebook.com/ChangeXapp"
                                    className="button social-link w-inline-block">
                                     <div className="icon-1x1-small text-color-black w-embed">

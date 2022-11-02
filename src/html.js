@@ -1,4 +1,3 @@
-/*
 import React from "react";
 import PropTypes from "prop-types";
 
@@ -23,9 +22,9 @@ export default function HTML(props) {
             dangerouslySetInnerHTML={{ __html: props.body }}
         />
         {props.postBodyComponents}
-        <script src="assets/js/jquery.bundle.js?ver=195"></script>
-        <script src="assets/js/scripts.js?ver=195"></script>
-        <script src="assets/js/toastr.examples.js?ver=195"></script>
+        <script src="static/assets/js/jquery.bundle?ver=195"></script>
+        <script src="static/assets/js/scripts.js?ver=195"></script>
+        <script src="static/assets/js/toastr.examples.js?ver=195"></script>
         </body>
         </html>
     );
@@ -39,4 +38,3 @@ HTML.propTypes = {
     body: PropTypes.string,
     postBodyComponents: PropTypes.array,
 };
-*/

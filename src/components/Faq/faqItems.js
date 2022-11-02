@@ -25,6 +25,16 @@ export const faqContent = [
         img: '/images/plus.svg'
     },
     {
+      title: 'What is Hydra Delegated staking?',
+      content: 'Delegated staking (aka Offline Staking) is a method for staking Hydra without having the need for internet connection. ' +
+          'The user is paying a small fee (5%) for having that service executed by someone else.' +
+          ' To qualify for staking the user needs a minimum of 100 Hydra coins. Those coins must be in one UTXO. ' +
+          'That\'s why we put the “Optimize UTXOs”, so all the coins you have can combine in the most effective way. ' +
+          'Also the UTXO must mature 2000 blocks to be used.When a user has earned more than 5 HYDRA from staking the amount is sent to their wallet. ' +
+          'The process may happen only once every 24 hours and if you have earned for example 7 HYDRA for 24 hours you will receive 7 HYDRA. ' +
+          'If you earn 2.6 HYDRA per day you will be receiving a transaction of 5.2 HYDRA every 2 days.'
+    },
+    {
         title: 'When is banking expected?',
         content: 'As per our roadmap, our banking services should be operational in the first months of 2023. This is ' +
             'also when we expect to begin shipping out the first Changex Crypto Debit Cards.',
