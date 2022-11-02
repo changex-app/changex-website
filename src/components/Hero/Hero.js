@@ -43,8 +43,7 @@ export default function Hero({title}){
                                         </h1>
                                     </div>
                                 </div>
-                                <div style={{opacity:1}}
-                                     className=" animate__animated animate__zoomIn animate__delay-1s button-group centered-items margin-top margin-large spread max-width-full-mobile-landscape">
+                                <div className="animate__animated animate__zoomIn animate__delay-1s button-group centered-items margin-top margin-large spread max-width-full-mobile-landscape">
                                     <a target="_blank"  rel="noreferrer" href="https://apps.apple.com/bg/app/changex-wallet/id1613309180"
                                        className="button is-store max-width-full-mobile-landscape w-inline-block">
                                         <img src={DownloadApple} alt="Apple" loading="lazy" width="150"></img>
@@ -66,9 +65,8 @@ export default function Hero({title}){
                             </div>
                         </div>
                         <div className="hero_text-wrapper margin-top margin-huge animate__animated animate__fadeInUp animate__delay-800ms">
-                            <p  style={{opacity:1}}
-                               className="max-width-large align-center text-align-center text-size-medium text-left-mobile">Manage,
-                                invest, and grow your wealth with a Euro bank account, access to crypto, and DeFi
+                            <p className="max-width-large align-center text-align-center text-size-medium text-left-mobile">
+                                Manage, invest, and grow your wealth with a Euro bank account, access to crypto, and DeFi
                                 investment tools. Spend anywhere with the Changex&nbsp;
                                 <SmoothLink to="card" smooth={true} className="text-style-link">Crypto Debit Card.</SmoothLink>
                             </p>

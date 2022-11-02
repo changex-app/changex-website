@@ -3984,3 +3984,12 @@ figcaption {
 .coingecko {
     margin-left: 2px;
 }
+
+.hero_text-wrapper > p {
+    opacity: 1;
+}
+
+.socialLinks {
+    opacity: 1;
+    margin-bottom: 1px !important;
+}
