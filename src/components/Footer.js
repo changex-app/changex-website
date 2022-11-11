@@ -54,7 +54,7 @@ export default function Footer(){
                                     <div>Investor&#x27;s Portal</div>
                                 </a>
                             </div>
-                            <div className="button-group centered-items margin-top spread align-left">
+                            <div className="button-group centered-items margin-top spread align-left social">
 
                                 <a target="_blank" rel="noreferrer" href="https://apps.apple.com/bg/app/changex-wallet/id1613309180"
                                    className="button is-store w-inline-block">
@@ -62,7 +62,7 @@ export default function Footer(){
                                          loading="lazy"
                                          alt="Changex App Store download"
                                          width="155"
-                                    height="26">
+                                         height="26">
                                     </img>
                                 </a>
 
