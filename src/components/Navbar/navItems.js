@@ -63,14 +63,14 @@ export const menuItems = [
             },
         ]
     },
-    {
+   /* {
         title: 'FAQs',
         url: '/faqs',
         id: 'faqs',
         className: 'nav_menu-links w-nav-menu',
         dropdown: false,
         submenu: []
-    }
+    }*/
 /*    {
         title: 'Company',
         url: '/company',
