@@ -19,9 +19,9 @@ export default function Cta() {
                     <div className="padding-section-large is-cta-section">
                         <div className="max-width-medium">
                             <div>
-                                <h2 className="heading-style-h2">Get <span
-                                    className="highlight is-purple">Changex</span><br/>Earn Freedom</h2>
-                                <p className="text-size-large text-color-darkgrey margin-vertical margin-large">Manage,
+                                <h2 className="heading-style-h2 highlight is-white">Get <span
+                                    className="highlight is-white">Changex</span><br/>Earn Freedom</h2>
+                                <p className="is-white text-size-large margin-vertical margin-large">Manage,
                                     invest, and grow your wealth with a Euro bank account, access to crypto, and DeFi
                                     investment tools.</p>
                             </div>

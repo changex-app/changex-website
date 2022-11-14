@@ -618,6 +618,7 @@ figcaption {
 .max-width-medium {
     width: 100%;
     max-width: 34rem;
+    margin-top: 4rem
 }
 
 
@@ -711,8 +712,8 @@ figcaption {
 }
 
 .padding-section-large.is-cta-section {
-/*    margin: 4rem 0 4rem 0;*/
-    padding: 4rem 0 0 4rem !important;
+    margin: 4rem 0 0 0;
+    padding: 1rem 0 0 4rem !important;
     display: flex !important;
     background-color: #3418D8;
     border-radius: 2rem;
@@ -985,7 +986,11 @@ figcaption {
 .button.is-store-cta {
     height: auto !important;
     background-color: #e0fb92;
+    padding: 0 !important;
+}
 
+.button.is-store-cta > img {
+    width: 170px;
 }
 
 .button.is-store:hover {
@@ -1006,7 +1011,7 @@ figcaption {
 }
 
 .button.is-store-footer.google {
-    padding: 0.6rem 1.6rem;
+    padding: 0.5rem 1.6rem 0.6rem 1.6rem;
 }
 
 .button.is-qr-footer {
@@ -1877,6 +1882,15 @@ figcaption {
 
 .highlight.is-green {
     color: var(--walletItemColor);
+}
+
+.is-white {
+    color: #c2c2c2;
+}
+
+.highlight.is-white {
+    color: var(--white);
+    font-weight: 600;
 }
 
 .highlight.is-purple {
