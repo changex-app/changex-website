@@ -618,7 +618,7 @@ figcaption {
 .max-width-medium {
     width: 100%;
     max-width: 34rem;
-    margin-top: 4rem
+    margin: 2rem 0 2rem 0;
 }
 
 
@@ -1617,6 +1617,7 @@ figcaption {
 
 .image-holder {
     position: absolute;
+    text-align: -webkit-center;
     top: 0%;
     width: 100%;
 /*    max-width: 1153px;*/
@@ -2969,8 +2970,8 @@ figcaption {
     }
 
     .padding-global {
-        padding-right: 0;
-        padding-left: 0;
+        padding-right: 1.25rem;
+        padding-left: 1.25rem;
     }
 
 
@@ -3006,6 +3007,10 @@ figcaption {
 }
 
 @media screen and (max-width: 845px) {
+
+    .padding-section-large.is-cta-section {
+        padding: 0 1rem 0rem 1rem !important;
+    }
 
     .w-nav-button {
         display: block !important;
@@ -3225,7 +3230,7 @@ figcaption {
     }
 
     .padding-section-large.is-cta-section {
-        padding-top: 4rem;
+        padding-top: 0;
     }
 
     .text-size-large {
@@ -3577,6 +3582,14 @@ figcaption {
 }
 
 @media screen and (max-width: 479px) {
+    .max-width-medium {
+        display: grid;
+    }
+
+    .cta-image {
+        display: none;
+    }
+
     .margin-horizontal {
         margin-top: 0rem;
         margin-bottom: 0rem;
@@ -4106,4 +4119,17 @@ figcaption {
 
 .cta-image {
     position: relative;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 1rem;
+}
+
+.cta-image .gatsby-image-wrapper {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
 }
