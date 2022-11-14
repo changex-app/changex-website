@@ -19,7 +19,6 @@ export default function Home() {
             <Bank/>
             <Partners/>
             <Card/>
-            <Waitlist/>
             <Wealth/>
             <Cta/>
             <Press/>

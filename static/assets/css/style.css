@@ -1,5 +1,6 @@
 :root {
-    --font: 'Source Sans Pro', sans-serif;
+    --font-header: 'Lexend';
+    --font-paragraph: 'Source Sans Pro' sans-serif;
     --white: #ffffff;
     --blackColor: #222222;
     --current: #1b10be;
@@ -11,6 +12,7 @@
     --heading1FontSize: 4.2rem;
     --heading2FontSize: 3.6rem;
     --heading3FontSize: 2.85rem;
+    --themeBlueBackgroundColor: #3418D8;
 }
 
 
@@ -27,7 +29,8 @@
 }
 
 body {
-    font-family: var(--font);
+    font-family: var(--font-paragraph);
+    font-style: normal;
     color: var(--blackColor);
     font-size: 0.8rem;
     line-height: 1.5;
@@ -46,7 +49,7 @@ body {
 h1 {
     margin-top: 0rem;
     margin-bottom: 0rem;
-    font-family: var(--font);
+    font-family: var(--font-header);
     font-size: 4.125rem;
     line-height: 1.1;
     font-weight: 600;
@@ -57,7 +60,7 @@ h1 {
 h2 {
     margin-top: 0rem;
     margin-bottom: 0rem;
-    font-family: var(--font);
+    font-family: var(--font-header);
     font-size: var(--heading2FontSize);
     line-height: 1.2;
     font-weight: 500;
@@ -67,7 +70,7 @@ h2 {
 h3 {
     margin-top: 0rem;
     margin-bottom: 0rem;
-    font-family: var(--font);
+    font-family: var(--font-header);
     font-size: var(--heading3FontSize);
     line-height: 1.2;
     font-weight: 500;
@@ -77,7 +80,8 @@ h3 {
 h4 {
     margin-top: 0rem;
     margin-bottom: 0rem;
-    font-family: var(--font);
+    font-family: var(--font-header);
+    color: var(--blackColor);
     font-size: 2rem;
     line-height: 1.4;
     font-weight: 500;
@@ -87,7 +91,7 @@ h4 {
 h5 {
     margin-top: 0rem;
     margin-bottom: 0rem;
-    font-family: var(--font);
+    font-family: var(--font-header);
     font-size: 1.625rem;
     line-height: 1.5;
     font-weight: 500;
@@ -97,7 +101,7 @@ h5 {
 h6 {
     margin-top: 0rem;
     margin-bottom: 0rem;
-    font-family: var(--font);
+    font-family: var(--font-header);
     font-size: 1.3rem;
     line-height: 1.5;
     font-weight: 500;
@@ -106,6 +110,7 @@ h6 {
 p {
     margin-bottom: 0rem;
     font-weight: 400;
+    font-family: var(--font-paragraph);
 }
 
 ul {
@@ -448,11 +453,12 @@ figcaption {
 }
 
 .heading-style-h3 {
-    font-family: var(--font);
-    font-size: var(--heading3FontSize);
+    font-family: var(--font-header);
+    font-size: 3.8rem;
     line-height: 1.2;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: -2px;
+    color: var(--blackColor);
 }
 
 .w_nav-overlay {
@@ -618,7 +624,7 @@ figcaption {
 .max-width-medium {
     width: 100%;
     max-width: 34rem;
-    margin: 2rem 0 2rem 0;
+    margin: 3rem 0 2rem 0;
 }
 
 
@@ -1498,7 +1504,7 @@ figcaption {
 }
 
 .label {
-    font-family: var(--font);
+    font-family: var(--font-header);
     font-size: 1.2rem;
     font-weight: 500;
     text-transform: capitalize;
@@ -2387,10 +2393,10 @@ figcaption {
     height: 52px;
     padding-right: 2rem;
     padding-left: 2rem;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    background-color: #c6e56a !important;
-    color: var(--backgroundColorBlack) !important;
+    border-top-right-radius: 13px !important;
+    border-bottom-right-radius: 13px !important;
+    background-color: var(--themeBlueBackgroundColor) !important;
+    color: var(--white) !important;
     font-size: 1.1rem;
     font-weight: 600;
 }
@@ -2404,8 +2410,8 @@ figcaption {
     border-style: solid;
     border-width: 1px;
     border-color: #fff;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
 }
 
 .email-field:focus {
@@ -3919,7 +3925,7 @@ figcaption {
 }
 
 .css-ahj2mt-MuiTypography-root {
-    font-family: var(--font)
+    font-family: var(--font-header)
 }
 
 .css-1elwnq4-MuiPaper-root-MuiAccordion-root {
@@ -4131,5 +4137,13 @@ figcaption {
     width: 100%;
     height: 100%;
     display: block;
-    object-fit: cover;
+}
+
+.gatsby-image-wrapper img {
+    object-fit: contain !important;
+}
+
+.debitCard {
+    color: var(--themeBlueBackgroundColor);
+    margin: 0 0 3rem 0;
 }
