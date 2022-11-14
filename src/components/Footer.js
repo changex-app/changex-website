@@ -57,7 +57,7 @@ export default function Footer(){
                             <div className="button-group centered-items margin-top spread align-left social">
 
                                 <a target="_blank" rel="noreferrer" href="https://apps.apple.com/bg/app/changex-wallet/id1613309180"
-                                   className="button is-store-footer w-inline-block">
+                                   className="button is-store-footer apple w-inline-block">
                                     <img src="/images/DW-Apple.svg"
                                          loading="lazy"
                                          alt="Changex App Store download"
@@ -89,7 +89,7 @@ export default function Footer(){
                         <div className="footer-bottom">
                             <div className="w-col w-col w-col-stack">
                                 <div className="button-group">
-                                    <div className="w-col-3">
+                                    <div className="w-col-3 legal_links_wrapper">
                                     <a target="_blank" rel="noreferrer" href="https://changex-io.web.app/privacy.html"
                                        className="legal_links text-size-small">Privacy Policy</a>
                                     <a target="_blank" rel="noreferrer" href="https://changex-io.web.app/terms.html"

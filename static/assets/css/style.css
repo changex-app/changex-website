@@ -1011,7 +1011,15 @@ figcaption {
 }
 
 .button.is-store-footer.google {
-    padding: 0.5rem 1.6rem 0.6rem 1.6rem;
+    padding: 0.3rem 1.6rem 0.6rem 1.6rem;
+}
+
+.button.is-store-footer.apple {
+    padding: 0.2rem 0.6rem 0.6rem 0.6rem;
+}
+
+.button.is-store-footer.apple > img {
+    height: 37px !important;
 }
 
 .button.is-qr-footer {
@@ -2637,6 +2645,10 @@ figcaption {
         padding: 3rem;
     }
 
+    .footer-group {
+        display: flex !important;
+    }
+
     .padding-global {
         padding-right: 0.5rem;
         padding-left: 0.5rem;
@@ -2950,6 +2962,10 @@ figcaption {
 @media screen and (max-width: 907px) {
     .w-nav-button {
         display: block !important;
+    }
+
+    .legal_links_wrapper {
+        display: contents;
     }
 
     .padding-global {
