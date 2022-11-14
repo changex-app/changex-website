@@ -57,7 +57,7 @@ export default function Footer(){
                             <div className="button-group centered-items margin-top spread align-left social">
 
                                 <a target="_blank" rel="noreferrer" href="https://apps.apple.com/bg/app/changex-wallet/id1613309180"
-                                   className="button is-store w-inline-block">
+                                   className="button is-store-footer w-inline-block">
                                     <img src="/images/DW-Apple.svg"
                                          loading="lazy"
                                          alt="Changex App Store download"
@@ -68,7 +68,7 @@ export default function Footer(){
 
 
                                 <a target="_blank" rel="noreferrer" href="https://play.google.com/store/apps/details?id=io.changex.app"
-                                   className="button is-store w-inline-block">
+                                   className="button is-store-footer google w-inline-block">
                                     <img src="/images/DW-Google.svg"
                                          loading="lazy"
                                          width="150"
@@ -78,7 +78,7 @@ export default function Footer(){
 
                                 <button onClick={openModal}
                                         className="button is-qr-footer w-inline-block">
-                                    <img src="/images/download-qr.svg" loading="lazy" width="75"
+                                    <img src="/images/cta/icn-qr.svg" loading="lazy" width="75"
                                          alt="Changex QR code"
                                          className="qr-small">
                                     </img>

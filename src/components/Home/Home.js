@@ -17,13 +17,12 @@ export default function Home() {
             <Hero title='Mobile Banking Meets Decantralized Finance'/>
             <Wallet/>
             <Bank/>
+            <Partners/>
             <Card/>
             <Waitlist/>
             <Wealth/>
-            <Partners/>
-            <Faq/>
-            <Press/>
             <Cta/>
+            <Press/>
         </>
     )
 }
