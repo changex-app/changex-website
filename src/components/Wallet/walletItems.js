@@ -24,16 +24,16 @@ export const scrollImages = [
 
 export const slideImages = [
     {
-        src: '/images/wallet/Sliderimg---stake.png',
+        url: '/images/wallet/cryptowallet_1.png',
     },
     {
-        src: '/images/wallet/Sliderimg---buy.png',
+        url: '/images/wallet/cryptowallet_1.png',
     },
     {
-        src: '/images/wallet/Sliderimg---sell.png',
+        url: '/images/wallet/cryptowallet_1.png',
     },
     {
-        src: 'images/wallet/Sliderimg---swap.png',
+        url: 'images/wallet/cryptowallet_1.png',
     }
 ];
 

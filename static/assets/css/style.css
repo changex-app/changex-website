@@ -726,6 +726,12 @@ figcaption {
     border-radius: 2rem;
 }
 
+.padding-section-large.is-wallet-section {
+    margin: 4rem 0 0 0;
+    display: flex !important;
+    border-radius: 2rem;
+}
+
 .padding-section-large.no-padding-bottom {
     padding-bottom: 0rem;
 }
@@ -1471,7 +1477,7 @@ figcaption {
 
 .section_wallet {
     position: relative;
-    min-height: 100vh;
+    background-color: #141414;
 }
 
 .div-block {
@@ -1488,7 +1494,6 @@ figcaption {
 
 .wallet_wrapper-left {
     position: -webkit-sticky;
-    position: sticky;
     top: 40%;
     z-index: 1;
     display: -webkit-box;
@@ -1555,8 +1560,7 @@ figcaption {
 .slider {
     position: absolute;
     left: auto;
-    top: 0%;
-    right: 0%;
+    top: 5%;
     bottom: auto;
     z-index: 0;
     width: 50%;
@@ -3252,6 +3256,10 @@ figcaption {
         padding-top: 0;
     }
 
+    .padding-section-large.is-wallet-section {
+        padding-top: 0;
+    }
+
     .text-size-large {
         font-size: 1.15rem;
     }
@@ -3611,6 +3619,7 @@ figcaption {
     .cta-image {
         display: none;
     }
+
 
     .margin-horizontal {
         margin-top: 0rem;
@@ -4155,6 +4164,14 @@ figcaption {
     display: block;
 }
 
+.wallet-image {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 1rem;
+}
+
 .gatsby-image-wrapper img {
     object-fit: contain !important;
 }
@@ -4183,4 +4200,13 @@ figcaption {
     color: var(--themeBlueBackgroundColor);
     background-color: var(--labelLime);
     border-radius: 6px;
+}
+
+.rsis-container {
+    background-color: #141414;
+}
+
+.rsis-image {
+    background-repeat: no-repeat;
+    background-size: contain !important;
 }

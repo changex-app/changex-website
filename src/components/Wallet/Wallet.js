@@ -4,6 +4,8 @@ import '../../../node_modules/animate.css/animate.css';
 import 'react-slideshow-image/dist/styles.css'
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { properties, scrollImages, slideImages } from "./walletItems";
+import {StaticImage} from "gatsby-plugin-image";
+import SimpleImageSlider from "react-simple-image-slider";
 
 export default function Wallet() {
     return (
@@ -13,25 +15,10 @@ export default function Wallet() {
                     <div className="container-large">
                         <div className="padding-section-large">
                             <div className="div-block">
-                                <AnimationOnScroll  animateIn="animate__fadeInUp" animateOnce={true} className="wallet_wrapper-left animate__animated animate__fadeInUp">
-                                    <div className="label is-lime slide-from-bottom">Wallet</div>
-                                    <h2 className="heading-style-h2 margin-bottom margin-large slide-from-bottom">
-                                        Decentralized <br/>Crypto &nbsp;
-                                        <span className="highlight is-green">Wallet</span>
-                                    </h2>
-                                    <p className="text-color-grey text-size-large slide-from-bottom">Access crypto from
-                                        any point on Earth and stay in control with Changex’s
-                                        highly-secure,
-                                        <span>non-custodial</span>
-                                        <span className="info-icn hide">ⓘ</span>
-                                        crypto wallet. <br/>No KYC required.
-                                    </p>
-                                </AnimationOnScroll>
-
                                 <div className="wallet_wrapper-right">
                                     <div className="slider">
                                         <div className="slide-container">
-                                            <Fade {...properties}>
+                                            {/*<Fade {...properties}>
                                                 {slideImages.map((slide, index)=> {
                                                     return (
                                                         <div className="slide01 w-slide">
@@ -43,14 +30,21 @@ export default function Wallet() {
                                                         </div>
                                                     )
                                                 })}
-                                            </Fade>
+                                            </Fade>*/}
+                                            <SimpleImageSlider
+                                                width={398}
+                                                height={856}
+                                                images={slideImages}
+                                                showBullets={true}
+                                                showNavs={true}
+                                            />
                                         </div>
                                     </div>
                                     <div className="wallet_benefits-container"></div>
-                                    {scrollImages.map((item, index)=> {
+                                    {/*{scrollImages.map((item, index)=> {
                                         return(
                                             <div id={index.toString()} className="wallet_benefits-container with-border">
-                                                {/*AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true}*/}
+
                                                 <div className="wallet_benefit-wrapper margin-vertical margin-large">
                                                     <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true}
                                                         className="icon-wrapper-100 is-green margin-bottom margin-xhuge slide-from-bottom">
@@ -66,13 +60,52 @@ export default function Wallet() {
                                                 </div>
                                             </div>
                                         )
-                                    })}
+                                    })}*/}
                                 </div>
+                                <AnimationOnScroll  animateIn="animate__fadeInUp" animateOnce={true} className="wallet_wrapper-left animate__animated animate__fadeInUp">
+                                    <div className="label is-lime slide-from-bottom">Wallet</div>
+                                    <h2 className="heading-style-h2 margin-bottom margin-large slide-from-bottom">
+                                        Decentralized <br/>Crypto &nbsp;
+                                        <span className="highlight is-green">Wallet</span>
+                                    </h2>
+                                    <p className="text-color-grey text-size-large slide-from-bottom">Access crypto from
+                                        any point on Earth and stay in control with Changex’s
+                                        highly-secure,
+                                        <span>non-custodial</span>
+                                        <span className="info-icn hide">ⓘ</span>
+                                        crypto wallet. <br/>No KYC required.
+                                    </p>
+                                </AnimationOnScroll>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            {/*<div className="padding-global">
+                <div className="container-large">
+                    <div className="padding-section-large is-cta-section">
+                        <div className="max-width-medium">
+                            <div  animateIn="animate__fadeInUp" animateOnce={true} className="wallet_wrapper-left animate__animated animate__fadeInUp">
+                                <div className="label is-lime slide-from-bottom">Wallet</div>
+                                <h2 className="heading-style-h2 margin-bottom margin-large slide-from-bottom">
+                                    Decentralized <br/>Crypto &nbsp;
+                                    <span className="highlight is-green">Wallet</span>
+                                </h2>
+                                <p className="text-color-grey text-size-large slide-from-bottom">Access crypto from
+                                    any point on Earth and stay in control with Changex’s
+                                    highly-secure,
+                                    <span>non-custodial</span>
+                                    <span className="info-icn hide">ⓘ</span>
+                                    crypto wallet. <br/>No KYC required.
+                                </p>
+                            </div>
+                    </div>
+                        <div className="cta-image">
+                            <StaticImage src={'../../../static/images/cta/image_cta.png'} alt={'cta'}></StaticImage>
+                        </div>
+                </div>
+            </div>
+            </div>*/}
         </section>
     )
 }
