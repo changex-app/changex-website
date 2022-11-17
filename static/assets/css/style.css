@@ -13,6 +13,7 @@
     --heading2FontSize: 3.6rem;
     --heading3FontSize: 2.85rem;
     --themeBlueBackgroundColor: #3418D8;
+    --labelLime: #E0FB92;
 }
 
 
@@ -991,7 +992,7 @@ figcaption {
 
 .button.is-store-cta {
     height: auto !important;
-    background-color: #e0fb92;
+    background-color: var(--labelLime);
     padding: 0 !important;
 }
 
@@ -1525,7 +1526,7 @@ figcaption {
 
 .label.is-lime {
     margin-bottom: 0.5rem;
-    color: #e0fb92;
+    color: var(--labelLime);
 }
 
 .label.is-green {
@@ -1603,6 +1604,13 @@ figcaption {
     width: 50%;
 }
 
+.bank_wrapper-bank-right {
+    width: 50%;
+    position: absolute;
+    z-index: 1;
+    text-align: initial;
+}
+
 .bank_wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1626,7 +1634,7 @@ figcaption {
     text-align: -webkit-center;
     top: 0%;
     width: 100%;
-/*    max-width: 1153px;*/
+    max-width: 1153px;
     min-height: 760px;
     background-image: url('/images/bank/mature-businessman-with-smartphone.png'),-webkit-gradient(linear,left top,left bottom,from(#ebedf0),to(#ebedf0));
     background-image: url('/images/bank/mature-businessman-with-smartphone.png'),linear-gradient(180deg,#ebedf0,#ebedf0);
@@ -2890,6 +2898,10 @@ figcaption {
         width: 50%;
     }
 
+    .bank_wrapper-bank-right {
+        width: 50%;
+    }
+
     .image-holder {
         min-height: 600px;
     }
@@ -3399,6 +3411,9 @@ figcaption {
     }
 
     .bank_wrapper-right {
+        width: 100%;
+    }
+    .bank_wrapper-bank-right {
         width: 100%;
     }
 
@@ -4146,4 +4161,25 @@ figcaption {
 .debitCard {
     color: var(--themeBlueBackgroundColor);
     margin: 0 0 3rem 0;
+}
+
+.firebase {
+    background-color: var(--themeBlueBackgroundColor);
+    color: var(--white);
+}
+
+.bank-image-comming-soon {
+    right: 30px;
+    bottom: 20px;
+    position: absolute;
+    width: 166px;
+    font-family: var(--font-header);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 145%;
+    padding: 5px;
+    margin: 0 10px 10px 0;
+    color: var(--themeBlueBackgroundColor);
+    background-color: var(--labelLime);
+    border-radius: 6px;
 }

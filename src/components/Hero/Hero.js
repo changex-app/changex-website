@@ -3,13 +3,13 @@ import { Link as SmoothLink } from 'react-scroll';
 import { Modal } from "@mui/material";
 import { useState } from "react";
 import { ScanQrModal } from "../../Utils/ScanQrCode";
-import {StaticImage} from "gatsby-plugin-image";
+import { StaticImage } from "gatsby-plugin-image";
 import '../../../node_modules/animate.css/animate.css';
 import DownloadApple from "../../../static/images/DW-Apple.svg"
 import DownloadGoogle from "../../../static/images/DW-Google.svg"
 import DownloadQR from "../../../static/images/download-qr.svg"
 
-export default function Hero({title}){
+export default function Hero( {heroObj} ){
 
     const [showModal, setShowModal] = useState(false)
 
@@ -19,7 +19,7 @@ export default function Hero({title}){
 
     return (
         <section id="hero" className="section_hero">
-            <StaticImage src={"../../../static/images/Hero-BGimg-mobile.png"} loading="lazy" className="image-hero" alt=""></StaticImage>
+            <StaticImage src={heroObj.backgroundImage} loading="lazy" className="image-hero" alt=""></StaticImage>
             <div className="hero-background animate__animated animate__fadeInLeft animate__delay-800ms"></div>
             <div className="hero-background right animate__animated animate__fadeInRight animate__delay-800ms"></div>
             <div className="padding-global">
@@ -30,8 +30,8 @@ export default function Hero({title}){
                                 <div className="">
                                     <div className="text-cut-off">
                                         <div
-                                            className="heading-style-h4 text-align-center text-color-primary text-left-mobile animate__animated animate__fadeInUp animate__delay-1s">Money
-                                            matters → Made Simple
+                                            className="heading-style-h4 text-align-center text-color-primary text-left-mobile animate__animated animate__fadeInUp animate__delay-1s">
+                                            {heroObj.titleObj.h1}
                                         </div>
                                     </div>
                                 </div>
@@ -39,7 +39,7 @@ export default function Hero({title}){
                                     <div
                                          className="text-cut-off">
                                         <h1 className="heading-style-h1 text-left-mobile animate__animated animate__fadeInUp animate__delay-1s">
-                                            {title}
+                                            {heroObj.titleObj.h2}
                                         </h1>
                                     </div>
                                 </div>
@@ -68,7 +68,7 @@ export default function Hero({title}){
                             <p className="max-width-large align-center text-align-center text-size-medium text-left-mobile">
                                 Manage, invest, and grow your wealth with a Euro bank account, access to crypto, and DeFi
                                 investment tools. Spend anywhere with the Changex&nbsp;
-                                <SmoothLink to="card" smooth={true} className="text-style-link">Crypto Debit Card.</SmoothLink>
+                                <SmoothLink to="card" smooth={true} className="text-style-link">{heroObj.titleObj.titleWithLink}</SmoothLink>
                             </p>
                         </div>
                     </div>

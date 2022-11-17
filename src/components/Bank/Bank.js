@@ -3,8 +3,6 @@ import "../../../node_modules/animate.css/animate.css";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import {bankContent, bankItems} from "./bankItem";
 
-
-
 export default function Bank(){
     return (
         <section id="bank" className="section_bank">
@@ -12,24 +10,23 @@ export default function Bank(){
                 <div className="container-large">
                     <div className="padding-section-large">
                         <div className="bank_wrapper margin-bottom margin-xhuge">
-                            <div className="image-holder">
-                            <div className="bank_wrapper-left">
 
+                                <div className="image-holder">
                                     <img loading="lazy" alt="changex bank"
-                                         srcSet="/images/bank/mature-businessman-with-smartphone.png 500w, /images/bank/mature-businessman-with-smartphone.png 800w, /images/bank/mature-businessman-with-smartphone.png 1080w, /images/bank/mature-businessman-with-smartphone.png 1600w, /images/bank/mature-businessman-with-smartphone.png 2306w"
+                                         srcSet="/images/bank/img-bank-p-500.png 500w, /images/bank/img-bank-p-800.png 800w, /images/bank/img-bank-p-1060.png 1060w, /images/bank/img-bank-p-1080.png 1080w, /images/bank/img-bank-p-1600.png 1600w, /images/bank/img-bank.png 2306w"
                                          sizes="(max-width: 479px) 93vw, (max-width: 767px) 95vw, 100vw"
                                          className="bank-image margin-vertical margin-large">
                                     </img>
+                                    <div className="bank-image-comming-soon">COMMING SOON</div>
                                 </div>
-                            </div>
                             <AnimationOnScroll  animateIn="animate__fadeInUp" animateOnce={true}
                                 className="bank_wrapper-right z-index-1 margin-vertical margin-large padding-horizontal padding-medium">
                                 <h2 className="heading-style-h2 slide-from-bottom">{bankContent.head2}</h2>
                                 <h3 className="heading-style-h5 margin-vertical margin-small slide-from-bottom">Wherever you are</h3>
                                 <p className="text-color-darkgrey text-size-medium margin-bottom margin-huge slide-from-bottom">{bankContent.paragraph}</p>
                                 <a target="_blank"  rel="noreferrer" href={bankContent.firebasePage}
-                                   className="button is-large with-icon width-260 w-inline-block">
-                                    <div>Read Whitepaper</div>
+                                   className="button firebase is-large with-icon width-260 w-inline-block">
+                                    <div>Learn More</div>
                                     <img src="/images/partners/arrow-right-primary.svg" loading="lazy" alt=""></img>
                                 </a>
                             </AnimationOnScroll>

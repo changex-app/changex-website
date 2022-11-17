@@ -10,11 +10,23 @@ import Faq from "../Faq/Faq";
 import Press from "../Press/Press";
 import Cta from "../Cta/Cta";
 
+const heroObj = {
+    titleObj: {
+        h1: "Money matters → Made Simple",
+        h2: "Mobile Banking Meets Decentralized Finance",
+        h3: "Manage, invest, and grow your wealth with a Euro bank account, access to crypto, and DeFi investment tools. Spend anywhere with the Changex",
+        titleWithLink: "Crypto Debit Card."
+    },
+    text: "",
+    appBtnsVisible: true,
+    scrollBtnText: "",
+    backgroundImage: "../../../static/images/Hero-BGimg-mobile.png"
+}
 
 export default function Home() {
     return (
         <>
-            <Hero title='Mobile Banking Meets Decantralized Finance'/>
+            <Hero heroObj={heroObj}/>
             <Wallet/>
             <Bank/>
             <Partners/>
