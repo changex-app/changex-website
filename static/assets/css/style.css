@@ -1501,7 +1501,7 @@ figcaption {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -1568,7 +1568,7 @@ figcaption {
     z-index: 0;
     width: 50%;
     height: auto;
-    max-width: 400px;
+    max-width: 600px;
     background-color: transparent;
 }
 
@@ -2606,6 +2606,17 @@ figcaption {
         padding-right: 0.5rem;
         padding-left: 0.5rem;
     }
+
+    .simpleImageSlider {
+        margin-top: 0.8rem !important;
+    }
+}
+
+@media screen and (max-height: 700px), screen and (max-width: 1024px) {
+
+    .simpleImageSlider {
+        margin-top: -1.5rem !important;
+    }
 }
 
 @media screen and (min-width: 1280px) {
@@ -2669,13 +2680,13 @@ figcaption {
     }
 
     .simpleImageSlider > div{
-        width: 350px !important;
-        height: 750px !important;
+        width: 358px !important;
+        height: 765px !important;
     }
 
     .simpleImageSlider > div > div{
-        width: 350px !important;
-        height: 750px !important;
+        width: 358px !important;
+        height: 765px !important;
     }
 
     .footer-group {
@@ -4264,17 +4275,17 @@ figcaption {
 }
 
 .simpleImageSlider {
-    margin-top: 6rem;
+    margin-top: 4rem;
 }
 
 .simpleImageSlider > div{
-   width: 400px;
-    height: 730px;
+   width: 358px;
+    height: 765px;
 }
 
 .simpleImageSlider > div > div{
-    width: 400px;
-    height: 730px;
+    width: 358px;
+    height: 765px;
 }
 
 .btn-wallet {
@@ -4291,3 +4302,16 @@ figcaption {
     order: 3;
     flex-grow: 0;
 }
+/*
+
+.simpleImageSlider > div > div > div:last-child {
+    display: grid !important;
+    margin: 0px 0px 0px 0px !important;
+    padding: 0px !important;
+    border: 0px !important;
+    position: absolute !important;
+    left: 95% !important;
+}
+*/
+
+
