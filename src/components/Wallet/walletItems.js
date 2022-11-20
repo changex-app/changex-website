@@ -42,7 +42,7 @@ export const properties = {
     autoplay: true,
     defaultIndex: 0,
     transitionDuration: 500,
-    arrows: false,
+    arrows: true,
     infinite: true,
     easing: "linear",
 };

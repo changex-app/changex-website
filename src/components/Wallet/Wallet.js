@@ -15,7 +15,7 @@ export default function Wallet() {
                     <div className="container-large">
                         <div className="padding-section-large">
                             <div className="div-block">
-                                <div className="wallet_wrapper-right">
+                                <div className="wallet_wrapper-left">
                                     <div className="slider">
                                         <div className="slide-container">
                                             {/*<Fade {...properties}>
@@ -31,13 +31,15 @@ export default function Wallet() {
                                                     )
                                                 })}
                                             </Fade>*/}
-                                            <SimpleImageSlider
-                                                width={398}
-                                                height={856}
-                                                images={slideImages}
-                                                showBullets={true}
-                                                showNavs={true}
-                                            />
+                                            <div className="simpleImageSlider">
+                                                <SimpleImageSlider
+                                                    className={'simpleImageSlider'}
+
+                                                    images={slideImages}
+                                                    showBullets={true}
+                                                    showNavs={true}
+                                                />
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="wallet_benefits-container"></div>
@@ -62,7 +64,7 @@ export default function Wallet() {
                                         )
                                     })}*/}
                                 </div>
-                                <AnimationOnScroll  animateIn="animate__fadeInUp" animateOnce={true} className="wallet_wrapper-left animate__animated animate__fadeInUp">
+                                <AnimationOnScroll  animateIn="animate__fadeInUp" animateOnce={true} className="wallet_wrapper-right animate__animated animate__fadeInUp">
                                     <div className="label is-lime slide-from-bottom">Wallet</div>
                                     <h2 className="heading-style-h2 margin-bottom margin-large slide-from-bottom">
                                         Decentralized <br/>Crypto &nbsp;

@@ -1489,7 +1489,7 @@ figcaption {
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
     align-items: flex-start;
-    grid-column-gap: 7rem;
+    grid-column-gap: 16rem;
 }
 
 .wallet_wrapper-left {
@@ -1501,7 +1501,7 @@ figcaption {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -1565,7 +1565,7 @@ figcaption {
     z-index: 0;
     width: 50%;
     height: auto;
-    max-width: 1159px;
+    max-width: 400px;
     background-color: transparent;
 }
 
@@ -4209,4 +4209,14 @@ figcaption {
 .rsis-image {
     background-repeat: no-repeat;
     background-size: contain !important;
+}
+
+.simpleImageSlider > div{
+   width: 400px;
+    height: 850px;
+}
+
+.simpleImageSlider > div > div{
+   width: 400px;
+    height: 850px;
 }

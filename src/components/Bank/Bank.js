@@ -9,16 +9,7 @@ export default function Bank(){
             <div className="padding-global">
                 <div className="container-large">
                     <div className="padding-section-large">
-                        <div className="image-holder">
-                            <img loading="lazy" alt="changex bank"
-                                 srcSet="/images/bank/img-bank-p-500.png 500w, /images/bank/img-bank-p-800.png 800w, /images/bank/img-bank-p-1060.png 1060w, /images/bank/img-bank-p-1080.png 1080w, /images/bank/img-bank-p-1600.png 1600w, /images/bank/img-bank.png 2306w"
-                                 sizes="(max-width: 479px) 93vw, (max-width: 767px) 95vw, 100vw"
-                                 className="bank-image margin-vertical margin-large">
-                            </img>
-                            <div className="bank-image-comming-soon">COMMING SOON</div>
-                        </div>
                         <div className="bank_wrapper margin-bottom margin-xhuge">
-
                                 <div className="image-holder">
                                     <img loading="lazy" alt="changex bank"
                                          srcSet="/images/bank/img-bank-p-500.png 500w, /images/bank/img-bank-p-800.png 800w, /images/bank/img-bank-p-1060.png 1060w, /images/bank/img-bank-p-1080.png 1080w, /images/bank/img-bank-p-1600.png 1600w, /images/bank/img-bank.png 2306w"
