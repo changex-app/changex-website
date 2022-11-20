@@ -11,7 +11,8 @@ import DownloadQR from "../../../static/images/download-qr.svg"
 
 export default function Hero( {heroObj} ){
 
-    const [showModal, setShowModal] = useState(false)
+    const [showModal, setShowModal] = useState(false);
+
 
     function openModal() {
         setShowModal(true);

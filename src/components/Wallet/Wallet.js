@@ -3,11 +3,40 @@ import { Fade } from 'react-slideshow-image';
 import '../../../node_modules/animate.css/animate.css';
 import 'react-slideshow-image/dist/styles.css'
 import { AnimationOnScroll } from 'react-animation-on-scroll';
-import { properties, scrollImages, slideImages } from "./walletItems";
+import {properties, scrollImages, slideImages, SliderOptions} from "./walletItems";
 import {StaticImage} from "gatsby-plugin-image";
 import SimpleImageSlider from "react-simple-image-slider";
+import {useState} from "react";
+import {bankContent} from "../Bank/bankItem";
 
 export default function Wallet() {
+
+    const [itemIndex, SetItemIndex] = useState(0);
+
+
+    function onClickNav(toRight) {
+        if (toRight){
+            if(itemIndex === 3) {
+                SetItemIndex(0)
+            } else {
+                SetItemIndex(itemIndex + 1)
+            }
+        } else {
+            if(itemIndex === 0) {
+                SetItemIndex(3)
+            } else {
+                SetItemIndex(itemIndex - 1)
+            }
+        }
+
+        console.warn('onClickNav toRight',toRight)
+    }
+
+    function onClickBullets(idx) {
+        SetItemIndex(idx)
+        console.warn('onClickBullets idx', idx)
+    }
+
     return (
         <section id="wallet" className="section_wallet">
             <div className="background-color-black">
@@ -34,10 +63,11 @@ export default function Wallet() {
                                             <div className="simpleImageSlider">
                                                 <SimpleImageSlider
                                                     className={'simpleImageSlider'}
-
-                                                    images={slideImages}
-                                                    showBullets={true}
-                                                    showNavs={true}
+                                                    onClickNav={ onClickNav }
+                                                    onClickBullets={ onClickBullets }
+                                                    images={ slideImages }
+                                                    showBullets={ true }
+                                                    showNavs={ true }
                                                 />
                                             </div>
                                         </div>
@@ -64,19 +94,22 @@ export default function Wallet() {
                                         )
                                     })}*/}
                                 </div>
-                                <AnimationOnScroll  animateIn="animate__fadeInUp" animateOnce={true} className="wallet_wrapper-right animate__animated animate__fadeInUp">
-                                    <div className="label is-lime slide-from-bottom">Wallet</div>
+                                <AnimationOnScroll  animateIn="animate__fadeInUp" className="wallet_wrapper-right animate__animated animate__fadeInUp">
+                                    <div className="label is-lime slide-from-bottom">{scrollImages[itemIndex].h1}</div>
                                     <h2 className="heading-style-h2 margin-bottom margin-large slide-from-bottom">
-                                        Decentralized <br/>Crypto &nbsp;
-                                        <span className="highlight is-green">Wallet</span>
+                                        {/*Decentralized <br/>Crypto &nbsp;
+                                        <span className="highlight is-green">Wallet</span>*/}
+                                        {scrollImages[itemIndex].caption}
                                     </h2>
-                                    <p className="text-color-grey text-size-large slide-from-bottom">Access crypto from
-                                        any point on Earth and stay in control with Changex’s
-                                        highly-secure,
-                                        <span>non-custodial</span>
+                                    <p className="text-color-grey text-size-large slide-from-bottom">{scrollImages[itemIndex].text}
+                                       {/* <span>non-custodial</span>
                                         <span className="info-icn hide">ⓘ</span>
-                                        crypto wallet. <br/>No KYC required.
+                                        crypto wallet. <br/>No KYC required.*/}
                                     </p>
+                                    <a target="_blank"  rel="noreferrer" href={scrollImages[itemIndex].url}
+                                       className="button btn-wallet is-large with-icon width-260 w-inline-block">
+                                        {scrollImages[itemIndex].urlText}
+                                    </a>
                                 </AnimationOnScroll>
                             </div>
                         </div>

@@ -8,7 +8,7 @@
     --walletItemColor: #11d482;
     --containerLargeWidth: 76rem;
     --containerSmallWidth: 48rem;
-    --backgroundColorBlack: #121220;
+    --backgroundColorBlack: #141414;
     --heading1FontSize: 4.2rem;
     --heading2FontSize: 3.6rem;
     --heading3FontSize: 2.85rem;
@@ -1507,6 +1507,7 @@ figcaption {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+    text-align: -webkit-center;
 }
 
 .label {
@@ -1541,6 +1542,8 @@ figcaption {
 .wallet_wrapper-right {
     z-index: 0;
     width: 100%;
+    margin-top: 2rem;
+    align-self: center;
 }
 
 .left-arrow {
@@ -2665,6 +2668,16 @@ figcaption {
         padding: 3rem;
     }
 
+    .simpleImageSlider > div{
+        width: 350px !important;
+        height: 750px !important;
+    }
+
+    .simpleImageSlider > div > div{
+        width: 350px !important;
+        height: 750px !important;
+    }
+
     .footer-group {
         display: flex !important;
     }
@@ -2875,11 +2888,12 @@ figcaption {
     }
 
     .div-block {
-        -webkit-box-orient: vertical;
+       /* -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -webkit-flex-direction: column;
         -ms-flex-direction: column;
-        flex-direction: column;
+        flex-direction: column;*/
+        grid-column-gap: 6rem;
     }
 
     .wallet_wrapper-left {
@@ -2987,6 +3001,17 @@ figcaption {
     .w-nav-button {
         display: block !important;
     }
+
+    .simpleImageSlider > div{
+        width: 327px !important;
+        height: 700px !important;
+    }
+
+    .simpleImageSlider > div > div{
+        width: 327px !important;
+        height: 700px !important;
+    }
+
 
     .legal_links_wrapper {
         display: contents;
@@ -3391,11 +3416,11 @@ figcaption {
     }
 
     .div-block {
-        -webkit-box-orient: vertical;
+/*        -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -webkit-flex-direction: column;
         -ms-flex-direction: column;
-        flex-direction: column;
+        flex-direction: column;*/
     }
 
     .wallet_wrapper-left {
@@ -3611,6 +3636,27 @@ figcaption {
     }
 }
 
+@media screen and (max-width: 765px) {
+
+    .div-block {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wallet_wrapper-right {
+        width: 50%;
+    }
+
+    .btn-wallet {
+        width: auto;
+    }
+
+}
+
 @media screen and (max-width: 479px) {
     .max-width-medium {
         display: grid;
@@ -3619,7 +3665,6 @@ figcaption {
     .cta-image {
         display: none;
     }
-
 
     .margin-horizontal {
         margin-top: 0rem;
@@ -3890,6 +3935,13 @@ figcaption {
 
     .image-hero {
         max-width: 280px;
+    }
+
+    .wallet_wrapper-right {
+        width: 100%;
+    }
+    .btn-wallet {
+        width: auto;
     }
 }
 
@@ -4203,7 +4255,7 @@ figcaption {
 }
 
 .rsis-container {
-    background-color: #141414;
+    background-color: var(--backgroundColorBlack);
 }
 
 .rsis-image {
@@ -4211,12 +4263,31 @@ figcaption {
     background-size: contain !important;
 }
 
+.simpleImageSlider {
+    margin-top: 6rem;
+}
+
 .simpleImageSlider > div{
    width: 400px;
-    height: 850px;
+    height: 730px;
 }
 
 .simpleImageSlider > div > div{
-   width: 400px;
-    height: 850px;
+    width: 400px;
+    height: 730px;
+}
+
+.btn-wallet {
+    background-color: #8366F4;
+    color: var(--white);
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 4rem;
+/*    width: 165px !important;*/
+    height: 49px;
+    /* Inside auto layout */
+
+    flex: none;
+    order: 3;
+    flex-grow: 0;
 }
