@@ -39,15 +39,15 @@ export default function Bank(){
                         <div className="w-layout-grid grid-3">
                             {bankItems.map((item,index) => {
                                 return(
-                                    <div id={index.toString()} className="box-container">
+                                    <div id={index.toString()} className="box-container-bank">
                                         <div className="padding-medium">
-                                            <div className="icon-wrapper margin-bottom margin-large">
+                                            <div className="icon-wrapper icon-card margin-bottom margin-large">
                                                 <img src={item.src} loading="lazy" alt={item.title} className="icon" />
                                             </div>
-                                            <h4 className="heading-style-h5 margin-top margin-large">
+                                            <h4 className="heading-style-h5 card-title margin-top margin-large">
                                                 <strong>{item.title}</strong>
                                             </h4>
-                                            <p className="text-color-darkgrey">{item.text}</p>
+                                            <p className="text-color-darkgrey card-text">{item.text}</p>
                                         </div>
                                     </div>
                                 )

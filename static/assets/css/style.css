@@ -343,7 +343,7 @@ figcaption {
 
 .padding-horizontal {
     padding-top: 4rem;
-    padding-left: 6rem;
+    padding-left: 2rem;
 }
 
 .margin-right {
@@ -459,11 +459,15 @@ figcaption {
 
 .heading-style-h3 {
     font-family: var(--font-header);
-    font-size: 3.8rem;
+    font-size: 3.2rem;
     line-height: 1.2;
     font-weight: 600;
     letter-spacing: -2px;
     color: var(--blackColor);
+}
+
+.w-form {
+    min-width: 300px;
 }
 
 .w_nav-overlay {
@@ -629,7 +633,8 @@ figcaption {
 .max-width-medium {
     width: 100%;
     max-width: 34rem;
-    margin: 3rem 0 2rem 0;
+    margin: 0rem 0 2rem 0;
+    align-self: center;
 }
 
 
@@ -725,7 +730,7 @@ figcaption {
 .padding-section-large.is-cta-section {
     margin: 4rem 0 0 0;
     padding: 1rem 0 0 4rem !important;
-    display: flex !important;
+    display: flex;
     background-color: #3418D8;
     border-radius: 2rem;
 }
@@ -1649,6 +1654,10 @@ a:focus, a:hover {
     text-align: initial;
 }
 
+.card_wrapper-right {
+    width: 100%;
+}
+
 .bank_wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1696,7 +1705,7 @@ a:focus, a:hover {
     top: 0%;
     right: 0%;
     bottom: auto;
-    background-image: url('/static/images/card/img-card-bg.png'), linear-gradient(180deg, #ebedf0, #ebedf0);
+    background-image: url('/static/images/card/img-card-bg.png');
     background-size: 1153px, auto;
 }
 
@@ -1714,15 +1723,43 @@ a:focus, a:hover {
 }
 
 .box-container {
-    border-style: solid;
+/*    border-style: solid;
     border-width: 1px;
     border-color: #e8e8e8;
-    border-radius: 6px;
+    border-radius: 6px;*/
+}
+
+.card-title {
+    font-size: 2rem !important;
+    max-width: 10rem !important;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    font-size: 1.2rem !important;
+}
+
+.box-container-bank {
+    border: 1px solid var(--themeBlueBackgroundColor);
+    width: 340px;
+    height: 464px;
+    border-radius: 24px;
+}
+
+.card-grid {
+    border: 1px solid var(--themeBlueBackgroundColor);
+    border-radius: 24px;
+    padding: 0 1rem 0 1rem;
 }
 
 .section_card {
     position: relative;
     border-top: 1px solid #e0e5e9;
+    background-image: url("/images/card/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #F3FBFD;
+
 }
 
 .section_card.is-bordered {
@@ -1840,7 +1877,6 @@ a:focus, a:hover {
 
 .section_cta {
     background-color: #f5f7fa;
-/*    background-image: url('../../images/Download-cta-bg.png');*/
     background-position: 100% 50%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -2646,7 +2682,7 @@ a:focus, a:hover {
 
     .div-block {
         max-height: 1050px !important;
-        position: relative;
+       /* position: relative;*/
     }
 
     .simpleImageSlider > div {
@@ -2725,6 +2761,10 @@ a:focus, a:hover {
 @media screen and (max-width: 991px) {
     .padding-xlarge {
         padding: 3rem;
+    }
+
+    .button.is-qr-cta {
+        display: none;
     }
 
     .simpleImageSlider > div{
@@ -3722,9 +3762,13 @@ a:focus, a:hover {
         display: grid;
     }
 
-    .cta-image {
-        display: none;
+    .padding-section-large.is-cta-section {
+        display: grid !important;
     }
+
+  /*  .cta-image {
+        display: none;
+    }*/
 
     .margin-horizontal {
         margin-top: 0rem;
@@ -4379,4 +4423,8 @@ a:focus, a:hover {
 
 .navItemBorder:after {
     height: 100%;
+}
+
+.icon-card {
+    margin-top: 2rem;
 }

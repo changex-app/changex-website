@@ -6,7 +6,7 @@ export const menuTabs = [
     {
         id: "stake",
         title: "Stake",
-        text: "staking any Proof-of-Stake asset in Changex boosts your CHANGE staking APR. Stake more assets to stack your boost and retain access to the tokens with liquid staking.",
+        text: "Staking any Proof-of-Stake asset in Changex boosts your CHANGE staking APR. Stake more assets to stack your boost and retain access to the tokens with liquid staking.",
         img: Staking_1,
         alt: "Investment Slider image for stake",
     },
@@ -29,7 +29,7 @@ export const menuTabs = [
 export const stake = {
     id: "Tab 1",
     alt: "Investment Slider image for stake",
-    text: "staking any Proof-of-Stake asset in Changex boosts your CHANGE staking APR. Stake more assets to stack your boost and retain access to the tokens with liquid staking."
+    text: "Staking any Proof-of-Stake asset in Changex boosts your CHANGE staking APR. Stake more assets to stack your boost and retain access to the tokens with liquid staking."
 }
 
 export const doubleApy = {
