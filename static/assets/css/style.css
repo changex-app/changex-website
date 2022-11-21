@@ -2643,6 +2643,21 @@ a:focus, a:hover {
     .simpleImageSlider {
         margin-top: 0.8rem !important;
     }
+
+    .div-block {
+        max-height: 1050px !important;
+        position: relative;
+    }
+
+    .simpleImageSlider > div {
+        width: 420px;
+        height: 865px;
+    }
+
+    .simpleImageSlider > div > div {
+        width: 420px;
+        height: 865px;
+    }
 }
 
 @media screen and (max-height: 700px), screen and (max-width: 1024px) {
@@ -3020,7 +3035,7 @@ a:focus, a:hover {
     }
 
     .spacer.spacer-huge {
-       /* height: 0;*/
+        height: 0;
     }
 
     .waitlist-wrapper-left.max-width-large {
@@ -3615,7 +3630,7 @@ a:focus, a:hover {
     }
 
     .spacer.spacer-huge {
-       /* height: 0;*/
+        height: 0;
     }
 
     .image-circle.bottom-right {
