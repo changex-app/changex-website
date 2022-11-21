@@ -10,6 +10,7 @@ export const menuItems = [
         id: 'bank',
         className: 'nav_menu-links w-nav-menu',
         dropdown: true,
+        hasLine: false,
         submenu: [
             {
                 title: 'Debit card',
@@ -27,6 +28,7 @@ export const menuItems = [
         id: 'wealth',
         className: 'nav_menu-links w-nav-menu',
         dropdown: true,
+        hasLine: false,
         submenu: [
             {
                 title: 'Staking',
@@ -45,8 +47,17 @@ export const menuItems = [
     {
         title: 'CHANGE Token',
         url: '/token-page',
-        id: 'company',
+        id: 'token-page',
         className: 'nav_menu-links w-nav-menu',
+        hasLine: true,
+        submenu: []
+    },
+    {
+        title: 'About',
+        url: '/about',
+        id: 'about',
+        className: 'nav_menu-links w-nav-menu',
+        hasLine: false,
         submenu: []
     },
     /*{

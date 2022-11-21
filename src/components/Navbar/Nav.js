@@ -88,13 +88,14 @@ export default function Navigation() {
                                             )
                                         } else {*/
                                             return (
-                                                <div className="nav_menu-links navDisplay" id={index.toString()}>
+                                                <div className={`nav_menu-links navDisplay ${menu.hasLine ? "navItemBorder" : ""}`} id={index.toString()}>
                                                     <SmoothLink to={menu.id} smooth={true}>
                                                         <Nav.Item eventKey={index.toString()}>
                                                             {menu.title}
                                                         </Nav.Item>
                                                     </SmoothLink>
                                                 </div>
+
                                             )
                                        /* }*/
                                     })}

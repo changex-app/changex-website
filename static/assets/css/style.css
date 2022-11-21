@@ -47,6 +47,10 @@ body {
     overflow: clip;
 }
 
+.nav_stats-wrapper {
+    align-self: center;
+}
+
 h1 {
     margin-top: 0rem;
     margin-bottom: 0rem;
@@ -1628,10 +1632,14 @@ a:focus, a:hover {
 
 .bank_wrapper-left {
     width: 50%;
+    position: relative;
+    align-self: flex-end;
 }
 
 .bank_wrapper-right {
-    width: 50%;
+    margin: 4rem 0 0 0 ;
+    width: 100%;
+    position: absolute;
 }
 
 .bank_wrapper-bank-right {
@@ -1647,6 +1655,8 @@ a:focus, a:hover {
     display: -ms-flexbox;
     display: flex;
     height: 100%;
+    position: relative;
+    min-height: 760px;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
@@ -1660,7 +1670,7 @@ a:focus, a:hover {
 }
 
 .image-holder {
-    position: absolute;
+    position: relative;
     text-align: -webkit-center;
     top: 0%;
     width: 100%;
@@ -1675,7 +1685,7 @@ a:focus, a:hover {
 }
 
 .image-holder.overflow-hidden {
-    min-height: 500px;
+    min-height: 700px;
     background-image: url('static/images/bank/img-bank.png');
     background-position: 0 0;
     background-size: 817px;
@@ -2948,7 +2958,8 @@ a:focus, a:hover {
     }
 
     .bank_wrapper-right {
-        width: 50%;
+        width: 100%;
+        position: inherit;
     }
 
     .bank_wrapper-bank-right {
@@ -2956,7 +2967,7 @@ a:focus, a:hover {
     }
 
     .image-holder {
-        min-height: 600px;
+        min-height: 700px;
     }
 
     .section-image.is-rounded {
@@ -3009,7 +3020,7 @@ a:focus, a:hover {
     }
 
     .spacer.spacer-huge {
-        height: 0;
+       /* height: 0;*/
     }
 
     .waitlist-wrapper-left.max-width-large {
@@ -3502,7 +3513,7 @@ a:focus, a:hover {
     }
 
     .image-holder {
-        position: static;
+        position: relative;
         width: 100%;
         min-height: auto;
         border-radius: 8px;
@@ -3604,7 +3615,7 @@ a:focus, a:hover {
     }
 
     .spacer.spacer-huge {
-        height: 0;
+       /* height: 0;*/
     }
 
     .image-circle.bottom-right {
@@ -4182,7 +4193,7 @@ a:focus, a:hover {
 }
 
 .navHeight {
-    height: 12.5rem;
+    /*height: 12.5rem;*/
 }
 
 .scan {
@@ -4273,9 +4284,7 @@ a:focus, a:hover {
 }
 
 .bank-image-comming-soon {
-    right: 30px;
-    bottom: 20px;
-    position: absolute;
+    top: 0;
     width: 166px;
     font-family: var(--font-header);
     font-weight: 600;
@@ -4348,3 +4357,11 @@ a:focus, a:hover {
     cursor: pointer;
 }
 
+.navItemBorder {
+    border-right: 1px solid #c5c6c7;
+    height: 100%;
+}
+
+.navItemBorder:after {
+    height: 100%;
+}
