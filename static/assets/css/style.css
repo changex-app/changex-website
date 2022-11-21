@@ -756,8 +756,17 @@ figcaption {
     font-size: var(--heading2FontSize);
     line-height: 1;
     font-weight: 550;
-    letter-spacing: -3px;
+    letter-spacing: 0px;
     text-transform: capitalize;
+}
+
+.wallet-header {
+    font-size: 40px;
+    height: 80px;
+}
+
+.wallet-text {
+    height: 80px;
 }
 
 .page-wrapper.overflow-hidden {
@@ -857,7 +866,7 @@ figcaption {
 }
 
 .button:hover {
-    background-color: #d3d3ff;
+/*    background-color: #d3d3ff;*/
 }
 
 .button.is-text {
@@ -881,6 +890,7 @@ figcaption {
     border: 1px solid #8888fc;
     background-color: transparent;
     color: #000;
+    padding: 1px 5px 1px 5px !important;
 }
 
 .button.is-icon {
@@ -1026,9 +1036,17 @@ figcaption {
 .button.is-store-footer.google {
     padding: 0.3rem 1.6rem 0.6rem 1.6rem;
 }
+.button.is-store-footer.google:hover {
+    opacity: 0.82;
+}
+
 
 .button.is-store-footer.apple {
     padding: 0.2rem 0.6rem 0.6rem 0.6rem;
+}
+
+.button.is-store-footer.apple:hover {
+    opacity: 0.82;
 }
 
 .button.is-store-footer.apple > img {
@@ -1075,6 +1093,10 @@ figcaption {
     color: var(--backgroundColorBlack);
     text-decoration: none;
     max-width: 160px;
+}
+
+a:focus, a:hover {
+    color: #afd544;
 }
 
 .text-size-medium {
@@ -1532,6 +1554,7 @@ figcaption {
 
 .label.is-lime {
     margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
     color: var(--labelLime);
 }
 
@@ -4314,4 +4337,14 @@ figcaption {
 }
 */
 
+
+.button-arrows {
+    width: 45px;
+    right: 0;
+    background: transparent;
+    font-size: 34px;
+    height: 44px;
+    color: #afd544;
+    cursor: pointer;
+}
 

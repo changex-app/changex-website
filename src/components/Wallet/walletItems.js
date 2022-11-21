@@ -38,13 +38,13 @@ export const slideImages = [
         url: '/images/wallet/cryptowallet_1.png',
     },
     {
-        url: '/images/wallet/cryptowallet_1.png',
+        url: '/images/wallet/cryptowallet_2.png',
     },
     {
-        url: '/images/wallet/cryptowallet_1.png',
+        url: '/images/wallet/cryptowallet_3.png',
     },
     {
-        url: 'images/wallet/cryptowallet_1.png',
+        url: 'images/wallet/cryptowallet_4.png',
     }
 ];
 
