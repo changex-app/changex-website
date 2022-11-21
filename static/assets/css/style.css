@@ -1709,6 +1709,10 @@ a:focus, a:hover {
     background-size: 1153px, auto;
 }
 
+.bank_wrapper-left.form {
+    align-self: center;
+}
+
 .section-image.is-rounded {
     border-radius: 32px;
     -o-object-fit: cover;
@@ -3160,6 +3164,18 @@ a:focus, a:hover {
         padding: 0 1rem 0rem 1rem !important;
     }
 
+    .card-icon {
+        display: inline-flex;
+    }
+
+    .card-icon > div >  img {
+        margin-right: 2rem;
+    }
+
+    .card-text {
+        margin-top: 2rem !important;
+    }
+
     .w-nav-button {
         display: block !important;
     }
@@ -3578,6 +3594,7 @@ a:focus, a:hover {
     .image-holder.card-image {
         position: relative;
         background-image: none;
+        margin-top: 0 !important;
     }
 
     .section-image.is-rounded {

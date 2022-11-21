@@ -63,7 +63,7 @@ export default function Card() {
                     <div className="padding-section-large">
                         <div className="card_wrapper margin-bottom margin-xhuge">
                             <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInUp"
-                                className="bank_wrapper-left z-index-1 margin-vertical margin-large padding-horizontal padding-medium">
+                                className="bank_wrapper-left form z-index-1 margin-vertical margin-large padding-horizontal padding-medium">
                                 <div className="max-width-large">
                                     <h3 className="heading-style-h3 margin-bottom">Meet the<br/> ChangeX<br/></h3>
                                     <h3 className="heading-style-h3 debitCard"> Debit Card</h3>
@@ -111,12 +111,6 @@ export default function Card() {
                             </AnimationOnScroll>
                             <div className="card_wrapper-right">
                                 <div className="image-holder card-image">
-                                    <img src="/images/card/Background.png"
-                                         loading="lazy"
-                                         alt="changex card"
-                                         className="image-card margin-vertical margin-large">
-
-                                    </img>
                                     <img src="../../static/images/card/cards-img.png" loading="lazy" alt="changex cards"
                                          sizes="(max-width: 479px) 93vw, (max-width: 767px) 95vw, 50vw"
                                          srcSet="/images/card/cards-img-p-500.png 500w, /images/card/cards-img.png 729w"
@@ -133,11 +127,11 @@ export default function Card() {
                                 {cardItems.map((card, index)=> {
                                     return (
                                         <div id={index.toString()} className="box-container">
-                                            <div className="padding-medium">
+                                            <div className="card-icon padding-medium">
                                                 <div className="icon-wrapper margin-bottom margin-medium">
                                                     <img src={card.src} loading="lazy" alt="" width={card.width} className="icon"></img>
                                                 </div>
-                                                <p className="margin-top margin-large">{card.text}</p>
+                                                <p style={{fontSize: "15px"}} className="card-text margin-top margin-large">{card.text}</p>
                                             </div>
                                         </div>
                                     )
