@@ -7,7 +7,7 @@ import { BiChevronLeftCircle } from "react-icons/bi";
 import { BiChevronRightCircle } from "react-icons/bi";
 import {scrollImages, slideImages, SliderOptions} from "./walletItems";
 import SimpleImageSlider from "react-simple-image-slider";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 
 export default function Wallet() {
 
@@ -15,33 +15,51 @@ export default function Wallet() {
 
     function RightBtnClick () {
         onClickNav(true)
-        let container = document.getElementsByClassName('rsis-image');
-        for (let item of container) {
-            item.setAttribute('style', `background-image: url("/images/wallet/cryptowallet_${itemIndex}")`);
-        }
+        let container = document.getElementsByClassName('rsis-container');
+        console.warn('container', typeof itemIndex);
+        SetItemIndex(itemIndex + 1)
+        Array.from(container[0].children).forEach(function (element, index) {
+            console.log('element', itemIndex + index)
+            element.setAttribute('style', `background-image: url("/images/wallet/cryptowallet_${itemIndex + index}")`);
+        });
+
+        console.warn('RightBtnClick itemIndex', itemIndex);
+        onClickBullets(itemIndex);
     }
 
 
     function LeftBtnClick () {
         onClickNav(false)
-        let container = document.getElementsByClassName('rsis-image');
+        let container = document.getElementsByClassName('rsis-container');
         for (let item of container) {
             item.setAttribute('style', `background-image: url("/images/wallet/cryptowallet_${itemIndex}")`);
         }
+        console.warn('LeftBtnClick itemIndex', itemIndex);
+        onClickBullets(itemIndex);
     }
 
     function onClickNav(toRight) {
         if (toRight){
             if(itemIndex === 3) {
-                SetItemIndex(0)
+                console.warn('toRight was 3', itemIndex)
+                let value = 0;
+                SetItemIndex(value)
+                console.warn('toRight was 0 , now is: ', itemIndex)
             } else {
-                SetItemIndex(itemIndex + 1)
+                let value = itemIndex + 1;
+                SetItemIndex(value)
+                console.warn('tuk', itemIndex)
             }
         } else {
             if(itemIndex === 0) {
-                SetItemIndex(3)
+                console.warn('toLEft was 0', itemIndex)
+                let value = 3;
+                SetItemIndex(value)
+                console.warn('toLEft was 0 , now is: ', itemIndex)
             } else {
-                SetItemIndex(itemIndex - 1)
+                let value = itemIndex - 1;
+                SetItemIndex(value)
+                console.warn('tuk', itemIndex)
             }
         }
     }

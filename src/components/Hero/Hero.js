@@ -20,23 +20,26 @@ export default function Hero( {heroObj} ){
 
     return (
         <section id="hero" className="section_hero">
-            <StaticImage src={"../../../static/images/Hero-BGimg-mobile.png"} loading="lazy" className="image-hero" alt=""></StaticImage>
-            <div className="hero-background animate__animated animate__fadeInLeft animate__delay-800ms"></div>
-            <div className="hero-background right animate__animated animate__fadeInRight animate__delay-800ms"></div>
+
+{/*            <div className="hero-background animate__animated animate__fadeInLeft animate__delay-800ms"></div>
+            <div className="hero-background right animate__animated animate__fadeInRight animate__delay-800ms"></div>*/}
             <div className="padding-global">
+                <video className='videoTag' autoPlay loop muted>
+                    <source src="/images/Hero_Video_color.mp4" type='video/mp4' />
+                </video>
                 <div className="container-large">
                     <div className="hero_content-wrapper padding-vertical padding-large">
-                        <div className="title_wrapper max-width-large align-center" >
+                        <div className="title_wrapper max-width-large" >
                             <div className="center-content z-index-1">
-                                <div className="">
-                                    <div className="text-cut-off">
+                                <div className="text-cut-off">
+                                    <div>
                                         <div
                                             className="heading-style-h4 text-align-center text-color-primary text-left-mobile animate__animated animate__fadeInUp animate__delay-1s">
                                             {heroObj.titleObj.h1}
                                         </div>
                                     </div>
                                 </div>
-                                <div className="text-align-center margin-vertical margin-small ">
+                                <div className="margin-vertical margin-small ">
                                     <div
                                          className="text-cut-off">
                                         <h1 className="heading-style-h1 text-left-mobile animate__animated animate__fadeInUp animate__delay-1s">
