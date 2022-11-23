@@ -4272,6 +4272,10 @@ a:focus, a:hover {
     margin-bottom: 1.3rem;
 }
 
+.infotainment .nav_right-wrapper {
+    display: block;
+}
+
 .mobileNavBtns  a {
     padding-left: 0 !important;
     color: var(--blackColor);

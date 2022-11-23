@@ -142,7 +142,7 @@ export default function Navigation() {
                 </div>
             {openNav &&  <div className="w_nav-overlay">
 
-                <nav role="navigation" className="nav_menu-links" data-nav-menu-open="">
+                <nav role="navigation" className="nav_menu-links-mobile" data-nav-menu-open="">
                             <Navbar className="navbar-main w-nav-menu" >
                                 <Nav activeKey={activeKey} className="rs-navbar-mobile">
                                     {menuItems.map((menu, index) => {
