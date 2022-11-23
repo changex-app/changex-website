@@ -56,15 +56,6 @@ export default function Hero( {heroObj} ){
                                        className="button is-store max-width-full-mobile-landscape w-inline-block">
                                         <img src={DownloadGoogle} alt="Google" loading="lazy" width="150"></img>
                                     </a>
-                                    <button onClick={openModal}
-                                       className="button is-qr w-inline-block">
-                                        <img src={DownloadQR}
-                                             loading="lazy" width="75" height="50"
-                                             alt="Changex QR code"
-                                             className="qr-small">
-                                        </img>
-                                        <p className="text-align-left text-size-regular scan">Scan To Download</p>
-                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -74,20 +65,17 @@ export default function Hero( {heroObj} ){
                                 investment tools. Spend anywhere with the Changex&nbsp;
                                 <SmoothLink to="card" smooth={true} className="text-style-link">{heroObj.titleObj.titleWithLink}</SmoothLink>
                             </p>
+                            <div className="is-qr-hero w-inline-block">
+                                <img src="/images/download-qr.svg" loading="lazy" width="75"
+                                     alt="Changex QR code"
+                                     className="qr-small-cta">
+                                </img>
+                            </div>
                         </div>
                     </div>
                 </div>
 
             </div>
-            <Modal open={showModal}>
-                <ScanQrModal className="section-scanpopup wf-section"
-                    showModal={showModal}
-                    setShowModal={setShowModal}
-                    aria-labelledby="modal-modal-title"
-                    aria-describedby="modal-modal-description"
-                >
-                </ScanQrModal>
-            </Modal>
         </section>
     );
 }

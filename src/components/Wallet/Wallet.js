@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Fade } from 'react-slideshow-image';
 import '../../../node_modules/animate.css/animate.css';
 import 'react-slideshow-image/dist/styles.css'
 import { AnimationOnScroll } from 'react-animation-on-scroll';
@@ -7,23 +6,28 @@ import { BiChevronLeftCircle } from "react-icons/bi";
 import { BiChevronRightCircle } from "react-icons/bi";
 import {scrollImages, slideImages, SliderOptions} from "./walletItems";
 import SimpleImageSlider from "react-simple-image-slider";
-import {useEffect, useState} from "react";
+import { useState } from "react";
 
 export default function Wallet() {
 
-    const [itemIndex, SetItemIndex] = useState(0);
+    let [itemIndex, SetItemIndex] = useState(0);
 
     function RightBtnClick () {
         onClickNav(true)
         let container = document.getElementsByClassName('rsis-container');
-        console.warn('container', typeof itemIndex);
-        SetItemIndex(itemIndex + 1)
+        itemIndex = itemIndex + 1;
+
+        if(itemIndex > 3) {
+            itemIndex = 1;
+        }
+
+        SetItemIndex(itemIndex)
+
         Array.from(container[0].children).forEach(function (element, index) {
-            console.log('element', itemIndex + index)
             element.setAttribute('style', `background-image: url("/images/wallet/cryptowallet_${itemIndex + index}")`);
+            element.setAttribute('class', `wallet-slider-image`);
         });
 
-        console.warn('RightBtnClick itemIndex', itemIndex);
         onClickBullets(itemIndex);
     }
 
@@ -31,35 +35,38 @@ export default function Wallet() {
     function LeftBtnClick () {
         onClickNav(false)
         let container = document.getElementsByClassName('rsis-container');
-        for (let item of container) {
-            item.setAttribute('style', `background-image: url("/images/wallet/cryptowallet_${itemIndex}")`);
+        itemIndex = itemIndex - 1;
+
+        if(itemIndex <= 0) {
+            itemIndex = 3;
         }
-        console.warn('LeftBtnClick itemIndex', itemIndex);
+
+        SetItemIndex(itemIndex);
+
+        Array.from(container[0].children).forEach(function (element, index) {
+            element.setAttribute('style', `background-image: url("/images/wallet/cryptowallet_${itemIndex - index}")`);
+            element.setAttribute('class', `wallet-slider-image`);
+        });
+
         onClickBullets(itemIndex);
     }
 
     function onClickNav(toRight) {
         if (toRight){
             if(itemIndex === 3) {
-                console.warn('toRight was 3', itemIndex)
                 let value = 0;
                 SetItemIndex(value)
-                console.warn('toRight was 0 , now is: ', itemIndex)
             } else {
                 let value = itemIndex + 1;
                 SetItemIndex(value)
-                console.warn('tuk', itemIndex)
             }
         } else {
             if(itemIndex === 0) {
-                console.warn('toLEft was 0', itemIndex)
                 let value = 3;
                 SetItemIndex(value)
-                console.warn('toLEft was 0 , now is: ', itemIndex)
             } else {
                 let value = itemIndex - 1;
                 SetItemIndex(value)
-                console.warn('tuk', itemIndex)
             }
         }
     }

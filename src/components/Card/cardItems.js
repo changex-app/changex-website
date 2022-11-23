@@ -1,22 +1,18 @@
 export const cardItems = [
     {
-        src: '/images/currency.svg',
+        src: '/images/card/Mini/2.0/stack.svg',
         text: 'Easily convert any in-app token to Euro.',
-        width: ''
     },
     {
-        src: '/images/staking.svg',
-        text: 'Spend staked assets without interrupting the flow of rewards.',
-        width: '102'
+        src: '/images/card/Mini/2.0/cashback.svg',
+        text: 'Spend staked assets or staking rewards.',
     },
     {
-        src: '/images/cashback.svg',
-        text: 'Earn cashback on spending and unlock unique benefits in the app.',
-        width: '116.5'
+        src: '/images/card/Mini/2.0/Boost_APY.svg',
+        text: 'Earn cashback & unlock benefits.',
     },
     {
-        src: '/images/your-money.svg',
-        text: 'Virtual and physical cards cover all needs - your money, your way.',
-        width: '103.5'
+        src: '/images/card/Mini/2.0/yourMoney.svg',
+        text: 'No hidden fees, no stress - your money, your way.',
     }
 ]

@@ -129,7 +129,7 @@ export default function Card() {
                                         <div id={index.toString()} className="box-container">
                                             <div className="card-icon padding-medium">
                                                 <div className="icon-wrapper margin-bottom margin-medium">
-                                                    <img src={card.src} loading="lazy" alt="" width={card.width} className="icon"></img>
+                                                    <img src={card.src} loading="lazy" alt="" width={card.width} className="card-svg"></img>
                                                 </div>
                                                 <p style={{fontSize: "15px"}} className="card-text margin-top margin-large">{card.text}</p>
                                             </div>
