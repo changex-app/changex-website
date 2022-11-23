@@ -1,7 +1,7 @@
 export const cardItems = [
     {
         src: '/images/currency.svg',
-        text: 'Choose your card’s currency in one click - Euro or any available token.',
+        text: 'Easily convert any in-app token to Euro.',
         width: ''
     },
     {

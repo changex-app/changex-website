@@ -26,6 +26,9 @@ export default function Hero( {heroObj} ){
             <div className="padding-global">
                 <div className="container-large">
                     <div className="hero_content-wrapper padding-vertical padding-large">
+                        <video className='videoTag' autoPlay loop muted>
+                            <source src="/images/Hero_Video_color.mp4" type='video/mp4' />
+                        </video>
                         <div className="title_wrapper max-width-large" >
                             <div className="center-content z-index-1">
                                 <div className="text-cut-off">
@@ -73,9 +76,6 @@ export default function Hero( {heroObj} ){
                             </p>
                         </div>
                     </div>
-                    <video className='videoTag' autoPlay loop muted>
-                        <source src="/images/Hero_Video_color.mp4" type='video/mp4' />
-                    </video>
                 </div>
 
             </div>
