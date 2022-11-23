@@ -24,9 +24,6 @@ export default function Hero( {heroObj} ){
 {/*            <div className="hero-background animate__animated animate__fadeInLeft animate__delay-800ms"></div>
             <div className="hero-background right animate__animated animate__fadeInRight animate__delay-800ms"></div>*/}
             <div className="padding-global">
-                <video className='videoTag' autoPlay loop muted>
-                    <source src="/images/Hero_Video_color.mp4" type='video/mp4' />
-                </video>
                 <div className="container-large">
                     <div className="hero_content-wrapper padding-vertical padding-large">
                         <div className="title_wrapper max-width-large" >
@@ -76,7 +73,11 @@ export default function Hero( {heroObj} ){
                             </p>
                         </div>
                     </div>
+                    <video className='videoTag' autoPlay loop muted>
+                        <source src="/images/Hero_Video_color.mp4" type='video/mp4' />
+                    </video>
                 </div>
+
             </div>
             <Modal open={showModal}>
                 <ScanQrModal className="section-scanpopup wf-section"
