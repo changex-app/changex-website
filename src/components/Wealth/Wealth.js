@@ -18,7 +18,7 @@ export default function Wealth() {
             <div className="background-color-black">
                 <div className="padding-global">
                     <div className="container-large">
-                        <div>
+                        <div className="main-container">
                             <div data-current="Tabs"  data-easing="ease-out" data-duration-in="300"
                                  data-duration-out="100" className="tabs tabs-wealth margin-top margin-huge w-tabs">
                                 <div className="max-width-small-slider">
@@ -44,10 +44,9 @@ export default function Wealth() {
                                     </div>
 
                                 </div>
-
-                                <div className="max-width-full w-tab-content">
-                                    <CardSlider sliderData = {sliderData}/>
-                                </div>
+                            </div>
+                            <div className="max-width-full margin-slider w-tab-content">
+                                <CardSlider centerMode={true} sliderData={sliderData}/>
                             </div>
                         </div>
                     </div>

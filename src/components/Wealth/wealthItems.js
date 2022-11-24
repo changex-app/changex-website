@@ -46,7 +46,7 @@ export const stablecoins = {
 
 export const sliderData = [
     {
-        id: "Tab 1",
+        id: "Tab1",
         image: "/images/wealth/Benefits.svg",
         alt: "Investment Slider image for stake",
         text: "Staking any Proof-of-Stake asset in Changex boosts your CHANGE staking APR. Stake more assets to stack your boost and retain access to the tokens with liquid staking.",
@@ -54,7 +54,7 @@ export const sliderData = [
         url: "/staking"
     },
     {
-        id: "Tab 2",
+        id: "Tab2",
         image: "/images/wealth/Leveraged.svg",
         alt: "Investment Slider image for double your APY",
         text: "Use Changex's unique Leveraged staking product to amplify the staking rewards of any Proof-of-Stake asset by 1.2-2x and earn like never before.",
@@ -62,7 +62,7 @@ export const sliderData = [
         url: "/savings"
     },
     {
-        id: "Tab 3",
+        id: "Tab3",
         image: "/images/wealth/Stablecoins.svg",
         alt: "Investment Slider image for lend stablecoins",
         text: "Lend your stablecoins for 5-9.5% APR and power the Leveraged staking economy. Everything is completely decentralized.",

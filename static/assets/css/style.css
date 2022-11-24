@@ -2301,6 +2301,8 @@ a:focus, a:hover {
 
 .tabs-wealth {
     min-height: 590px;
+    max-width: 32rem;
+    margin-right: 8rem;
 }
 
 .tabs.margin-top.margin-huge {
@@ -4551,13 +4553,8 @@ a:focus, a:hover {
     object-fit: contain;
 }
 
-.css-xmuyxk-MuiPaper-root-MuiCard-root {
-    background-color: var(--backgroundColorBlack);
-    color: var(--white);
-    max-width: 345px;
-    height: 500px;
-    border: 1px solid #afaaaa;
-    border-radius: 40px;
+.react-multi-carousel-item {
+    width: 350px !important;
 }
 
 .css-r40f8v-MuiTypography-root {
@@ -4565,11 +4562,11 @@ a:focus, a:hover {
 }
 
 .css-46bh2p-MuiCardContent-root {
-    padding: 50px 40px
+    padding: 30px 40px
 }
 
 .css-1t6e9jv-MuiCardActions-root {
-    padding: 50px 0px;
+    padding: 30px 0px;
 }
 
 .css-1t6e9jv-MuiCardActions-root > button > a {
@@ -4582,17 +4579,35 @@ a:focus, a:hover {
     font-size: 13px;
 }
 
-.react-multi-carousel-dot-list {
-    width: 23rem !important;
+.main-container {
+    display: flex;
 }
 
-
 .max-width-small-slider {
-    max-width: 30rem;
+    max-width: 32rem;
     width: 100%;
 }
 
 .money {
-    max-width: 22rem;
+    max-width: 32rem;
     width: 100%;
 }
+
+.card-slide {
+    background-color: var(--backgroundColorBlack);
+    color: var(--white);
+    max-width: 345px;
+    height: 500px;
+    border: 1px solid #afaaaa;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.react-multi-carousel-track {
+    translate3d(-1377px, 0px, 0px);
+}
+
+.margin-slider {
+    margin-top: 5rem;
+}
+
