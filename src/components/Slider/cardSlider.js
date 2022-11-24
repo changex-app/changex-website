@@ -84,7 +84,7 @@ export default function CardSlider( {partialVisible, sliderData} ) {
                 }}
                 rewind={true}
                 rewindWithAnimation={true}
-                rtl={false}
+                rtl={true}
                 shouldResetAutoplay
                 showDots={true}
                 sliderClass=""
