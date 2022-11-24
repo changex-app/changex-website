@@ -7,44 +7,89 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions } from "@mui/material";
 import { FaAngleRight } from "react-icons/fa";
-
+import "react-multi-carousel/lib/styles.css";
 
 const responsive = {
+    superLargeDesktop: {
+        // the naming can be any, depends on you.
+        breakpoint: { max: 4000, min: 3000 },
+        items: 2
+    },
     desktop: {
         breakpoint: { max: 3000, min: 1024 },
-        items: 3,
-        slidesToSlide: 1 // optional, default to 1.
+        items: 2,
+        slidesToSlide: 1,
+        partialVisibilityGutter: 100// optional, default to 1.
     },
     tablet: {
         breakpoint: { max: 1024, min: 464 },
-        items: 2,
-        slidesToSlide: 1 // optional, default to 1.
+        items: 1,
+        slidesToSlide: 1,
+        partialVisibilityGutter: 100// optional, default to 1.
     },
     mobile: {
         breakpoint: { max: 464, min: 0 },
         items: 1,
-        slidesToSlide: 1 // optional, default to 1.
+        slidesToSlide: 1,
+        partialVisibilityGutter: 100// optional, default to 1.
     }
 };
 
-export default function CardSlider( {sliderData} ) {
+export default function CardSlider( {partialVisible, sliderData} ) {
         return (
             <Carousel
-                responsive={ responsive }
-                swipeable={false}
-                draggable={false}
-                arrows={false}
-                showDots={true}
-                ssr={true} // means to render carousel on server-side.
-                infinite={true}
+                additionalTransfrom={0}
+                autoPlaySpeed={3000}
                 centerMode={false}
-                focusOnSelect={true}
-                swipeable={true}
-                transitionDuration={500}
-                containerClass="carousel-container"
-                removeArrowOnDeviceType={["tablet", "mobile"]}
-                dotListClass="custom-dot-list-style"
-                itemClass="carousel-item-padding-40-px"
+                arrows={false}
+                className=""
+                containerClass="container"
+                dotListClass=""
+                draggable
+                focusOnSelect={false}
+                infinite
+                itemClass=""
+                keyBoardControl
+                minimumTouchDrag={80}
+                partialVisible
+                pauseOnHover
+                renderArrowsWhenDisabled={false}
+                renderButtonGroupOutside={false}
+                renderDotsOutside={false}
+                responsive={{
+                    desktop: {
+                        breakpoint: {
+                            max: 3000,
+                            min: 1024
+                        },
+                        items: 2,
+                        partialVisibilityGutter: 40
+                    },
+                    mobile: {
+                        breakpoint: {
+                            max: 464,
+                            min: 0
+                        },
+                        items: 1,
+                        partialVisibilityGutter: 30
+                    },
+                    tablet: {
+                        breakpoint: {
+                            max: 1024,
+                            min: 464
+                        },
+                        items: 2,
+                        partialVisibilityGutter: 30
+                    }
+                }}
+                rewind={true}
+                rewindWithAnimation={true}
+                rtl={false}
+                shouldResetAutoplay
+                showDots={true}
+                sliderClass=""
+                slidesToSlide={1}
+                swipeable
             >
                 {sliderData.map((item, index)=> {
                     return(

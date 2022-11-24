@@ -3831,6 +3831,10 @@ a:focus, a:hover {
 }
 
 @media screen and (max-width: 479px) {
+
+    .main-container {
+        display: grid !important;
+    }
     .max-width-medium {
         display: grid;
     }
@@ -4531,7 +4535,7 @@ a:focus, a:hover {
     height: 90px;
 }
 
-.wallet-slider-image {
+/*.wallet-slider-image {
     position: absolute;
     left: 0px;
     top: 0px;
@@ -4540,8 +4544,7 @@ a:focus, a:hover {
     background-size: cover;
     overflow: hidden;
     transition: all 0s ease 0s;
-    transform: translate3d(0%, 0px, 0px);
-}
+}*/
 
 .css-o69gx8-MuiCardMedia-root {
     display: block;

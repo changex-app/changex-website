@@ -15,14 +15,6 @@ export const scrollImages = [
         urlText: 'Download the app',
         h1: 'Wallet'
     },
-/*    {
-        src: 'images/wallet/scroll_3.svg',
-        caption: 'Access multi-chain crypto',
-        text: 'Get on top of some of the hottest cryptocurrencies with a focus on Proof-of-Stake tokens. Swap between networks with ease.',
-        url: 'https://firebasestorage.googleapis.com/v0/b/changex-io.appspot.com/o/changex-whitepaper-v4.pdf?alt=media&amp;token=85d7033d-ce62-4fd2-aefd-b50f2a758530',
-        urlText: 'Read the whitepaper',
-        h1: 'Multi-chain'
-    },*/
     {
         src: 'images/wallet/scroll_4.svg',
         caption: 'Buy and sell crypto',
@@ -57,7 +49,7 @@ export const properties = {
 
 export const SliderOptions = {
     useGPURender: true,
-    showNavs: true,
+    showNavs: false,
     showBullets: true,
     loop: true,
     autoPlay: true,

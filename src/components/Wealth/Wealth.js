@@ -46,7 +46,7 @@ export default function Wealth() {
                                 </div>
                             </div>
                             <div className="max-width-full margin-slider w-tab-content">
-                                <CardSlider centerMode={true} sliderData={sliderData}/>
+                                <CardSlider partialVisible={true} sliderData={sliderData}/>
                             </div>
                         </div>
                     </div>
