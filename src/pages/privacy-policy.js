@@ -22,12 +22,9 @@ const IndexPage = () => {
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
           <meta name="description" content="" />
-          <link rel="shortcut icon" href="/assets/images/icon.png" />
           <title>Privacy Policy | ChangeX</title>
-
-          <link rel="stylesheet" href="assets/css/vendor.bundle.css?ver=195" />
-          <link rel="stylesheet" href="assets/css/style-dark.css" />
-          <link rel="stylesheet" href="assets/css/theme.css?ver=195" />
+          <link rel="stylesheet" href="/assets/css/style.css" />
+          <link rel="stylesheet" href="/assets/css/theme.css?ver=195" />
         </Helmet>
         <header
           className="nk-header page-header is-transparent is-sticky is-shrink is-dark"

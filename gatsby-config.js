@@ -9,7 +9,8 @@ module.exports = {
     options: {
       "trackingId": "UA-221374557-1"
     }
-  }, "gatsby-plugin-image",
+  },
+    "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {
@@ -17,7 +18,11 @@ module.exports = {
     options: {
       "icon": "src/assets/images/icon.png"
     }
-  }, "gatsby-plugin-mdx", "gatsby-transformer-remark", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
+  },
+    "gatsby-plugin-mdx",
+    "gatsby-transformer-remark",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",

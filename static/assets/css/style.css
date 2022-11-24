@@ -2266,11 +2266,13 @@ a:focus, a:hover {
 }
 
 .tabs-menu {
+    margin-top: 10%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     width: 300px;
+    font-size: 15px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -2280,14 +2282,10 @@ a:focus, a:hover {
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
     align-items: flex-start;
-    border-left: 1px solid #303d48;
 }
 
 .tabs {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
+    display: inline-flex;
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
@@ -2696,9 +2694,11 @@ a:focus, a:hover {
 }
 
 .tab-link.w--current {
-    border-left: 2px solid var(--walletItemColor);
-    background-color: transparent;
+/*    border-left: 2px solid var(--walletItemColor);*/
+    background-color: var(--themeBlueBackgroundColor) !important;
     color: #fff !important;
+    border-radius: 40px;
+    width: 200px;
 }
 
 .image-hero {
@@ -4539,4 +4539,60 @@ a:focus, a:hover {
     overflow: hidden;
     transition: all 0s ease 0s;
     transform: translate3d(0%, 0px, 0px);
+}
+
+.css-o69gx8-MuiCardMedia-root {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    zoom: 1.3;
+    background-color:var(--backgroundColorBlack);
+    width: 100%;
+    object-fit: contain;
+}
+
+.css-xmuyxk-MuiPaper-root-MuiCard-root {
+    background-color: var(--backgroundColorBlack);
+    color: var(--white);
+    max-width: 345px;
+    height: 500px;
+    border: 1px solid #afaaaa;
+    border-radius: 40px;
+}
+
+.css-r40f8v-MuiTypography-root {
+    color: var(--white)
+}
+
+.css-46bh2p-MuiCardContent-root {
+    padding: 50px 40px
+}
+
+.css-1t6e9jv-MuiCardActions-root {
+    padding: 50px 0px;
+}
+
+.css-1t6e9jv-MuiCardActions-root > button > a {
+    font-size: 10px !important;
+    color: var(--labelLime)
+}
+
+.css-1t6e9jv-MuiCardActions-root > button > a > svg {
+    vertical-align: sub;
+    font-size: 13px;
+}
+
+.react-multi-carousel-dot-list {
+    width: 23rem !important;
+}
+
+
+.max-width-small-slider {
+    max-width: 30rem;
+    width: 100%;
+}
+
+.money {
+    max-width: 22rem;
+    width: 100%;
 }

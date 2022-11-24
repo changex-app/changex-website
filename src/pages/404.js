@@ -1,5 +1,5 @@
 import * as React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+/*import { StaticImage } from "gatsby-plugin-image";*/
 import MetaDecorator from "../Utils/MetaDecorator";
 
 const NotFoundPage = () => {
@@ -8,7 +8,7 @@ const NotFoundPage = () => {
       <MetaDecorator/>
       <main className="pages">
       <section id="#404" className="section_hero">
-        <StaticImage src={"../../../static/images/Hero-BGimg-mobile.png"} loading="lazy" className="image-hero" alt=""></StaticImage>
+        <img src={"../../../static/images/Hero-BGimg-mobile.png"} loading="lazy" className="image-hero" alt=""></img>
         <div className="hero-background"></div>
         <div className="hero-background right"></div>
         <div className="padding-global">
