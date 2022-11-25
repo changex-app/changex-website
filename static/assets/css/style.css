@@ -4587,10 +4587,14 @@ a:focus, a:hover {
     vertical-align: sub;
     font-size: 13px;
 }
-
+/*
 .react-multi-carousel-dot--active button {
-    background: var(--labelLime) ;
+    background: var(--labelLime) !important;
 }
+
+.react-multi-carousel-dot button {
+    background: var(--backgroundColorBlack) !important;
+}*/
 
 .main-container {
     display: flex;

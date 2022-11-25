@@ -2,43 +2,27 @@ import * as React from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
-import { Button, CardActionArea, CardActions } from "@mui/material";
-import { FaAngleRight } from "react-icons/fa";
 import "react-multi-carousel/lib/styles.css";
 
-const responsive = {
-    superLargeDesktop: {
-        // the naming can be any, depends on you.
-        breakpoint: { max: 4000, min: 3000 },
-        items: 2
-    },
-    desktop: {
-        breakpoint: { max: 3000, min: 1024 },
-        items: 2,
-        slidesToSlide: 1,
-        partialVisibilityGutter: 100// optional, default to 1.
-    },
-    tablet: {
-        breakpoint: { max: 1024, min: 464 },
-        items: 1,
-        slidesToSlide: 1,
-        partialVisibilityGutter: 100// optional, default to 1.
-    },
-    mobile: {
-        breakpoint: { max: 464, min: 0 },
-        items: 1,
-        slidesToSlide: 1,
-        partialVisibilityGutter: 100// optional, default to 1.
-    }
-};
-
-export default function WalletSlider( {responsiveSliderData, sliderData} ) {
+export default function WalletSlider( { onClickNav, responsiveSliderData, sliderData } ) {
     return (
         <Carousel
             additionalTransfrom= { responsiveSliderData.additionalTransfrom }
+            afterChange={function(previousSlide,_ref){
+                if(_ref.currentSlide < 3) {
+                    if(_ref.currentSlide === 2) {
+                        onClickNav(0);
+                        return;
+                    }
+                    onClickNav(_ref.currentSlide + 1)
+                } else if (_ref.currentSlide >= 5) {
+                        onClickNav(0)
+                }
+                else if(_ref.currentSlide >= 3 ) {
+                        onClickNav(_ref.currentSlide - 2)
+                }
+            }}
             autoPlaySpeed= { responsiveSliderData.autoPlaySpeed }
             centerMode= { responsiveSliderData.centerMode }
             arrows= { responsiveSliderData.arrows }
