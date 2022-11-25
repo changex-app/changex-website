@@ -1126,6 +1126,10 @@ a:focus, a:hover {
     letter-spacing: -0.2px;
 }
 
+.waller-slider {
+    display: flex !important;
+}
+
 .button-group {
     display: -webkit-box;
     display: -webkit-flex;
@@ -3052,10 +3056,10 @@ a:focus, a:hover {
         position: static;
     }
 
-    .slider {
+   /* .slider {
         position: relative;
         width: 100%;
-    }
+    }*/
 
     .wallet_benefits-container {
         min-height: auto;
@@ -3832,6 +3836,20 @@ a:focus, a:hover {
 
 @media screen and (max-width: 479px) {
 
+    .dotListClass {
+        display: flex !important;
+        margin-top: 20%;
+    }
+
+    .waller-slider {
+        display: block  !important;
+    }
+
+    .carousel-button-group-wallet {
+/*        justify-content: end !important;*/
+        display: none !important;
+    }
+
     .main-container {
         display: grid !important;
     }
@@ -4554,10 +4572,10 @@ a:focus, a:hover {
     width: auto !important;
 }
 
-.wallet-wrapper-left .slider .react-multi-carousel-dot-list {
-    position: initial;
+.dotListClass {
+    position: relative !important;
     bottom: 0;
-    display: block;
+    display: grid;
     align-self: center;
     left: 0;
     right: 0;
@@ -4565,6 +4583,18 @@ a:focus, a:hover {
     padding: 0;
     text-align: center;
 }
+/*
+.wallet-wrapper-left .slider .react-multi-carousel-dot-list {
+    position: relative !important;
+    bottom: 0;
+    display: grid !important;
+    align-self: center;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    padding: 0;
+    text-align: center;
+}*/
 
 .css-r40f8v-MuiTypography-root {
     color: var(--white)

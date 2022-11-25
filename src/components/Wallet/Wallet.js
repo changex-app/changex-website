@@ -5,6 +5,8 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { responsiveSliderData, scrollImages, slideImages } from "./walletItems";
 import { useState } from "react";
 import WalletSlider from "../Slider/walletSlider";
+import {menuTabs, sliderData} from "../Wealth/wealthItems";
+import CardSlider from "../Slider/cardSlider";
 
 export default function Wallet() {
 
@@ -16,17 +18,17 @@ export default function Wallet() {
     }
 
     return (
-        <section id="wallet" className="section_wallet">
-            <div className="background-color-black">
-                <div className="padding-global">
-                    <div className="container-large">
-                        <div className="padding-section-large">
-                            <div className="div-block">
-                                <div className="wallet_wrapper-left">
-                                    <div className="slider">
-                                        <WalletSlider onClickNav={onClickNav} responsiveSliderData={responsiveSliderData} sliderData={slideImages}/>
-                                    </div>
-                                </div>
+    <section id="wallet" className="section_wallet">
+        <div className="background-color-black">
+            <div className="padding-global">
+                <div className="container-large">
+                    <div className="main-container">
+                        <div className="max-width-full waller-slider  margin-slider w-tab-content">
+                            <WalletSlider onClickNav={onClickNav} responsiveSliderData={responsiveSliderData} sliderData={slideImages}/>
+                        </div>
+                        <div data-current="Tabs"  data-easing="ease-out" data-duration-in="300"
+                             data-duration-out="100" className="tabs tabs-wealth margin-top margin-huge w-tabs">
+                            <div className="max-width-small-slider">
                                 <AnimationOnScroll  animateIn="animate__fadeInUp" className="wallet_wrapper-right animate__animated animate__fadeInUp">
                                     <div style={{display: "flex"}}>
                                         <div className="label is-lime slide-from-bottom">{scrollImages[itemIndex].h1}</div>
@@ -46,9 +48,11 @@ export default function Wallet() {
                                 </AnimationOnScroll>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
     )
 }
