@@ -70,3 +70,33 @@ export const sliderData = [
         url: "/lending"
     }
 ]
+
+
+export const responsiveSliderData =  {
+    additionalTransfrom: 0,
+    autoPlaySpeed: 3000,
+    centerMode: false,
+    arrows: false,
+    className: "",
+    containerClass: "container",
+    dotListClass: "",
+    draggable: true,
+    focusOnSelect: false,
+    infinite: true,
+    itemClass:"",
+    keyBoardControl: true,
+    minimumTouchDrag: 80,
+    partialVisible: true,
+    pauseOnHover: true,
+    renderArrowsWhenDisabled: false,
+    renderDotsOutside: false,
+    rewind: true,
+    rewindWithAnimation: true,
+    rtl: true,
+    renderButtonGroupOutside: true,
+    shouldResetAutoplay: true,
+    showDots: true,
+    sliderClass:"",
+    slidesToSlide: 1,
+    swipeable: true
+}

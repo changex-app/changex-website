@@ -1,6 +1,6 @@
 import * as React from "react";
 import {useState} from "react";
-import {doubleApy, menuTabs, stake, stablecoins, sliderData} from "./wealthItems";
+import {doubleApy, menuTabs, stake, stablecoins, sliderData, responsiveSliderData} from "./wealthItems";
 import { StaticImage } from "gatsby-plugin-image";
 import CardSlider from "../Slider/cardSlider";
 
@@ -45,8 +45,8 @@ export default function Wealth() {
 
                                 </div>
                             </div>
-                            <div className="max-width-full margin-slider w-tab-content">
-                                <CardSlider partialVisible={true} sliderData={sliderData}/>
+                            <div className="max-width-full wealth-card-slider margin-slider w-tab-content">
+                                <CardSlider responsiveSliderData={ responsiveSliderData } sliderData={sliderData}/>
                             </div>
                         </div>
                     </div>

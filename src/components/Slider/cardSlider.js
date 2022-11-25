@@ -8,6 +8,7 @@ import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions } from "@mui/material";
 import { FaAngleRight } from "react-icons/fa";
 import "react-multi-carousel/lib/styles.css";
+import { BiChevronRight, FiChevronLeft } from "react-icons/all";
 
 const responsive = {
     superLargeDesktop: {
@@ -35,27 +36,26 @@ const responsive = {
     }
 };
 
-export default function CardSlider( {partialVisible, sliderData} ) {
+export default function CardSlider( {responsiveSliderData, sliderData} ) {
         return (
             <Carousel
-                additionalTransfrom={0}
-                autoPlaySpeed={3000}
-                centerMode={false}
-                arrows={false}
-                className=""
-                containerClass="container"
-                dotListClass=""
-                draggable
-                focusOnSelect={false}
-                infinite
-                itemClass=""
-                keyBoardControl
-                minimumTouchDrag={80}
-                partialVisible
-                pauseOnHover
-                renderArrowsWhenDisabled={false}
-                renderButtonGroupOutside={false}
-                renderDotsOutside={false}
+                additionalTransfrom= { responsiveSliderData.additionalTransfrom }
+                autoPlaySpeed= { responsiveSliderData.autoPlaySpeed }
+                centerMode= { responsiveSliderData.centerMode }
+                arrows= { responsiveSliderData.arrows }
+                className= { responsiveSliderData.className }
+                containerClass= { responsiveSliderData.containerClass }
+                dotListClass= { responsiveSliderData.dotListClass }
+                draggable={ responsiveSliderData.draggable}
+                focusOnSelect={ responsiveSliderData.focusOnSelect }
+                infinite= { responsiveSliderData.infinite }
+                itemClass= { responsiveSliderData.itemClass }
+                keyBoardControl= { responsiveSliderData.keyBoardControl }
+                minimumTouchDrag= { responsiveSliderData.minimumTouchDrag }
+                partialVisible= { responsiveSliderData.partialVisible }
+                pauseOnHover= { responsiveSliderData.pauseOnHover}
+                renderArrowsWhenDisabled= { responsiveSliderData.renderArrowsWhenDisabled }
+                renderDotsOutside= { responsiveSliderData.renderDotsOutside }
                 responsive={{
                     desktop: {
                         breakpoint: {
@@ -72,24 +72,26 @@ export default function CardSlider( {partialVisible, sliderData} ) {
                         },
                         items: 1,
                         partialVisibilityGutter: 30
-                    },
+                          },
                     tablet: {
                         breakpoint: {
                             max: 1024,
                             min: 464
-                        },
+                         },
                         items: 2,
                         partialVisibilityGutter: 30
                     }
                 }}
-                rewind={true}
-                rewindWithAnimation={true}
-                rtl={true}
-                shouldResetAutoplay
-                showDots={true}
-                sliderClass=""
-                slidesToSlide={1}
-                swipeable
+                rewind= { responsiveSliderData.rewind}
+                rewindWithAnimation= { responsiveSliderData.rewindWithAnimation }
+                rtl= { responsiveSliderData.rtl }
+                customButtonGroup= { responsiveSliderData.customButtonGroup }
+                renderButtonGroupOutside = { responsiveSliderData.renderButtonGroupOutside }
+                shouldResetAutoplay= { responsiveSliderData.shouldResetAutoplay }
+                showDots= { responsiveSliderData.showDots }
+                sliderClass= { responsiveSliderData.sliderClass }
+                slidesToSlide= { responsiveSliderData.slidesToSlide }
+                swipeable= { responsiveSliderData.swipeable }
             >
                 {sliderData.map((item, index)=> {
                     return(
@@ -119,5 +121,4 @@ export default function CardSlider( {partialVisible, sliderData} ) {
                 )}
             </Carousel>
         )
-}
-;
+};

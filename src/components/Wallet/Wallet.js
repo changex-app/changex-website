@@ -4,9 +4,13 @@ import 'react-slideshow-image/dist/styles.css'
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { BiChevronLeftCircle } from "react-icons/bi";
 import { BiChevronRightCircle } from "react-icons/bi";
-import { scrollImages, slideImages, SliderOptions } from "./walletItems";
+import {CustomButtonGroup, responsiveSliderData, scrollImages, slideImages, SliderOptions} from "./walletItems";
 import SimpleImageSlider from "react-simple-image-slider";
 import { useState } from "react";
+import {BiChevronRight, FiChevronLeft} from "react-icons/all";
+import CardSlider from "../Slider/cardSlider";
+import WalletSlider from "../Slider/walletSlider";
+import {ButtonGroup} from "rsuite";
 
 export default function Wallet() {
 
@@ -110,28 +114,14 @@ export default function Wallet() {
                             <div className="div-block">
                                 <div className="wallet_wrapper-left">
                                     <div className="slider">
-                                        <div className="slide-container">
-                                            <div className="simpleImageSlider">
-                                                <SimpleImageSlider
-                                                    className = {'simpleImageSlider'}
-                                                    onClickNav = { onClickNav }
-                                                    onClickBullets = { onClickBullets }
-                                                    images = { slideImages }
-                                                    showBullets = { SliderOptions.showBullets }
-                                                    showNavs = { SliderOptions.showNavs }
-                                                />
-                                            </div>
-                                        </div>
+                                        <WalletSlider responsiveSliderData={responsiveSliderData} sliderData={slideImages}/>
                                     </div>
-                                    <div className="wallet_benefits-container"></div>
-
                                 </div>
                                 <AnimationOnScroll  animateIn="animate__fadeInUp" className="wallet_wrapper-right animate__animated animate__fadeInUp">
                                     <div style={{display: "flex"}}>
                                         <div className="label is-lime slide-from-bottom">{scrollImages[itemIndex].h1}</div>
                                         <div style={{margin: "0px 0 10px auto"}}>
-                                            <button onClick={LeftBtnClick} className="button-arrows"><BiChevronLeftCircle/></button>
-                                            <button onClick={RightBtnClick} className="button-arrows"><BiChevronRightCircle/></button>
+                                         {/*   <CustomButtonGroup/>*/}
                                         </div>
                                     </div>
 

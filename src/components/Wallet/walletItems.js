@@ -1,3 +1,7 @@
+import * as React from "react";
+import {BiChevronRight, FiChevronLeft} from "react-icons/all";
+import {BiChevronLeftCircle, BiChevronRightCircle} from "react-icons/bi";
+
 export const scrollImages = [
     {
         src: '/images/wallet/icn-40x40-wallet.svg',
@@ -57,3 +61,44 @@ export const SliderOptions = {
     startIndex: 0,
     duration: 5000,
 };
+
+export const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
+    const { carouselState: { currentSlide } } = rest;
+    return (
+        <div className="carousel-button-group-wallet mb-4  gap-4 flex justify-end
+          items-center w-full">
+            <button onClick={() => previous()} className="button-arrows"><BiChevronLeftCircle/></button>
+            <button onClick={() => next()} className="button-arrows"><BiChevronRightCircle/></button>
+        </div>
+    );
+};
+
+export const responsiveSliderData =  {
+    additionalTransfrom: 0,
+    autoPlaySpeed: 3000,
+    centerMode: false,
+    arrows: false,
+    className: "",
+    containerClass: "container",
+    dotListClass: "dotListClass",
+    draggable: true,
+    focusOnSelect: false,
+    infinite: true,
+    itemClass:"",
+    keyBoardControl: true,
+    minimumTouchDrag: 80,
+    partialVisible: false,
+    pauseOnHover: true,
+    renderArrowsWhenDisabled: false,
+    renderDotsOutside: true,
+    rewind: false,
+    rewindWithAnimation: false,
+    rtl: true,
+    customButtonGroup: <ButtonGroup/>,
+    renderButtonGroupOutside: true,
+    shouldResetAutoplay: true,
+    showDots: true,
+    sliderClass:"",
+    slidesToSlide: 1,
+    swipeable: true
+}

@@ -1551,7 +1551,7 @@ a:focus, a:hover {
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
     align-items: flex-start;
-    grid-column-gap: 16rem;
+    grid-column-gap: 14rem;
 }
 
 .wallet_wrapper-left {
@@ -1566,9 +1566,9 @@ a:focus, a:hover {
     max-width: 600px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
+/*    -webkit-flex-direction: column;
     -ms-flex-direction: column;
-    flex-direction: column;
+    flex-direction: column;*/
     text-align: -webkit-center;
 }
 
@@ -2236,7 +2236,6 @@ a:focus, a:hover {
     max-width: 1120px;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 30px;
     padding-left: 30px;
 }
 
@@ -4535,16 +4534,6 @@ a:focus, a:hover {
     height: 90px;
 }
 
-/*.wallet-slider-image {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    overflow: hidden;
-    transition: all 0s ease 0s;
-}*/
 
 .css-o69gx8-MuiCardMedia-root {
     display: block;
@@ -4556,8 +4545,12 @@ a:focus, a:hover {
     object-fit: contain;
 }
 
-.react-multi-carousel-item {
+.wealth-card-slider .react-multi-carousel-item {
     width: 350px !important;
+}
+
+.wallet-wrapper-left .react-multi-carousel-item {
+    width: auto !important;
 }
 
 .css-r40f8v-MuiTypography-root {
@@ -4614,3 +4607,7 @@ a:focus, a:hover {
     margin-top: 5rem;
 }
 
+.carousel-button-group-wallet {
+    display: flex;
+    align-self: baseline;
+}
