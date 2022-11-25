@@ -121,7 +121,6 @@ export default function Wallet() {
                                     <div style={{display: "flex"}}>
                                         <div className="label is-lime slide-from-bottom">{scrollImages[itemIndex].h1}</div>
                                         <div style={{margin: "0px 0 10px auto"}}>
-                                         {/*   <CustomButtonGroup/>*/}
                                         </div>
                                     </div>
 
