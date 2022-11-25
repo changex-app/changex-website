@@ -62,16 +62,6 @@ export const SliderOptions = {
     duration: 5000,
 };
 
-export const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
-    const { carouselState: { currentSlide } } = rest;
-    return (
-        <div className="carousel-button-group-wallet mb-4  gap-4 flex justify-end
-          items-center w-full">
-            <button onClick={() => previous()} className="button-arrows"><BiChevronLeftCircle/></button>
-            <button onClick={() => next()} className="button-arrows"><BiChevronRightCircle/></button>
-        </div>
-    );
-};
 
 export const responsiveSliderData =  {
     additionalTransfrom: 0,
@@ -94,7 +84,6 @@ export const responsiveSliderData =  {
     rewind: false,
     rewindWithAnimation: false,
     rtl: true,
-    customButtonGroup: <ButtonGroup/>,
     renderButtonGroupOutside: true,
     shouldResetAutoplay: true,
     showDots: true,

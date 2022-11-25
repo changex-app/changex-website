@@ -8,7 +8,7 @@ import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions } from "@mui/material";
 import { FaAngleRight } from "react-icons/fa";
 import "react-multi-carousel/lib/styles.css";
-import { BiChevronRight, FiChevronLeft } from "react-icons/all";
+import {useEffect, useRef} from "react";
 
 const responsive = {
     superLargeDesktop: {
@@ -36,11 +36,21 @@ const responsive = {
     }
 };
 
-export default function CardSlider( {responsiveSliderData, sliderData} ) {
+export default function CardSlider( { onClickNav, responsiveSliderData, sliderData } ) {
+
+    const carouselRef = useRef();
+
         return (
             <Carousel
+                ref={carouselRef}
                 additionalTransfrom= { responsiveSliderData.additionalTransfrom }
+                afterChange={function(previousSlide,_ref){
+                   /* carouselRef.current.autoPlay = false;*/
+                    console.warn('car')
+                    onClickNav(_ref.currentSlide, carouselRef)
+                }}
                 autoPlaySpeed= { responsiveSliderData.autoPlaySpeed }
+                autoPlay={responsiveSliderData.autoPlay}
                 centerMode= { responsiveSliderData.centerMode }
                 arrows= { responsiveSliderData.arrows }
                 className= { responsiveSliderData.className }
@@ -115,7 +125,6 @@ export default function CardSlider( {responsiveSliderData, sliderData} ) {
                                     </CardActions>
                                 </CardContent>
                             </CardActionArea>
-
                         </Card>
                     )}
                 )}

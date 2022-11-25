@@ -4565,7 +4565,7 @@ a:focus, a:hover {
 }
 
 .wealth-card-slider .react-multi-carousel-item {
-    width: 350px !important;
+    width: 340px !important;
 }
 
 .wallet-wrapper-left .react-multi-carousel-item {
@@ -4655,7 +4655,7 @@ a:focus, a:hover {
 }
 
 .margin-slider {
-    margin-top: 5rem;
+    margin-top: 1rem;
 }
 
 .carousel-button-group-wallet {

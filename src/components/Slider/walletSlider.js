@@ -4,8 +4,21 @@ import 'react-multi-carousel/lib/styles.css';
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import "react-multi-carousel/lib/styles.css";
+import {BiChevronLeftCircle, BiChevronRightCircle} from "react-icons/bi";
 
-export default function WalletSlider( { onClickNav, responsiveSliderData, sliderData } ) {
+
+export const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
+    const { carouselState: { currentSlide } } = rest;
+    return (
+        <div className="carousel-button-group-wallet mb-4  gap-4 flex justify-end
+          items-center w-full">
+            <button onClick={() => previous()} className="button-arrows"><BiChevronLeftCircle/></button>
+            <button onClick={() => next()} className="button-arrows"><BiChevronRightCircle/></button>
+        </div>
+    );
+};
+
+export default function WalletSlider( {onClickNav, responsiveSliderData, sliderData } ) {
     return (
         <Carousel
             additionalTransfrom= { responsiveSliderData.additionalTransfrom }
@@ -68,7 +81,7 @@ export default function WalletSlider( { onClickNav, responsiveSliderData, slider
             rewind= { responsiveSliderData.rewind}
             rewindWithAnimation= { responsiveSliderData.rewindWithAnimation }
             rtl= { responsiveSliderData.rtl }
-            customButtonGroup= { responsiveSliderData.customButtonGroup }
+            customButtonGroup= { <ButtonGroup/> }
             renderButtonGroupOutside = { responsiveSliderData.renderButtonGroupOutside }
             shouldResetAutoplay= { responsiveSliderData.shouldResetAutoplay }
             showDots= { responsiveSliderData.showDots }

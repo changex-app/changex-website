@@ -1,6 +1,9 @@
+import * as React from "react";
 import Staking_1 from "../../../static/images/wealth/Staking_1.svg";
 import Doubleapy from "../../../static/images/wealth/Doubleapy.svg";
 import Stablecoins from "../../../static/images/wealth/Lend-Stablecoins.svg";
+import {BiChevronLeftCircle, BiChevronRightCircle} from "react-icons/bi";
+
 
 export const menuTabs = [
     {
@@ -71,10 +74,21 @@ export const sliderData = [
     }
 ]
 
+export const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
+    const { carouselState: { currentSlide } } = rest;
+    return (
+        <div className="carousel-button-group-wallet mb-4  gap-4 flex justify-end
+          items-center w-full">
+            <button onClick={() => previous()} className="button-arrows"><BiChevronLeftCircle/></button>
+            <button onClick={() => next()} className="button-arrows"><BiChevronRightCircle/></button>
+        </div>
+    );
+};
 
 export const responsiveSliderData =  {
     additionalTransfrom: 0,
-    autoPlaySpeed: 3000,
+    autoPlaySpeed: 4000,
+    autoPlay: true,
     centerMode: false,
     arrows: false,
     className: "",
@@ -92,9 +106,9 @@ export const responsiveSliderData =  {
     renderDotsOutside: false,
     rewind: true,
     rewindWithAnimation: true,
-    rtl: true,
+    rtl: false,
     renderButtonGroupOutside: true,
-    shouldResetAutoplay: true,
+    shouldResetAutoplay: false,
     showDots: true,
     sliderClass:"",
     slidesToSlide: 1,

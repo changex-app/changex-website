@@ -1,16 +1,34 @@
 import * as React from "react";
-import {useState} from "react";
+import {useRef, useState} from "react";
 import {doubleApy, menuTabs, stake, stablecoins, sliderData, responsiveSliderData} from "./wealthItems";
-import { StaticImage } from "gatsby-plugin-image";
 import CardSlider from "../Slider/cardSlider";
+import Carousel from "react-multi-carousel";
+let carouselRef2;
 
 
 export default function Wealth() {
 
     const [active, setActive] = useState('stake');
 
-    function handleClick(id) {
-        setActive(id);
+
+    async function onClickNav(index, carouselRef) {
+        console.warn('carousel click', index, carouselRef.current)
+
+        carouselRef2 = carouselRef;
+        if(index === 4){
+            index = 0;
+        }
+        if(index === 5){
+            index = 1;
+        }
+        if(index === 6){
+            index = 2;
+        }
+
+        setActive(menuTabs[index].id);
+    }
+    function handleClick(id,index) {
+        carouselRef2.current.goToSlide(index)
     }
 
     return (
@@ -35,7 +53,7 @@ export default function Wealth() {
                                         {menuTabs.map((item, index)=> {
                                             return (
                                                 <span id={item.id}
-                                                      onClick={() => handleClick(item.id)}
+                                                      onClick={() => handleClick(item.id, index)}
                                                       className={active === item.id ? 'tab-link w-inline-block w-tab-link w--current' : 'tab-link w-inline-block w-tab-link'}>
                                                  <div>{item.title}</div>
                                              </span>
@@ -46,7 +64,7 @@ export default function Wealth() {
                                 </div>
                             </div>
                             <div className="max-width-full wealth-card-slider margin-slider w-tab-content">
-                                <CardSlider responsiveSliderData={ responsiveSliderData } sliderData={sliderData}/>
+                                <CardSlider onClickNav={onClickNav} responsiveSliderData={ responsiveSliderData } sliderData={sliderData}/>
                             </div>
                         </div>
                     </div>
