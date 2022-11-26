@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { useEffect, useRef, useState } from "react";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import Card from "@mui/material/Card";
@@ -7,50 +8,29 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions } from "@mui/material";
 import { FaAngleRight } from "react-icons/fa";
-import "react-multi-carousel/lib/styles.css";
-import {useEffect, useRef} from "react";
-
-const responsive = {
-    superLargeDesktop: {
-        // the naming can be any, depends on you.
-        breakpoint: { max: 4000, min: 3000 },
-        items: 2
-    },
-    desktop: {
-        breakpoint: { max: 3000, min: 1024 },
-        items: 2,
-        slidesToSlide: 1,
-        partialVisibilityGutter: 100// optional, default to 1.
-    },
-    tablet: {
-        breakpoint: { max: 1024, min: 464 },
-        items: 1,
-        slidesToSlide: 1,
-        partialVisibilityGutter: 100// optional, default to 1.
-    },
-    mobile: {
-        breakpoint: { max: 464, min: 0 },
-        items: 1,
-        slidesToSlide: 1,
-        partialVisibilityGutter: 100// optional, default to 1.
-    }
-};
 
 export default function CardSlider( { onClickNav, responsiveSliderData, sliderData } ) {
 
     const carouselRef = useRef();
+
+    const [timer, setTimer] = useState(false)
+
+    useEffect(() => {
+        console.warn(window.innerWidth)
+        setTimeout(() => {
+            setTimer(true)
+        }, 1000)
+    }, [])
 
         return (
             <Carousel
                 ref={carouselRef}
                 additionalTransfrom= { responsiveSliderData.additionalTransfrom }
                 afterChange={function(previousSlide,_ref){
-                   /* carouselRef.current.autoPlay = false;*/
-                    console.warn('car')
                     onClickNav(_ref.currentSlide, carouselRef)
                 }}
                 autoPlaySpeed= { responsiveSliderData.autoPlaySpeed }
-                autoPlay={responsiveSliderData.autoPlay}
+                autoPlay={!timer}
                 centerMode= { responsiveSliderData.centerMode }
                 arrows= { responsiveSliderData.arrows }
                 className= { responsiveSliderData.className }
@@ -88,7 +68,7 @@ export default function CardSlider( { onClickNav, responsiveSliderData, sliderDa
                             max: 1024,
                             min: 464
                          },
-                        items: 2,
+                        items: 1,
                         partialVisibilityGutter: 30
                     }
                 }}

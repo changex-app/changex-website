@@ -2,26 +2,23 @@ import * as React from "react";
 import {useRef, useState} from "react";
 import {doubleApy, menuTabs, stake, stablecoins, sliderData, responsiveSliderData} from "./wealthItems";
 import CardSlider from "../Slider/cardSlider";
-import Carousel from "react-multi-carousel";
-let carouselRef2;
 
+let carouselRef2;
 
 export default function Wealth() {
 
     const [active, setActive] = useState('stake');
 
-
     async function onClickNav(index, carouselRef) {
-        console.warn('carousel click', index, carouselRef.current)
-
         carouselRef2 = carouselRef;
-        if(index === 4){
+
+        if(index === 3 || index === 6){
             index = 0;
         }
-        if(index === 5){
+        if(index === 4 || index === 7){
             index = 1;
         }
-        if(index === 6){
+        if(index === 5 || index === 8){
             index = 2;
         }
 
@@ -64,7 +61,7 @@ export default function Wealth() {
                                 </div>
                             </div>
                             <div className="max-width-full wealth-card-slider margin-slider w-tab-content">
-                                <CardSlider onClickNav={onClickNav} responsiveSliderData={ responsiveSliderData } sliderData={sliderData}/>
+                                <CardSlider  onClickNav={onClickNav} responsiveSliderData={ responsiveSliderData } sliderData={sliderData}/>
                             </div>
                         </div>
                     </div>

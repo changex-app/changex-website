@@ -4564,9 +4564,11 @@ a:focus, a:hover {
     object-fit: contain;
 }
 
+/*
 .wealth-card-slider .react-multi-carousel-item {
     width: 340px !important;
 }
+*/
 
 .wallet-wrapper-left .react-multi-carousel-item {
     width: auto !important;
