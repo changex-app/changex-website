@@ -2237,11 +2237,19 @@ a:focus, a:hover {
     grid-template-rows: auto;
 }
 
-.container {
+.container-wallet {
     max-width: 1120px;
     margin-right: auto;
     margin-left: auto;
     padding-left: 30px;
+}
+
+.container-wealth {
+    max-width: 1120px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 30px;
+    margin-top: 3rem;
 }
 
 .footer-grid {
@@ -3868,7 +3876,6 @@ a:focus, a:hover {
     }
 
     .carousel-button-group-wallet {
-/*        justify-content: end !important;*/
         display: none !important;
     }
 

@@ -81,7 +81,7 @@ export const responsiveSliderData =  {
     centerMode: false,
     arrows: false,
     className: "",
-    containerClass: "container",
+    containerClass: "container-wealth",
     dotListClass: "",
     draggable: true,
     focusOnSelect: false,
