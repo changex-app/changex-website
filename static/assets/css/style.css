@@ -2766,6 +2766,20 @@ a:focus, a:hover {
         height: 124px;
         padding: 0.5rem;
     }
+
+    .videoTag {
+        top: 0 !important;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .image-holder {
+        max-width: 100% !important;
+    }
+
+    .container-large {
+        max-width: 89rem !important;
+    }
 }
 
 @media screen and (max-width: 1025px) {
@@ -3820,8 +3834,11 @@ a:focus, a:hover {
     }
 
     .videoTag {
-        margin-left: -20% !important;
+        margin-left: -30% !important;
         position: relative !important;
+        margin-top: 0 !important;
+        margin-bottom: 4rem;
+        transform: scale(1.7);
     }
 
     .wallet_wrapper-right {
