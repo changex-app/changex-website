@@ -5,7 +5,7 @@ import {bankContent, bankItems} from "./bankItem";
 
 export default function Bank(){
     return (
-        <section id="bank" className="section_bank">
+        <section id="bank-section" className="section_bank">
             <div className="padding-global">
                 <div className="container-large">
                     <div className="padding-section-large">

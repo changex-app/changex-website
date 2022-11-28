@@ -6,7 +6,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { Button, CardActionArea, CardActions } from "@mui/material";
+import {Button, CardActionArea, CardActions, CardHeader} from "@mui/material";
 import { FaAngleRight } from "react-icons/fa";
 
 export default function CardSlider( { onClickNav, responsiveSliderData, sliderData } ) {
@@ -95,6 +95,11 @@ export default function CardSlider( { onClickNav, responsiveSliderData, sliderDa
                                     alt={item.alt}
                                 />
                                 <CardContent>
+                                    {item.head &&
+                                        <Typography gutterBottom variant="h5" component="div">
+                                            {item.head}
+                                        </Typography>
+                                    }
                                     <Typography variant="body2" color="text.secondary">
                                         {item.text}
                                     </Typography>
