@@ -43,7 +43,7 @@ export default function Wealth() {
                                             <span className="highlight is-green"> never sleeps</span>
                                         </h2>
                                         <p className="text-size-large text-color-grey">
-                                            Earn passive income in easiest possible way with DeFi’s most powerful investment tools.
+                                            Earn passive income in the easiest possible way with DeFi’s most powerful investment tools.
                                         </p>
                                     </div>
                                     <div className="tabs-menu w-tab-menu">

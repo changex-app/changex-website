@@ -2800,6 +2800,10 @@ a:focus, a:hover {
         padding-left: 0.5rem;
     }
 
+    .dotListClass {
+        left: -13% !important;
+    }
+
     .is-qr-hero {
         width: 90px !important;
     }
@@ -4657,14 +4661,14 @@ a:focus, a:hover {
     vertical-align: sub;
     font-size: 13px;
 }
-/*
-.react-multi-carousel-dot--active button {
-    background: var(--labelLime) !important;
-}
 
 .react-multi-carousel-dot button {
-    background: var(--backgroundColorBlack) !important;
-}*/
+    background: transparent !important;
+}
+
+.react-multi-carousel-dot--active button{
+    background: #11D48E !important;
+}
 
 .main-container {
     display: flex;
