@@ -6,15 +6,9 @@ import Home from "../components/Home/Home";
 import Navigation from "../components/Navbar/Nav";
 import Footer from "../components/Footer";
 import content from "../../static/assets/content/content.json";
-import DebitCard from "./bank/debitcard";
-import SepaBankAccount from "./bank/sepabankaccount";
-import BuySellCrypto from "./wallet/buysellcrypto";
-import DefyCryptoWallet from "./wallet/defycryptowallet";
-import SwapCrypto from "./wallet/swapcrypto";
-import Lending from "./wealth/lending";
-import Savings from "./wealth/savings";
-import Staking from "./wealth/staking";
 import NotFoundPage from "./404";
+import BankPage from "./bank/BankPage";
+import WealthPage from "./wealth/WealthPage";
 const imageUrl = "/assets/images/Changex-OG.jpeg";
 
 const IndexPage = () => {
@@ -32,14 +26,8 @@ const IndexPage = () => {
               <main className="pages">
                   <Routes >
                           <Route path="/" element={ <Home/> } />
-                          <Route path="/bank/debitcard/" element={ <DebitCard/> } />
-                          <Route path="/bank/sepabankaccount/" element={ <SepaBankAccount/> } />
-                          <Route path="/wallet/buysellcrypto/" element={ <BuySellCrypto />} />
-                          <Route path="/wallet/defycryptowallet/" element={ <DefyCryptoWallet/> } />
-                          <Route path="/wallet/swapcrypto/" element={ <SwapCrypto/> } />
-                          <Route path="/wealth/lending/" element={ <Lending/> } />
-                          <Route path="/wealth/savings/" element={ <Savings/> } />
-                          <Route path="/wealth/staking/" element={ <Staking/> } />
+                          <Route path="/bank" element={ <BankPage/> } />
+                          <Route path="/wealth" element={ <WealthPage/> } />
                           <Route path="*" element={ <NotFoundPage/> }/>
                   </Routes>
               </main>
