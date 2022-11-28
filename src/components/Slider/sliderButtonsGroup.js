@@ -1,4 +1,4 @@
-import {BiChevronLeftCircle, BiChevronRightCircle} from "react-icons/bi";
+import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
 import * as React from "react";
 
 export const SliderButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
@@ -6,8 +6,8 @@ export const SliderButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
     return (
         <div className="carousel-button-group-wallet mb-4  gap-4 flex justify-end
           items-center w-full">
-            <button onClick={() => previous()} className="button-arrows"><BiChevronLeftCircle/></button>
-            <button onClick={() => next()} className="button-arrows"><BiChevronRightCircle/></button>
+            <button onClick={() => previous()} className="button-arrows"><BiChevronLeft/></button>
+            <button onClick={() => next()} className="button-arrows"><BiChevronRight/></button>
         </div>
     );
 };

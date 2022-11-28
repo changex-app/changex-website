@@ -5,10 +5,6 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { responsiveSliderData, scrollImages, slideImages } from "./walletItems";
 import { useState } from "react";
 import WalletSlider from "../Slider/walletSlider";
-import {menuTabs, sliderData} from "../Wealth/wealthItems";
-import CardSlider from "../Slider/cardSlider";
-import {BiChevronLeftCircle, BiChevronRightCircle} from "react-icons/bi";
-
 
 export default function Wallet() {
 
@@ -31,7 +27,7 @@ export default function Wallet() {
                                  data-duration-out="100" className="tabs tabs-wealth margin-top margin-huge w-tabs">
                                 <div className="max-width-small-slider">
                                     <AnimationOnScroll  animateIn="animate__fadeInUp" className="wallet_wrapper-right animate__animated animate__fadeInUp">
-                                        <div style={{display: "flex"}}>
+                                        <div className="wallet-content">
                                             <div className="label is-lime slide-from-bottom">{scrollImages[itemIndex].h1}</div>
                                             <div style={{margin: "0px 0 10px auto"}}>
                                             </div>

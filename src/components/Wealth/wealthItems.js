@@ -74,16 +74,6 @@ export const sliderData = [
     }
 ]
 
-export const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
-    const { carouselState: { currentSlide } } = rest;
-    return (
-        <div className="carousel-button-group-wallet mb-4  gap-4 flex justify-end items-center w-full">
-            <button onClick={() => previous()} className="button-arrows"><BiChevronLeftCircle/></button>
-            <button onClick={() => next()} className="button-arrows"><BiChevronRightCircle/></button>
-        </div>
-    );
-};
-
 export const responsiveSliderData =  {
     additionalTransfrom:0,
     autoPlaySpeed: 1000,

@@ -2718,6 +2718,10 @@ a:focus, a:hover {
         padding-top: 0;
     }
 
+    .carousel-button-group-wallet {
+        right: 13% !important;
+    }
+
     .image-holder {
         max-width: 1153px;
     }
@@ -3856,6 +3860,7 @@ a:focus, a:hover {
     .dotListClass {
         display: flex !important;
         margin-top: 20%;
+        left: 2% !important;
     }
 
     .waller-slider {
@@ -4531,10 +4536,18 @@ a:focus, a:hover {
     width: 45px;
     right: 0;
     background: transparent;
-    font-size: 34px;
-    height: 44px;
+    font-size: 30px;
+    height: 40px;
+    margin: 0 5px;
     color: #afd544;
     cursor: pointer;
+    border: 0.5px solid rgba(224,251,146);
+    opacity: 0.5;
+    border-radius: 3rem;
+}
+
+.button-arrows:hover {
+    opacity: 1;
 }
 
 .navItemBorder {
@@ -4597,7 +4610,7 @@ a:focus, a:hover {
     bottom: 0;
     display: grid;
     align-self: center;
-    left: 0;
+    left: -16%;
     right: 0;
     justify-content: center;
     padding: 0;
@@ -4681,4 +4694,19 @@ a:focus, a:hover {
 .carousel-button-group-wallet {
     display: flex;
     align-self: baseline;
+    position: absolute;
+    z-index: 999;
+    right: 21%;
+    top: 19%;
+}
+
+.w-tab-content {
+    position: inherit;
+    display: block;
+    overflow: hidden;
+}
+
+.wallet-content {
+    display: flex;
+    margin-bottom: 2rem;
 }

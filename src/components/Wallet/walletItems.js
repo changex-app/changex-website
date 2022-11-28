@@ -73,7 +73,7 @@ export const responsiveSliderData =  {
     dotListClass: "dotListClass",
     draggable: true,
     focusOnSelect: false,
-    infinite: true,
+    infinite: false,
     itemClass:"",
     keyBoardControl: true,
     minimumTouchDrag: 80,
