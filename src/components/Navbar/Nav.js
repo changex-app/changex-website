@@ -89,11 +89,11 @@ export default function Navigation() {
                                         } else {*/
                                             return (
                                                 <div className={`nav_menu-links navDisplay ${menu.hasLine ? "navItemBorder" : ""}`} id={index.toString()}>
-                                                    <Link to={menu.id}>
-                                                        <Nav.Item eventKey={index.toString()}>
-                                                            {menu.title}
+                                                        <Nav.Item>
+                                                            <Link to={menu.url} eventKey={index.toString()}>
+                                                                {menu.title}
+                                                            </Link>
                                                         </Nav.Item>
-                                                    </Link>
                                                 </div>
 
                                             )
@@ -164,11 +164,11 @@ export default function Navigation() {
                                         } else {*/
                                             return (
                                                 <div  className="mobileNavBtns navDisplay" id={index.toString()}>
-                                                    <Link to={menu.url}>
-                                                        <Nav.Item  onClick={openNavDropDown} eventKey={index.toString()}>
+                                                    <Nav.Item>
+                                                        <Link to={menu.url} eventKey={index.toString()}>
                                                             {menu.title}
-                                                        </Nav.Item>
-                                                    </Link>
+                                                        </Link>
+                                                    </Nav.Item>
                                                 </div>
                                             )
                                         /*}*/

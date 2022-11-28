@@ -3,6 +3,7 @@ import Hero from "../../components/Hero/Hero";
 import MetaDecorator from "../../Utils/MetaDecorator";
 import SliderSection from "../../components/SliderSection/SliderSection";
 import {menuTabs, responsiveSliderData, sliderData} from "../../components/Wealth/wealthItems";
+import InnerHero from "../../components/InnerHero/InnerHero";
 
 const heroObj = {
     titleObj: {
@@ -17,10 +18,12 @@ const heroObj = {
 }
 
 const textData = {
+    background: 'background-color-black',
     head: '',
     h1: "Discover",
     h2: "Staking",
     h3: "Don't just hold your crypto - stake it and earn on your investments passively, while retaining access to your coins",
+    h4: "",
     buttonTxt: "Stake CHANGE"
 
 }
@@ -30,9 +33,9 @@ export default function WealthPage(){
     return (
         <>
             <MetaDecorator/>
-            <Hero heroObj={ heroObj }/>
+            <InnerHero heroObj={ heroObj }/>
             <section id="wealth" className="section_invest">
-                <SliderSection textData={ textData } sliderData={ sliderData } responsiveSliderData={ responsiveSliderData } menuTabs={ menuTabs }/>
+                <SliderSection textData={ textData } sliderData={ sliderData } responsiveSliderData={ responsiveSliderData } menuTabs={ null }/>
             </section>
         </>
     )

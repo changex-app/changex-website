@@ -31,6 +31,7 @@ export default function Hero( { heroObj } ){
                                         </h1>
                                     </div>
                                 </div>
+
                                 {heroObj.appBtnsVisible &&
                                     <div className="animate__animated animate__zoomIn animate__delay-1s button-group centered-items margin-top margin-large spread max-width-full-mobile-landscape">
                                         <a target="_blank"  rel="noreferrer" href="https://apps.apple.com/bg/app/changex-wallet/id1613309180"
@@ -47,8 +48,7 @@ export default function Hero( { heroObj } ){
                         </div>
                         <div className="hero_text-wrapper animate__animated animate__fadeInUp animate__delay-800ms">
                             <p className="max-width-large align-center text-align-center text-size-medium text-left-mobile">
-                                Manage, invest, and grow your wealth with a Euro bank account, access to crypto, and DeFi
-                                investment tools. Spend anywhere with the Changex&nbsp;
+                                {heroObj.titleObj.h4}&nbsp;
                                 <SmoothLink to="card" smooth={true} className="text-style-link">{heroObj.titleObj.titleWithLink}</SmoothLink>
                             </p>
                             <div className="is-qr-hero w-inline-block">

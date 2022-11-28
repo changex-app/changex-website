@@ -9,19 +9,22 @@ export default function SliderSection({ textData, sliderData, responsiveSliderDa
     const [active, setActive] = useState('stake');
 
     async function onClickNav(index, carouselRef) {
-        carouselRef2 = carouselRef;
+        if (menuTabs) {
+            carouselRef2 = carouselRef;
 
-        if(index === 3 || index === 6){
-            index = 0;
-        }
-        if(index === 4 || index === 7){
-            index = 1;
-        }
-        if(index === 5 || index === 8){
-            index = 2;
+            if(index === 3 || index === 6){
+                index = 0;
+            }
+            if(index === 4 || index === 7){
+                index = 1;
+            }
+            if(index === 5 || index === 8){
+                index = 2;
+            }
+
+            setActive(menuTabs[index].id);
         }
 
-        setActive(menuTabs[index].id);
     }
     function handleClick(id,index) {
         carouselRef2.current.goToSlide(index)
@@ -56,6 +59,13 @@ export default function SliderSection({ textData, sliderData, responsiveSliderDa
                                                  </span>
                                             )
                                         })}
+                                    </div>
+                                }
+                                {!menuTabs &&
+                                    <div className="tabs-menu w-tab-menu">
+                                        <span className=' w-inline-block w-tab-link tab-lime'>
+                                            <div>{textData.buttonTxt}</div>
+                                        </span>
                                     </div>
                                 }
                             </div>

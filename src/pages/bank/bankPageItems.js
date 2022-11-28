@@ -1,7 +1,7 @@
 export const heroObj = {
     titleObj: {
-        h1: "A Crypto-Friendly Bank With a DeFi Core",
-        h2: "Banking For The Dgital Age",
+        h1: "Banking For The Dgital Age",
+        h2: "A Crypto-Friendly Bank With a DeFi Core",
         h3: "Changex simplifies your entry into the digital economy with a uniquely functional debit card - key elements of banking inside a non-custodial crypto wallet"
     },
     text: "",
@@ -11,6 +11,7 @@ export const heroObj = {
 }
 
 export const stakeText = {
+    background: 'background-color-blue',
     head: '',
     h1: "Discover Better Fiat With Changex Banking",
     h2: "",
@@ -70,7 +71,7 @@ export const sliderData = [
     },
     {
         id: "Tab3",
-        image: "/images/wealth/Currencies.svg",
+        image: "/images/bank/Currencies.svg",
         head: "An Alternative to Banks",
         alt: "An Alternative to Banks",
         text: "Changex will operate as a licensed agent of an Electronic Money Institution (EMI), built for the digital era. EMIs are safe, flexible, and compliant with all international legal frameworks and requirements.",
