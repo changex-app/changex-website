@@ -27,8 +27,11 @@ export default function Hero( { heroObj } ){
                                     <div
                                          className="text-cut-off">
                                         <h1 className="heading-style-h1 text-left-mobile animate__animated animate__fadeInUp animate__delay-1s">
-                                            {heroObj.titleObj.h2}
+                                            {heroObj.titleObj.h2} <br/> <p className="text-color-primary heading-style-h1" >{heroObj.titleObj.h3}</p>
                                         </h1>
+                                        <h2 className="text-color-primary heading-style-h1 text-left-mobile animate__animated animate__fadeInUp animate__delay-1s">
+
+                                        </h2>
                                     </div>
                                 </div>
 
@@ -51,13 +54,13 @@ export default function Hero( { heroObj } ){
                                 {heroObj.titleObj.h4}&nbsp;
                                 <SmoothLink to="card" smooth={true} className="text-style-link">{heroObj.titleObj.titleWithLink}</SmoothLink>
                             </p>
-                            <div className="is-qr-hero w-inline-block">
-                                <img src="/images/download-qr.svg" loading="lazy" width="75"
-                                     alt="Changex QR code"
-                                     className="qr-small-cta">
-                                </img>
-                            </div>
                         </div>
+                    </div>
+                    <div className="is-qr-hero w-inline-block">
+                        <img src="/images/download-qr.svg" loading="lazy" width="75"
+                             alt="Changex QR code"
+                             className="qr-small-cta">
+                        </img>
                     </div>
                 </div>
             </div>

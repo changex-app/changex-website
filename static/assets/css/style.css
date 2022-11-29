@@ -1,5 +1,5 @@
 :root {
-    --font-header: 'Lexend';
+    --font-header: 'Lexend', sans-serif;
     --font-paragraph: 'Source Sans Pro' sans-serif;
     --white: #ffffff;
     --blackColor: #222222;
@@ -115,7 +115,7 @@ h6 {
 p {
     margin-bottom: 0rem;
     font-weight: 400;
-    font-family: var(--font-paragraph);
+    font-family: var(--font-paragraph) !important;
 }
 
 ul {
@@ -566,8 +566,8 @@ figcaption {
 }
 
 .padding-section-small {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 .padding-section-small.is-footer {
@@ -649,7 +649,7 @@ figcaption {
 
 .max-width-large {
     width: 100%;
-    max-width: 48rem;
+    max-width: 43rem;
     font-weight: 400;
 }
 
@@ -883,10 +883,6 @@ figcaption {
     text-align: center;
 }
 
-.button:hover {
-/*    background-color: #d3d3ff;*/
-}
-
 .button.is-text {
     border: 2px solid transparent;
     background-color: transparent;
@@ -978,12 +974,7 @@ figcaption {
 }
 
 .button.is-large.with-icon.width-260 {
-    width: 260px;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    grid-column-gap: 0.5rem;
+    width: 50%;
 }
 
 .button.social-link {
@@ -1093,12 +1084,12 @@ figcaption {
 }
 
 .is-qr-hero {
-    width: 120px;
-    height: 120px;
+    width: 105px;
+    height: 105px;
     position: absolute;
     padding: 0.5rem !important;
-    right: 0;
-    bottom: 0;
+    right: 20px;
+    bottom: 20px;
     background: #ffffff;
     border: 1px solid rgba(48, 61, 72, 0.24);
     border-radius: 10px;
@@ -1130,7 +1121,7 @@ a:focus, a:hover {
 }
 
 .text-size-medium {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 400;
     letter-spacing: -0.2px;
 }
@@ -1606,9 +1597,6 @@ a:focus, a:hover {
     max-width: 600px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-/*    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;*/
     text-align: -webkit-center;
 }
 
@@ -1672,7 +1660,6 @@ a:focus, a:hover {
     z-index: 0;
     width: 50%;
     height: auto;
-/*    max-width: 600px;*/
     background-color: transparent;
 }
 
@@ -1708,13 +1695,12 @@ a:focus, a:hover {
 }
 
 .bank_wrapper-left {
-    width: 50%;
-    position: relative;
-    align-self: flex-end;
+    width: 45%;
+    position: absolute;
+    align-self: center;
 }
 
 .bank_wrapper-right {
-    margin: 4rem 0 0 0 ;
     width: 100%;
     position: absolute;
 }
@@ -1737,7 +1723,7 @@ a:focus, a:hover {
     display: flex;
     height: 100%;
     position: relative;
-    min-height: 760px;
+    min-height: 690px;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
@@ -1755,19 +1741,19 @@ a:focus, a:hover {
     text-align: -webkit-center;
     top: 0%;
     width: 100%;
-    max-width: 1153px;
-    min-height: 760px;
-    background-image: url('/images/bank/mature-businessman-with-smartphone.png'),-webkit-gradient(linear,left top,left bottom,from(#ebedf0),to(#ebedf0));
-    background-image: url('/images/bank/mature-businessman-with-smartphone.png'),linear-gradient(180deg,#ebedf0,#ebedf0);
-    background-size: cover, auto;
+    height: 100%;
+    min-height: 690px;
+    background-image: url('/images/bank/BankImage.png'),-webkit-gradient(linear,left top,left bottom,from(#ebedf0),to(#ebedf0));
+    background-image: url('/images/bank/BankImage.png'),linear-gradient(180deg,#ebedf0,#ebedf0);
     background-repeat: no-repeat, repeat;
+    background-position-x: center;
     border-radius: 30px;
     margin-top: 6rem;
 }
 
 .image-holder.overflow-hidden {
     min-height: 700px;
-    background-image: url('static/images/bank/img-bank.png');
+    background-image: url('static/images/bank/BankImage.png');
     background-position: 0 0;
     background-size: 817px;
 }
@@ -1783,6 +1769,7 @@ a:focus, a:hover {
 
 .bank_wrapper-left.form {
     align-self: center;
+    position: relative;
 }
 
 .section-image.is-rounded {
@@ -1798,16 +1785,9 @@ a:focus, a:hover {
     grid-template-rows: auto;
 }
 
-.box-container {
-/*    border-style: solid;
-    border-width: 1px;
-    border-color: #e8e8e8;
-    border-radius: 6px;*/
-}
-
 .card-title {
     font-size: 2rem !important;
-    max-width: 10rem !important;
+    max-width: 12rem !important;
     margin-bottom: 1rem;
 }
 
@@ -2052,7 +2032,7 @@ a:focus, a:hover {
 }
 
 .text-color-primary {
-    color: #3418d8;
+    color: #3418d8 !important;
     font-weight: 600;
     font-family: var(--font-header) !important;
 }
@@ -2459,11 +2439,13 @@ a:focus, a:hover {
     right: 0%;
 }
 
+.bank_wrapper .bank_wrapper-left {
+    margin: 5rem 0 0 3rem;
+}
+
 .bank-image {
     object-fit: cover;
     min-width: 100%;
-    min-height: 100%;
-    display: none;
 }
 
 .image-card {
@@ -2770,7 +2752,6 @@ a:focus, a:hover {
 }
 
 .tab-link.w--current {
-/*    border-left: 2px solid var(--walletItemColor);*/
     background-color: var(--themeBlueBackgroundColor) !important;
     color: #fff !important;
     border-radius: 40px;
@@ -2781,15 +2762,13 @@ a:focus, a:hover {
     display: none;
 }
 
-
-/*@media screen and (max-width: 1280)*/
 @media screen and (max-width: 1280px) {
     .button.is-qr {
         padding-top: 0;
     }
 
     .carousel-button-group-wallet {
-        right: 13% !important;
+        right: 14% !important;
     }
 
     .image-holder {
@@ -2867,8 +2846,8 @@ a:focus, a:hover {
     }
 
     .is-qr-hero {
-        width: 90px !important;
-        height: 90px !important;
+        width: 77px !important;
+        height: 77px !important;
     }
 
     .title_wrapper.max-width-large {
@@ -2886,7 +2865,6 @@ a:focus, a:hover {
 
     .div-block {
         max-height: 1050px !important;
-       /* position: relative;*/
     }
 
     .simpleImageSlider > div {
@@ -2928,7 +2906,12 @@ a:focus, a:hover {
     }
 
     .footer-group {
-        display: flex !important;
+        display: grid !important;
+        justify-content: left;
+    }
+
+    .footer-group > a {
+        text-align: left;
     }
 
     .padding-global {
@@ -3137,22 +3120,12 @@ a:focus, a:hover {
     }
 
     .div-block {
-       /* -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;*/
         grid-column-gap: 6rem;
     }
 
     .wallet_wrapper-left {
         position: static;
     }
-
-   /* .slider {
-        position: relative;
-        width: 100%;
-    }*/
 
     .wallet_benefits-container {
         min-height: auto;
@@ -3245,6 +3218,10 @@ a:focus, a:hover {
 @media screen and (max-width: 907px) {
     .w-nav-button {
         display: block !important;
+    }
+
+    .section_bank {
+        background-color: #E0EAF2;
     }
 
     .is-qr-hero {
@@ -3518,11 +3495,6 @@ a:focus, a:hover {
         padding-left: 0rem;
     }
 
-    .padding-section-small {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }
-
     .text-size-tiny.text-color-black.stats-text {
         font-size: 1rem;
         text-align: left;
@@ -3684,20 +3656,11 @@ a:focus, a:hover {
 
     .hero_content-wrapper.padding-vertical.padding-large {
         height: auto;
-        margin-bottom: 4rem;
     }
 
     .hero-background {
         left: -95%;
         display: none;
-    }
-
-    .div-block {
-/*        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;*/
     }
 
     .wallet_wrapper-left {
@@ -3719,6 +3682,7 @@ a:focus, a:hover {
 
     .bank_wrapper-right {
         width: 100%;
+        margin-top: 0;
     }
     .bank_wrapper-bank-right {
         width: 100%;
@@ -3731,16 +3695,13 @@ a:focus, a:hover {
         flex-direction: column;
     }
 
-    .image-holder {
-        position: relative;
-        width: 100%;
-        min-height: auto;
-        border-radius: 8px;
-        background-image: none;
+    .bank-image-comming-soon {
+        width: 57% !important;
     }
 
     .image-holder.card-image {
         position: relative;
+        min-height: 360px;
         background-image: none;
         margin-top: 0 !important;
     }
@@ -3938,6 +3899,19 @@ a:focus, a:hover {
         left: 2% !important;
     }
 
+    .image-holder.bank-image {
+        position: relative;
+        width: 100%;
+        border-radius: 8px;
+        min-height: 360px;
+        background-image: url("/images/bank/mature-businessman.png") !important;
+        background-size: cover;
+    }
+
+    .bank_wrapper .bank_wrapper-left {
+        margin: 1rem 0 5rem 0;
+    }
+
     .waller-slider {
         display: block  !important;
     }
@@ -3953,13 +3927,13 @@ a:focus, a:hover {
         display: grid;
     }
 
+    .button.is-large.with-icon.width-260 {
+        width: 100%;
+    }
+
     .padding-section-large.is-cta-section {
         display: grid !important;
     }
-
-  /*  .cta-image {
-        display: none;
-    }*/
 
     .margin-horizontal {
         margin-top: 0rem;
@@ -4070,7 +4044,7 @@ a:focus, a:hover {
     }
 
     .heading-style-h4 {
-        font-size: 1.25rem;
+        font-size: 1.75rem;
     }
 
     .heading-style-h4.text-align-center.text-color-primary.text-left-mobile {
@@ -4223,6 +4197,18 @@ a:focus, a:hover {
 
     .email-field::placeholder {
         font-size: 1.1rem;
+    }
+
+    .email-submit {
+        border-radius: 13px !important;
+    }
+
+    .email-field {
+        border-radius: 13px !important;
+    }
+
+    .margin-slider {
+        margin-bottom: 1rem;
     }
 
     .tab-link {
@@ -4391,10 +4377,6 @@ a:focus, a:hover {
     padding: 0px 18px !important;
 }
 
-/*.rs-dropdown-menu {
-    : -moz-available;
-}*/
-
 .rs-navbar-item {
     font-size: 14px;
     font-family: Lexend, sans-serif !important;
@@ -4451,10 +4433,6 @@ a:focus, a:hover {
     height: 3.5625rem;
 }
 
-.navHeight {
-    /*height: 12.5rem;*/
-}
-
 .scan {
     width: min-content;
 }
@@ -4465,6 +4443,7 @@ a:focus, a:hover {
 
 .hero_text-wrapper {
     margin-bottom: 1rem;
+    margin-top: 3rem;
 }
 
 .hero_text-wrapper > p {
@@ -4548,7 +4527,7 @@ a:focus, a:hover {
 
 .bank-image-comming-soon {
     top: 0;
-    width: 166px;
+    width: 35%;
     font-family: var(--font-header);
     font-weight: 600;
     font-size: 18px;
@@ -4584,30 +4563,16 @@ a:focus, a:hover {
 }
 
 .btn-wallet {
-    background-color: #8366F4;
-    color: var(--white);
+    background-color: var(--labelLime);
+    color: var(--blackColor);
     flex-direction: column;
     gap: 10px;
     margin-top: 4rem;
-/*    width: 165px !important;*/
     height: 49px;
-    /* Inside auto layout */
-
     flex: none;
     order: 3;
     flex-grow: 0;
 }
-/*
-
-.simpleImageSlider > div > div > div:last-child {
-    display: grid !important;
-    margin: 0px 0px 0px 0px !important;
-    padding: 0px !important;
-    border: 0px !important;
-    position: absolute !important;
-    left: 95% !important;
-}
-*/
 
 
 .button-arrows {
@@ -4677,18 +4642,7 @@ a:focus, a:hover {
     padding: 0;
     text-align: center;
 }
-/*
-.wallet-wrapper-left .slider .react-multi-carousel-dot-list {
-    position: relative !important;
-    bottom: 0;
-    display: grid !important;
-    align-self: center;
-    left: 0;
-    right: 0;
-    justify-content: center;
-    padding: 0;
-    text-align: center;
-}*/
+
 
 .css-r40f8v-MuiTypography-root {
     color: var(--white)
@@ -4738,7 +4692,7 @@ a:focus, a:hover {
     align-self: baseline;
     position: absolute;
     z-index: 999;
-    right: 21%;
+    right: 15%;
     top: 19%;
 }
 
@@ -4773,18 +4727,19 @@ a:focus, a:hover {
     max-width: 345px;
     height: 500px;
     border: 1px solid #afaaaa;
-    border-radius: 40px;
+    border-radius: 20px;
     overflow: hidden;
     display: grid;
+    margin: 2rem 1rem !important;
 }
 
 .card-slide > img {
     display: block;
     background-repeat: no-repeat;
     background-position: center;
-    zoom: 1.3;
     background-color: transparent;
-    width: 100%;
+    width: 90%;
+    margin: auto;
     object-fit: contain;
 }
 

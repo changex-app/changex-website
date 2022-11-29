@@ -8,9 +8,7 @@ export default function Partners() {
                 <div>
                     <div className="padding-section-small">
                         <div className="max-width-xlarge align-center text-align-center slide-from-bottom">
-                            <h3 className="heading-style-h4 slide-from-bottom"><strong>Our partners</strong></h3>
-                            <p className="text-size-large text-color-darkgrey margin-bottom margin-medium">Revolutionizing
-                                personal finance one community at a time.</p>
+                            <h3 className="heading-style-h4 slide-from-bottom">Revolutionizing Personal Finance One Community At A Time.</h3>
                             <div  className="logo-group r-marquee">
                                 <div className="logos-wrapper r-marquee-wrapper-left">
                                     {logosParners.map((logo, index) => {

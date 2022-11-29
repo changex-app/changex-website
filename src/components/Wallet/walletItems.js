@@ -24,8 +24,8 @@ export const scrollImages = [
         caption: 'Buy and sell crypto',
         text: 'Trade cryptocurrencies with the click of a button with vetted protocols and contracts.',
         url: 'https://changex.io',
-        urlText: "https://changex.io",
-        h1: 'Buy and Sell'
+        urlText: "Download the app",
+        h1: 'Wallet'
     },
 ];
 

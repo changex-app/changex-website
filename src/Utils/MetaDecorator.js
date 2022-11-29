@@ -40,7 +40,10 @@ const MetaDecorator = ({ title, description, imageAlt, imageUrl }) => (
         <link rel="icon" href="favicon.ico" type="image/x-icon"/>
         <link rel="stylesheet" href="/assets/css/style.css"/>
         <link rel="stylesheet" href="/assets/css/theme.css"/>
-
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@600&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet"/>
         <script type="text/javascript" src="//app.sgwidget.com/js/sg-widget-v2.js"></script>
     </Helmet>
     
