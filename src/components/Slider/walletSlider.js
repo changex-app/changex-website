@@ -82,6 +82,7 @@ export default function WalletSlider( {onClickNav, responsiveSliderData, sliderD
 
                     <Card className="wallet-card" id={index.toString()}>
                         <CardMedia
+                            className="wallet-card-image"
                             component="img"
                             height="400"
                             image={item.url}

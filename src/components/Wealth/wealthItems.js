@@ -2,7 +2,6 @@ import * as React from "react";
 import Staking_1 from "../../../static/images/wealth/Staking_1.svg";
 import Doubleapy from "../../../static/images/wealth/Doubleapy.svg";
 import Stablecoins from "../../../static/images/wealth/Lend-Stablecoins.svg";
-import {BiChevronLeftCircle, BiChevronRightCircle} from "react-icons/bi";
 
 
 export const menuTabs = [
@@ -47,7 +46,7 @@ export const stablecoins = {
     text: "Lend your stablecoins for 5-9.5% APR and power the Leveraged staking economy. Everything is completely decentralized."
 }
 
-export const sliderData = [
+export const sliderDataLandingPage = [
     {
         id: "Tab1",
         image: "/images/wealth/Benefits.svg",
@@ -74,6 +73,36 @@ export const sliderData = [
         text: "Lend your stablecoins for 5-9.5% APR and power the Leveraged staking economy. Everything is completely decentralized.",
         linkText: "Discover Lending",
         url: "/lending"
+    }
+]
+
+export const sliderDataWealthPage = [
+    {
+        id: "card1",
+        image: "/images/wealth/StakingWealth.svg",
+        head: "Flexible Stakind And Spending",
+        alt: "Flexible Stakind And Spending",
+        text: "Stake assets and maintain immediate access to them without interrupting the flow of rewards. This is a unique way to use your crypto in various ways while earning on it constantly.",
+        linkText: "",
+        url: ""
+    },
+    {
+        id: "card2",
+        image: "/images/wealth/Hydra.svg",
+        head: "Delegated HYDRA Staking",
+        alt: "Delegated HYDRA Staking",
+        text: "Stake HYDRA offline and enjoy the full benefits of the HydraChain economy by delegating your coins to a staker. Rewards equal to 5 HYDRA or more are paid out daily.",
+        linkText: "",
+        url: ""
+    },
+    {
+        id: "card3",
+        image: "/images/wealth/WealthChange.svg",
+        head: "Earn Bonus CHANGE",
+        alt: "Earn Bonus CHANGE",
+        text: "Whenever you stake an asset in Changex, the APR for your staked CHANGE goes up, and the bonuses stack. Without CHANGE, this mechanism is not possible.",
+        linkText: "",
+        url: ""
     }
 ]
 

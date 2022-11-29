@@ -1,5 +1,5 @@
 import * as React from "react";
-import { menuTabs, stake, sliderData, responsiveSliderData} from "./wealthItems";
+import { menuTabs, stake, sliderDataLandingPage, responsiveSliderData} from "./wealthItems";
 import SliderSection from "../SliderSection/SliderSection";
 
 const textData = {
@@ -13,7 +13,7 @@ const textData = {
 export default function Wealth() {
     return (
         <section id="wealth-section" className="section_invest">
-            <SliderSection textData={ textData } sliderData={ sliderData } responsiveSliderData={ responsiveSliderData } menuTabs={ menuTabs }/>
+            <SliderSection textData={ textData } sliderData={ sliderDataLandingPage } responsiveSliderData={ responsiveSliderData } menuTabs={ menuTabs }/>
         </section>
     )
 }

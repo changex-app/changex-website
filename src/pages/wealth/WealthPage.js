@@ -2,7 +2,7 @@ import * as React from "react";
 import Hero from "../../components/Hero/Hero";
 import MetaDecorator from "../../Utils/MetaDecorator";
 import SliderSection from "../../components/SliderSection/SliderSection";
-import {menuTabs, responsiveSliderData, sliderData} from "../../components/Wealth/wealthItems";
+import { responsiveSliderData, sliderDataWealthPage } from "../../components/Wealth/wealthItems";
 import InnerHero from "../../components/InnerHero/InnerHero";
 
 const heroObj = {
@@ -35,7 +35,7 @@ export default function WealthPage(){
             <MetaDecorator/>
             <InnerHero heroObj={ heroObj }/>
             <section id="wealth" className="section_invest">
-                <SliderSection textData={ textData } sliderData={ sliderData } responsiveSliderData={ responsiveSliderData } menuTabs={ null }/>
+                <SliderSection textData={ textData } sliderData={ sliderDataWealthPage } responsiveSliderData={ responsiveSliderData } menuTabs={ null }/>
             </section>
         </>
     )

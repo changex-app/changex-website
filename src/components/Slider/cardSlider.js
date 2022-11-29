@@ -87,29 +87,30 @@ export default function CardSlider( { onClickNav, responsiveSliderData, sliderDa
                     return(
 
                         <Card className="card-slide" id={index.toString()} sx={{maxWidth: 345, margin: "30px 30px" }}>
-                            <CardActionArea>
                                 <CardMedia
                                     component="img"
                                     height="200"
+                                    width="200"
                                     image={item.image}
                                     alt={item.alt}
                                 />
-                                <CardContent>
+                                <CardContent className="card-content">
                                     {item.head &&
-                                        <Typography gutterBottom variant="h5" component="div">
+                                        <Typography className="card-header" gutterBottom variant="h5" component="div">
                                             {item.head}
                                         </Typography>
                                     }
-                                    <Typography variant="body2" color="text.secondary">
+                                    <Typography className="card-caption" variant="body2" color="text.secondary">
                                         {item.text}
                                     </Typography>
                                     <CardActions>
-                                        <Button size="small" color="primary">
-                                            <a href={item.url}>{item.linkText} <FaAngleRight/></a>
-                                        </Button>
+                                        {item.url &&
+                                            <Button  size="small" color="primary">
+                                                <a className="card-link" href={item.url}>{item.linkText} <FaAngleRight/></a>
+                                            </Button>
+                                        }
                                     </CardActions>
                                 </CardContent>
-                            </CardActionArea>
                         </Card>
                     )}
                 )}

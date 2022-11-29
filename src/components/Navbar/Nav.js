@@ -65,9 +65,9 @@ export default function Navigation() {
                             <Navbar className="nav_menu-links w-nav-menu navbar-main">
                                 <Navbar.Brand href="/" className="nav_left-wrapper">
                                     <div className="nav_brandlink margin-right w-nav-brand">
-                                        <SmoothLink smooth={true} to="hero">
+                                        <Link to="/">
                                             <img src={ChangeXLogoColor} loading="lazy" alt="ChangeX Logo" className="nav_logo"></img>
-                                        </SmoothLink>
+                                        </Link>
                                     </div>
                                 </Navbar.Brand>
                                 <Nav activeKey={activeKey} className={'hide-mobile-landscape'}>
@@ -164,7 +164,7 @@ export default function Navigation() {
                                         } else {*/
                                             return (
                                                 <div  className="mobileNavBtns navDisplay" id={index.toString()}>
-                                                    <Nav.Item>
+                                                    <Nav.Item onClick={openNavDropDown}>
                                                         <Link to={menu.url} eventKey={index.toString()}>
                                                             {menu.title}
                                                         </Link>
