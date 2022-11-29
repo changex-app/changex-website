@@ -31,7 +31,7 @@ export default function SliderSection({ textData, sliderData, responsiveSliderDa
     }
 
     return (
-        <div className="background-color-black">
+        <div className={textData.background}>
             <div className="padding-global">
                 <div className="container-large">
                     <div className="main-container">

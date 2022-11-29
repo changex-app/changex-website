@@ -4,6 +4,7 @@ import MetaDecorator from "../../Utils/MetaDecorator";
 import SliderSection from "../../components/SliderSection/SliderSection";
 import { responsiveSliderData, sliderDataWealthPage } from "../../components/Wealth/wealthItems";
 import InnerHero from "../../components/InnerHero/InnerHero";
+const imageUrl = "/assets/images/Changex-OG.jpeg";
 
 const heroObj = {
     titleObj: {
@@ -32,7 +33,12 @@ const textData = {
 export default function WealthPage(){
     return (
         <>
-            <MetaDecorator/>
+            <MetaDecorator
+                description={heroObj.titleObj.h3}
+                title={heroObj.titleObj.h2}
+                imageAlt= "Changex Wealth"
+                imageUrl={imageUrl}
+            />
             <InnerHero heroObj={ heroObj }/>
             <section id="wealth" className="section_invest">
                 <SliderSection textData={ textData } sliderData={ sliderDataWealthPage } responsiveSliderData={ responsiveSliderData } menuTabs={ null }/>

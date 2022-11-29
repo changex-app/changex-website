@@ -10,7 +10,7 @@ export const heroObj = {
     backgroundImage: ''
 }
 
-export const stakeText = {
+export const textData = {
     background: 'background-color-blue',
     head: '',
     h1: "Discover Better Fiat With Changex Banking",

@@ -15,13 +15,13 @@ const IndexPage = () => {
 
     return (
         <Router>
-          <MetaDecorator
-              description={content.pageDescription}
-              title={content.pageTitle}
-              imageAlt={content.metaImageAlt}
-              imageUrl={imageUrl}
-          />
           <CookieConsentModal/>
+            <MetaDecorator
+                description={content.pageDescription}
+                title={content.pageTitle}
+                imageAlt={content.metaImageAlt}
+                imageUrl={imageUrl}
+            />
               <Navigation/>
               <main className="pages">
                   <Routes >
