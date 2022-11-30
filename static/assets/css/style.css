@@ -570,8 +570,8 @@ figcaption {
     padding-bottom: 5rem;
 }
 
-.padding-section-small.is-footer {
-    padding-bottom: 0rem;
+.is-footer {
+    padding-top: 2rem;
 }
 
 .max-width-small {
@@ -737,18 +737,18 @@ figcaption {
 }
 
 .padding-section-large.is-cta-section {
-    margin: 4rem 0 0 0;
+    margin: 5rem 0 0 0;
     padding: 1rem 0 0 4rem !important;
     display: flex;
     background-color: #3418D8;
     border-radius: 2rem;
 }
 
-.padding-section-large.is-wallet-section {
+/*.padding-section-large.is-wallet-section {
     margin: 4rem 0 0 0;
     display: flex !important;
     border-radius: 2rem;
-}
+}*/
 
 .padding-section-large.no-padding-bottom {
     padding-bottom: 0rem;
@@ -1135,6 +1135,7 @@ a:focus, a:hover {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    flex: 1 3;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
@@ -1572,6 +1573,10 @@ a:focus, a:hover {
     background-color: #141414;
 }
 
+.section_footer {
+    padding: 0 0 5rem 0;
+}
+
 .div-block {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1930,7 +1935,7 @@ a:focus, a:hover {
 }
 
 .section_cta {
-    background-color: #f5f7fa;
+    background-color: var(--white);
     background-position: 100% 50%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -2912,15 +2917,6 @@ a:focus, a:hover {
         height: 765px !important;
     }
 
-    .footer-group {
-        display: grid !important;
-        justify-content: left;
-    }
-
-    .footer-group > a {
-        text-align: left;
-    }
-
     .padding-global {
         padding-right: 0.5rem;
         padding-left: 0.5rem;
@@ -3194,10 +3190,10 @@ a:focus, a:hover {
         padding-left: 20px;
     }
 
-    .footer-grid {
+    /*.footer-grid {
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    }
+    }*/
 
     .spacer.spacer-huge {
         height: 0;
@@ -3548,8 +3544,8 @@ a:focus, a:hover {
     }
 
     .padding-section-large {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
     }
 
     .padding-section-large.is-cta-section {
@@ -3670,6 +3666,19 @@ a:focus, a:hover {
 
     .nav_download-item.qr-icon {
         display: none;
+    }
+
+    .footer-group {
+        display: grid !important;
+        justify-content: left;
+    }
+
+    .footer-group > a {
+        text-align: left;
+    }
+
+    .footer-links {
+        justify-content: flex-start;
     }
 
     .section_hero {
@@ -3915,6 +3924,11 @@ a:focus, a:hover {
 }
 
 @media screen and (max-width: 479px) {
+
+
+    .footer-bottom .button-group {
+        display: -webkit-box !important;
+    }
 
     .dotListClass {
         display: flex !important;
@@ -4689,6 +4703,7 @@ a:focus, a:hover {
 
 .main-container {
     display: flex;
+    padding: 5rem 0 5rem 0;
 }
 
 .max-width-small-slider {
