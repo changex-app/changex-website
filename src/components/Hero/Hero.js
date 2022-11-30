@@ -49,20 +49,21 @@ export default function Hero( { heroObj } ){
                                 }
                             </div>
                         </div>
-                        <div className="hero_text-wrapper animate__animated animate__fadeInUp animate__delay-800ms">
-                            <p className="max-width-large align-center text-align-center text-size-medium text-left-mobile">
-                                {heroObj.titleObj.h4}&nbsp;
-                                <SmoothLink to="card" smooth={true} className="text-style-link">{heroObj.titleObj.titleWithLink}</SmoothLink>
-                            </p>
-                        </div>
                     </div>
-                    <div className="is-qr-hero w-inline-block">
-                        <img src="/images/download-qr.svg" loading="lazy" width="75"
-                             alt="Changex QR code"
-                             className="qr-small-cta">
-                        </img>
-                    </div>
+
                 </div>
+            </div>
+            <div className="hero_text-wrapper animate__animated animate__fadeInUp animate__delay-800ms">
+                <p className="max-width-large align-center text-align-center text-size-medium text-left-mobile">
+                    {heroObj.titleObj.h4}&nbsp;
+                    <SmoothLink to="card" smooth={true} className="text-style-link">{heroObj.titleObj.titleWithLink}</SmoothLink>
+                </p>
+            </div>
+            <div className="is-qr-hero w-inline-block">
+                <img src="/images/download-qr.svg" loading="lazy" width="75"
+                     alt="Changex QR code"
+                     className="qr-small-cta">
+                </img>
             </div>
         </section>
     );

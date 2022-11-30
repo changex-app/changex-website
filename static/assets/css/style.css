@@ -551,11 +551,13 @@ figcaption {
 .padding-global {
     padding-right: 2.5rem;
     padding-left: 2.5rem;
+    height: 100%;
 }
 
 .padding-global.background-color-grey {
     background-color: transparent;
 }
+
 
 .text-weight-normal {
     font-weight: 400;
@@ -800,6 +802,7 @@ figcaption {
 
 .container-large {
     width: 100%;
+    height: 100%;
     max-width: var(--containerLargeWidth);
     margin-right: auto;
     margin-left: auto;
@@ -974,7 +977,7 @@ figcaption {
 }
 
 .button.is-large.with-icon.width-260 {
-    width: 50%;
+    width: 61%;
 }
 
 .button.social-link {
@@ -1480,6 +1483,7 @@ a:focus, a:hover {
 
 .section_hero {
     position: relative;
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -1488,7 +1492,8 @@ a:focus, a:hover {
 }
 
 .title_wrapper.max-width-large {
-    height: 100%;
+    margin: auto 0;
+    position: relative;
 }
 
 .text-cut-off {
@@ -1523,7 +1528,6 @@ a:focus, a:hover {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    height: 95vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -1538,11 +1542,8 @@ a:focus, a:hover {
 .hero_content-wrapper.padding-vertical.padding-large {
     position: relative;
     z-index: 1;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    margin-top: 4.5rem;
+    height: 100%;
+/*    margin-top: 4.5rem;*/
 }
 
 .hero-background {
@@ -1886,7 +1887,9 @@ a:focus, a:hover {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    height: 100%;
+    margin: inherit;
+    position: relative;
+    /*height: 100%;*/
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -3227,14 +3230,14 @@ a:focus, a:hover {
         background-color: #E0EAF2;
     }
 
-    .videoTag {
+   /* .videoTag {
         margin-left: -20% !important;
         position: relative !important;
         margin-top: 0 !important;
         margin-bottom: 4rem;
         top: 5%;
-        /*transform: scale(1.7);*/
-    }
+        !*transform: scale(1.7);*!
+    }*/
 
     .is-qr-hero {
        display: none !important;
@@ -3918,8 +3921,8 @@ a:focus, a:hover {
 
     .videoTag {
         margin-left: -30% !important;
-        width: 95% !important;
-        transform: scale(1.7);
+        width: 95% !important;/*
+        transform: scale(1.7);*/
     }
 }
 
@@ -4474,8 +4477,10 @@ a:focus, a:hover {
 }
 
 .hero_text-wrapper {
-    margin-bottom: 1rem;
-    margin-top: 3rem;
+    position: absolute;
+    bottom: 1.3rem;
+    left: 0;
+    right: 0;
 }
 
 .hero_text-wrapper > p {
@@ -4642,138 +4647,141 @@ a:focus, a:hover {
 .videoTag {
     position: absolute;
     width: 100%;
-    height: 76%;
-    margin-top: 2.5rem;
-    margin-left: 15%;
+    /* height: 76%; */
+    top: 10%;
+    /* left: 0; */
+    left: 15%;
+    /* margin-top: 1.5rem; */
+    /* margin-left: 15%; */
 }
 
 .centered-items {
-    align-self: flex-start;
+align-self: flex-start;
 }
 
 .card-svg {
-    background: #3418D8;
-    border-radius: 35px;
-    padding: 0;
-    width: 90px;
-    height: 90px;
+background: #3418D8;
+border-radius: 35px;
+padding: 0;
+width: 90px;
+height: 90px;
 }
 
 .wallet-wrapper-left .react-multi-carousel-item {
-    width: auto !important;
+width: auto !important;
 }
 
 .dotListClass {
-    position: relative !important;
-    bottom: 0;
-    display: grid;
-    align-self: center;
-    left: -16%;
-    right: 0;
-    justify-content: center;
-    padding: 0;
-    text-align: center;
+position: relative !important;
+bottom: 0;
+display: grid;
+align-self: center;
+left: -16%;
+right: 0;
+justify-content: center;
+padding: 0;
+text-align: center;
 }
 
 
 .css-r40f8v-MuiTypography-root {
-    color: var(--white)
+color: var(--white)
 }
 
 .css-1t6e9jv-MuiCardActions-root {
-    padding: 10px 0px;
+padding: 10px 0px;
 }
 
 .card-link {
-    font-size: 9px !important;
-    color: var(--labelLime)
+font-size: 9px !important;
+color: var(--labelLime)
 }
 .card-link > svg {
-    vertical-align: sub;
-    font-size: 13px;
+vertical-align: sub;
+font-size: 13px;
 }
 
 .react-multi-carousel-dot button {
-    background: transparent !important;
+background: transparent !important;
 }
 
 .react-multi-carousel-dot--active button{
-    background: #11D48E !important;
+background: #11D48E !important;
 }
 
 .main-container {
-    display: flex;
-    padding: 5rem 0 5rem 0;
+display: flex;
+padding: 5rem 0 5rem 0;
 }
 
 .max-width-small-slider {
-    max-width: 35rem;
-    width: 100%;
+max-width: 35rem;
+width: 100%;
 }
 
 .money {
-    max-width: 35rem;
-    width: 100%;
+max-width: 35rem;
+width: 100%;
 }
 
 .margin-slider {
-    margin-top: 1rem;
+margin-top: 1rem;
 }
 
 .carousel-button-group-wallet {
-    display: flex;
-    align-self: baseline;
-    position: absolute;
-    z-index: 999;
-    right: 15%;
-    top: 19%;
+display: flex;
+align-self: baseline;
+position: absolute;
+z-index: 999;
+right: 15%;
+top: 19%;
 }
 
 .w-tab-content {
-    position: inherit;
-    display: block;
-    overflow: hidden;
+position: inherit;
+display: block;
+overflow: hidden;
 }
 
 .wallet-content {
-    display: flex;
-    margin-bottom: 2rem;
+display: flex;
+margin-bottom: 2rem;
 }
 
 .card-header {
-    font-size: 20px !important;
-    margin-bottom: 1.1rem !important;
+font-size: 20px !important;
+margin-bottom: 1.1rem !important;
 }
 
 .card-caption {
-    font-size: 12px !important;
-    color: #dedbdb !important;
+font-size: 12px !important;
+color: #dedbdb !important;
 }
 
 .card-content {
-    padding: 30px 40px;
+padding: 30px 40px;
 }
 
 .card-slide {
-    background-color: transparent;
-    color: var(--white);
-    max-width: 345px;
-    height: 500px;
-    border: 1px solid #afaaaa;
-    border-radius: 20px;
-    overflow: hidden;
-    display: grid;
-    margin: 2rem 1rem !important;
+background-color: transparent;
+color: var(--white);
+max-width: 345px;
+height: 500px;
+border: 1px solid #afaaaa;
+border-radius: 20px;
+overflow: hidden;
+display: grid;
+margin: 2rem 1rem !important;
 }
 
 .card-slide > img {
-    display: block;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: transparent;
-    width: 90%;
-    margin: auto;
-    object-fit: contain;
+display: block;
+background-repeat: no-repeat;
+background-position: center;
+background-color: transparent;
+width: 90%;
+margin: auto;
+object-fit: contain;
 }
 
 .react-multi-carousel-track {
@@ -4781,11 +4789,11 @@ translate3d(-1377px, 0px, 0px);
 }
 
 .wallet-card-image {
-    display: block;
-    background-repeat: no-repeat;
-    background-position: center;
-    zoom: 1.3;
-    background-color:var(--backgroundColorBlack);
-    width: 100%;
-    object-fit: contain;
+display: block;
+background-repeat: no-repeat;
+background-position: center;
+zoom: 1.3;
+background-color:var(--backgroundColorBlack);
+width: 100%;
+object-fit: contain;
 }
