@@ -19,12 +19,12 @@ export default function Wallet() {
             <div className="background-color-black">
                 <div className="padding-global">
                     <div className="container-large">
-                        <div className="main-container">
+                        <div className="main-container-wallet">
                                 <div className="max-width-full waller-slider  margin-slider w-tab-content">
                                     <WalletSlider onClickNav={onClickNav} responsiveSliderData={responsiveSliderData} sliderData={slideImages}/>
                                 </div>
                                 <div data-current="Tabs"  data-easing="ease-out" data-duration-in="300"
-                                     data-duration-out="100" className="tabs tabs-wealth margin-top margin-huge w-tabs">
+                                     data-duration-out="100" className="tabs tabs-wallet margin-top margin-huge w-tabs">
                                     <div className="max-width-small-slider">
                                         <AnimationOnScroll  animateIn="animate__fadeInUp" className="wallet_wrapper-right animate__animated animate__fadeInUp">
                                             <div className="wallet-content">
@@ -39,7 +39,7 @@ export default function Wallet() {
                                             <p className="text-color-grey wallet-text text-size-large slide-from-bottom">{scrollImages[itemIndex].text}
                                             </p>
                                             <a target="_blank"  rel="noreferrer" href={scrollImages[itemIndex].url}
-                                               className="button btn-wallet is-large with-icon width-260 w-inline-block">
+                                               className="button heading-style-h5 btn-wallet is-large with-icon width-260 w-inline-block">
                                                 {scrollImages[itemIndex].urlText}
                                             </a>
                                         </AnimationOnScroll>

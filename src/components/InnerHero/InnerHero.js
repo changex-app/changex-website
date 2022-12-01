@@ -32,7 +32,7 @@ export default function InnerHero( { heroObj } ){
                                         {heroObj.titleObj.h3}
                                     </div>
                                 </div>
-                                <div className="tabs-menu w-tab-menu">
+                                <div className="tabs-menu goToLink w-tab-menu">
                                     <span className="tab-nav w-inline-block w--current">
                                         <div>
                                             {heroObj.scrollBtnText} <BsArrowDown/>

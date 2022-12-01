@@ -9,7 +9,7 @@ export default function Press() {
                 <div className="container-large">
                     <div className="padding-section-small slide-from-bottom">
                         <div className="max-width-large align-center text-align-center">
-                            <h3 className="heading-style-h5 margin-bottom margin-medium">As seen on</h3>
+                            <h3 className="heading-style-h6 margin-bottom margin-medium">As seen on</h3>
                             <div className="logo-group r-marquee">
                                 <div className="logos-wrapper r-marquee-wrapper-left">
                                     {logos.map((logo, index) => {
