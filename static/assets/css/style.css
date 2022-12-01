@@ -2960,6 +2960,9 @@ a:focus, a:hover {
         transform: scale(1) !important;
         right: 20% !important;
     }
+    /*.tabs-wealth {
+        margin-right: 13rem;
+    }*/
 }
 
 @media screen and (max-height: 720px), screen and (max-width: 1024px) {
@@ -4335,6 +4338,32 @@ a:focus, a:hover {
     }
 }
 
+@media screen and (max-width: 390px) {
+    .heading-style-h1 {
+        font-size: 1.5rem !important;
+    }
+
+   /* .heading-style-h2 {
+        font-size: 0.75rem !important;
+    }*/
+
+    .hero_text-wrapper {
+        grid-area: footer !important;
+        position: relative !important;
+    }
+
+/*    .heading-style-h3 {
+        font-size: 0.38rem !important;
+    }
+
+    .heading-style-h4 {
+        font-size: 0.19rem !important;
+    }
+
+    .heading-style-h5 {
+        font-size: 0.8rem !important;
+    }*/
+}
 
 .Dropdown-control {
     border: none;
