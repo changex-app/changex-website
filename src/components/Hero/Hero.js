@@ -8,11 +8,8 @@ export default function Hero( { heroObj } ){
     return (
         <section id="hero" className="section_hero">
             <div className="padding-global">
-                <div className="container-large">
+                <div className="container-hero">
                     <div className="hero_content-wrapper padding-vertical padding-large">
-                        <video className='videoTag' autoPlay loop muted>
-                            <source src="/images/Hero_Video_color.mp4" type='video/mp4' />
-                        </video>
                         <div className="title_wrapper max-width-large" >
                             <div className="center-content z-index-1">
                                 <div className="text-cut-off">
@@ -50,11 +47,13 @@ export default function Hero( { heroObj } ){
                             </div>
                         </div>
                     </div>
-
+                    <video className='videoTag' autoPlay loop muted>
+                        <source src="/images/Hero_Video_color.mp4" type='video/mp4' />
+                    </video>
                 </div>
             </div>
             <div className="hero_text-wrapper animate__animated animate__fadeInUp animate__delay-800ms">
-                <p className="max-width-large align-center text-align-center text-size-medium text-left-mobile">
+                <p className="heading-style-h4 max-width-large align-center text-align-center text-size-medium text-left-mobile">
                     {heroObj.titleObj.h4}&nbsp;
                     <SmoothLink to="card" smooth={true} className="text-style-link">{heroObj.titleObj.titleWithLink}</SmoothLink>
                 </p>

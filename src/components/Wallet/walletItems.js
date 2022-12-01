@@ -83,7 +83,7 @@ export const responsiveSliderData =  {
     renderDotsOutside: true,
     rewind: false,
     rewindWithAnimation: false,
-    rtl: true,
+    rtl: false,
     renderButtonGroupOutside: true,
     shouldResetAutoplay: true,
     showDots: true,
