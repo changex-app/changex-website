@@ -4336,6 +4336,15 @@ a:focus, a:hover {
     .card-svg {
         height: 65px !important;
     }
+
+    .hero_text-wrapper {
+        grid-area: footer !important;
+        position: relative !important;
+    }
+
+    .button.is-store {
+        height: 45px;
+    }
 }
 
 @media screen and (max-width: 390px) {
@@ -4350,6 +4359,10 @@ a:focus, a:hover {
     .hero_text-wrapper {
         grid-area: footer !important;
         position: relative !important;
+    }
+
+    .button.is-store {
+        height: 45px;
     }
 
 /*    .heading-style-h3 {
