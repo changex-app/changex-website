@@ -50,14 +50,15 @@ export default function Hero( { heroObj } ){
                     <video className='videoTag' autoPlay loop muted>
                         <source src="/images/Hero_Video_color.mp4" type='video/mp4' />
                     </video>
+                    <div className="hero_text-wrapper animate__animated animate__fadeInUp animate__delay-800ms">
+                        <p className="heading-style-h4 max-width-large align-center text-align-center text-size-medium text-left-mobile">
+                            {heroObj.titleObj.h4}&nbsp;
+                            <SmoothLink to="card" smooth={true} className="text-style-link">{heroObj.titleObj.titleWithLink}</SmoothLink>
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div className="hero_text-wrapper animate__animated animate__fadeInUp animate__delay-800ms">
-                <p className="heading-style-h4 max-width-large align-center text-align-center text-size-medium text-left-mobile">
-                    {heroObj.titleObj.h4}&nbsp;
-                    <SmoothLink to="card" smooth={true} className="text-style-link">{heroObj.titleObj.titleWithLink}</SmoothLink>
-                </p>
-            </div>
+
             <div className="is-qr-hero w-inline-block">
                 <img src="/images/download-qr.svg" loading="lazy" width="75"
                      alt="Changex QR code"

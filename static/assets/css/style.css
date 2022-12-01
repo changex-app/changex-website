@@ -818,12 +818,15 @@ figcaption {
 
 .container-hero {
     grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "head"
+      "bottom";
     display: inline-grid;
     max-width: var(--containerLargeWidth);
     margin: auto;
     width: 100%;
     height: 100%;
-
+    margin-top: 5%;
 }
 
 .container-large.is-nav {
@@ -2844,9 +2847,9 @@ a:focus, a:hover {
         padding: 0.5rem;
     }
 
-    /*.videoTag {
-        height: 70% !important;
-    }*/
+    .videoTag {
+        right: 35% !important;
+    }
 }
 
 @media screen and (min-width: 2560px) {
@@ -2883,7 +2886,12 @@ a:focus, a:hover {
     }*/
 
     .videoTag {
-       /* margin-left: 0% !important;*/
+        transform: scale(1.5) !important;
+        right: 15% !important;
+    }
+
+    .container-hero {
+        grid-template-columns: 1.5fr 2fr;
     }
 
     .simpleImageSlider {
@@ -2932,20 +2940,29 @@ a:focus, a:hover {
     }
 }
 
-@media screen and (min-height: 1366px), screen and (max-width: 1024px) {
-/*    .videoTag {
-        height: 40% !important;
-        position: relative !important;
-        margin: auto auto 0 auto;
-    }*/
+@media screen and (width: 1024px), screen and (height: 1366px) {
 
     .title_wrapper.max-width-large {
         margin: auto !important;
     }
+
+    .container-hero {
+        grid-template-columns: none !important;
+        margin-top: 0 !important;
+        grid-template-areas:
+                "head"
+                "bottom"
+                "footer";
+    }
+
+    .videoTag {
+        grid-area: head;
+        transform: scale(1) !important;
+        right: 20% !important;
+    }
 }
 
 @media screen and (max-height: 720px), screen and (max-width: 1024px) {
-
 }
 
 
@@ -3198,10 +3215,6 @@ a:focus, a:hover {
         width: 50%;
     }
 
-   /* .image-holder {
-        min-height: 700px;
-    }*/
-
     .section-image.is-rounded {
         max-width: 120%;
         margin-left: -63px;
@@ -3278,14 +3291,20 @@ a:focus, a:hover {
         background-color: #E0EAF2;
     }
 
-   /* .videoTag {
-        margin-left: -20% !important;
-        position: relative !important;
+    .container-hero {
+        grid-template-columns: none !important;
         margin-top: 0 !important;
-        margin-bottom: 4rem;
-        top: 5%;
-        !*transform: scale(1.7);*!
-    }*/
+        grid-template-areas:
+                "head"
+                "bottom"
+                "footer";
+    }
+
+    .videoTag {
+        grid-area: head;
+        transform: scale(1) !important;
+        right: 20% !important;
+    }
 
     .is-qr-hero {
        display: none !important;
@@ -3370,9 +3389,6 @@ a:focus, a:hover {
 }
 
 @media screen and (max-width: 845px) {
-/*    .videoTag {
-        position: relative !important;
-    }*/
 
     .padding-section-large.is-cta-section {
         padding: 0 1rem 0rem 1rem !important;
@@ -3576,9 +3592,7 @@ a:focus, a:hover {
         text-align: left;
     }
 
-    .max-width-large.align-center.text-align-center.text-size-medium.text-left-mobile {
-        max-width: 26rem;
-    }
+
 
     .max-width-full-mobile-landscape {
         width: 100%;
@@ -3962,6 +3976,10 @@ a:focus, a:hover {
         align-items: center;
     }
 
+    .max-width-large.align-center.text-align-center.text-size-medium.text-left-mobile {
+        max-width: 26rem;
+    }
+
     .wallet_wrapper-right {
         width: 50%;
     }
@@ -4173,13 +4191,13 @@ a:focus, a:hover {
         font-size: 1rem;
     }
 
-    .button-group.centered-items.margin-top.margin-large {
+  /*  .button-group.centered-items.margin-top.margin-large {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -webkit-flex-direction: column;
         -ms-flex-direction: column;
         flex-direction: column;
-    }
+    }*/
 
     .hide.show-on-mobile {
         position: relative;
@@ -4529,6 +4547,7 @@ a:focus, a:hover {
 
 .hero_text-wrapper {
     position: absolute;
+    grid-area: bottom;
     bottom: 1.3rem;
     left: 0;
     right: 0;
@@ -4701,6 +4720,7 @@ a:focus, a:hover {
     height: 100%;
     top: 0;
     bottom: 0;
+    right: 0;
     margin: auto;
     transform: scale(2);
 }
