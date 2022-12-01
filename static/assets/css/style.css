@@ -4014,6 +4014,7 @@ a:focus, a:hover {
     .main-container-wallet {
         display: grid !important;
         grid-template-columns: none !important;
+        padding: 5rem 0 0 0 !important;
     }
 
     .wallet_wrapper-right {
@@ -4024,6 +4025,20 @@ a:focus, a:hover {
     .main-container {
         display: grid !important;
     }
+
+    .hero_text-wrapper {
+        grid-area: footer !important;
+        position: relative !important;
+    }
+
+    .button.is-store {
+        height: 2.813rem !important;
+    }
+
+    .heading-style-h6heading-style-h6 {
+        font-size: var(--heading6MobileFontSize) !important;
+    }
+
 }
 
 @media screen and (max-width: 479px) {
@@ -4361,11 +4376,6 @@ a:focus, a:hover {
 
     .card-svg {
         height: 65px !important;
-    }
-
-    .hero_text-wrapper {
-        grid-area: footer !important;
-        position: relative !important;
     }
 
     .button.is-store {
@@ -4855,12 +4865,13 @@ a:focus, a:hover {
 .main-container-wallet {
     display: inline-grid;
     grid-template-columns: 1.8fr 1fr;
+    padding: 5rem 0 5rem 0;
 }
 
 .max-width-small-slider {
     max-width: 35rem;
     width: 100%;
-    margin-bottom: 5rem;
+/*    margin-bottom: 5rem;*/
 }
 
 .money {
@@ -4868,9 +4879,9 @@ a:focus, a:hover {
     width: 100%;
 }
 
-.margin-slider {
+/*.margin-slider {
     margin-top: 1rem;
-}
+}*/
 
 .carousel-button-group-wallet {
     display: flex;

@@ -51,7 +51,7 @@ export default function Hero( { heroObj } ){
                         <source src="/images/Hero_Video_color.mp4" type='video/mp4' />
                     </video>
                     <div className="hero_text-wrapper animate__animated animate__fadeInUp animate__delay-800ms">
-                        <p className="heading-style-h5 max-width-large align-center text-align-center text-size-medium text-left-mobile">
+                        <p className="heading-style-h6 max-width-large align-center text-align-center text-size-medium text-left-mobile">
                             {heroObj.titleObj.h4}&nbsp;
                             <SmoothLink to="card" smooth={true} className="text-style-link">{heroObj.titleObj.titleWithLink}</SmoothLink>
                         </p>
