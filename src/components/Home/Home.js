@@ -23,15 +23,22 @@ const heroObj = {
     backgroundImage: "../../../static/images/Hero-BGimg-mobile.png"
 }
 
+const cardContent = {
+    head1: 'Meet The',
+    head2: 'ChangeX',
+    head3: 'Debit Card',
+    paragraph: ''
+}
+
 export default function Home() {
     return (
         <>
-            <Hero heroObj={heroObj}/>
+            <Hero heroObj={ heroObj }/>
             <Wallet/>
             <Bank/>
             <CryptoBank/>
             <Partners/>
-            <Card/>
+            <Card cardContent={ cardContent }/>
             <Wealth/>
             <Cta/>
             <Press/>

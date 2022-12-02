@@ -1,3 +1,5 @@
+import * as React from "react";
+
 export const heroObj = {
     titleObj: {
         h1: "Banking For The Dgital Age",
@@ -10,7 +12,7 @@ export const heroObj = {
     backgroundImage: ''
 }
 
-export const textData = {
+export const sliderTextData = {
     background: 'background-color-blue',
     head: '',
     h1: "Discover Better Fiat With Changex Banking",
@@ -79,3 +81,12 @@ export const sliderData = [
         url: ""
     }
 ]
+
+
+export const cardContent = {
+    head1: 'Use Your Assets',
+    head2: 'With The Crypto',
+    head3: 'Debit Card',
+    paragraph: 'A centrally-issued bank card that works with your decentralized tokens.'
+
+}

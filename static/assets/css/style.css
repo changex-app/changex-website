@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
     --font-header: 'Lexend', sans-serif;
     --font-paragraph: 'Source Sans Pro' sans-serif;
@@ -1796,6 +1800,7 @@ a:focus, a:hover {
 .bank_wrapper-left.form {
     align-self: center;
     position: relative;
+    /*width: 60% !important;*/
 }
 
 .section-image.is-rounded {
@@ -4939,8 +4944,8 @@ a:focus, a:hover {
     object-fit: contain;
 }
 
-.react-multi-carousel-track {
-    translate3d(-1377px, 0px, 0px);
+.goToLink {
+    margin: 5rem auto 5rem auto;
 }
 
 .wallet-card-image {

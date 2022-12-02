@@ -4,15 +4,9 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { cardItems } from './cardItems'
 import {waitlistItems} from "../Waitlist/waitlistItem";
 import { useState } from "react";
+import Advantages from "../Advantages/Advantages";
 
-const cardContent = {
-    head2: 'Meet Your Crypto Debit Card',
-    head3: 'Virtual or physical - it’s always there for you.',
-    paragraph: 'Connected to your wallet and bank account, the Changex Crypto Debit Card lets you spend anything, anywhere. Yes, Euro and any crypto token in the app. Just choose whatever works best for you.'
-
-}
-
-export default function Card() {
+export default function Card( { cardContent } ) {
     const [isShown, setIsShown] = useState(true);
     const [hasError, setHasError] = useState(false);
     const [formData, setFormData] = useState('');
@@ -65,8 +59,9 @@ export default function Card() {
                             <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInUp"
                                 className="bank_wrapper-left form z-index-1 margin-vertical margin-large padding-horizontal padding-medium">
                                 <div className="max-width-large">
-                                    <h3 className="heading-style-h3 margin-bottom">Meet the<br/> ChangeX<br/></h3>
-                                    <h3 className="heading-style-h3 debitCard"> Debit Card</h3>
+                                    <h3 className="heading-style-h3 margin-bottom">{cardContent.head1}<br/> {cardContent.head2} <br/></h3>
+                                    <h3 className="heading-style-h3 debitCard margin-bottom"> {cardContent.head3} </h3>
+                                    <p>{cardContent.paragraph}</p>
                                     <h4>{waitlistItems.head1}</h4>
                                     <div className="w-form">
                                         {isShown && (
@@ -119,25 +114,7 @@ export default function Card() {
                                 </div>
                             </div>
                         </div>
-                        <div className="card-grid">
-                            <h3 className="heading-style-h3 margin-vertical margin-large">
-                                More Than A card - It’s Freedom
-                            </h3>
-                            <div className="w-layout-grid grid-4">
-                                {cardItems.map((card, index)=> {
-                                    return (
-                                        <div id={index.toString()} className="box-container">
-                                            <div className="card-icon padding-medium">
-                                                <div className="icon-wrapper margin-bottom margin-medium">
-                                                    <img src={card.src} loading="lazy" alt="" width={card.width} className="card-svg"></img>
-                                                </div>
-                                                <p style={{fontSize: "15px"}} className="card-text margin-top margin-large">{card.text}</p>
-                                            </div>
-                                        </div>
-                                    )
-                                })}
-                            </div>
-                        </div>
+                        <Advantages advantages={ cardItems }/>
                     </div>
                 </div>
             </div>

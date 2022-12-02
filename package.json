@@ -58,5 +58,8 @@
     "rsuite": "^5.20.0",
     "scrollable-component": "^1.2.1",
     "styled-components": "^5.3.6"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
   }
 }

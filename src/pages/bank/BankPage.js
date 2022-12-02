@@ -6,12 +6,12 @@ import {
     responsiveSliderData,
     sliderData,
     heroObj,
-    textData
-} from "./bankPageItems";
+    sliderTextData,
+    cardContent
+} from "../../components/Bank/bankPageItems";
 import MetaDecorator from "../../Utils/MetaDecorator";
 import InnerHero from "../../components/InnerHero/InnerHero";
 const imageUrl = "/assets/images/Changex-OG.jpeg";
-
 
 export default function BankPage(){
     return (
@@ -24,8 +24,8 @@ export default function BankPage(){
             />
             <InnerHero heroObj={ heroObj }/>
             <section id="bank" className="section_bank">
-                <SliderSection textData={ textData } sliderData={sliderData} responsiveSliderData={ responsiveSliderData } menuTabs={null}/>
-                <Card/>
+                <SliderSection textData={ sliderTextData } sliderData={sliderData} responsiveSliderData={ responsiveSliderData } menuTabs={null}/>
+                <Card cardContent={ cardContent }/>
                 <Cta/>
             </section>
         </>

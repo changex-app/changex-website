@@ -1,5 +1,4 @@
 import * as React from "react";
-import Hero from "../../components/Hero/Hero";
 import MetaDecorator from "../../Utils/MetaDecorator";
 import SliderSection from "../../components/SliderSection/SliderSection";
 import { responsiveSliderData, sliderDataWealthPage } from "../../components/Wealth/wealthItems";
