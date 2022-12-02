@@ -160,26 +160,6 @@ export default function Navigation() {
                             </Navbar>
                     <div className="infotainment">
                         <div className="nav_right-wrapper margin-top margin-huge">
-                            <div className="nav_stats-wrapper">
-                                <div className="padding-small">
-                                    <div id="changexPrice2" className="text-size-tiny changexprice">$CHANGE:
-                                        <a href="https://www.coingecko.com/en/coins/changex" rel="noreferrer" target="_blank"
-                                           className="price-highlight">
-                                            <span>0.0252
-                                                <img src="https://uploads-ssl.webflow.com/63315e7a42bc6afd0341c3bd/633af48efed1b8c1674e5f3e_icn-externallink.svg"
-                                                 alt="external link" width="9">
-                                                </img>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="nav_stats-wrapper">
-                                <div className="padding-small">
-                                    <div id="changexApy2" className="text-size-tiny text-color-black changexapy">APY: <b>63.08%<b></b></b>
-                                    </div>
-                                </div>
-                            </div>
                             <div className="button-group centered-items margin-top margin-large spread max-width-full-mobile-landscape">
                                 {mobileIcon.map((icon, index) => {
                                     return (
