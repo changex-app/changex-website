@@ -14,21 +14,12 @@ import { Nav, Navbar } from "rsuite";
 
 export default function Navigation() {
 
-    const [value, setValue] = useState('$CHANGE');
     const [apy, setApy] = useState('$CHANGE');
     const [openNav, setIsNavOpen] = useState(false);
     const [showModal, setShowModal] = useState(false)
-    const [navItem, setNavItem] = useState('/')
     const [activeKey, setActiveKey] = useState(null);
 
     useEffect( () => {
-        fetchPrice()
-            .then(res => {
-                if (res && res.price) {
-                    setValue(res.price.current_price.toFixed(4));
-                }
-            })
-
         fetchApy()
             .then(res => {
                 if (res && res.apy) {
@@ -101,22 +92,14 @@ export default function Navigation() {
                                     })}
                                 </Nav>
                             </Navbar>
-                            <div className="nav_right-wrapper hide-mobile-landscape">
-                                <div className="nav_stats-wrapper">
-                                    <div className="padding-small">
-                                        <div id="changexPrice" className="text-size-tiny changexprice">$CHANGE:&nbsp;
-                                            <a target="_blank" rel="noreferrer" className="price-highlight" href="https://www.coingecko.com/en/coins/changex" >
-                                                <span>{value}<img alt="changex coingecko" className="coingecko" src="/images/external_link.svg"/></span>
 
-                                            </a></div>
-                                    </div>
-                                </div>
+                            <div className="nav_right-wrapper">
                                 <div className="nav_stats-wrapper">
                                     <div className="padding-small">
-                                        <div id="changexApy" className="text-size-tiny text-color-black changexapy">APY:<strong> {apy}%</strong></div>
+                                        <div id="changexApy" className="text-size-tiny text-color-black changexapy">$CHANGE&nbsp;APY:<strong> {apy}%</strong></div>
                                     </div>
                                 </div>
-                                <ul className="nav_download-wrapper w-list-unstyled">
+                                <ul className="nav_download-wrapper w-list-unstyled hide-mobile-landscape">
                                     {iconItems.map((icon, index) => {
                                         return (
                                             <li id={index.toString()}  className="nav_download-item">
@@ -132,10 +115,10 @@ export default function Navigation() {
                                         </div>
                                     </li>
                                 </ul>
-                            </div>
-                            <div className="menu-button w-nav-button" aria-label="menu" role="button" tabIndex="0"
-                                 aria-controls="w-nav-overlay-0" aria-haspopup="menu">
-                                <img onClick={openNavDropDown} src={MenuIcon} width="20" alt="changex qr" className="menu-icon"></img>
+                                <div className="menu-button w-nav-button" aria-label="menu" role="button" tabIndex="0"
+                                     aria-controls="w-nav-overlay-0" aria-haspopup="menu">
+                                    <img onClick={openNavDropDown} src={MenuIcon} width="20" alt="changex qr" className="menu-icon"></img>
+                                </div>
                             </div>
                         </div>
                     </div>

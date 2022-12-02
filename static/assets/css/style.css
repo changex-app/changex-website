@@ -1406,6 +1406,11 @@ a:focus, a:hover {
     background-color: transparent !important;
 }
 
+.nav_center-wrapper {
+    display: flex;
+    align-self: center;
+}
+
 .nav_right-wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -3359,9 +3364,9 @@ a:focus, a:hover {
         height: 72px !important;
     }
 
-    .nav_right-wrapper {
+ /*   .nav_right-wrapper {
         flex-direction: column;
-    }
+    }*/
 
     .nav_stats-wrapper {
         text-align: left;
@@ -3709,13 +3714,13 @@ a:focus, a:hover {
         border-bottom: 1px solid #ececec;
     }
 
-    .nav_right-wrapper {
+  /*  .nav_right-wrapper {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -webkit-flex-direction: column;
         -ms-flex-direction: column;
         flex-direction: column;
-    }
+    }*/
 
     .nav_full-wrapper {
         border-radius: 0;
@@ -3734,9 +3739,7 @@ a:focus, a:hover {
     }
 
     .nav_stats-wrapper {
-        -webkit-align-self: flex-start;
-        -ms-flex-item-align: start;
-        align-self: flex-start;
+        align-self: center;
     }
 
     .nav_download-item.qr-icon {
@@ -4518,9 +4521,9 @@ a:focus, a:hover {
     width: 100px;
 }
 
-.rs-navbar-brand {
+/*.rs-navbar-brand {
     padding: 0px 18px !important;
-}
+}*/
 
 .rs-navbar-item {
     font-size: 14px;
