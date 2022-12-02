@@ -4558,10 +4558,12 @@ a:focus, a:hover {
 
 .infotainment {
     margin-bottom: 1.3rem;
+    display: flex;
 }
 
 .infotainment .nav_right-wrapper {
     display: block;
+    margin: auto;
 }
 
 .mobileNavBtns  a {
