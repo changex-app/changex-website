@@ -819,6 +819,7 @@ figcaption {
     max-width: var(--containerLargeWidth);
     margin-right: auto;
     margin-left: auto;
+    overflow: hidden;
 }
 
 .container-hero {

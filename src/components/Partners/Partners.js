@@ -5,10 +5,9 @@ export default function Partners() {
     return(
         <section className="section_partners animate__animated animate__fadeInUp">
             <div className="padding-global">
-                <div>
+                <div className="container-large">
                     <div className="padding-section-small">
-                        <div className="max-width-xlarge align-center text-align-center slide-from-bottom">
-                            <h3 className="heading-style-h6 slide-from-bottom">Revolutionizing Personal Finance One Community At A Time.</h3>
+                            <h3 className="heading-style-h6 slide-from-bottom text-align-center">Revolutionizing Personal Finance One Community At A Time.</h3>
                             <div  className="logo-group r-marquee">
                                 <div className="logos-wrapper r-marquee-wrapper-left">
                                     {logosParners.map((logo, index) => {
@@ -37,7 +36,6 @@ export default function Partners() {
                                         )})}
                                 </div>
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>
