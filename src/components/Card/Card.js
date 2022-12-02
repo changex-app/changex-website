@@ -63,7 +63,7 @@ export default function Card( { cardContent } ) {
                                     <h3 className="heading-style-h3 debitCard margin-bottom"> {cardContent.head3} </h3>
                                     <p>{cardContent.paragraph}</p>
                                     <h4>{waitlistItems.head1}</h4>
-                                    <div className="w-form">
+                                    <div className="form-wrapper">
                                         {isShown && (
                                             <div className="sendgrid-subscription-widget widget-2368"
                                                  data-emailerror="Please enter a valid email address">

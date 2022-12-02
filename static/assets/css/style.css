@@ -484,10 +484,6 @@ figcaption {
     color: var(--blackColor);
 }
 
-.w-form {
-    min-width: 300px;
-}
-
 .w_nav-overlay {
     top: 10%;
     left: 0;
@@ -792,6 +788,7 @@ figcaption {
     font-weight: 550;
     letter-spacing: 0px;
     text-transform: capitalize;
+    margin-top: 1.25rem;
 }
 
 .wallet-header {
@@ -2594,6 +2591,10 @@ a:focus, a:hover {
     font-weight: 600;
 }
 
+.form-wrapper {
+    margin: 0 0 1.25rem 0;
+}
+
 .email-submit:hover {
     cursor: pointer;
 }
@@ -2605,6 +2606,7 @@ a:focus, a:hover {
     border-color: #fff;
     border-top-left-radius: 13px;
     border-bottom-left-radius: 13px;
+    width: 100%;
 }
 
 .email-field:focus {
@@ -4718,6 +4720,7 @@ a:focus, a:hover {
 .firebase {
     background-color: var(--themeBlueBackgroundColor);
     color: var(--white);
+    margin: 1.25rem 0 0 0;
 }
 
 .bank-image-comming-soon {
@@ -4908,6 +4911,23 @@ a:focus, a:hover {
     overflow: hidden;
 }
 
+.w-tab-link {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    padding: 10px 10px;
+    text-align: left;
+    cursor: pointer;
+    color: var(--blackColor);
+    background-color: #dddddd;
+}
+
+.w-tab-link:focus {
+    outline: 0;
+}
+
+
 .wallet-content {
     display: flex;
     margin-bottom: 2rem;
@@ -4962,3 +4982,76 @@ a:focus, a:hover {
     width: 100%;
     object-fit: contain;
 }
+
+p {
+    margin: 1.25rem auto 1.25rem auto !important;
+}
+
+
+/*
+
+
+
+
+
+
+.w-nav-menu {
+    position: relative;
+    float: right;
+    font-weight: 600;
+    font-size: 1.0rem;
+}
+
+[data-nav-menu-open] {
+    display: grid !important;
+    position: absolute;
+    flex-direction: column;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    text-align: center;
+    overflow: visible;
+    width: 100%
+}
+
+.w-nav {
+    position: relative;
+    overflow: hidden;
+    background: #fefefe;
+}
+*/
+
+.w-nav:before,
+.w-nav:after {
+    content: " ";
+    display: table;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-end: 2;
+    grid-row-end: 2;
+}
+.w-nav:after {
+    clear: both;
+}
+.w-nav-brand {
+    position: relative;
+    float: left;
+    text-decoration: none;
+    color: #333333;
+}
+.w-nav-link {
+    position: relative;
+    display: inline-block;
+    vertical-align: text-top;
+    text-decoration: none;
+    color: var(--blackColor);
+    padding: 16px 20px 16px 20px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+
+
