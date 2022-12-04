@@ -20,10 +20,10 @@ export default function Bank(){
                                     Learn More
                                 </a>
                             </AnimationOnScroll>
-                            <div className="bank_wrapper-right">
-                                <div className="image-holder bank-image">
+                            <div className="bank_wrapper-right image-holder bank-image">
+{/*                                <div className="">
 
-                                </div>
+                                </div>*/}
                             </div>
                         </div>
                         <div className="spacer spacer-huge"></div>

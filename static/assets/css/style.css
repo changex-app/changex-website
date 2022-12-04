@@ -1763,23 +1763,23 @@ a:focus, a:hover {
 }
 
 .image-holder {
-    position: relative;
+    position: absolute;
     text-align: -webkit-center;
     top: 0%;
     width: 100%;
     min-height: 690px;
     max-height: 100%;
     max-width: 100%;
-    background-image: url('/images/bank/BankImage.png'),-webkit-gradient(linear,left top,left bottom,from(#ebedf0),to(#ebedf0));
-    background-image: url('/images/bank/BankImage.png'),linear-gradient(180deg,#ebedf0,#ebedf0);
+    background-image: url('/images/card/BankImage_1220x691.png'),-webkit-gradient(linear,left top,left bottom,from(#ebedf0),to(#ebedf0));
+    background-image: url('/images/card/BankImage_1220x691.png'),linear-gradient(180deg,#ebedf0,#ebedf0);
     background-repeat: no-repeat, repeat;
-    background-position-x: center;
+    background-position-x: right;
     border-radius: 30px;
     margin-top: 6rem;
 }
 
 .image-holder.overflow-hidden {
-    background-image: url('static/images/bank/BankImage.png');
+    background-image: url('static/images/card/BankImage_1220x691.png');
     background-position: 0 0;
     background-size: 817px;
 }
@@ -2588,6 +2588,10 @@ a:focus, a:hover {
     font-weight: 600;
 }
 
+/*::placeholder {
+    opacity: 0.5;
+    padding: 1rem;
+}*/
 .form-wrapper {
     margin: 0 0 1.25rem 0;
 }
@@ -2599,6 +2603,8 @@ a:focus, a:hover {
 .email-field {
     height: 52px !important;
     border-style: solid;
+    font-size: 1rem;
+    padding: 1rem;
     border-width: 1px;
     border-color: #fff;
     border-top-left-radius: 13px;
@@ -2617,6 +2623,7 @@ a:focus, a:hover {
     color: var(--backgroundColorBlack);
     font-size: 1.3rem;
     font-weight: 400;
+    opacity: 0.5;
 }
 
 .email-field:-ms-input-placeholder {
