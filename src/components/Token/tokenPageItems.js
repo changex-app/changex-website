@@ -8,7 +8,7 @@ export const heroObj = {
     appBtnsVisible: true,
     scrollBtnText: "Buy CHANGE",
     backgroundImage: "",
-    class: "wealthPage"
+    class: "tokenPage"
 }
 
 export const textData = {

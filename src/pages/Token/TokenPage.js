@@ -2,7 +2,8 @@ import * as React from "react";
 import MetaDecorator from "../../Utils/MetaDecorator";
 import InnerHero from "../../components/InnerHero/InnerHero";
 import { heroObj } from "../../components/Token/tokenPageItems";
-import Advantages from "../../components/Advantages/Advantages";
+import {faqBankContent} from "../../components/Faq/faqItems";
+import Faq from "../../components/Faq/Faq";
 const imageUrl = "/assets/images/Changex-OG.jpeg";
 
 const cardContent = {
@@ -25,6 +26,7 @@ export default function TokenPage(){
             />
             <InnerHero heroObj={ heroObj }/>
             <section id="token-page">
+                <Faq title={'FAQ'} faqContent={faqBankContent}/>
             </section>
         </>
     )

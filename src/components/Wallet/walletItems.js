@@ -5,18 +5,18 @@ import {BiChevronLeftCircle, BiChevronRightCircle} from "react-icons/bi";
 export const scrollImages = [
     {
         src: '/images/wallet/icn-40x40-wallet.svg',
-        caption: 'Decentralyzed Crypto wallet',
-        text: 'Access crypto from any point on Earth and stay in control with Changex’s highly-secure, non-custodial crypto wallet. No KYC required',
-        url: 'https://changex.io',
-        urlText: 'Learn More',
-        h1: 'Wallet'
-    },
-    {
-        src: '/images/wallet/icn-40x40-wallet.svg',
         caption: 'A wallet just for you',
         text: 'Own your crypto - Changex has no control over your wallet and can never access your funds. All information is kept safely on the blockchain',
         url: 'https://changex.io',
         urlText: 'Download the app',
+        h1: 'Wallet'
+    },
+    {
+        src: '/images/wallet/icn-40x40-wallet.svg',
+        caption: 'Decentralyzed Crypto wallet',
+        text: 'Access crypto from any point on Earth and stay in control with Changex’s highly-secure, non-custodial crypto wallet. No KYC required',
+        url: 'https://changex.io',
+        urlText: 'Learn More',
         h1: 'Wallet'
     },
     {

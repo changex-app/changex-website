@@ -59,8 +59,8 @@ export default function Card( { cardContent } ) {
                             <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInUp"
                                 className="bank_wrapper-left form z-index-1 margin-vertical margin-large padding-horizontal padding-medium">
                                 <div className="max-width-large">
-                                    <h3 className="heading-style-h3 margin-bottom">{cardContent.head1}<br/> {cardContent.head2} <br/></h3>
-                                    <h3 className="heading-style-h3 debitCard margin-bottom"> {cardContent.head3} </h3>
+                                    <h2 className="heading-style-h2 margin-bottom">{cardContent.head1}<br/> {cardContent.head2} <br/></h2>
+                                    <h3 className="heading-style-h2 debitCard margin-bottom"> {cardContent.head3} </h3>
                                     <p>{cardContent.paragraph}</p>
                                     <h4>{waitlistItems.head1}</h4>
                                     <div className="form-wrapper">
@@ -114,7 +114,7 @@ export default function Card( { cardContent } ) {
                                 </div>
                             </div>
                         </div>
-                        <Advantages advantages={ cardItems }/>
+                        <Advantages title={'More Than A card - It’s Freedom'} advantages={ cardItems }/>
                     </div>
                 </div>
             </div>
