@@ -11,6 +11,8 @@ import {
 } from "../../components/Bank/bankPageItems";
 import MetaDecorator from "../../Utils/MetaDecorator";
 import InnerHero from "../../components/InnerHero/InnerHero";
+import Faq from "../../components/Faq/Faq";
+import {faqBankContent} from "../../components/Faq/faqItems";
 const imageUrl = "/assets/images/Changex-OG.jpeg";
 
 export default function BankPage(){
@@ -26,6 +28,7 @@ export default function BankPage(){
             <section id="bank" className="section_bank">
                 <SliderSection textData={ sliderTextData } sliderData={sliderData} responsiveSliderData={ responsiveSliderData } menuTabs={null}/>
                 <Card cardContent={ cardContent }/>
+                <Faq title={'Banking FAQ'} faqContent={faqBankContent }/>
                 <Cta/>
             </section>
         </>

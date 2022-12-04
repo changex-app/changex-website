@@ -289,6 +289,10 @@ figcaption {
     padding: 0.5rem;
 }
 
+.margin-null {
+    margin: 0 !important;
+}
+
 .margin-xxlarge {
     margin: 5rem;
 }
@@ -592,7 +596,7 @@ figcaption {
 }
 
 .text-color-white {
-    color: #fff;
+    color: var(--white);
 }
 
 .text-style-italic {
@@ -735,7 +739,7 @@ figcaption {
 .heading-style-h6 {
     font-size: 1.312rem;
     line-height: 1.5;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 0;
 }
 
@@ -769,6 +773,10 @@ figcaption {
     color: var(--walletItemColor);
 }
 
+.is-lime {
+    color: var(--labelLime) !important;
+}
+
 .text-size-large {
     font-size: 1.225rem;
     font-weight: 400;
@@ -779,7 +787,7 @@ figcaption {
 .heading-style-h2 {
     font-size: var(--heading2FontSize);
     line-height: 1;
-    font-weight: 550;
+    font-weight: 600;
     letter-spacing: 0px;
     text-transform: capitalize;
     margin-top: 1.25rem;
@@ -925,7 +933,7 @@ figcaption {
     border: 1px solid #8888fc;
     background-color: transparent;
     color: #000;
-    padding: 1px 5px 1px 5px !important;
+    padding: 1px 5px 1px 5px;
 }
 
 .button.is-icon {
@@ -1982,7 +1990,8 @@ a:focus, a:hover {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex;
+    background: transparent;
+    display: contents;
     padding-top: 1rem;
     padding-bottom: 1rem;
     -webkit-box-pack: justify;
@@ -2565,6 +2574,17 @@ a:focus, a:hover {
     grid-column-gap: 2rem;
 }
 
+.contact {
+    border-radius: 2rem;
+    background: #1B242C;
+    border: 1px solid #F3FBFD;
+    flex-direction: column;
+    display: flex;
+    padding: 2rem;
+    align-items: flex-start;
+    width: 75%;
+}
+
 .form {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2766,6 +2786,14 @@ a:focus, a:hover {
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
 }
+
+.button-lime {
+    background-color: var(--labelLime) !important;
+    color: var(--themeBlueBackgroundColor);
+    border-radius: 0.5rem;
+    font-weight: 600;
+}
+
 
 .tab-lime {
     background-color: var(--labelLime) !important;
@@ -4451,7 +4479,7 @@ a:focus, a:hover {
 }
 
 .css-yw020d-MuiAccordionSummary-expandIconWrapper {
-    background: var(--btnBackground);
+    background: var(--labelLime);
     border-radius: 100%;
     min-width: 50px;
     min-height: 50px;
@@ -5063,6 +5091,21 @@ w-nav-menu-mobile
     width: 100%;
 }
 
+.bankPage {
+    background-image: url("/images/bank/bank-hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+.tokenPage {
+    background-image: url("/images/Token-hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+.wealthPage {
+    background-image: url("/images/wealth-hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 

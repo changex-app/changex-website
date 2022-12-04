@@ -5,27 +5,21 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import Typography from '@mui/material/Typography';
 import AddCircle from '@mui/icons-material/Add';
-import { faqContent } from "./faqItems";
 
 
-export default function Faq() {
+export default function Faq( { title,  faqContent } ) {
     return(
         <section id="faqs" className="section_faq">
-            <div className="padding-global background-color-grey">
-                <div className="container-small">
+            <div className="padding-global background-color-black">
+                <div className="container-large">
                     <div className="padding-section-large">
-                        <AnimationOnScroll  animateIn="animate__fadeInUp" animateOnce={true}>
-                            <div className="slide-from-bottom">
-                                <h2 className="heading-style-h2 text-align-center margin-vertical margin-medium">
-                                    Frequently Asked
-                                </h2>
-                                <p className="text-size-medium text-align-center">
-                                    Did we miss something? Drop us a line at&nbsp;
-                                    <a href="mailto:support@changex.io?subject=changex%20website"
-                                       className="text-style-link">support@changex.io&nbsp;
-                                    </a>
-                                    - we’d love to hear from you.</p>
-                            </div>
+                        <AnimationOnScroll style={{display: "grid", gridTemplateColumns: "1fr 1fr"}}  animateIn="animate__fadeInUp" animateOnce={true}>
+                            <div>
+                                <div className="slide-from-bottom">
+                                    <h2 className="heading-style-h2 text-align-center margin-vertical margin-medium">
+                                        {title}
+                                    </h2>
+                                </div>
                                 <div className="w-layout-grid faq-grid margin-vertical margin-huge slide-from-bottom">
                                     {faqContent.map((faq, index) => {
                                         return (
@@ -34,31 +28,34 @@ export default function Faq() {
                                                     expandIcon={<AddCircle />}
                                                     aria-controls="panel1a-content"
                                                     id="panel1a-header">
-                                                    <Typography className="heading-style-h5">
+                                                    <Typography className="heading-style-h6 margin-null text-color-white">
                                                         {faq.title}
                                                     </Typography>
                                                 </AccordionSummary>
                                                 <AccordionDetails>
-                                                    <Typography className="text-size-medium text-color-darkgrey">
+                                                    <Typography className="text-size-medium text-color-white">
                                                         {faq.content}
                                                     </Typography>
                                                 </AccordionDetails>
                                             </Accordion>
                                         )})}
                                 </div>
-                            <div className="slide-from-bottom">
-                                <h3 className="heading-style-h3 text-align-center">Still got questions?</h3>
-                                <p className="text-size-medium text-align-center margin-vertical margin-small">
-                                    Drop us a line at&nbsp;
-                                    <a href="mailto:support@changex.io?subject=changex%20website"
-                                       className="text-style-link">support@changex.io
-                                    </a>
-                                    , we’d love to hear from you.
-                                </p>
-                                <div className="button-group centered-items">
-                                    <a href="mailto:support@changex.io?subject=changex%20website"
-                                       className="button is-large is-secondary  w-button">Contact Us
-                                    </a>
+                            </div>
+                            <div style={{margin: "auto"}}>
+                                <div className="slide-from-bottom contact">
+                                    <h3 className="heading-style-h6">Still got questions?</h3>
+                                    <p className="text-size-medium margin-vertical margin-small">
+                                        Drop us a line at&nbsp;
+                                        <a href="mailto:support@changex.io?subject=changex%20website"
+                                           className="is-lime">support@changex.io
+                                        </a>
+                                        and we'll get back to you.
+                                    </p>
+                                    <div className="button-group centered-items">
+                                        <a href="mailto:support@changex.io?subject=changex%20website"
+                                           className="button button-lime w-button">Contact Us
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </AnimationOnScroll>

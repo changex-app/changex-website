@@ -9,6 +9,7 @@ import content from "../../static/assets/content/content.json";
 import NotFoundPage from "./404";
 import BankPage from "./bank/BankPage";
 import WealthPage from "./wealth/WealthPage";
+import TokenPage from "./Token/TokenPage";
 const imageUrl = "/assets/images/Changex-OG.jpeg";
 
 const IndexPage = () => {
@@ -28,6 +29,7 @@ const IndexPage = () => {
                           <Route path="/" element={ <Home/> } />
                           <Route path="/bank" element={ <BankPage/> } />
                           <Route path="/wealth" element={ <WealthPage/> } />
+                          <Route path="/token-page" element={ <TokenPage/> } />
                           <Route path="*" element={ <NotFoundPage/> }/>
                   </Routes>
               </main>

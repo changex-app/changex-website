@@ -5,14 +5,15 @@ import '../../../node_modules/animate.css/animate.css';
 import { BsArrowDown } from "react-icons/bs";
 import DownloadApple from "../../../static/images/DW-Apple.svg";
 import DownloadGoogle from "../../../static/images/DW-Google.svg";
+import {StaticImage} from "gatsby-plugin-image";
 
 export default function InnerHero( { heroObj } ){
 
     return (
-        <section id="inner-hero" className="inner_hero">
-            <div className="padding-global">
+        <section id="inner-hero" className={heroObj.class}>
+            <div className={`padding-global`}>
                 <div className="container-large">
-                    <div className="hero_content-wrapper padding-vertical padding-large">
+                    <div className={`hero_content-wrapper padding-vertical padding-large`}>
                         <div className="title_wrapper_hero max-width-large" >
                             <div className="center-content z-index-1">
                                 <div className="">
@@ -38,7 +39,6 @@ export default function InnerHero( { heroObj } ){
                                             {heroObj.scrollBtnText} <BsArrowDown/>
                                         </div>
                                     </span>
-
                                 </div>
                             </div>
                         </div>

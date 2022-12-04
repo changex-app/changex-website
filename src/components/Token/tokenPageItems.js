@@ -7,12 +7,13 @@ export const heroObj = {
     text: "",
     appBtnsVisible: true,
     scrollBtnText: "Buy CHANGE",
-    backgroundImage: ''
+    backgroundImage: "",
+    class: "wealthPage"
 }
 
 export const textData = {
-    background: 'background-color-blue',
-    head: '',
+    background: "background-color-blue",
+    head: "",
     h1: "Discover Better Fiat With Changex Banking",
     h2: "",
     h3: "Opening a bank account with Changex happens in seconds and gives you access to a suite of financial services and perks for an easier life.",

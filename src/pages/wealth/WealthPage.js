@@ -7,14 +7,15 @@ const imageUrl = "/assets/images/Changex-OG.jpeg";
 
 const heroObj = {
     titleObj: {
-        h1: "Put Your Money to Work and",
-        h2: "Grow With Wealth",
+        h1: "Grow with Changex",
+        h2: "Put Your Money to Work and Grow Your Wealth",
         h3: "Access a suite of DeFi investment and passive income products and take control of your financial future."
     },
     text: "",
     appBtnsVisible: false,
     scrollBtnText: "Discover Wealth",
-    backgroundImage: ''
+    backgroundImage: '',
+    class: 'wealthPage'
 }
 
 const textData = {

@@ -9,7 +9,8 @@ export const heroObj = {
     text: "",
     appBtnsVisible: false,
     scrollBtnText: "Discover Bank",
-    backgroundImage: ''
+    backgroundImage: '../../images/bank/bank-hero-bg.png',
+    class: 'bankPage'
 }
 
 export const sliderTextData = {
