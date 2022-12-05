@@ -1,7 +1,7 @@
 export const heroObj = {
     titleObj: {
         h1: "Introducing",
-        h2: "The CHANGE Token",
+        h2: "The CHANGE token",
         h3: "A multi-chain, multi-purpose token that offers added benefit of increased APR for every other staked asset in the app."
     },
     text: "",

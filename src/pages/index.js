@@ -9,7 +9,7 @@ import content from "../../static/assets/content/content.json";
 import NotFoundPage from "./404";
 import BankPage from "./bank/BankPage";
 import WealthPage from "./wealth/WealthPage";
-import TokenPage from "./Token/TokenPage";
+import TokenPage from "./token/TokenPage";
 const imageUrl = "/assets/images/Changex-OG.jpeg";
 
 const IndexPage = () => {

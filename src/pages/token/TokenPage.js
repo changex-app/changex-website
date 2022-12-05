@@ -26,7 +26,7 @@ export default function TokenPage(){
             />
             <InnerHero heroObj={ heroObj }/>
             <section id="token-page">
-                <Faq title={'FAQ'} faqContent={faqBankContent}/>
+                <Faq background={'background-color-off-white'} title={'FAQ'} faqContent={faqBankContent}/>
             </section>
         </>
     )

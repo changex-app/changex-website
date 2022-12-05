@@ -13,7 +13,7 @@ export default function Faq( { title,  faqContent } ) {
             <div className="padding-global background-color-black">
                 <div className="container-large">
                     <div className="padding-section-large">
-                        <AnimationOnScroll style={{display: "grid", gridTemplateColumns: "1fr 1fr"}}  animateIn="animate__fadeInUp" animateOnce={true}>
+                        <AnimationOnScroll className="grid-2" animateIn="animate__fadeInUp" animateOnce={true}>
                             <div>
                                 <div className="slide-from-bottom">
                                     <h2 className="heading-style-h2 text-align-center margin-vertical margin-medium">

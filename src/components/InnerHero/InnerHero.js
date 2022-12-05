@@ -41,7 +41,7 @@ export default function InnerHero( { heroObj } ){
                     </div>
                 </div>
                 {heroObj.class === "tokenPage" &&
-                    <Advantages title={'A community-centric token'} advantages={ advantages }/>
+                    <Advantages classGrid={'card-grid-token'} title={'A community-centric token'} advantages={ advantages }/>
                 }
             </div>
         </section>

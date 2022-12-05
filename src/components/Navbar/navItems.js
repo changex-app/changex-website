@@ -45,7 +45,7 @@ export const menuItems = [
         ]
     },
     {
-        title: 'CHANGE Token',
+        title: 'CHANGE token',
         url: '/token-page',
         id: 'token-page',
         className: 'nav_menu-links w-nav-menu',

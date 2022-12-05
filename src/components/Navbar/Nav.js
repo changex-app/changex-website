@@ -35,7 +35,7 @@ export default function Navigation() {
 
         window.addEventListener('resize', handleWindowResize)
 
-        setTimeout(fetchPrice,fetchApy, 30000);
+        /*setTimeout(fetchPrice,fetchApy, 30000);*/
 
     },[])
 

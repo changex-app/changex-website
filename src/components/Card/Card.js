@@ -55,7 +55,7 @@ export default function Card( { cardContent } ) {
             <div className="padding-global">
                 <div className="container-large">
                     <div className="padding-section-large">
-                        <div className="card_wrapper margin-bottom margin-xhuge">
+                        <div className="card_wrapper margin-bottom margin-xxhuge">
                             <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInUp"
                                 className="bank_wrapper-left form z-index-1 margin-vertical margin-large padding-horizontal padding-medium">
                                 <div className="max-width-large">
@@ -114,7 +114,7 @@ export default function Card( { cardContent } ) {
                                 </div>
                             </div>
                         </div>
-                        <Advantages title={'More Than A card - It’s Freedom'} advantages={ cardItems }/>
+                        <Advantages classGrid={'card-grid'} title={'More Than A card - It’s Freedom'} advantages={ cardItems }/>
                     </div>
                 </div>
             </div>

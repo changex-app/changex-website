@@ -1,8 +1,8 @@
 import * as React from "react"
 
-export default function Advantages( { title, advantages } ) {
+export default function Advantages( { classGrid, title, advantages } ) {
     return (
-        <div className="card-grid">
+        <div className={classGrid}>
             <h3 className="heading-style-h3 text-align-center margin-vertical margin-large">
                 {title}
             </h3>

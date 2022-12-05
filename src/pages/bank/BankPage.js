@@ -8,7 +8,7 @@ import {
     heroObj,
     sliderTextData,
     cardContent
-} from "../../components/Bank/bankPageItems";
+} from "../../components/Bank/bankItem";
 import MetaDecorator from "../../Utils/MetaDecorator";
 import InnerHero from "../../components/InnerHero/InnerHero";
 import Faq from "../../components/Faq/Faq";
