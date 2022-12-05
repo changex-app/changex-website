@@ -4173,7 +4173,7 @@ a:focus, a:hover {
         position: relative !important;
         width: 100% !important;
         border: none !important;
-        padding: 2rem;
+        padding: 2rem !important;
     }
 
     .section_card {
