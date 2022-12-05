@@ -6,8 +6,8 @@ import { advantages } from "../Token/tokenPageItems";
 export default function InnerHero( { heroObj } ){
 
     return (
-        <section id="inner-hero" className={heroObj.class}>
-            <div className="padding-global">
+        <section id="inner-hero" className={`${heroObj.class}`}>
+            <div className={`padding-global`}>
                 <div className="container-large">
                     <div className="hero_content-wrapper padding-vertical padding-large">
                         <div className="title_wrapper_hero max-width-large" >

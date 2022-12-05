@@ -28,7 +28,7 @@ export default function BankPage(){
             <section id="bank" className="section_bank">
                 <SliderSection textData={ sliderTextData } sliderData={sliderData} responsiveSliderData={ responsiveSliderData } menuTabs={null}/>
                 <Card cardContent={ cardContent }/>
-                <Faq title={'Banking FAQ'} faqContent={faqBankContent }/>
+                <Faq background={'background-color-black'} title={'Banking FAQ'} faqContent={faqBankContent }/>
                 <Cta/>
             </section>
         </>

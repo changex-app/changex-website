@@ -56,6 +56,15 @@ export default function Card( { cardContent } ) {
                 <div className="container-large">
                     <div className="padding-section-large">
                         <div className="card_wrapper margin-bottom margin-xxhuge">
+                            <div className="card_wrapper-right">
+                                <div className="image-holder card-image">
+                                    <img src="../../static/images/card/cards-img.png" loading="lazy" alt="changex cards"
+                                         sizes="(max-width: 479px) 93vw, (max-width: 767px) 95vw, 50vw"
+                                         srcSet="/images/card/cards-img-p-500.png 500w, /images/card/cards-img.png 729w"
+                                         className="image-2">
+                                    </img>
+                                </div>
+                            </div>
                             <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInUp"
                                 className="bank_wrapper-left form z-index-1 margin-vertical margin-large padding-horizontal padding-medium">
                                 <div className="max-width-large">
@@ -104,15 +113,7 @@ export default function Card( { cardContent } ) {
                                     </div>
                                 </div>
                             </AnimationOnScroll>
-                            <div className="card_wrapper-right">
-                                <div className="image-holder card-image">
-                                    <img src="../../static/images/card/cards-img.png" loading="lazy" alt="changex cards"
-                                         sizes="(max-width: 479px) 93vw, (max-width: 767px) 95vw, 50vw"
-                                         srcSet="/images/card/cards-img-p-500.png 500w, /images/card/cards-img.png 729w"
-                                         className="image-2">
-                                    </img>
-                                </div>
-                            </div>
+
                         </div>
                         <Advantages classGrid={'card-grid'} title={'More Than A card - It’s Freedom'} advantages={ cardItems }/>
                     </div>

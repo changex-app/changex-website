@@ -7,10 +7,10 @@ import Typography from '@mui/material/Typography';
 import AddCircle from '@mui/icons-material/Add';
 
 
-export default function Faq( { title,  faqContent } ) {
+export default function Faq( { background, title,  faqContent } ) {
     return(
         <section id="faqs" className="section_faq">
-            <div className="padding-global background-color-black">
+            <div className={`padding-global ${background}`}>
                 <div className="container-large">
                     <div className="padding-section-large">
                         <AnimationOnScroll className="grid-2" animateIn="animate__fadeInUp" animateOnce={true}>
@@ -28,12 +28,14 @@ export default function Faq( { title,  faqContent } ) {
                                                     expandIcon={<AddCircle />}
                                                     aria-controls="panel1a-content"
                                                     id="panel1a-header">
-                                                    <Typography className="heading-style-h6 margin-null text-color-white">
+                                                    <Typography
+                                                        className={`heading-style-h6 margin-null ${background === "background-color-off-white" ? "text-color-black" : "text-color-white"}`}>
                                                         {faq.title}
                                                     </Typography>
                                                 </AccordionSummary>
                                                 <AccordionDetails>
-                                                    <Typography className="text-size-medium text-color-white">
+                                                    <Typography
+                                                        className={`heading-style-h7 margin-null ${background === "background-color-off-white" ? "text-color-black" : "text-color-white"}`}>
                                                         {faq.content}
                                                     </Typography>
                                                 </AccordionDetails>
@@ -42,18 +44,19 @@ export default function Faq( { title,  faqContent } ) {
                                 </div>
                             </div>
                             <div style={{margin: "auto"}}>
-                                <div className="slide-from-bottom contact">
-                                    <h3 className="heading-style-h6">Still got questions?</h3>
+                                <div  className={ `slide-from-bottom contact ${background === "background-color-off-white" ? "contact-border-blue" : "contact-border-lime"}`}>
+                                    <h6 className="heading-style-h6">Still got questions?</h6>
                                     <p className="text-size-medium margin-vertical margin-small">
                                         Drop us a line at&nbsp;
                                         <a href="mailto:support@changex.io?subject=changex%20website"
-                                           className="is-lime">support@changex.io
+                                           className={`${background === "background-color-off-white" ? "highlight is-blue" : "is-lime"}`}>
+                                            support@changex.io&nbsp;
                                         </a>
                                         and we'll get back to you.
                                     </p>
                                     <div className="button-group centered-items">
                                         <a href="mailto:support@changex.io?subject=changex%20website"
-                                           className="button button-lime w-button">Contact Us
+                                            className={ `button w-button ${background === "background-color-off-white" ? "button-off-white" : "button-lime"}`}>Contact Us
                                         </a>
                                     </div>
                                 </div>

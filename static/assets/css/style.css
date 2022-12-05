@@ -1798,11 +1798,12 @@ a:focus, a:hover {
 
 .image-holder.card-image {
     left: auto;
-    top: 0%;
+    top: -2%;
     right: 0%;
     bottom: auto;
     background-image: url('/static/images/card/img-card-bg.png');
     background-size: 1153px, auto;
+    transform: scale(0.9);
 }
 
 .bank_wrapper-left.form {
@@ -1871,18 +1872,17 @@ a:focus, a:hover {
 }
 
 .card_wrapper {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: space-around;
+    display: grid;
+/*    -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
     justify-content: space-around;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
-    align-items: center;
+    align-items: center;*/
     grid-column-gap: 10rem;
+    grid-template-columns: 1fr;
+    width: 70%;
 }
 
 .grid-4 {
@@ -2095,6 +2095,11 @@ a:focus, a:hover {
     color: #3418d8 !important;
     font-weight: 600;
     font-family: var(--font-header) !important;
+}
+
+.is-blue {
+    color: var(--themeBlueBackgroundColor);
+    text-decoration: underline;
 }
 
 .highlight.is-green {
@@ -2501,7 +2506,6 @@ a:focus, a:hover {
 .image-2 {
     position: absolute;
     left: auto;
-    top: -5%;
     right: 5%;
     object-fit: scale-down;
 }
@@ -2600,14 +2604,21 @@ a:focus, a:hover {
 
 .contact {
     border-radius: 2rem;
-    background: #1B242C;
-    border: 1px solid #F3FBFD;
+    background: transparent;
     flex-direction: column;
     display: flex;
     padding: 2rem;
     align-items: flex-start;
     width: 75%;
     margin: auto;
+}
+
+.contact-border-blue {
+    border: 1px solid var(--themeBlueBackgroundColor);
+}
+
+.contact-border-lime {
+    border: 1px solid var(--labelLime);
 }
 
 .form {
@@ -2809,6 +2820,13 @@ a:focus, a:hover {
     flex: 0 0 auto;
 }
 
+.button-off-white {
+    background-color: #EBE8FC !important;
+    color: var(--themeBlueBackgroundColor);
+    border-radius: 0.5rem;
+    font-weight: 600;
+}
+
 .button-lime {
     background-color: var(--labelLime) !important;
     color: var(--themeBlueBackgroundColor);
@@ -2856,6 +2874,26 @@ a:focus, a:hover {
 
 .image-hero {
     display: none;
+}
+
+@media screen and (max-width: 2560px) and (min-height: 1440px){
+    .image-holder.card-image {
+        transform: scale(1) !important;
+        top: -20% !important;
+    }
+
+}
+
+@media screen and (max-width: 3840px) and (min-height: 2160px){
+    .image-holder.card-image {
+        top: -40%;
+        right: 8%;
+    }
+
+    .section_card {
+        background-size: 100% 100%;
+    }
+
 }
 
 @media screen and (max-width: 1280px) {
@@ -2936,6 +2974,11 @@ a:focus, a:hover {
 }
 
 @media screen and (max-width: 1025px) {
+
+    .image-holder.card-image {
+        top: -6% !important;
+    }
+
     .padding-global {
         padding-right: 0.5rem;
         padding-left: 0.5rem;
@@ -3006,7 +3049,6 @@ a:focus, a:hover {
 }
 
 @media screen and (width: 1024px), screen and (height: 1366px) {
-
     .title_wrapper.max-width-large {
         margin: auto !important;
     }
@@ -3027,7 +3069,10 @@ a:focus, a:hover {
     }
 }
 
-@media screen and (max-height: 720px), screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
+    .card_wrapper {
+        margin: 0 !important;
+    }
 }
 
 
@@ -3453,6 +3498,12 @@ a:focus, a:hover {
 }
 
 @media screen and (max-width: 845px) {
+
+
+    .image-holder.card-image {
+        top: -15% !important;
+        right: -15% !important;
+    }
 
     .dotListClass {
         display: none !important;
@@ -3898,6 +3949,11 @@ a:focus, a:hover {
         flex-direction: column-reverse;
     }
 
+    .card_wrapper {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
     .grid-4 {
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -4038,7 +4094,7 @@ a:focus, a:hover {
     }
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 768px) {
 
     .div-block {
         -webkit-box-orient: vertical;
@@ -4095,6 +4151,15 @@ a:focus, a:hover {
 
 @media screen and (max-width: 479px) {
 
+    .section_card {
+        background-image: url("/images/card/Background2x.png") !important;
+    }
+
+    .image-holder.card-image {
+        right: -15% !important;
+        top: 0% !important;
+        transform: scale(0.8);
+    }
 
     .footer-bottom .button-group {
         display: -webkit-box !important;
@@ -4504,6 +4569,10 @@ a:focus, a:hover {
 
 .css-1elwnq4-MuiPaper-root-MuiAccordion-root {
     box-shadow: 0 0 0 0;
+}
+
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root:before {
+    background-color: transparent !important;
 }
 
 .css-yw020d-MuiAccordionSummary-expandIconWrapper {
@@ -5115,8 +5184,10 @@ w-nav-menu-mobile
 
 .bankPage {
     background-image: url("/images/bank/bank-hero-bg.png");
+    position: relative;
+    border-top: 1px solid #e0e5e9;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 .tokenPage {

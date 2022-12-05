@@ -135,3 +135,5 @@ export const responsiveSliderData =  {
     slidesToSlide: 1,
     swipeable: true
 }
+
+

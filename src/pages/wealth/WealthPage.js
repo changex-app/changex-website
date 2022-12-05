@@ -3,6 +3,8 @@ import MetaDecorator from "../../Utils/MetaDecorator";
 import SliderSection from "../../components/SliderSection/SliderSection";
 import { responsiveSliderData, sliderDataWealthPage } from "../../components/Wealth/wealthItems";
 import InnerHero from "../../components/InnerHero/InnerHero";
+import Faq from "../../components/Faq/Faq";
+import { faqWealthContent } from "../../components/Faq/faqItems";
 const imageUrl = "/assets/images/Changex-OG.jpeg";
 
 const heroObj = {
@@ -42,6 +44,7 @@ export default function WealthPage(){
             <InnerHero heroObj={ heroObj }/>
             <section id="wealth" className="section_invest">
                 <SliderSection textData={ textData } sliderData={ sliderDataWealthPage } responsiveSliderData={ responsiveSliderData } menuTabs={ null }/>
+                <Faq background={'background-color-off-white'} title={'Wealth FAQ'} faqContent={faqWealthContent}/>
             </section>
         </>
     )
