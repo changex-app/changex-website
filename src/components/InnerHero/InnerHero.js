@@ -29,13 +29,15 @@ export default function InnerHero( { heroObj } ){
                                         {heroObj.titleObj.h3}
                                     </div>
                                 </div>
-                                <div className="tabs-menu goToLink w-tab-menu">
-                                    <span className="tab-nav w-inline-block w--current">
-                                        <div>
-                                            {heroObj.scrollBtnText} <BsArrowDown/>
-                                        </div>
-                                    </span>
-                                </div>
+                                {heroObj.scrollBtnText &&
+                                    <div className="tabs-menu goToLink w-tab-menu">
+                                        <span className="tab-nav w-inline-block w--current">
+                                            <div>
+                                                {heroObj.scrollBtnText} <BsArrowDown/>
+                                            </div>
+                                        </span>
+                                    </div>
+                                }
                             </div>
                         </div>
                     </div>

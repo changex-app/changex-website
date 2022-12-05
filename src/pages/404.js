@@ -20,7 +20,7 @@ const NotFoundPage = () => {
                     <div
                         className="text-cut-off">
                       <h1 className="heading-style-h1 text-left-mobile">
-                        Page Does Not Exists Yet or never did !
+                        Page Does Not Exists Yet or never will !
                       </h1>
                       <a href="https://changex.io"><button>Go to Home page</button></a>
                     </div>

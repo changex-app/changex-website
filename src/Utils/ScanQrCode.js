@@ -4,9 +4,9 @@ export const ScanQrModal = ({showModal, setShowModal}) =>{
 
     return <>{showModal ?
             <div style={{display: "flex"}}  className="section-scanpopup wf-section">
-                <div className="padding-global">
+                <div>
                     <div className="modal-scan-wrapper">
-                        <div className="padding-large">
+                        <div className="padding-small">
                             <div
                                 className="modal-scan-imgwrap"><img
                                 src="https://uploads-ssl.webflow.com/63315e7a42bc6afd0341c3bd/633668ff7172a17634704dfb_download-qr.svg"

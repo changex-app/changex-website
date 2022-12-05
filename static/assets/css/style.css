@@ -25,6 +25,7 @@
     --heading5MobileFontSize: 0.875rem;
     --heading6FontSize: 1.312rem;
     --heading6MobileFontSize: 0.65rem;
+    --heading7FontSize: 0.875rem;
     --themeBlueBackgroundColor: #3418D8;
     --labelLime: #E0FB92;
 }
@@ -747,6 +748,10 @@ figcaption {
     letter-spacing: 0;
 }
 
+.heading-style-h7 {
+    font-size: var(--heading7FontSize);
+}
+
 .padding-section-large {
     padding-top: 8rem;
     padding-bottom: 8rem;
@@ -961,6 +966,9 @@ figcaption {
     grid-column-gap: 1rem;
     grid-row-gap: 1rem;
     text-decoration: none;
+}
+.is-link {
+    color: #3418D8;
 }
 
 .button.is-link {
@@ -2753,6 +2761,8 @@ a:focus, a:hover {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
+    padding: 1rem;
+    margin: auto;
     max-width: 420px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2955,7 +2965,7 @@ a:focus, a:hover {
     }
 
     .videoTag {
-        right: 35% !important;
+        right: 34% !important;
     }
 }
 
@@ -3048,11 +3058,10 @@ a:focus, a:hover {
     }
 }
 
-@media screen and (width: 1024px), screen and (height: 1366px) {
+@media screen and ( max-width: 1024px) and (min-height: 1366px) {
     .title_wrapper.max-width-large {
         margin: auto !important;
     }
-
     .container-hero {
         grid-template-columns: none !important;
         margin-top: 0 !important;
@@ -3072,6 +3081,11 @@ a:focus, a:hover {
 @media screen and (max-width: 1024px) {
     .card_wrapper {
         margin: 0 !important;
+    }
+
+    .aboutStick {
+        width: 60% !important;
+        bottom: 7% !important;
     }
 }
 
@@ -4096,6 +4110,10 @@ a:focus, a:hover {
 
 @media screen and (max-width: 768px) {
 
+    .aboutStick {
+        padding: 1rem !important;
+    }
+
     .div-block {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -4150,6 +4168,13 @@ a:focus, a:hover {
 }
 
 @media screen and (max-width: 479px) {
+
+    .aboutStick {
+        position: relative !important;
+        width: 100% !important;
+        border: none !important;
+        padding: 2rem;
+    }
 
     .section_card {
         background-image: url("/images/card/Background2x.png") !important;
@@ -5203,3 +5228,30 @@ w-nav-menu-mobile
     background-size: cover;
 }
 
+.about {
+    background-repeat: no-repeat;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+}
+
+.aboutStick {
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    width: 50%;
+    left: 0;
+    bottom: 11%;
+    right: 0;
+    position: absolute;
+    border: 1px solid var(--themeBlueBackgroundColor);
+}
+
+.aboutStick > span:first-of-type {
+    margin-bottom: 1rem ;
+}
