@@ -81,7 +81,8 @@ export default function InnerHero( { heroObj } ){
                                                 <div id="changexPrice" className="text-size-tiny changexprice">$CHANGE:&nbsp;
                                                     <a target="_blank" rel="noreferrer" className="price-highlight" href="https://www.coingecko.com/en/coins/changex">
                                                         <span>{price}<img alt="changex coingecko" className="coingecko" src="/images/external_link.svg"/></span>
-                                                    </a></div>
+                                                    </a>
+                                                </div>
                                             </div>
                                             <div className="padding-small">
                                                 <div id="changexApy" className="text-size-tiny text-color-black changexapy">$CHANGE&nbsp;APY:<strong> {apy}%</strong></div>

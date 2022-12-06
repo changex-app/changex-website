@@ -15,6 +15,7 @@ import { Nav, Navbar } from "rsuite";
 export default function Navigation() {
 
     const [apy, setApy] = useState('$CHANGE');
+    const [price, setPrice] = useState('$CHANGE');
     const [openNav, setIsNavOpen] = useState(false);
     const [showModal, setShowModal] = useState(false)
     const [activeKey, setActiveKey] = useState(null);
@@ -24,6 +25,12 @@ export default function Navigation() {
             .then(res => {
                 if (res && res.apy) {
                     setApy(res.apy.inPercent);
+                }
+            })
+        fetchPrice()
+            .then(res => {
+                if (res && res.price) {
+                    setPrice(res.price.current_price.toFixed(4));
                 }
             })
 
@@ -94,9 +101,18 @@ export default function Navigation() {
                             </Navbar>
 
                             <div className="nav_right-wrapper">
+                                <div className="nav_stats-wrapper hide-mobile-landscape">
+                                    <div className="padding-small">
+                                        <div id="changexPrice" className="text-size-tiny changexprice ">$CHANGE:&nbsp;
+                                            <a target="_blank" rel="noreferrer" className="price-highlight" href="https://www.coingecko.com/en/coins/changex">
+                                                <span>{price}<img alt="changex coingecko" className="coingecko" src="/images/external_link.svg"/></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div className="nav_stats-wrapper">
                                     <div className="padding-small">
-                                        <div id="changexApy" className="text-size-tiny text-color-black changexapy">$CHANGE&nbsp;APY:<strong> {apy}%</strong></div>
+                                        <div id="changexApy" className="text-size-tiny text-color-black changexapy">APY:<strong> {apy}%</strong></div>
                                     </div>
                                 </div>
                                 <ul className="nav_download-wrapper w-list-unstyled hide-mobile-landscape">
