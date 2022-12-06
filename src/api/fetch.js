@@ -3,7 +3,6 @@ import axios from "axios";
 
 export const fetchPrice = async () => {
     let dataPrice;
-/*
     await axios.get("https://changex-price-fetcher-xcl5j.ondigitalocean.app/coins/markets?ids=changex&vs_currency=usd")
         .then((res)=> {
             if(res.status === 200) {
@@ -14,7 +13,7 @@ export const fetchPrice = async () => {
             throw new Error(err);
         });
 
-    return {price: dataPrice}*/
+    return {price: dataPrice}
 }
 
 export const fetchApy = async () => {

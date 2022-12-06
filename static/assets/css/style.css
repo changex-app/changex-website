@@ -1556,6 +1556,7 @@ a:focus, a:hover {
     align-self: center;
     height: 100%;
     margin-top: 10%;
+    margin-bottom: 5%;
 }
 
 .title_wrapper_hero .heading-style-h1 {
@@ -4169,6 +4170,10 @@ a:focus, a:hover {
 
 @media screen and (max-width: 479px) {
 
+    .infoInnerWrapper {
+        display: inline-grid !important;
+    }
+
     .aboutStick {
         position: relative !important;
         width: 100% !important;
@@ -5254,4 +5259,31 @@ w-nav-menu-mobile
 
 .aboutStick > span:first-of-type {
     margin-bottom: 1rem ;
+}
+
+.infoWrapper {
+    text-align: center;
+    margin: 3rem auto 5rem auto;
+}
+
+.infoInnerWrapper {
+    display: inline-flex;
+    margin: 2rem 0 2rem 0;
+}
+
+.btn-primary {
+    background-color: var(--themeBlueBackgroundColor) !important;
+    width: 160px;
+}
+
+.dropdown {
+    margin-top: 4px;
+}
+
+.dropdown-item {
+    padding: 0 !important;
+    border-radius: 8px !important;
+}
+.dropdown-menu {
+    border-radius: 0.5rem !important
 }
