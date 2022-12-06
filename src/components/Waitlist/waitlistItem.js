@@ -1,6 +1,6 @@
 export const waitlistItems = {
     coming: "Coming: Q1 2023",
-    head1: "Join the Card Waitlist",
+    head1: "Join the Waitlist",
     received: "Thank you! Your submission has been received!",
     error: "Oops! Something went wrong while submitting the form.",
     terms: "https://changex-io.web.app/terms.html",

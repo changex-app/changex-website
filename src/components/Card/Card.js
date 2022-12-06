@@ -69,9 +69,9 @@ export default function Card( { cardContent } ) {
                                 className="bank_wrapper-left form z-index-1 margin-vertical margin-large padding-horizontal padding-medium">
                                 <div className="max-width-large">
                                     <h2 className="heading-style-h2 margin-bottom">{cardContent.head1}<br/> {cardContent.head2} <br/></h2>
-                                    <h3 className="heading-style-h2 debitCard margin-bottom"> {cardContent.head3} </h3>
-                                    <p>{cardContent.paragraph}</p>
-                                    <h4>{waitlistItems.head1}</h4>
+                                    <h2 className="heading-style-h2 debitCard"> {cardContent.head3} </h2>
+                                    <p className="paragraph-style">{cardContent.paragraph}</p>
+                                    <h4 className="padding-top heading-style-h4">{waitlistItems.head1}</h4>
                                     <div className="form-wrapper">
                                         {isShown && (
                                             <div className="sendgrid-subscription-widget widget-2368"
@@ -115,7 +115,9 @@ export default function Card( { cardContent } ) {
                             </AnimationOnScroll>
 
                         </div>
-                        <Advantages classGrid={'card-grid'} title={'More Than A card - It’s Freedom'} advantages={ cardItems }/>
+                        {cardContent.page !== "Bank" &&
+                            <Advantages classGrid={'card-grid'} title={'More Than A card - It’s Freedom'} advantages={ cardItems }/>
+                        }
                     </div>
                 </div>
             </div>

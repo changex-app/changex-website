@@ -27,7 +27,8 @@ const cardContent = {
     head1: 'Meet The',
     head2: 'ChangeX',
     head3: 'Debit Card',
-    paragraph: ''
+    paragraph: '',
+    page: 'Home'
 }
 
 export default function Home() {

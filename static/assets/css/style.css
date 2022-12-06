@@ -331,12 +331,6 @@ figcaption {
     margin-bottom: 0rem;
 }
 
-.padding-top {
-    padding-right: 0rem;
-    padding-bottom: 0rem;
-    padding-left: 0rem;
-}
-
 .margin-vertical {
     margin-right: 0rem;
     margin-left: 0rem;
@@ -390,6 +384,12 @@ figcaption {
 
 .padding-bottom {
     padding-top: 0rem;
+    padding-right: 0rem;
+    padding-left: 0rem;
+}
+
+.padding-top {
+    padding-top: 2rem;
     padding-right: 0rem;
     padding-left: 0rem;
 }
@@ -556,6 +556,10 @@ figcaption {
 .icon-1x1-medium {
     width: 2rem;
     height: 2rem;
+}
+
+.paragraph-style {
+    font-size: 1.2rem;
 }
 
 .heading-style-h1 {
@@ -1847,7 +1851,6 @@ a:focus, a:hover {
 
 .box-container-bank {
     border: 1px solid var(--themeBlueBackgroundColor);
-
     height: 464px;
     border-radius: 24px;
 }
@@ -2343,6 +2346,10 @@ a:focus, a:hover {
     margin-left: auto;
     padding-left: 30px;
     margin-top: 3rem;
+}
+
+.bankStick .carousel-indicators {
+    position: absolute;
 }
 
 .footer-grid {
@@ -3178,7 +3185,7 @@ a:focus, a:hover {
     }
 
     .padding-top {
-        padding-right: 0rem;
+        padding-right: 1rem;
         padding-bottom: 0rem;
         padding-left: 0rem;
     }
@@ -3636,7 +3643,7 @@ a:focus, a:hover {
     }
 
     .padding-top {
-        padding-right: 0rem;
+        padding-right: 1rem;
         padding-bottom: 0rem;
         padding-left: 0rem;
     }
@@ -4237,7 +4244,7 @@ a:focus, a:hover {
     }
 
     .padding-top {
-        padding-right: 0rem;
+        padding-right: 1rem;
         padding-bottom: 0rem;
         padding-left: 0rem;
     }
@@ -4833,7 +4840,8 @@ a:focus, a:hover {
 
 .debitCard {
     color: var(--themeBlueBackgroundColor);
-    margin: 0 0 3rem 0;
+    margin-top: 0.3rem !important;
+    margin-bottom: 2rem  !important;
 }
 
 .firebase {
@@ -4897,7 +4905,7 @@ a:focus, a:hover {
     width: 45px;
     right: 0;
     background: transparent;
-    font-size: 33px;
+    font-size: 25px;
     height: 43px;
     margin: 0 5px;
     color: #afd544;
@@ -5047,9 +5055,12 @@ a:focus, a:hover {
     margin-bottom: 2rem;
 }
 
-.card-header {
+.container-wealth .card-header {
     font-size: 20px !important;
     margin-bottom: 1.1rem !important;
+    background-color: transparent;
+    border-bottom: none;
+    padding-left: 0;
 }
 
 .card-caption {
@@ -5061,7 +5072,7 @@ a:focus, a:hover {
     padding: 30px 40px;
 }
 
-.card-slide {
+.container-wealth .card-slide {
     background-color: transparent;
     color: var(--white);
     max-width: 345px;
@@ -5073,7 +5084,7 @@ a:focus, a:hover {
     margin: 2rem 1rem !important;
 }
 
-.card-slide > img {
+.container-wealth .card-slide > img {
     display: block;
     background-repeat: no-repeat;
     background-position: center;
@@ -5260,6 +5271,80 @@ w-nav-menu-mobile
 
 .aboutStick > span:first-of-type {
     margin-bottom: 1rem ;
+}
+
+.bank {
+    background-repeat: no-repeat;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    margin: auto;
+}
+
+.bankStick {
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    width: 30%;
+    height: 35%;
+    left: 0;
+    bottom: 11%;
+    right: 0;
+    position: absolute;
+    border: 1px solid var(--themeBlueBackgroundColor);
+}
+
+.bankStick .carousel {
+    position: absolute !important;
+    height: 95%;
+}
+
+.bankStick > span:first-of-type {
+    margin-bottom: 1rem ;
+}
+
+.slider-header {
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+}
+
+.slider-content {
+    margin: 1rem;
+}
+
+.slider-content > p {
+    font-size: 21px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    color: var(--backgroundColorBlack) !important;
+}
+
+.carousel-control-next {
+    align-items: start;
+    font-size: 20px;
+}
+
+.carousel-control-prev {
+    align-items: start;
+    font-size: 20px;
+    right: 10%;
+    left: auto;
+}
+
+.carouselIcon {
+    border: 1px solid #3418d8;
+    border-radius: 30px;
+    width: 35px;
+    height: 35px;
+}
+
+.carouselIcon > svg {
+    color: #3418d8;
 }
 
 .infoWrapper {

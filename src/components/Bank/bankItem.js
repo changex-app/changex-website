@@ -74,8 +74,35 @@ export const responsiveSliderData =  {
     showDots: true,
     sliderClass:"",
     slidesToSlide: 1,
-    swipeable: true
+    swipeable: true,
+    responsive: {
+        desktop: {
+            breakpoint: {
+                max: 3000,
+                min: 1024
+            },
+            items: 2,
+            partialVisibilityGutter: 40
+        },
+        mobile: {
+            breakpoint: {
+                max: 464,
+                min: 0
+            },
+            items: 1,
+            partialVisibilityGutter: 30
+        },
+        tablet: {
+            breakpoint: {
+                max: 1024,
+                min: 464
+            },
+            items: 1,
+            partialVisibilityGutter: 30
+        }
+    }
 }
+
 
 export const sliderData = [
     {
@@ -112,6 +139,48 @@ export const cardContent = {
     head1: 'Use Your Assets',
     head2: 'With The Crypto',
     head3: 'Debit Card',
-    paragraph: 'A centrally-issued bank card that works with your decentralized tokens.'
-
+    paragraph: 'A centrally-issued bank card that works with your decentralized tokens.',
+    page: 'Bank'
 }
+
+export const thoughtObj = {
+    page: 'bank',
+    title: 'Spend',
+    link: '',
+    p1:  'The Changex crypto debit card works like a standard debit card in any location that supports cashless payments.',
+    p2:  ' Use Euro or any in-app token in the real world and unchain your personal finance.'
+}
+
+
+export const sliderThoughtData = [
+    {
+        id: "Tab1",
+        image: "",
+        head: "Spend",
+        alt: "Spend",
+        p1: "The Changex crypto debit card works like a standard debit card in any location that supports cashless payments.",
+        p2: "Use Euro or any in-app token in the real world and unchain your personal finance.",
+        linkText: "",
+        url: ""
+    },
+    {
+        id: "Tab2",
+        image: "",
+        head: "Earn",
+        alt: "Earn",
+        p1: "Get crypto or Euro cashback every time you use your card for purchases.",
+        p2: "Increase the percentage and get more out of your bank account by holding and/or staking more CHANGE.",
+        linkText: "",
+        url: ""
+    },
+    {
+        id: "Tab3",
+        image: "",
+        head: "Stay flexible",
+        alt: "Stay flexible",
+        p1: "Use your virtual debit card in the app and spend securely, or spend Euro and any in-app token with the physical card.",
+        p2: "Simply pick your currency - Changex handles everything in the background.",
+        linkText: "",
+        url: ""
+    }
+]

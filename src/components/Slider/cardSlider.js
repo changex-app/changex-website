@@ -16,7 +16,7 @@ export default function CardSlider( { onClickNav, responsiveSliderData, sliderDa
     const [timer, setTimer] = useState(false)
 
     useEffect(() => {
-        console.warn(window.innerWidth)
+        console.warn(responsiveSliderData.centerMode)
         setTimeout(() => {
             setTimer(true)
         }, 1000)
@@ -46,32 +46,7 @@ export default function CardSlider( { onClickNav, responsiveSliderData, sliderDa
                 pauseOnHover= { responsiveSliderData.pauseOnHover}
                 renderArrowsWhenDisabled= { responsiveSliderData.renderArrowsWhenDisabled }
                 renderDotsOutside= { responsiveSliderData.renderDotsOutside }
-                responsive={{
-                    desktop: {
-                        breakpoint: {
-                            max: 3000,
-                            min: 1024
-                        },
-                        items: 2,
-                        partialVisibilityGutter: 40
-                    },
-                    mobile: {
-                        breakpoint: {
-                            max: 464,
-                            min: 0
-                        },
-                        items: 1,
-                        partialVisibilityGutter: 30
-                          },
-                    tablet: {
-                        breakpoint: {
-                            max: 1024,
-                            min: 464
-                         },
-                        items: 1,
-                        partialVisibilityGutter: 30
-                    }
-                }}
+                responsive={responsiveSliderData.responsive}
                 rewind= { responsiveSliderData.rewind}
                 rewindWithAnimation= { responsiveSliderData.rewindWithAnimation }
                 rtl= { responsiveSliderData.rtl }
@@ -83,37 +58,38 @@ export default function CardSlider( { onClickNav, responsiveSliderData, sliderDa
                 slidesToSlide= { responsiveSliderData.slidesToSlide }
                 swipeable= { responsiveSliderData.swipeable }
             >
-                {sliderData.map((item, index)=> {
-                    return(
-
-                        <Card className="card-slide" id={index.toString()} sx={{maxWidth: 345, margin: "30px 30px" }}>
-                                <CardMedia
-                                    component="img"
-                                    height="200"
-                                    width="200"
-                                    image={item.image}
-                                    alt={item.alt}
-                                />
-                                <CardContent className="card-content">
-                                    {item.head &&
-                                        <Typography className="card-header" gutterBottom variant="h5" component="div">
-                                            {item.head}
-                                        </Typography>
-                                    }
-                                    <Typography className="card-caption" variant="body2" color="text.secondary">
-                                        {item.text}
-                                    </Typography>
-                                    <CardActions>
-                                        {item.url &&
-                                            <Button  size="small" color="primary">
-                                                <a className="card-link" href={item.url}>{item.linkText} <FaAngleRight/></a>
-                                            </Button>
-                                        }
-                                    </CardActions>
-                                </CardContent>
-                        </Card>
-                    )}
-                )}
+                { sliderData.map((item, index)=> {
+                                return (
+                                    <Card className="card-slide" id={index.toString()}
+                                          sx={{maxWidth: 345, margin: "30px 30px"}}>
+                                         <CardMedia
+                                            component="img"
+                                            height="200"
+                                            width="200"
+                                            image={item.image}
+                                            alt={item.alt}
+                                        />
+                                        <CardContent className="card-content">
+                                            {item.head &&
+                                                <Typography className="card-header" gutterBottom variant="h5" component="div">
+                                                    {item.head}
+                                                </Typography>
+                                            }
+                                            <Typography className="card-caption" variant="body2" color="text.secondary">
+                                                {item.text}
+                                            </Typography>
+                                            <CardActions>
+                                                {item.url &&
+                                                    <Button size="small" color="primary">
+                                                        <a className="card-link" href={item.url}>{item.linkText} <FaAngleRight/></a>
+                                                    </Button>
+                                                }
+                                            </CardActions>
+                                        </CardContent>
+                                    </Card>
+                                )
+                            }
+                        )}
             </Carousel>
         )
 };
