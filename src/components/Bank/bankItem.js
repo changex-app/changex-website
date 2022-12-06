@@ -42,7 +42,8 @@ export const sliderTextData = {
     h1: "Discover Better Fiat With Changex Banking",
     h2: "",
     h3: "Opening a bank account with Changex happens in seconds and gives you access to a suite of financial services and perks for an easier life.",
-    buttonTxt: "Read Whitepaper"
+    buttonTxt: "Read Whitepaper",
+    buttonUrl: "https://firebasestorage.googleapis.com/v0/b/changex-io.appspot.com/o/changex-whitepaper-v4.pdf?alt=media&amp;token=85d7033d-ce62-4fd2-aefd-b50f2a758530"
 
 }
 

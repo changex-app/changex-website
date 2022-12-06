@@ -1,6 +1,7 @@
 import * as React from "react"
 import CardSlider from "../Slider/cardSlider";
 import {useState} from "react";
+import {scrollImages} from "../Wallet/walletItems";
 
 let carouselRef2;
 
@@ -62,10 +63,10 @@ export default function SliderSection({ textData, sliderData, responsiveSliderDa
                                     </div>
                                 }
                                 {!menuTabs &&
-                                    <div className="tabs-menu w-tab-menu">
-                                        <span className=' w-inline-block w-tab-link tab-lime'>
-                                            <div>{textData.buttonTxt}</div>
-                                        </span>
+                                    <div className="tabs-menu w-tab-menu  w-inline-block button-group centered-items">
+                                        <a href={textData.buttonUrl}
+                                           className={ `button w-button button-lime`}>{textData.buttonTxt}
+                                        </a>
                                     </div>
                                 }
                             </div>
