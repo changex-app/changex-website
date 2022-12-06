@@ -101,18 +101,21 @@ export default function Navigation() {
                             </Navbar>
 
                             <div className="nav_right-wrapper">
-                                <div className="nav_stats-wrapper hide-mobile-landscape">
+                                <div className="nav_stats-wrapper">
                                     <div className="padding-small">
-                                        <div id="changexPrice" className="text-size-tiny changexprice ">$CHANGE:&nbsp;
+                                        <div id="changexPrice" className="text-size-tiny changexprice ">
+                                            <span className="hide-mobile-landscape">$CHANGE:&nbsp;</span>
                                             <a target="_blank" rel="noreferrer" className="price-highlight" href="https://www.coingecko.com/en/coins/changex">
-                                                <span>{price}<img alt="changex coingecko" className="coingecko" src="/images/external_link.svg"/></span>
+                                                <span>${price}<img alt="changex coingecko" className="coingecko" src="/images/external_link.svg"/></span>
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="nav_stats-wrapper">
                                     <div className="padding-small">
-                                        <div id="changexApy" className="text-size-tiny text-color-black changexapy">APY:<strong> {apy}%</strong></div>
+                                        <div id="changexApy" className="text-size-tiny text-color-black changexapy">
+                                            <span>APY:</span><strong> {apy}%</strong>
+                                        </div>
                                     </div>
                                 </div>
                                 <ul className="nav_download-wrapper w-list-unstyled hide-mobile-landscape">

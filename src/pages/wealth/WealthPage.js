@@ -28,7 +28,7 @@ const textData = {
     h3: "Don't just hold your crypto - stake it and earn on your investments passively, while retaining access to your coins",
     h4: "",
     buttonTxt: "Stake CHANGE",
-    buttonUrl: "https://apps.apple.com/bg/app/changex-wallet/id1613309180"
+    buttonUrl: "https://urlgeni.us/changexapp"
 }
 
 
