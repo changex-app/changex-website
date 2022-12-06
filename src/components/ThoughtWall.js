@@ -35,7 +35,7 @@ export default function ThoughtWall( {thoughtObj } ) {
                                 return (
                                     <Carousel.Item className="w-100">
                                         <div className="slider-header" >
-                                            <h3>{item.head}</h3>
+                                            <h4>{item.head}</h4>
                                         </div>
                                        <div className="slider-content" >
                                             <p>
