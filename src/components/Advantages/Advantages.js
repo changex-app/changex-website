@@ -15,7 +15,7 @@ export default function Advantages( { classGrid, title, advantages } ) {
                                     <img src={card.src} loading="lazy" alt="" width={card.width} className="card-svg"></img>
 
                                 </div>
-                                <h6 className="heading-style-h6">{card.title}</h6>
+                                <h4 className="headingTextSize">{card.title}</h4>
                                 <p style={{fontSize: "15px"}} className="card-text margin-top margin-large">{card.text}</p>
                             </div>
                         </div>

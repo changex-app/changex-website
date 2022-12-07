@@ -26,6 +26,7 @@
     --heading6FontSize: 1.312rem;
     --heading6MobileFontSize: 0.65rem;
     --heading7FontSize: 0.875rem;
+    --headingTextSize: 1.688rem;
     --themeBlueBackgroundColor: #3418D8;
     --labelLime: #E0FB92;
 }
@@ -3605,9 +3606,6 @@ a:focus, a:hover {
         padding: 0 1rem 0rem 1rem !important;
     }
 
-    .card-icon {
-        display: inline-flex;
-    }
 
     .card-icon > div >  img {
         margin-right: 2rem;
@@ -4618,10 +4616,6 @@ a:focus, a:hover {
     }
     .btn-wallet {
         width: auto;
-    }
-
-    .card-svg {
-        height: 65px !important;
     }
 
     .button.is-store {
