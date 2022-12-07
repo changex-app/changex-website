@@ -6,7 +6,7 @@ export default function Feature({ background, content }) {
             <div className={background}>
                 <div className="padding-global">
                     <div className="container-large">
-                        <div>
+                        <div className="features">
                             <h2 className="heading-style-h2">{content.head}</h2>
                             {content.feature.map((item, index) => {
                                 return (

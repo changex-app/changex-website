@@ -13,6 +13,7 @@ export default function Advantages( { classGrid, title, advantages } ) {
                             <div className="card-icon padding-medium">
                                 <div className="icon-wrapper margin-bottom margin-medium">
                                     <img src={card.src} loading="lazy" alt="" width={card.width} className="card-svg"></img>
+
                                 </div>
                                 <h6 className="heading-style-h6">{card.title}</h6>
                                 <p style={{fontSize: "15px"}} className="card-text margin-top margin-large">{card.text}</p>

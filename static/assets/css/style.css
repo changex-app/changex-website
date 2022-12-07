@@ -3129,6 +3129,10 @@ a:focus, a:hover {
 }
 
 @media screen and (max-width: 1024px) {
+    .container-wealth {
+        padding-left: 6.3rem !important;
+    }
+
     .card_wrapper {
         margin: 0 !important;
     }
@@ -3151,6 +3155,12 @@ a:focus, a:hover {
     .wrapper-left-image {
         margin: auto auto auto 5rem;
     }
+
+    .grid-4 {
+        -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
 }
 
 
@@ -3411,11 +3421,6 @@ a:focus, a:hover {
     .section-image.is-rounded.right-aligned {
         margin-right: -60px;
         margin-left: 0;
-    }
-
-    .grid-4 {
-        -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
     }
 
     .nav_logo {
@@ -4182,14 +4187,9 @@ a:focus, a:hover {
 }
 
 @media screen and (max-width: 768px) {
-
-   /* .main-container {
-        display: grid !important;
+    .react-multi-carousel-item {
+        margin-left: -1rem !important;
     }
-
-
-*/
-
 
     .waller-slider {
         display: block  !important;
@@ -5018,6 +5018,14 @@ a:focus, a:hover {
     opacity: 1;
 }
 
+.button-arrows:focus-visible {
+    outline: none;
+}
+
+.button-arrows:focus {
+    outline: none;
+}
+
 .button-arrows > svg {
     padding: 0 0 0.25rem 0;
 }
@@ -5206,6 +5214,16 @@ a:focus, a:hover {
 
 .goToLink {
     margin: 5rem auto 5rem auto;
+}
+
+.features {
+    margin: 5rem auto 5rem auto;
+}
+
+.features > h2:first-of-type {
+    text-align: center;
+    margin: auto;
+    position: relative;
 }
 
 .wallet-card {

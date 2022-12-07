@@ -138,7 +138,7 @@ export const responsiveSliderData =  {
         desktop: {
             breakpoint: {
                 max: 3000,
-                min: 1024
+                min: 1025
             },
             items: 2,
             partialVisibilityGutter: 40
