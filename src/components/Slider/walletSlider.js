@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { useRef , useEffect, useState} from "react";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import Card from "@mui/material/Card";
@@ -6,25 +7,39 @@ import CardMedia from "@mui/material/CardMedia";
 import "react-multi-carousel/lib/styles.css";
 import { SliderButtonGroup } from "./sliderButtonsGroup";
 
+
 export default function WalletSlider( {onClickNav, responsiveSliderData, sliderData } ) {
+    const carouselRef = useRef();
+
+    const [timer, setTimer] = useState(false)
+
+    useEffect(() => {
+        setTimeout(() => {
+            setTimer(true)
+        }, 1000)
+    }, [])
+
     return (
         <Carousel
+            ref={carouselRef}
             additionalTransfrom= { responsiveSliderData.additionalTransfrom }
             afterChange={function(previousSlide,_ref){
+                console.warn('ref', _ref, _ref.currentSlide)
                 if(_ref.currentSlide < 3) {
                     if(_ref.currentSlide === 2) {
-                        onClickNav(0);
+                        onClickNav(0, carouselRef);
                         return;
                     }
-                    onClickNav(_ref.currentSlide + 1)
+                    onClickNav(_ref.currentSlide + 1, carouselRef)
                 } else if (_ref.currentSlide >= 5) {
-                        onClickNav(0)
+                        onClickNav(0, carouselRef)
                 }
                 else if(_ref.currentSlide >= 3 ) {
-                        onClickNav(_ref.currentSlide - 2)
+                        onClickNav(_ref.currentSlide - 2, carouselRef)
                 }
             }}
             autoPlaySpeed= { responsiveSliderData.autoPlaySpeed }
+            autoPlay={!timer}
             centerMode= { responsiveSliderData.centerMode }
             arrows= { responsiveSliderData.arrows }
             className= { responsiveSliderData.className }
@@ -69,7 +84,6 @@ export default function WalletSlider( {onClickNav, responsiveSliderData, sliderD
             rewind= { responsiveSliderData.rewind}
             rewindWithAnimation= { responsiveSliderData.rewindWithAnimation }
             rtl= { responsiveSliderData.rtl }
-            customButtonGroup= { <SliderButtonGroup/> }
             renderButtonGroupOutside = { responsiveSliderData.renderButtonGroupOutside }
             shouldResetAutoplay= { responsiveSliderData.shouldResetAutoplay }
             showDots= { responsiveSliderData.showDots }

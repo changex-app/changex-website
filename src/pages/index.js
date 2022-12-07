@@ -1,5 +1,5 @@
 import * as React from "react";
-import {HashRouter as Router, Routes, Route} from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import CookieConsentModal from "../Utils/CookieConsent";
 import MetaDecorator from "../Utils/MetaDecorator";
 import Home from "../components/Home/Home";

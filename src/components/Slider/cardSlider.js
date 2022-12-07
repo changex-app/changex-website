@@ -16,7 +16,6 @@ export default function CardSlider( { onClickNav, responsiveSliderData, sliderDa
     const [timer, setTimer] = useState(false)
 
     useEffect(() => {
-        console.warn(responsiveSliderData.centerMode)
         setTimeout(() => {
             setTimer(true)
         }, 1000)

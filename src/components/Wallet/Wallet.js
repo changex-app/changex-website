@@ -5,13 +5,26 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { responsiveSliderData, scrollImages, slideImages } from "./walletItems";
 import { useState } from "react";
 import WalletSlider from "../Slider/walletSlider";
+import {BiChevronLeft, BiChevronRight} from "react-icons/bi";
+
+let  carouselRef2;
 
 export default function Wallet() {
 
     let [itemIndex, SetItemIndex] = useState(0);
 
-    async function onClickNav(idx) {
+
+    async function onClickNav(idx, carouselRef) {
+        carouselRef2 = carouselRef;
         SetItemIndex(idx)
+    }
+
+    function RightBtnClick() {
+        carouselRef2.current.next()
+    }
+
+    function LeftBtnClick() {
+        carouselRef2.current.previous()
     }
 
     return (
@@ -30,6 +43,8 @@ export default function Wallet() {
                                             <div className="wallet-content">
                                                 <div className="label is-lime slide-from-bottom">{scrollImages[itemIndex].h1}</div>
                                                 <div style={{margin: "0px 0 10px auto"}}>
+                                                        <button onClick={LeftBtnClick} className="button-arrows"><BiChevronLeft/></button>
+                                                        <button onClick={RightBtnClick} className="button-arrows"><BiChevronRight/></button>
                                                 </div>
                                             </div>
 

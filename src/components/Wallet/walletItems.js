@@ -65,7 +65,8 @@ export const SliderOptions = {
 
 export const responsiveSliderData =  {
     additionalTransfrom: 0,
-    autoPlaySpeed: 3000,
+    autoPlaySpeed: 1000,
+    autoPlay: true,
     centerMode: false,
     arrows: false,
     className: "",
