@@ -45,7 +45,7 @@ export default function Faq( { background, title,  faqContent } ) {
                             </div>
                             <div style={{margin: "auto"}}>
                                 <div  className={ `slide-from-bottom contact ${background === "background-color-off-white" ? "contact-border-blue" : "contact-border-lime"}`}>
-                                    <h6 className="heading-style-h6">Still got questions?</h6>
+                                    <h5 className="heading-style-h5">Still got questions?</h5>
                                     <p className="text-size-medium margin-vertical margin-small">
                                         Drop us a line at&nbsp;
                                         <a href="mailto:support@changex.io?subject=changex%20website"

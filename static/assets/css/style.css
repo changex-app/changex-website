@@ -946,7 +946,7 @@ figcaption {
     border: 1px solid #8888fc;
     background-color: transparent;
     color: #000;
-    padding: 1px 5px 1px 5px;
+    padding: 1px 5px 1px 5px !important;
 }
 
 .button.is-icon {
@@ -2350,6 +2350,28 @@ a:focus, a:hover {
 
 .bankStick .carousel-indicators {
     position: absolute;
+    bottom: -10% !important;
+}
+
+.carousel-indicators > button {
+    margin: 0 10px 0 10px;
+    height: 13px;
+    border-radius: 13px;
+}
+
+.carousel-indicators > button:focus-visible {
+    outline: none !important;
+}
+
+.carousel-indicators > button:focus {
+    outline: none !important;
+}
+.carousel-indicators > button:hover {
+    background-color: var(--themeBlueBackgroundColor);
+}
+
+.carousel-indicators .active {
+    background-color: var(--themeBlueBackgroundColor);
 }
 
 .footer-grid {
@@ -3094,6 +3116,11 @@ a:focus, a:hover {
 
     .aboutStick {
         width: 60% !important;
+        bottom: 7% !important;
+    }
+
+    .bankStick {
+        width: 35% !important;
         bottom: 7% !important;
     }
 }
@@ -4119,7 +4146,16 @@ a:focus, a:hover {
 
 @media screen and (max-width: 768px) {
 
+    .carousel-control-next, .carousel-control-prev {
+        color: var(--backgroundColorBlack) !important;
+        padding: 0.5rem 0 0 0 !important;
+    }
+
     .aboutStick {
+        padding: 1rem !important;
+    }
+
+    .bankStick {
         padding: 1rem !important;
     }
 
@@ -4146,6 +4182,12 @@ a:focus, a:hover {
 }
 
 @media screen and (max-width: 600px) {
+
+    .carousel-control-next, .carousel-control-prev {
+        color: var(--backgroundColorBlack) !important;
+        padding: 2rem 0 0 0 !important;
+    }
+
     .main-container-wallet {
         display: grid !important;
         grid-template-columns: none !important;
@@ -4184,8 +4226,18 @@ a:focus, a:hover {
 
     .aboutStick {
         position: relative !important;
+        margin: auto;
         width: 100% !important;
         border: none !important;
+        padding: 2rem !important;
+    }
+
+    .bankStick {
+/*        position: relative !important;*/
+        width: 100% !important;
+        margin: auto auto 10% auto !important;
+        border: none !important;
+        border-radius: 0 !important;
         padding: 2rem !important;
     }
 
@@ -4971,6 +5023,13 @@ a:focus, a:hover {
     text-align: center;
 }
 
+.dotListClass > li > button:focus {
+    outline: none !important;
+}
+
+.react-multi-carousel-dot-list > li > button:focus {
+    outline: none !important;
+}
 
 .css-r40f8v-MuiTypography-root {
     color: var(--white)
@@ -5253,6 +5312,14 @@ w-nav-menu-mobile
     margin: 0 auto;
 }
 
+.bank {
+    background-repeat: no-repeat;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+}
+
 .aboutStick {
     margin: auto;
     background-color: white;
@@ -5282,15 +5349,14 @@ w-nav-menu-mobile
 }
 
 .bankStick {
-    margin: auto;
+    margin:  auto 10% 10% auto;
     background-color: white;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 2rem;
-    width: 30%;
-    height: 35%;
+    width: 410px;
     left: 0;
     bottom: 11%;
     right: 0;
@@ -5316,19 +5382,20 @@ w-nav-menu-mobile
     margin: 1rem;
 }
 
-.slider-content > p {
+/*.slider-content > p {
     font-size: 21px;
-}
+}*/
 
 .carousel-control-next, .carousel-control-prev {
     color: var(--backgroundColorBlack) !important;
+    padding: 2rem 0 0 0;
 }
 
 .carousel-control-next {
     align-items: start;
     font-size: 20px;
-    top: 1%;
     right: 2%;
+    margin-left: 1rem;
 }
 
 .carousel-control-prev {
@@ -5336,7 +5403,7 @@ w-nav-menu-mobile
     font-size: 20px;
     right: 11%;
     left: auto;
-    top: 1%;
+    margin-right: 1rem;
 }
 
 .carouselIcon {
@@ -5348,6 +5415,7 @@ w-nav-menu-mobile
 
 .carouselIcon > svg {
     color: #3418d8;
+    font-size: 1rem;
 }
 
 .infoWrapper {

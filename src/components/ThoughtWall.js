@@ -1,6 +1,6 @@
 import * as React from "react";
 import backgroundAboutImage from "../../static/images/about/thought-catalog.png";
-import backgroundBankImage from "../../static/images/about/thought-catalog.png";
+import backgroundBankImage from "../../static/images/bank/thought-catalog-bank.png";
 import Carousel from 'react-bootstrap/Carousel';
 import { sliderThoughtData } from "./Bank/bankItem";
 import {FaAngleLeft, FaAngleRight} from "react-icons/fa";
@@ -8,25 +8,11 @@ import {FaAngleLeft, FaAngleRight} from "react-icons/fa";
 export default function ThoughtWall( {thoughtObj } ) {
     return (
         <section id="thought-wall">
-            {thoughtObj.page === "about" &&
                 <div className="about">
-                    <img  src={backgroundAboutImage} alt="changex money"/>
-                    <div className="aboutStick">
-                        <span >
-                            {thoughtObj.p1}
-                            <span className="is-link"> Change starts now. </span>
-                        </span>
-                        <span>
-                            {thoughtObj.p2}
-                        </span>
-                    </div>
-                </div>
-            }
-            {thoughtObj.page === "bank" &&
-                <div className="bank">
-                    <img src={backgroundBankImage} alt="changex bank"/>
-                    <div className="bankStick">
+                    <img className="aboutImage"  src={backgroundAboutImage} alt="changex money"/>
+                        {thoughtObj.page === "bank" &&
                         <Carousel
+                            className="bankStick"
                             nextLabel=""
                             prevLabel=""
                             prevIcon= {<span className="carouselIcon"> <FaAngleLeft/> </span>}
@@ -37,14 +23,14 @@ export default function ThoughtWall( {thoughtObj } ) {
                                         <div className="slider-header" >
                                             <h4>{item.head}</h4>
                                         </div>
-                                       <div className="slider-content" >
-                                            <p>
-                                            {item.p1}
+                                        <div className="slider-content" >
+                                            <p className="heading-style-h7">
+                                                {item.p1}
                                             </p>
-                                       </div>
+                                        </div>
                                         <div className="slider-content">
-                                            <p>
-                                            {item.p2}
+                                            <p className="heading-style-h7">
+                                                {item.p2}
                                             </p>
                                         </div>
 
@@ -53,9 +39,20 @@ export default function ThoughtWall( {thoughtObj } ) {
                                 )
                             })}
                         </Carousel>
-                    </div>
+                        }
+
+                        {thoughtObj.page === "about" &&
+                            <div className="aboutStick">
+                            <span >
+                            {thoughtObj.p1}
+                                <span className="is-link"> Change starts now. </span>
+                        </span>
+                                <span>
+                            {thoughtObj.p2}
+                        </span>
+                            </div>
+                        }
                 </div>
-            }
         </section>
     )
 }
