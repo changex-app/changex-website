@@ -6,10 +6,19 @@ import { advantages } from "../Token/tokenPageItems";
 import { useEffect, useState } from "react";
 import { fetchApy, fetchPrice } from "../../api/fetch";
 import DropDownButton from "../DropownButton";
+import DownloadApple from "../../../static/images/DW-Apple.svg";
+import DownloadGoogle from "../../../static/images/DW-Google.svg";
+import {ScanQrModal} from "../../Utils/ScanQrCode";
+import {Modal} from "@mui/material";
 export default function InnerHero( { heroObj } ){
 
     const [apy, setApy] = useState('$CHANGE');
     const [price, setPrice] = useState('$CHANGE');
+    const [showModal, setShowModal] = useState(false)
+
+    function openModal() {
+        setShowModal(true);
+    }
 
     const dropDownObj = [
         {
@@ -58,9 +67,9 @@ export default function InnerHero( { heroObj } ){
                         <div className="title_wrapper_hero max-width-large" >
                             <div className="center-content z-index-1">
                                 <div className="">
-                                    <div className="heading-style-h4 text-align-center text-color-primary text-left-mobile animate__animated animate__fadeInUp animate__delay-1s">
+                                    <h6 className="heading-style-h6 text-align-center text-color-primary text-left-mobile animate__animated animate__fadeInUp animate__delay-1s">
                                         {heroObj.titleObj.h1}
-                                    </div>
+                                    </h6>
                                 </div>
                                 <div className="margin-vertical margin-small ">
                                     <div className="">
@@ -74,6 +83,27 @@ export default function InnerHero( { heroObj } ){
                                         {heroObj.titleObj.h3}
                                     </div>
                                 </div>
+                                {heroObj.appBtnsVisible &&
+                                    <div className="animate__animated animate__zoomIn animate__delay-1s button-group centered-items margin-top margin-large spread max-width-full-mobile-landscape">
+                                        <a target="_blank"  rel="noreferrer" href="https://apps.apple.com/bg/app/changex-wallet/id1613309180"
+                                           className="button is-store max-width-full-mobile-landscape w-inline-block">
+                                            <img src={DownloadApple} alt="Apple" loading="lazy" width="150"></img>
+                                        </a>
+                                        <a target="_blank" rel="noreferrer" href="https://play.google.com/store/apps/details?id=io.changex.app"
+                                           className="button is-store max-width-full-mobile-landscape w-inline-block">
+                                            <img src={DownloadGoogle} alt="Google" loading="lazy" width="150"></img>
+                                        </a>
+                                        {heroObj.appBtnsVisible && heroObj.class === "walletPage" &&
+                                            <button onClick={openModal}
+                                                    className="button is-qr-hero w-inline-block">
+                                                <img src="/images/download-qr.svg" loading="lazy" width="75"
+                                                     alt="Changex QR code"
+                                                     className="qr-big">
+                                                </img>
+                                            </button>
+                                        }
+                                    </div>
+                                }
                                 {heroObj.scrollBtnText && heroObj.class === "tokenPage" &&
                                     <div className="infoWrapper">
                                         <div className="infoInnerWrapper">
@@ -108,6 +138,14 @@ export default function InnerHero( { heroObj } ){
                     <Advantages classGrid={'card-grid-token'} title={'A community-centric token'} advantages={ advantages }/>
                 }
             </div>
+            <Modal open={showModal}>
+                <ScanQrModal className="section-scanpopup wf-section"
+                             showModal={showModal}
+                             setShowModal={setShowModal}
+                             aria-labelledby="modal-modal-title"
+                             aria-describedby="modal-modal-description">
+                </ScanQrModal>
+            </Modal>
         </section>
     );
 }

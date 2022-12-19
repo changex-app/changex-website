@@ -5,7 +5,7 @@ export const heroObj = {
         h3: "A multi-chain, multi-purpose token that offers added benefit of increased APR for every other staked asset in the app."
     },
     text: "",
-    appBtnsVisible: true,
+    appBtnsVisible: false,
     scrollBtnText: "Buy CHANGE",
     backgroundImage: "",
     class: "tokenPage"

@@ -13,7 +13,7 @@ import {
 import MetaDecorator from "../../Utils/MetaDecorator";
 import InnerHero from "../../components/InnerHero/InnerHero";
 import Faq from "../../components/Faq/Faq";
-import {faqBankContent} from "../../components/Faq/faqItems";
+import { faqBankContent } from "../../components/Faq/faqItems";
 import ThoughtWall from "../../components/ThoughtWall";
 const imageUrl = "/assets/images/Changex-OG.jpeg";
 

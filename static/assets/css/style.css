@@ -13,7 +13,7 @@
     --containerLargeWidth: 76rem;
     --containerSmallWidth: 48rem;
     --backgroundColorBlack: #141414;
-    --heading1FontSize: 5rem;
+    --heading1FontSize: 4.12rem;
     --heading1MobileFontSize: 2.5rem;
     --heading2FontSize: 3.812rem;
     --heading2MobileFontSize: 1.938rem;
@@ -1132,13 +1132,12 @@ figcaption {
 .is-qr-hero {
     width: 105px;
     height: 105px;
-    position: absolute;
     padding: 0.5rem !important;
-    right: 20px;
     bottom: 20px;
     background: #ffffff;
     border: 1px solid rgba(48, 61, 72, 0.24);
     border-radius: 10px;
+    position: relative;
 }
 
 .button.is-qr {
@@ -1160,6 +1159,7 @@ figcaption {
     color: var(--backgroundColorBlack);
     text-decoration: none;
     max-width: 160px;
+    align-self: stretch;
 }
 
 a:focus, a:hover {
@@ -1216,6 +1216,7 @@ a:focus, a:hover {
     align-items: stretch;
     grid-column-gap: 0.5rem;
     display: inline-flex;
+    align-self: stretch;
 }
 
 .button-group.align-right {
@@ -4730,19 +4731,13 @@ a:focus, a:hover {
 }
 
 .cookies {
-    align-items: baseline;
-    justify-content: space-between;
-    left: 0px;
-    position: fixed;
-    width: 100%;
-    z-index: 999;
+    left: 0;
+    padding: 0.5rem;
+    height: 16%;
     font-size: 17px;
-    bottom: 0px;
     overflow: auto;
     background: #e9e9ff !important;
     color: #333333 !important;
-    height: 100px;
-    display: flex;
 }
 
 .cookiesText {
@@ -4768,20 +4763,13 @@ a:focus, a:hover {
 }
 
 .declineBtn {
-    display: block;
-    flex: 1;
-    align-self: center;
-    justify-content: center;
-    background: #00266E !important;
-    box-shadow: none;
+    width: 100px !important;
+    height: 50px !important;
+    color: var(--white) !important;
+    font-size: 17px;
     font-weight: 600;
-    color: #fefefe !important;
-    cursor: pointer;
-    padding: 5px 10px;
-    margin: 15px;
-    font-size: 13px;
-    height: 50px;
-    width: 100px;
+    border-radius: 6px !important;
+    background: var(--themeBlueBackgroundColor) !important;
 }
 
 /*.rs-navbar-brand {
@@ -5368,6 +5356,12 @@ w-nav-menu-mobile
 
 .wealthPage {
     background-image: url("/images/wealth-hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.walletPage {
+    background-image: url("/images/Hero-BG-img.png");
     background-repeat: no-repeat;
     background-size: cover;
 }

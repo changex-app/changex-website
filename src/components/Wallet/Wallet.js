@@ -28,7 +28,7 @@ export default function Wallet() {
     }
 
     return (
-        <section id="wallet" className="section_wallet">
+        <section id="wallet-section" className="section_wallet">
             <div className="background-color-black">
                 <div className="padding-global">
                     <div className="container-large">

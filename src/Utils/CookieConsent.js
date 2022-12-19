@@ -7,7 +7,7 @@ export default function CookieConsentModal(){
         <CookieConsent containerClasses="cookies animate__animated animate__fadeInUp"
                        overlayClasses="content"
             location="bottom"
-            buttonText="Continue"
+            buttonText="Accept"
             cookieName="changex.io-cookie-concent"
             cookieSecurity='true'
             flipButtons='true'
@@ -15,6 +15,8 @@ export default function CookieConsentModal(){
             expires={30}
             buttonClasses="accept"
             buttonWrapperClasses="btnWrrapper"
+                       declineButtonText="I Decline"
+                       enableDeclineButton
         >
             <div className='cookies_wrappers'>
                 <div style={{paddingLeft: "2.5rem"}}>
