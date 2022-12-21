@@ -33,7 +33,7 @@ export default function Hero( { heroObj } ){
                                 </div>
 
                                 {heroObj.appBtnsVisible &&
-                                    <div className="animate__animated animate__zoomIn animate__delay-1s button-group centered-items margin-top margin-large spread max-width-full-mobile-landscape">
+                                    <div className="animate__animated animate__zoomIn animate__delay-1s button-group  margin-top margin-large spread max-width-full-mobile-landscape">
                                         <a target="_blank"  rel="noreferrer" href="https://apps.apple.com/bg/app/changex-wallet/id1613309180"
                                            className="button is-store max-width-full-mobile-landscape w-inline-block">
                                             <img src={DownloadApple} alt="Apple" loading="lazy" width="150"></img>

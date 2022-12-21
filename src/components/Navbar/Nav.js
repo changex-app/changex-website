@@ -104,9 +104,9 @@ export default function Navigation() {
                                 <div className="nav_stats-wrapper">
                                     <div className="padding-small">
                                         <div id="changexPrice" className="text-size-tiny changexprice ">
-                                            <span className="hide-mobile-landscape">$CHANGE:&nbsp;</span>
+                                            <span>$CHANGE:</span>
                                             <a target="_blank" rel="noreferrer" className="price-highlight" href="https://www.coingecko.com/en/coins/changex">
-                                                <span>${price}<img alt="changex coingecko" className="coingecko" src="/images/external_link.svg"/></span>
+                                                <span> ${price}<img alt="changex coingecko" className="coingecko" src="/images/external_link.svg"/></span>
                                             </a>
                                         </div>
                                     </div>

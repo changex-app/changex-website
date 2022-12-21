@@ -8,6 +8,7 @@ import { fetchApy, fetchPrice } from "../../api/fetch";
 import DropDownButton from "../DropownButton";
 import DownloadApple from "../../../static/images/DW-Apple.svg";
 import DownloadGoogle from "../../../static/images/DW-Google.svg";
+import QRWhite from "../../../static/images/icn-qr-white.svg";
 import {ScanQrModal} from "../../Utils/ScanQrCode";
 import {Modal} from "@mui/material";
 export default function InnerHero( { heroObj } ){
@@ -96,7 +97,7 @@ export default function InnerHero( { heroObj } ){
                                         {heroObj.appBtnsVisible && heroObj.class === "walletPage" &&
                                             <button onClick={openModal}
                                                     className="button is-qr-hero w-inline-block">
-                                                <img src="/images/download-qr.svg" loading="lazy" width="75"
+                                                <img src={QRWhite} loading="lazy" width="75"
                                                      alt="Changex QR code"
                                                      className="qr-big">
                                                 </img>

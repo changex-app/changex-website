@@ -370,6 +370,10 @@ figcaption {
     margin-bottom: 0rem;
     margin-left: 0rem;
 }
+.margin-top-bottom {
+    margin-top: 10rem !important;
+    margin-bottom: 10rem !important;
+}
 
 .margin-left {
     margin-top: 0rem;
@@ -1130,13 +1134,12 @@ figcaption {
 }
 
 .is-qr-hero {
-    width: 105px;
-    height: 105px;
+    width: 65px;
+    height: 65px;
     padding: 0.5rem !important;
-    bottom: 20px;
-    background: #ffffff;
+    background: var(--backgroundColorBlack);
     border: 1px solid rgba(48, 61, 72, 0.24);
-    border-radius: 10px;
+    border-radius: 6px;
     position: relative;
 }
 
@@ -1200,10 +1203,10 @@ a:focus, a:hover {
 }
 
 .button-group.centered-items {
-    -webkit-box-pack: center;
+/*    -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
-    justify-content: center;
+    justify-content: center;*/
 }
 
 .button-group.centered-items.margin-top.margin-large.spread {
@@ -1563,7 +1566,6 @@ a:focus, a:hover {
     align-self: center;
     height: 100%;
     margin-top: 10%;
-    margin-bottom: 5%;
 }
 
 .title_wrapper_hero .heading-style-h1 {
@@ -1867,7 +1869,11 @@ a:focus, a:hover {
 }
 
 .card-text {
-    font-size: 1.2rem !important;
+    font-size: 1.125rem !important;
+}
+
+.box-container {
+    padding: 1rem !important;
 }
 
 .box-container-bank {
@@ -1885,8 +1891,17 @@ a:focus, a:hover {
 .card-grid-token {
     border: 1px solid var(--themeBlueBackgroundColor);
     border-radius: 24px;
-    padding: 0 1rem 0 1rem;
-    width: 85%;
+    padding: 2rem;
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.card-grid-wallet {
+    border: 1px solid var(--themeBlueBackgroundColor);
+    border-radius: 24px;
+    padding: 2rem;
+    width: 100%;
     position: relative;
     margin: auto;
 }
@@ -5096,6 +5111,10 @@ a:focus, a:hover {
 .react-multi-carousel-dot--active button{
     background: #11D48E !important;
 }
+.main-container-block {
+    display: block;
+    padding: 0 0 5rem 0;
+}
 
 .main-container {
     display: flex;
@@ -5109,12 +5128,12 @@ a:focus, a:hover {
 }
 
 .max-width-small-slider {
-    max-width: 35rem;
+    max-width: 37rem;
     width: 100%;
 }
 
 .money {
-    max-width: 35rem;
+    max-width: 37rem;
     width: 100%;
 }
 
@@ -5161,6 +5180,8 @@ a:focus, a:hover {
     background-color: transparent;
     border-bottom: none;
     padding-left: 0;
+    font-family: var(--font-header);
+    font-weight: 600;
 }
 
 .card-caption {
@@ -5345,25 +5366,27 @@ w-nav-menu-mobile
     border-top: 1px solid #e0e5e9;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    height: 100vh;
 }
 
 .tokenPage {
     background-image: url("/images/Token-hero-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 20rem;
 }
 
 .wealthPage {
     background-image: url("/images/wealth-hero-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 }
 
 .walletPage {
-    background-image: url("/images/Hero-BG-img.png");
+    background-image: url("/images/wallet/walletBackground2.png");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 }
 
 .about {

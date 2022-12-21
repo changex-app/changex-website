@@ -15,7 +15,7 @@ export default function CookieConsentModal(){
             expires={30}
             buttonClasses="accept"
             buttonWrapperClasses="btnWrrapper"
-                       declineButtonText="I Decline"
+                       declineButtonText="Maybe Later"
                        enableDeclineButton
         >
             <div className='cookies_wrappers'>

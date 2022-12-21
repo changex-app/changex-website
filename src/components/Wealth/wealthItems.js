@@ -161,5 +161,3 @@ export const responsiveSliderData =  {
         }
     }
 }
-
-

@@ -108,22 +108,119 @@ export const heroObj = {
 export const advantages = [
     {
         src: '/images/card/Mini/2.0/stack.svg',
-        text: 'CHANGE has a fixed supply of 425 million tokens that favors growth: every transaction in Changex serves to reduce total supply and protect the price.',
-        title: 'Burn'
+        text: 'Explore the world of DeFi from a non-custodial crypto wallet. Access decentralized exchanges and a myriad of investment opportunities.',
+        title: 'Decentralized'
     },
     {
         src: '/images/card/Mini/2.0/cashback.svg',
-        text: 'Earn on your tokens with staking and power-up your CHANGE: every staked asset in Changex increases your CHANGE rewards. Bonuses stack.',
-        title: 'Earn More'
+        text: 'Buy coins and tokens with Euro directly in the wallet via advanced fiat/crypto synergies - decentralization with the added comfort and simplicity of CeFi.',
+        title: 'Hybrid CeDeFi'
     },
     {
         src: '/images/card/Mini/2.0/Boost_APY.svg',
-        text: 'Stake or simply trade: CHANGE lets you jump between blockchains with ease - Hydra and Ethereum are yours to explore, with BSC and more to come.\n',
-        title: 'Explore'
+        text: 'Hold tokens on multiple blockchains in your DeFi non-custodial wallet. Swap and stake tokens without unnecessary complications.',
+        title: 'Multi-Chain'
     },
     {
         src: '/images/card/Mini/2.0/yourMoney.svg',
-        text: 'Unlock exclusive app features by holding and/or staking CHANGE in Changex: higher cashback, higher stablecoin APR, and more.\n',
-        title: 'Get Benefits'
+        text: 'Changex has zero access to your data and assets - everything is safely stored on your device only, and our number one priority is your safety.',
+        title: 'Secure'
     }
 ]
+
+export const sliderDataWalletPage = [
+    {
+        id: "card1",
+        image: "/images/wealth/StakingWealth.svg",
+        head: "Fiat On-Ramp",
+        alt: "Flexible Stakind And Spending",
+        text: "Stake assets and maintain immediate access to them without interrupting the flow of rewards. This is a unique way to use your crypto in various ways while earning on it constantly.",
+        linkText: "",
+        url: ""
+    },
+    {
+        id: "card2",
+        image: "/images/wealth/Hydra.svg",
+        head: "Crypto Off-Ramp",
+        alt: "Delegated HYDRA Staking",
+        text: "Stake HYDRA offline and enjoy the full benefits of the HydraChain economy by delegating your coins to a staker. Rewards equal to 5 HYDRA or more are paid out daily.",
+        linkText: "",
+        url: ""
+    },
+    {
+        id: "card3",
+        image: "/images/wealth/WealthChange.svg",
+        head: "Earn Bonus CHANGE",
+        alt: "Earn Bonus CHANGE",
+        text: "Whenever you stake an asset in Changex, the APR for your staked CHANGE goes up, and the bonuses stack. Without CHANGE, this mechanism is not possible.",
+        linkText: "",
+        url: ""
+    }
+]
+
+export const responsiveWalletPageSlider = {
+    additionalTransfrom:0,
+    autoPlaySpeed: 1000,
+    autoPlay: true,
+    centerMode: false,
+    arrows: false,
+    className: "",
+    containerClass: "container-wealth",
+    dotListClass: "",
+    draggable: true,
+    focusOnSelect: false,
+    infinite: true,
+    itemClass:"",
+    keyBoardControl: true,
+    minimumTouchDrag: 80,
+    partialVisible: true,
+    pauseOnHover: true,
+    renderArrowsWhenDisabled: false,
+    renderDotsOutside: false,
+    rewind: true,
+    rewindWithAnimation: true,
+    rtl: false,
+    renderButtonGroupOutside: true,
+    shouldResetAutoplay: false,
+    showDots: true,
+    sliderClass:"",
+    slidesToSlide: 1,
+    swipeable: true,
+    responsive: {
+        desktop: {
+            breakpoint: {
+                max: 3000,
+                min: 1025
+            },
+            items: 2,
+            partialVisibilityGutter: 40
+        },
+        mobile: {
+            breakpoint: {
+                max: 464,
+                min: 0
+            },
+            items: 1,
+            partialVisibilityGutter: 30
+        },
+        tablet: {
+            breakpoint: {
+                max: 1024,
+                min: 464
+            },
+            items: 1,
+            partialVisibilityGutter: 30
+        }
+    }
+}
+
+export const textData = {
+    background: 'background-color-black',
+    head: '',
+    h1: "Buy Crypto",
+    h2: "With Fiat",
+    h3: "Get your coins without complications with in-wallet banking and a fiat on-ramp. No more transfers, extra steps, and clutter - buy crypto with Euro without ever leaving the app.",
+    h4: "",
+    buttonTxt: "Read Whitepaper",
+    buttonUrl: "https://firebasestorage.googleapis.com/v0/b/changex-io.appspot.com/o/changex-whitepaper-v4.pdf?alt=media&amp;token=85d7033d-ce62-4fd2-aefd-b50f2a758530"
+}

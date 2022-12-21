@@ -5,6 +5,27 @@ import GoogleIcon from "../../../static/images/DW-Google.svg";
 
 export const menuItems = [
     {
+        title: 'Wallet',
+        url: '/wallet',
+        id: 'wallet',
+        className: 'nav_menu-links w-nav-menu',
+        dropdown: true,
+        submenu: [
+            {
+                title: 'DeFy Crypto Wallet',
+                url: 'defycryptowallet',
+            },
+            {
+                title: 'Swap Crypto',
+                url: 'swapcrypto',
+            },
+            {
+                title: 'Buy and Sell crypto',
+                url: 'buysellcrypto',
+            },
+        ]
+    },
+    {
         title: 'Bank',
         url: '/bank',
         id: 'bank',
@@ -60,27 +81,6 @@ export const menuItems = [
         hasLine: false,
         submenu: []
     },
-    /*{
-        title: 'Wallet',
-        url: '/wallet',
-        id: 'wallet',
-        className: 'nav_menu-links w-nav-menu',
-        dropdown: true,
-        submenu: [
-            {
-                title: 'DeFy Crypto Wallet',
-                url: 'defycryptowallet',
-            },
-            {
-                title: 'Swap Crypto',
-                url: 'swapcrypto',
-            },
-            {
-                title: 'Buy and Sell crypto',
-                url: 'buysellcrypto',
-            },
-        ]
-    },*/
    /* {
         title: 'FAQs',
         url: '/faqs',
