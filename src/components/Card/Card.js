@@ -115,7 +115,7 @@ export default function Card( { cardContent } ) {
                             </AnimationOnScroll>
 
                         </div>
-                        {cardContent.page !== "Bank" &&
+                        {cardContent.page !== "Bank" || cardContent.page !== "Wallet" &&
                             <Advantages classGrid={'card-grid'} title={'More Than A card - It’s Freedom'} advantages={ cardItems }/>
                         }
                     </div>
