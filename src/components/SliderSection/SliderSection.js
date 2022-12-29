@@ -37,7 +37,7 @@ export default function SliderSection({ textData, sliderData, responsiveSliderDa
                 <div className="container-large">
                     <div className="main-container">
                         <div data-current="Tabs"  data-easing="ease-out" data-duration-in="300"
-                             data-duration-out="100" className="tabs tabs-wealth margin-top margin-huge w-tabs">
+                             data-duration-out="100" className="tabs tabs-wealth margin-top w-tabs">
                             <div className="max-width-small-slider">
                                 <div className="money">
                                     <div className="label is-lime">{textData.head}</div>
@@ -49,9 +49,8 @@ export default function SliderSection({ textData, sliderData, responsiveSliderDa
                                     </p>
                                 </div>
 
-                                {menuTabs &&
-                                    <div className="tabs-menu w-tab-menu">
-                                        {menuTabs.map((item, index)=> {
+                                    <div className={`${menuTabs ? "" : "hide" } tabs-menu w-tab-menu`}>
+                                        {menuTabs && menuTabs.map((item, index)=> {
                                             return (
                                                 <span id={item.id}
                                                       onClick={() => handleClick(item.id, index)}
@@ -61,14 +60,11 @@ export default function SliderSection({ textData, sliderData, responsiveSliderDa
                                             )
                                         })}
                                     </div>
-                                }
-                                {!menuTabs &&
-                                    <div className="tabs-menu w-tab-menu  w-inline-block button-group centered-items">
+                                    <div className={`${menuTabs ? "hide" : "" } tabs-menu w-tab-menu  w-inline-block button-group centered-items`}>
                                         <a href={textData.buttonUrl}
                                            className={ `button w-button button-lime`}>{textData.buttonTxt}
                                         </a>
                                     </div>
-                                }
                             </div>
                         </div>
                         <div className="max-width-full wealth-card-slider margin-slider w-tab-content">

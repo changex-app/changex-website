@@ -199,6 +199,11 @@ figcaption {
     text-align: center;
 }
 
+.margin-section-medium {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
 .margin-custom2 {
     margin: 2.5rem;
 }
@@ -282,6 +287,8 @@ figcaption {
 .margin-huge {
     margin: 6rem;
 }
+
+.margin-huge
 
 .padding-medium {
     padding: 2rem;
@@ -1230,7 +1237,7 @@ a:focus, a:hover {
 }
 
 .hide {
-    display: none;
+    display: none !important;
 }
 
 .padding-section-medium {
@@ -1710,7 +1717,8 @@ a:focus, a:hover {
 
 .container-feature {
     display: flex;
-    margin: 5rem auto 5rem auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 .left-arrow {
@@ -2381,7 +2389,7 @@ a:focus, a:hover {
     margin-right: auto;
     margin-left: auto;
     padding-left: 30px;
-    margin-top: 3rem;
+    margin-top: auto;
 }
 
 .bankStick .carousel-indicators {
@@ -4309,12 +4317,12 @@ a:focus, a:hover {
     }
 
     .bankStick {
-/*        position: relative !important;*/
-        width: 100% !important;
-        margin: auto auto 10% auto !important;
-        border: none !important;
-        border-radius: 0 !important;
+        position: absolute !important;
+        width: 90% !important;
+        margin: auto !important;
+        border-radius: 15px !important;
         padding: 2rem !important;
+        border: 1px solid var(--themeBlueBackgroundColor);
     }
 
     .section_card {
@@ -5113,7 +5121,7 @@ a:focus, a:hover {
 }
 .main-container-block {
     display: block;
-    padding: 0 0 5rem 0;
+    padding: 0 0 0 0;
 }
 
 .main-container {
@@ -5130,6 +5138,7 @@ a:focus, a:hover {
 .max-width-small-slider {
     max-width: 37rem;
     width: 100%;
+    margin: auto !important;
 }
 
 .money {
@@ -5360,6 +5369,12 @@ w-nav-menu-mobile
     width: 100%;
 }
 
+.aboutPage {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
 .bankPage {
     background-image: url("/images/bank/bank-hero-bg.png");
     position: relative;
@@ -5389,8 +5404,15 @@ w-nav-menu-mobile
     height: 100vh;
 }
 
+.aboutImage {
+    background-image: url("/images/about/thought-catalog.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .about {
     background-repeat: no-repeat;
+    background-color: transparent;
     width: 100%;
     display: inline-block;
     position: relative;
@@ -5450,12 +5472,16 @@ w-nav-menu-mobile
 }
 
 .bankStick .carousel {
-    position: absolute !important;
+    position: absolute;
     height: 95%;
 }
 
 .bankStick > span:first-of-type {
     margin-bottom: 1rem ;
+}
+
+.bankThought {
+    height: 100vh;
 }
 
 .slider-header {

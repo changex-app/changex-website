@@ -144,8 +144,9 @@ export const cardContent = {
 }
 
 export const thoughtObj = {
-    page: 'bank',
+    page: 'Bank',
     title: 'Spend',
+    image: '../images/bank/spend-image.png',
     link: '',
     p1:  'The Changex crypto debit card works like a standard debit card in any location that supports cashless payments.',
     p2:  ' Use Euro or any in-app token in the real world and unchain your personal finance.'

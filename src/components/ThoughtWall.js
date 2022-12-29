@@ -1,22 +1,32 @@
 import * as React from "react";
-import backgroundAboutImage from "../../static/images/about/thought-catalog.png";
-import backgroundBankImage from "../../static/images/bank/thought-catalog-bank.png";
 import Carousel from 'react-bootstrap/Carousel';
 import { sliderThoughtData } from "./Bank/bankItem";
 import {FaAngleLeft, FaAngleRight} from "react-icons/fa";
+import $ from 'jquery'
 
 export default function ThoughtWall( {thoughtObj } ) {
+
+    $('#myCarousel').on('slide.bs.carousel', function (e) {
+        console.log('before');
+    });
+
+    $('')
+
     return (
         <section id="thought-wall">
                 <div className="about">
-                    <img className="aboutImage"  src={backgroundAboutImage} alt="changex money"/>
-                        {thoughtObj.page === "bank" &&
+                    <img className={`${thoughtObj.page === 'About' ? 'aboutPage' : 'hide'}`}
+                         src={`${thoughtObj.image}`} alt="changex money"/>
+                    <img className={`${thoughtObj.page === 'Bank' ? 'bankThought' : 'hide'}`}
+                         src={`${thoughtObj.image}`} alt="changex money"/>
+                        {thoughtObj.page === "Bank" &&
                         <Carousel
                             className="bankStick"
+                            id="bankCarousel"
                             nextLabel=""
                             prevLabel=""
                             prevIcon= {<span className="carouselIcon"> <FaAngleLeft/> </span>}
-                            nextIcon=  {<span className="carouselIcon"> <FaAngleRight/> </span>}  >
+                            nextIcon=  {<span className="carouselIcon"> <FaAngleRight/> </span>}>
                             {sliderThoughtData.map((item, index) => {
                                 return (
                                     <Carousel.Item className="w-100">
@@ -41,7 +51,7 @@ export default function ThoughtWall( {thoughtObj } ) {
                         </Carousel>
                         }
 
-                        {thoughtObj.page === "about" &&
+                        {thoughtObj.page === "About" &&
                             <div className="aboutStick">
                             <span >
                             {thoughtObj.p1}

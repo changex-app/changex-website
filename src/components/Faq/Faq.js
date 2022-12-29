@@ -12,7 +12,7 @@ export default function Faq( { background, title,  faqContent } ) {
         <section id="faqs" className="section_faq">
             <div className={`padding-global ${background}`}>
                 <div className="container-large">
-                    <div className="padding-section-large">
+                    <div className="margin-section-medium">
                         <AnimationOnScroll className="grid-2" animateIn="animate__fadeInUp" animateOnce={true}>
                             <div>
                                 <div className="slide-from-bottom">
@@ -20,7 +20,7 @@ export default function Faq( { background, title,  faqContent } ) {
                                         {title}
                                     </h2>
                                 </div>
-                                <div className="w-layout-grid faq-grid margin-vertical margin-huge slide-from-bottom">
+                                <div className="w-layout-grid faq-grid margin-vertical slide-from-bottom">
                                     {faqContent.map((faq, index) => {
                                         return (
                                             <Accordion id={index.toString()} className="faq-question-bar w-inline-block">

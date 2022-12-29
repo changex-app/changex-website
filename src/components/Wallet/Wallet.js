@@ -37,7 +37,7 @@ export default function Wallet() {
                                     <WalletSlider onClickNav={onClickNav} responsiveSliderData={responsiveSliderData} sliderData={slideImages}/>
                                 </div>
                                 <div data-current="Tabs"  data-easing="ease-out" data-duration-in="300"
-                                     data-duration-out="100" className="tabs tabs-wallet margin-top margin-huge w-tabs">
+                                     data-duration-out="100" className="tabs tabs-wallet margin-top w-tabs">
                                     <div className="max-width-small-slider">
                                         <AnimationOnScroll  animateIn="animate__fadeInUp" className="wallet_wrapper-right animate__animated animate__fadeInUp">
                                             <div className="wallet-content">

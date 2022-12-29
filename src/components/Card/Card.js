@@ -54,8 +54,8 @@ export default function Card( { cardContent } ) {
         <section id="card" className="section_card overflow-hidden">
             <div className="padding-global">
                 <div className="container-large">
-                    <div className="padding-section-large">
-                        <div className="card_wrapper margin-bottom margin-xxhuge">
+                    <div className="margin-section-medium">
+                        <div className="card_wrapper">
                             <div className="card_wrapper-right">
                                 <div className="image-holder card-image">
                                     <img src="../../static/images/card/cards-img.png" loading="lazy" alt="changex cards"
@@ -113,11 +113,10 @@ export default function Card( { cardContent } ) {
                                     </div>
                                 </div>
                             </AnimationOnScroll>
-
                         </div>
-                        {cardContent.page !== "Bank" || cardContent.page !== "Wallet" &&
+                        <div className={`${cardContent.page === "Home" ? "" : "hide"  }`}  >
                             <Advantages classGrid={'card-grid'} title={'More Than A card - It’s Freedom'} advantages={ cardItems }/>
-                        }
+                        </div>
                     </div>
                 </div>
             </div>

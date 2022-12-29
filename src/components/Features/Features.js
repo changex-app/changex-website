@@ -12,7 +12,7 @@ export default function Feature({ background, content }) {
                                 return (
                                     <div className={item.alignImage === "left" ? "container-feature rowReverse" : "container-feature"}>
                                         <div data-current="Tabs"  data-easing="ease-out" data-duration-in="300"
-                                             data-duration-out="100" className="tabs tabs-wealth margin-top margin-huge w-tabs">
+                                             data-duration-out="100" className="tabs tabs-wealth  w-tabs">
                                             <div className="max-width-small-slider">
                                                 <div className="money">
                                                     <h2 className="heading-style-h2 margin-bottom margin-small">{item.h1}
