@@ -5,6 +5,8 @@ import { heroObj ,advantages } from "../../components/Wallet/walletItems";
 import SliderSection from "../../components/SliderSection/SliderSection";
 import {responsiveWalletPageSlider, sliderDataWalletPage, textData} from "../../components/Wallet/walletItems";
 import Card from "../../components/Card/Card";
+import SwapCrypto from "../../components/SwapCrypto/SwapCrypto";
+
 
 const cardContent = {
     head1: 'Meet The',
@@ -20,6 +22,7 @@ export default function WalletPage(){
             <InnerHero heroObj={heroObj}/>
             <section id="wallet">
                 <Advantages classGrid={'card-grid-wallet'} title={'The DeFI Wallet that brings change'} advantages={ advantages }/>
+                <SwapCrypto/>
                 <SliderSection textData={ textData } sliderData={ sliderDataWalletPage } responsiveSliderData={ responsiveWalletPageSlider } menuTabs={ null }/>
                 <Card cardContent={cardContent}/>
             </section>

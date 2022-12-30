@@ -791,7 +791,8 @@ figcaption {
 
 .text-style-link {
     text-decoration: none;
-    color: #3418d8;
+    color: #3418d8 !important;
+    cursor: pointer;
 }
 
 .text-style-link.is-green {
@@ -1155,7 +1156,7 @@ figcaption {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    padding: 0 1rem 0 0.5rem;
+    padding: 0.5rem;
     -webkit-box-align: center;
    -webkit-align-items: center;
    -ms-flex-align: center;
@@ -1168,8 +1169,10 @@ figcaption {
     background-color: transparent;
     color: var(--backgroundColorBlack);
     text-decoration: none;
-    max-width: 160px;
+    max-width: 115px;
     align-self: stretch;
+    position: relative;
+    right: 3%;
 }
 
 a:focus, a:hover {
@@ -2693,7 +2696,7 @@ a:focus, a:hover {
     padding: 2rem;
     align-items: flex-start;
     width: 75%;
-    margin: auto;
+    margin: 5rem auto 0 auto;
 }
 
 .contact-border-blue {
@@ -2943,6 +2946,10 @@ a:focus, a:hover {
     cursor: pointer;
 }
 
+.tab-nav > a {
+    color: var(--white) !important;
+}
+
 .tab-link {
     margin-bottom: 1.4rem;
     background-color: transparent !important;
@@ -2983,7 +2990,7 @@ a:focus, a:hover {
 
 @media screen and (max-width: 1280px) {
     .button.is-qr {
-        padding-top: 0;
+        max-width: 80px !important;
     }
 
     .carousel-button-group-wallet {
@@ -4867,6 +4874,7 @@ a:focus, a:hover {
 
 .hero_text-wrapper {
     position: absolute;
+    display: flex;
     grid-area: bottom;
     bottom: 1.3rem;
     left: 0;
@@ -4875,6 +4883,7 @@ a:focus, a:hover {
 
 .hero_text-wrapper > p {
     opacity: 1;
+    align-self: center;
 }
 
 .socialLinks {

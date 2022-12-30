@@ -6,11 +6,17 @@ import $ from 'jquery'
 
 export default function ThoughtWall( {thoughtObj } ) {
 
-    $('#myCarousel').on('slide.bs.carousel', function (e) {
+    $('#bankCarousel').on('slide.bs.carousel', function (e) {
         console.log('before');
     });
 
-    $('')
+    function PrevClick(e) {
+        console.warn('prevClicked', e)
+    }
+
+    $(".left").on('click', function(e){
+        $("#bankCarousel").carousel("prev", e);
+    });
 
     return (
         <section id="thought-wall">
@@ -25,8 +31,8 @@ export default function ThoughtWall( {thoughtObj } ) {
                             id="bankCarousel"
                             nextLabel=""
                             prevLabel=""
-                            prevIcon= {<span className="carouselIcon"> <FaAngleLeft/> </span>}
-                            nextIcon=  {<span className="carouselIcon"> <FaAngleRight/> </span>}>
+                            prevIcon= {<span data-slide="prev" className="left carouselIcon" onClick={PrevClick}> <FaAngleLeft/> </span>}
+                            nextIcon=  {<span data-slide="next" className="right carouselIcon"> <FaAngleRight/> </span>}>
                             {sliderThoughtData.map((item, index) => {
                                 return (
                                     <Carousel.Item className="w-100">
