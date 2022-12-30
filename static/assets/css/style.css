@@ -1848,7 +1848,7 @@ a:focus, a:hover {
     top: -2%;
     right: 0%;
     bottom: auto;
-    background-image: url('/static/images/card/img-card-bg.png');
+    background-image: url('/static/images/card/Background.png');
     background-size: 1153px, auto;
     transform: scale(0.9);
 }
@@ -1924,6 +1924,12 @@ a:focus, a:hover {
     background-size: contain;
     background-color: #F3FBFD;
 
+}
+
+.section_card_wallet {
+    position: relative;
+    border-top: 1px solid #e0e5e9;
+    background-color: #F3FBFD;
 }
 
 .section_card.is-bordered {

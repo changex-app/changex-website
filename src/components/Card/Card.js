@@ -51,7 +51,7 @@ export default function Card( { cardContent } ) {
 
 
     return (
-        <section id="card" className="section_card overflow-hidden">
+        <section id="card" className={`${cardContent.page === 'Wallet' ? 'section_card_wallet' : 'section_card'} overflow-hidden`}>
             <div className="padding-global">
                 <div className="container-large">
                     <div className="margin-section-medium">
