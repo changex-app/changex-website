@@ -41,15 +41,13 @@ export default function SwapCrypto() {
                                         {titleObj.titleObj.h3}
                                     </div>
                                 </div>
-                                {titleObj.scrollBtnText && titleObj.class !== "tokenPage"  &&
-                                    <div className="tabs-menu goToLink w-tab-menu">
+                                    <div className={`${titleObj.scrollBtnText && titleObj.class !== "tokenPage" ? '' : 'hide'} tabs-menu goToLink w-tab-menu`}>
                                         <span className="tab-nav w-inline-block w--current">
                                             <Link to={titleObj.buttonUrl}>
                                                                 {titleObj.scrollBtnText}
                                             </Link>
                                         </span>
                                     </div>
-                                }
                             </div>
                         </div>
                     </div>
