@@ -288,7 +288,9 @@ figcaption {
     margin: 6rem;
 }
 
-.margin-huge
+.margin-huge {
+
+}
 
 .padding-medium {
     padding: 2rem;

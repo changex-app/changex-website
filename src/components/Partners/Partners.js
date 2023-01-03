@@ -7,7 +7,7 @@ export default function Partners() {
             <div className="padding-global">
                 <div className="container-large">
                     <div className="padding-section-small">
-                            <h3 className="heading-style-h6 slide-from-bottom text-align-center">Revolutionizing Personal Finance One Community At A Time.</h3>
+                            <h3 className="heading-style-h6 margin-medium text-align-center">Revolutionizing Personal Finance One Community At A Time.</h3>
                             <div  className="logo-group r-marquee">
                                 <div className="logos-wrapper r-marquee-wrapper-left">
                                     {logosParners.map((logo, index) => {
