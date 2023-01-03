@@ -146,7 +146,7 @@ export const cardContent = {
 export const thoughtObj = {
     page: 'Bank',
     title: 'Spend',
-    image: '../images/bank/spend-image.png',
+    image: '../images/bank/bank_0.png',
     link: '',
     p1:  'The Changex crypto debit card works like a standard debit card in any location that supports cashless payments.',
     p2:  ' Use Euro or any in-app token in the real world and unchain your personal finance.'
@@ -156,9 +156,9 @@ export const thoughtObj = {
 export const sliderThoughtData = [
     {
         id: "Tab1",
-        image: "",
+        image: "/images/bank/bank_0.png",
         head: "Spend",
-        alt: "Spend",
+        alt: "spend",
         p1: "The Changex crypto debit card works like a standard debit card in any location that supports cashless payments.",
         p2: "Use Euro or any in-app token in the real world and unchain your personal finance.",
         linkText: "",
@@ -166,9 +166,9 @@ export const sliderThoughtData = [
     },
     {
         id: "Tab2",
-        image: "",
+        image: "/images/bank/bank_1.png",
         head: "Earn",
-        alt: "Earn",
+        alt: "earn",
         p1: "Get crypto or Euro cashback every time you use your card for purchases.",
         p2: "Increase the percentage and get more out of your bank account by holding and/or staking more CHANGE.",
         linkText: "",
@@ -176,9 +176,9 @@ export const sliderThoughtData = [
     },
     {
         id: "Tab3",
-        image: "",
+        image: "/images/bank/bank_2.png",
         head: "Stay flexible",
-        alt: "Stay flexible",
+        alt: "flexible",
         p1: "Use your virtual debit card in the app and spend securely, or spend Euro and any in-app token with the physical card.",
         p2: "Simply pick your currency - Changex handles everything in the background.",
         linkText: "",

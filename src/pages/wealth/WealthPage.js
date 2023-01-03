@@ -36,24 +36,43 @@ const featureContent = {
     head: 'More Features Coming Soon',
     feature: [
         {
-            h1: "Pioneering Leverage Staking",
-            h2: "",
+            h1: "Pioneering Leveraged",
+            h2: "Staking",
             h3: "A unique way to boost the staking rewards of any PoS token in the app by a factor of 1.2-2x. All while maintaining low liquidation risk. Leveraged staking works with any interest-bearing economy.",
             h4: "",
-            buttonTxt: "learn More",
+            buttonTxt: "Learn More",
             buttonUrl: "https://urlgeni.us/changexapp",
+            buttonClass: "button-lime",
             imageUrl: "/images/wealth/leverage_staking.svg",
             alignImage: 'right'
         },
         {
-            h1: "Discover Lending",
-            h2: "",
+            h1: "Discover",
+            h2: "Lending",
             h3: "Earn on stablecoins like USDT and USDC while powering up the Leveraged Staking economy. ",
             h4: "Users who use leveraged staking borrow your stablecoins to acquire more of their asset, and pay you back the interest. Everything is completely decentralized, and your coins play a vital role in the ecosystem.",
             buttonTxt: "Read Whitepaper",
             buttonUrl: "https://firebasestorage.googleapis.com/v0/b/changex-io.appspot.com/o/changex-whitepaper-v4.pdf?alt=media&amp;token=85d7033d-ce62-4fd2-aefd-b50f2a758530",
+            buttonClass: "button-lime",
             imageUrl: "/images/wealth/lending.svg",
             alignImage: 'left'
+        }
+    ]
+}
+
+const featureContent2 = {
+    feature: [
+        {
+            h1: "Stack For A Rainy Day With",
+            h2: "Savings",
+            h3: "Deposit idle stablecoin assets for a fixed interest rate and remain decentralized: Changex relies on smart contracts and can never access your assets.",
+            h4: "",
+            buttonTxt: "Read Whitepaper",
+            buttonUrl: "https://firebasestorage.googleapis.com/v0/b/changex-io.appspot.com/o/changex-whitepaper-v4.pdf?alt=media&amp;token=85d7033d-ce62-4fd2-aefd-b50f2a758530",
+            buttonClass: "background-color-blue",
+            imageUrl: "/images/savings/Savings_Rainy_Day.png",
+            alignImage: 'right',
+            commingSoon: true
         }
     ]
 }
@@ -71,6 +90,7 @@ export default function WealthPage(){
             <section id="wealth" className="section_invest">
                 <SliderSection textData={ textData } sliderData={ sliderDataWealthPage } responsiveSliderData={ responsiveSliderData } menuTabs={ null }/>
                 <Feature background={'background-color-blue'} content={featureContent}/>
+                <Feature background={'background-color-off-pink'} content={featureContent2}/>
                 <Faq background={'background-color-off-white'} title={'Wealth FAQ'} faqContent={faqWealthContent}/>
             </section>
         </>

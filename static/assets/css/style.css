@@ -473,12 +473,16 @@ figcaption {
 }
 
 .background-color-blue {
-    background-color: var(--themeBlueBackgroundColor);
-    color: #f5f5f5;
+    background-color: var(--themeBlueBackgroundColor) !important;
+    color: #f5f5f5 !important;
 }
 
 .background-color-off-white {
     background-color: #F3FBFD;
+}
+
+.background-color-off-pink {
+    background-color: #EBE8FC;
 }
 
 .z-index-1 {
@@ -813,6 +817,7 @@ figcaption {
 
 .heading-style-h2 {
     font-size: var(--heading2FontSize);
+    text-decoration: none !important;
     line-height: 1;
     font-weight: 600;
     letter-spacing: 0px;
@@ -1712,6 +1717,7 @@ a:focus, a:hover {
 .centerImage {
     display: block;
     margin: auto;
+    transform: scale(0.8);
 }
 
 .wrapper-left-image {
@@ -1922,7 +1928,7 @@ a:focus, a:hover {
     position: relative;
     border-top: 1px solid #e0e5e9;
     background-image: url("/images/card/Background.png");
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-size: contain;
     background-color: #F3FBFD;
 
@@ -4275,7 +4281,7 @@ a:focus, a:hover {
 
     .wallet_wrapper-right {
         width: 50%;
-        margin: 2rem auto;
+        margin: 2rem auto 0 auto;
     }
 
     .btn-wallet {
@@ -4972,7 +4978,7 @@ a:focus, a:hover {
 
 .bank-image-comming-soon {
     top: 0;
-    width: 30%;
+    width: 31%;
     font-family: var(--font-header);
     font-weight: 600;
     font-size: 13px;
@@ -5497,7 +5503,7 @@ w-nav-menu-mobile
 }
 
 .bankThought {
-    height: 100vh;
+    width: 100%;
 }
 
 .slider-header {
