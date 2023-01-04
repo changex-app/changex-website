@@ -6,8 +6,8 @@ import {Avatar, IconButton} from "rsuite";
 import Typography from "@mui/material/Typography";
 import CardContent from "@mui/material/CardContent";
 import ExpandableItem from "../ExpandableItem";
-import RemoveCircleOutlineRoundedIcon from '@mui/icons-material/RemoveCircleOutlineRounded';
-import AddCircleOutlineRoundedIcon from '@mui/icons-material/AddCircleOutlineRounded';
+import AddIcon from '@mui/icons-material/Add';
+import RemoveIcon from '@mui/icons-material/Remove';
 
 export default function Team({titleObj, teamData, background }) {
     return (
@@ -23,7 +23,7 @@ export default function Team({titleObj, teamData, background }) {
                                 <ExpandableItem className="margin-large"
                                     render={props => (
                                         <>
-                                            <Card className="aboutCardWrapper" >
+                                            <Card className={`${props.open ? '' : 'max-height-card'} aboutCardWrapper`} >
                                                 <CardHeader className="cardHeader"
                                                     avatar={
                                                         <Avatar  className="teamAvatar" aria-label="avatar">
@@ -34,7 +34,7 @@ export default function Team({titleObj, teamData, background }) {
                                                     subheader={item.role}
                                                 />
                                                 <CardContent className="cardContent">
-                                                    <Typography variant="body2" className={`${props.open && item.showMore ? '' : 'cardContentTxt'}`}>
+                                                    <Typography variant="body2" className={`${!props.open && item.showMore ? 'cardContentTxt' : ''}`}>
                                                         {item.about}
                                                     </Typography>
                                                     <Typography variant="body2">
@@ -42,8 +42,8 @@ export default function Team({titleObj, teamData, background }) {
                                                             <Typography variant="body2">{item.about2}</Typography>
                                                         </Collapse>
                                                         {props.open ?
-                                                            <RemoveCircleOutlineRoundedIcon className={`${item.showMore ? '' : 'hide'}`} onClick={() => props.setOpen(!props.open)}></RemoveCircleOutlineRoundedIcon> :
-                                                            <AddCircleOutlineRoundedIcon  className={`${item.showMore ? '' : 'hide'}`} onClick={() => props.setOpen(!props.open)}></AddCircleOutlineRoundedIcon>}
+                                                            <RemoveIcon className={`${item.showMore ? '' : 'hide'} showMoreBtn`} onClick={() => props.setOpen(!props.open)}></RemoveIcon> :
+                                                            <AddIcon  className={`${item.showMore ? '' : 'hide'} showMoreBtn`} onClick={() => props.setOpen(!props.open)}></AddIcon>}
                                                     </Typography>
                                                 </CardContent>
                                                 <CardActions>
