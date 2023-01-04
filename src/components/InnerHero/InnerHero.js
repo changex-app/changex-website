@@ -11,6 +11,7 @@ import DownloadGoogle from "../../../static/images/DW-Google.svg";
 import QRWhite from "../../../static/images/icn-qr-white.svg";
 import {ScanQrModal} from "../../Utils/ScanQrCode";
 import {Modal} from "@mui/material";
+
 export default function InnerHero( { heroObj } ){
 
     const [apy, setApy] = useState('$CHANGE');

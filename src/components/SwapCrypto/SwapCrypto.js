@@ -1,10 +1,4 @@
 import * as React from 'react'
-import {TitleHero} from "../Title";
-import DownloadApple from "../../../static/images/DW-Apple.svg";
-import DownloadGoogle from "../../../static/images/DW-Google.svg";
-import QRWhite from "../../../static/images/icn-qr-white.svg";
-import DropDownButton from "../DropownButton";
-import {BsArrowDown} from "react-icons/bs";
 import {Link} from "react-router-dom";
 
 const titleObj = {

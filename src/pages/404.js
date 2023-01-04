@@ -1,5 +1,4 @@
 import * as React from "react";
-/*import { StaticImage } from "gatsby-plugin-image";*/
 import MetaDecorator from "../Utils/MetaDecorator";
 
 const NotFoundPage = () => {

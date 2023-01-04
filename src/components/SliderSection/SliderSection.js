@@ -1,7 +1,6 @@
 import * as React from "react"
 import CardSlider from "../Slider/cardSlider";
 import {useState} from "react";
-import {scrollImages} from "../Wallet/walletItems";
 
 let carouselRef2;
 

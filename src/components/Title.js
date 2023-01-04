@@ -2,7 +2,6 @@ import DownloadApple from "../../static/images/DW-Apple.svg";
 import DownloadGoogle from "../../static/images/DW-Google.svg";
 import * as React from "react";
 
-
 export function TitleHero({ contentObj }) {
     return (
         <div className="hero_content-wrapper padding-vertical padding-large">

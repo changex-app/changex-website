@@ -1,9 +1,10 @@
 import * as React from "react";
+import { useState } from "react";
 import Carousel from 'react-bootstrap/Carousel';
 import { sliderThoughtData } from "./Bank/bankItem";
-import {FaAngleLeft, FaAngleRight} from "react-icons/fa";
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import $ from 'jquery'
-import { useState } from "react";
+
 
 export default function ThoughtWall( {thoughtObj } ) {
 

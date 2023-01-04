@@ -6,7 +6,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import {Button, CardActionArea, CardActions, CardHeader} from "@mui/material";
+import {Button, CardActions} from "@mui/material";
 import { FaAngleRight } from "react-icons/fa";
 
 export default function CardSlider( { onClickNav, responsiveSliderData, sliderData } ) {

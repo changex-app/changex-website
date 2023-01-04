@@ -1880,6 +1880,7 @@ a:focus, a:hover {
     grid-template-rows: auto;
 }
 
+
 .card-title {
     font-size: 2rem !important;
     max-width: 12rem !important;
@@ -1942,6 +1943,28 @@ a:focus, a:hover {
 
 .section_card.is-bordered {
     border-top: 1px solid #e0e5e9;
+}
+
+.aboutCardWrapper {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 10px;
+    isolation: isolate;
+    width: 360px;
+    background: #FFFFFF;
+    /* Primary/Blue */
+
+    border: 1px solid #3418D8;
+    border-radius: 24px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 1;
 }
 
 .card_wrapper {
@@ -2173,6 +2196,10 @@ a:focus, a:hover {
 .is-blue {
     color: var(--themeBlueBackgroundColor);
     text-decoration: underline;
+}
+
+.blue {
+    color: var(--themeBlueBackgroundColor) !important;
 }
 
 .highlight.is-green {
@@ -5078,7 +5105,7 @@ a:focus, a:hover {
     bottom: 0;
     right: 0;
     margin: auto;
-    transform: scale(2);
+    transform: scale(1.8);
 }
 
 .centered-items {
@@ -5215,13 +5242,35 @@ a:focus, a:hover {
     font-weight: 600;
 }
 
+.cardHeader {
+    padding: 0 !important;
+}
+
 .card-caption {
     font-size: var(--heading5MobileFontSize) !important;
     color: #dedbdb !important;
 }
 
 .card-content {
-    padding: 30px 40px;
+     padding: 30px 40px;
+}
+
+.cardContent {
+    min-height: 11.25rem !important;
+    margin-bottom: 1rem !important;
+    margin-top: 1rem !important;
+    padding: 0 !important;
+    overflow: hidden;
+    line-height: 1em;
+}
+
+.cardContentTxt {
+    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+}
+
+#section_team {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 .container-wealth .card-slide {
@@ -5576,4 +5625,22 @@ w-nav-menu-mobile
 }
 .dropdown-menu {
     border-radius: 0.5rem !important
+}
+
+.teamImg {
+    width: 90px;
+    height: 90px;
+    /* Secondary/Black 2 */
+    border: 1px solid #1B242C;
+    border-radius: 500px;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.teamAvatar {
+    border-radius: 45px !important;
+    width: 71px;
+    height: 71px;
 }

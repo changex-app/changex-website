@@ -1,4 +1,3 @@
-import * as React from "react";
 import Staking_1 from "../../../static/images/wealth/Staking_1.svg";
 import Doubleapy from "../../../static/images/wealth/Doubleapy.svg";
 import Stablecoins from "../../../static/images/wealth/Lend-Stablecoins.svg";

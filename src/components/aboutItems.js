@@ -1,5 +1,3 @@
-import * as React from "react"
-
 export const heroObj = {
     titleObj: {
         h1: "About Changex",

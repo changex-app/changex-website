@@ -5,7 +5,6 @@ import 'react-multi-carousel/lib/styles.css';
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import "react-multi-carousel/lib/styles.css";
-import { SliderButtonGroup } from "./sliderButtonsGroup";
 
 
 export default function WalletSlider( {onClickNav, responsiveSliderData, sliderData } ) {
