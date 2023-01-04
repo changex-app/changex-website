@@ -5652,5 +5652,19 @@ w-nav-menu-mobile
 }
 
 .max-height-card {
-    max-height: 395px !important;
+    height: 395px;
+    animation-name: card-closed;
+    animation-duration: 2s;
+    animation-direction: reverse;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes card-closed {
+    0% {
+        max-height: 395px;
+    }
+    100% {
+        max-height: available;
+    }
 }
