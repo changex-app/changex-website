@@ -4,7 +4,6 @@ import { ScanQrModal } from "../../Utils/ScanQrCode";
 import { Modal } from "@mui/material";
 import 'react-dropdown/style.css';
 import { Link } from 'react-router-dom';
-import { Link as SmoothLink } from 'react-scroll';
 import ChangeXLogoColor from "../../../static/images/Logo_navigation.svg";
 import QRBlack from "../../../static/images/icn-qr-black.svg";
 import MenuIcon from "../../../static/images/Menu-Icon_1Menu Icon.png";

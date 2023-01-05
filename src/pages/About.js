@@ -1,11 +1,11 @@
 import * as React from "react";
-import Cta from "../../components/Cta/Cta";
-import { heroObj } from "../../components/aboutItems";
-import {teamAdvisorsData, teamExpertsData, titleAdvisorsObj, titleExpertsObj} from "../../components/Team/teamItems";
-import MetaDecorator from "../../Utils/MetaDecorator";
-import ThoughtWall from "../../components/ThoughtWall";
-import Team from "../../components/Team/Team";
-import AboutHero from "../../components/InnerHero/AboutHero";
+import Cta from "../components/Cta/Cta";
+import { heroObj } from "../components/aboutItems";
+import {teamAdvisorsData, teamExpertsData, titleAdvisorsObj, titleExpertsObj} from "../components/Team/teamItems";
+import MetaDecorator from "../Utils/MetaDecorator";
+import ThoughtWall from "../components/ThoughtWall";
+import Team from "../components/Team/Team";
+import AboutHero from "../components/InnerHero/AboutHero";
 
 const imageUrl = "/images/Changex-OG.jpeg";
 

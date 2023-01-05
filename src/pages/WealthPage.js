@@ -1,11 +1,11 @@
 import * as React from "react";
-import MetaDecorator from "../../Utils/MetaDecorator";
-import SliderSection from "../../components/SliderSection/SliderSection";
-import { responsiveSliderData, sliderDataWealthPage } from "../../components/Wealth/wealthItems";
-import InnerHero from "../../components/InnerHero/InnerHero";
-import Faq from "../../components/Faq/Faq";
-import { faqWealthContent } from "../../components/Faq/faqItems";
-import Feature from "../../components/Features/Features";
+import MetaDecorator from "../Utils/MetaDecorator";
+import SliderSection from "../components/SliderSection/SliderSection";
+import { responsiveSliderData, sliderDataWealthPage } from "../components/Wealth/wealthItems";
+import InnerHero from "../components/InnerHero/InnerHero";
+import Faq from "../components/Faq/Faq";
+import { faqWealthContent } from "../components/Faq/faqItems";
+import Feature from "../components/Features/Features";
 const imageUrl = "/assets/images/Changex-OG.jpeg";
 
 const heroObj = {

@@ -219,7 +219,7 @@ export const menuItemsFooter = [
         submenu: []
     },
     {
-        title: 'Suported Tokens',
+        title: 'Suppported Tokens',
         url: '/supported-tokens',
         id: 'supported-tokens',
         className: 'nav_menu-links w-nav-menu',

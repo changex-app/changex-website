@@ -5,7 +5,7 @@ import CarbonLogo from "/static/images/social/carbon.svg";
 import TwitterLogo from "/static/images/social/twitter.svg";
 import FacebookLogo from "/static/images/social/facebook.svg";
 import LinkedinLogo from "/static/images/social/linkedIn.svg";
-import { Link } from "react-scroll";
+import { Link } from 'react-router-dom';
 import {menuItems, menuItemsFooter} from "./Navbar/navItems";
 import { useState } from "react";
 import {Modal} from "@mui/material";
@@ -36,7 +36,7 @@ export default function Footer(){
                             <div className="button-group footer-group">
                                 {menuItemsFooter.map((menu, index) => {
                                 return (
-                                    <Link target="_blank"  to={menu.url} className="button is-link w-inline-block">
+                                    <Link  to={menu.url} className="button is-link w-inline-block">
                                         <div className="text-color-black">{menu.title}</div>
                                     </Link>
                                 )})

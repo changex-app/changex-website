@@ -1,7 +1,7 @@
 import * as React from "react";
-import Card from "../../components/Card/Card"
-import SliderSection from "../../components/SliderSection/SliderSection";
-import Cta from "../../components/Cta/Cta";
+import Card from "../components/Card/Card"
+import SliderSection from "../components/SliderSection/SliderSection";
+import Cta from "../components/Cta/Cta";
 import {
     responsiveSliderData,
     sliderData,
@@ -9,12 +9,12 @@ import {
     sliderTextData,
     cardContent,
     thoughtObj
-} from "../../components/Bank/bankItem";
-import MetaDecorator from "../../Utils/MetaDecorator";
-import InnerHero from "../../components/InnerHero/InnerHero";
-import Faq from "../../components/Faq/Faq";
-import { faqBankContent } from "../../components/Faq/faqItems";
-import ThoughtWall from "../../components/ThoughtWall";
+} from "../components/Bank/bankItem";
+import MetaDecorator from "../Utils/MetaDecorator";
+import InnerHero from "../components/InnerHero/InnerHero";
+import Faq from "../components/Faq/Faq";
+import { faqBankContent } from "../components/Faq/faqItems";
+import ThoughtWall from "../components/ThoughtWall";
 const imageUrl = "/assets/images/Changex-OG.jpeg";
 
 

@@ -486,6 +486,11 @@ figcaption {
     color: #f5f5f5 !important;
 }
 
+.background-color-off-blue {
+    background-color: rgba(235, 232, 252, 0.16) !important;
+    color: var(--white) !important;
+}
+
 .background-color-off-white {
     background-color: #F3FBFD;
 }
@@ -2035,6 +2040,12 @@ a:focus, a:hover {
     grid-template-rows: auto;
 }
 
+.grid-2-1 {
+    display: grid;
+    -ms-grid-columns: 1fr 2fr;
+    grid-template-columns: 1fr 2fr;
+}
+
 .menu-icon {
     position: relative;
     display: inline-block;
@@ -2625,6 +2636,10 @@ a:focus, a:hover {
 
 .spacer-small {
     height: 1rem;
+}
+
+.spacer-middle {
+    height: 2rem;
 }
 
 .spacer.spacer-huge {
@@ -4156,6 +4171,11 @@ a:focus, a:hover {
     }
 
     .grid-2 {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .grid-2-1 {
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
@@ -5747,4 +5767,10 @@ w-nav-menu-mobile
 
 .quoteText > p {
     padding-left: 1rem;
+}
+
+.question {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
 }

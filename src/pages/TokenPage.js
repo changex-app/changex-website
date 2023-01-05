@@ -6,7 +6,7 @@ import {faqBankContent} from "../components/Faq/faqItems";
 import Faq from "../components/Faq/Faq";
 const imageUrl = "/assets/images/Changex-OG.jpeg";
 
-export default function Partner(){
+export default function TokenPage(){
     return (
         <>
             <MetaDecorator
