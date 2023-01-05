@@ -5712,3 +5712,8 @@ w-nav-menu-mobile
 .vh {
     height: 100vh;
 }
+
+#advantages {
+    z-index: 7;
+    position: relative;
+}
