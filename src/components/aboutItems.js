@@ -127,6 +127,6 @@ export const perksArray = [
 export const aboutQuoteObject = {
     author: 'Nick Iliev',
     quote: 'You don’t need to know how DeFi works. You simply want it to work.',
-    role: 'CEO @ Changex',
+    role: 'CEO @Changex',
     img: '/images/about/icon-quote.svg'
 }

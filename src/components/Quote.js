@@ -8,12 +8,14 @@ export default function Quote( { quoteObject } ) {
                     <img src={quoteObject.img} />
                 </div>
                 <div className="quoteText">
-                    <h5 className="heading-style-h5 padding-small">
-                        {quoteObject.quote}
-                    </h5>
-                    <p className="">
-                        <strong>{quoteObject.author}</strong>, {quoteObject.role}
-                    </p>
+                    <div className="padding-small">
+                        <h5 className="heading-style-h5"> {quoteObject.quote}</h5>
+                        <div className="spacer-small"></div>
+                        <p className="">
+                            <strong>{quoteObject.author}</strong>, {quoteObject.role}
+                        </p>
+                    </div>
+
                 </div>
             </div>
         </>

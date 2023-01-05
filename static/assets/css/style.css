@@ -2623,6 +2623,10 @@ a:focus, a:hover {
     height: 100px;
 }
 
+.spacer-small {
+    height: 1rem;
+}
+
 .spacer.spacer-huge {
     height: 160px;
 }
