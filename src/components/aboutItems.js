@@ -2,7 +2,8 @@ export const heroObj = {
     titleObj: {
         h1: "About Changex",
         h2: "We Simplify DeFi",
-        h3: "The rise of blockchain has introduced a financial revolution, but the gate to this new reality remains very narrow. DeFi tends to be inaccessible, needlessly technological, and sometimes off-puttingly complicated in the eyes of inexperienced users. This probably explains why only ~4% of the world’s population use cryptocurrencies."
+        h3: "The rise of blockchain has introduced a financial revolution, but the gate to this new reality remains very narrow. DeFi tends to be inaccessible, needlessly technological, and sometimes off-puttingly complicated in the eyes of inexperienced users. This probably explains why only ~4% of the world’s population use cryptocurrencies.",
+        h4: "At Changex, we believe that everyone must have access to better personal finance, more investment opportunities, and independence in their money matters."
     },
     text: "",
     appBtnsVisible: false,
@@ -10,19 +11,6 @@ export const heroObj = {
     backgroundImage: '',
     class: 'aboutPage'
 }
-
-export const aboutCardItems = [
-    {
-        src: '/images/bank/CeDeFi.svg',
-        title: 'CeDeFI Model',
-        text: 'We’re employing a CeDeFi model, which takes the best sides of traditional finance and the incredible opportunities of blockchain technology.'
-    },
-    {
-        src: '/images/bank/your_monney.svg',
-        title: 'Simple, yet Powerful',
-        text: 'tool to manage, invest, and grow your wealth on your own terms, so that you can focus on what matters most - your financial wellbeing and your vision for the future.'
-    }
-]
 
 export const aboutTeam = [
     {
@@ -135,3 +123,10 @@ export const perksArray = [
         text: 'Tool to manage, invest, and grow your wealth on your own terms, so that you can focus on what matters most - your financial wellbeing and your vision for the future.'
     }
 ]
+
+export const aboutQuoteObject = {
+    author: 'Nick Iliev',
+    quote: 'You don’t need to know how DeFi works. You simply want it to work.',
+    role: 'CEO @ Changex',
+    img: '/images/about/icon-quote.svg'
+}

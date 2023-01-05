@@ -1,20 +1,14 @@
 import * as React from 'react'
-import DownloadApple from "../../../static/images/DW-Apple.svg";
-import DownloadGoogle from "../../../static/images/DW-Google.svg";
-import QRWhite from "../../../static/images/icn-qr-white.svg";
-import {BsArrowDown} from "react-icons/bs";
-import Advantages from "../Advantages/Advantages";
-import {advantages} from "../Token/tokenPageItems";
-import {perksArray} from "../aboutItems";
+import {aboutQuoteObject, perksArray} from "../aboutItems";
 import Perks from "../Perks";
-import {bankItems} from "../Bank/bankItem";
+import Quote from "../Quote";
 
 export default function AboutHero( { heroObj } ){
     return (
         <section id="inner-hero">
             <div className="padding-global relative">
                 <div className="container-large ">
-                    <div id="inner-hero-title" className="hero_about_content-wrapper padding-vertical padding-small">
+                    <div id="inner-hero-title" className="hero_about_content-wrapper padding-vertical padding-small ">
                         <div className="title_wrapper_hero_about max-width-large animate__animated animate__fadeInUp animate__delay-1s" >
                             <div className="center-content z-index-1">
                                 <div className="">
@@ -37,20 +31,13 @@ export default function AboutHero( { heroObj } ){
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <div>
-
-                        </div>
-                        <div>
-                            <h1>
-
-                            </h1>
-                            <p>
-
-                            </p>
+                    <Quote quoteObject={aboutQuoteObject}/>
+                    <div className="margin-top-small">
+                        <div className="text-weight-normal animate__animated animate__fadeInUp animate__delay-1s">
+                            {heroObj.titleObj.h4}
                         </div>
                     </div>
-                    <div className="w-layout-grid grid-2">
+                    <div className="w-layout-grid grid-2 margin-top-medium">
                         <Perks perksArray={perksArray}/>
                     </div>
                 </div>

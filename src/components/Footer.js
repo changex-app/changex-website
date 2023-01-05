@@ -6,7 +6,7 @@ import TwitterLogo from "/static/images/social/twitter.svg";
 import FacebookLogo from "/static/images/social/facebook.svg";
 import LinkedinLogo from "/static/images/social/linkedIn.svg";
 import { Link } from "react-scroll";
-import {menuItems} from "./Navbar/navItems";
+import {menuItems, menuItemsFooter} from "./Navbar/navItems";
 import { useState } from "react";
 import {Modal} from "@mui/material";
 import {ScanQrModal} from "../Utils/ScanQrCode";
@@ -34,7 +34,7 @@ export default function Footer(){
                                     JSC,<br/> All trademarks and copyrights belong to their respective owners.</div>
                             </div>
                             <div className="button-group footer-group">
-                                {menuItems.map((menu, index) => {
+                                {menuItemsFooter.map((menu, index) => {
                                 return (
                                     <Link target="_blank"  to={menu.url} className="button is-link w-inline-block">
                                         <div className="text-color-black">{menu.title}</div>

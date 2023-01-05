@@ -10,6 +10,7 @@ export const menuItems = [
         id: 'wallet',
         className: 'nav_menu-links w-nav-menu',
         dropdown: true,
+        footer: true,
         submenu: [
             {
                 title: 'DeFy Crypto Wallet',
@@ -32,6 +33,7 @@ export const menuItems = [
         className: 'nav_menu-links w-nav-menu',
         dropdown: true,
         hasLine: false,
+        footer: true,
         submenu: [
             {
                 title: 'Debit card',
@@ -50,6 +52,7 @@ export const menuItems = [
         className: 'nav_menu-links w-nav-menu',
         dropdown: true,
         hasLine: false,
+        footer: true,
         submenu: [
             {
                 title: 'Staking',
@@ -71,6 +74,7 @@ export const menuItems = [
         id: 'token-page',
         className: 'nav_menu-links w-nav-menu',
         hasLine: true,
+        footer: true,
         submenu: []
     },
     {
@@ -138,3 +142,97 @@ export const mobileIcon = [
         id: 'google'
     }
 ]
+
+
+export const menuItemsFooter = [
+    {
+        title: 'Wallet',
+        url: '/wallet',
+        id: 'wallet',
+        className: 'nav_menu-links w-nav-menu',
+        dropdown: true,
+        footer: true,
+        submenu: [
+            {
+                title: 'DeFy Crypto Wallet',
+                url: 'defycryptowallet',
+            },
+            {
+                title: 'Swap Crypto',
+                url: 'swapcrypto',
+            },
+            {
+                title: 'Buy and Sell crypto',
+                url: 'buysellcrypto',
+            },
+        ]
+    },
+    {
+        title: 'Bank',
+        url: '/bank',
+        id: 'bank',
+        className: 'nav_menu-links w-nav-menu',
+        dropdown: true,
+        hasLine: false,
+        footer: true,
+        submenu: [
+            {
+                title: 'Debit card',
+                url: 'debitcard',
+            },
+            {
+                title: 'SEPA Bank Account',
+                url: 'sepabankaccount',
+            }
+        ]
+    },
+    {
+        title: 'Wealth',
+        url: '/wealth',
+        id: 'wealth',
+        className: 'nav_menu-links w-nav-menu',
+        dropdown: true,
+        hasLine: false,
+        footer: true,
+        submenu: [
+            {
+                title: 'Staking',
+                url: 'staking',
+            },
+            {
+                title: 'Lending',
+                url: 'lending',
+            },
+            {
+                title: 'Savings',
+                url: 'savings'
+            },
+        ]
+    },
+    {
+        title: 'CHANGE token',
+        url: '/token-page',
+        id: 'token-page',
+        className: 'nav_menu-links w-nav-menu',
+        hasLine: true,
+        footer: true,
+        submenu: []
+    },
+    {
+        title: 'Suported Tokens',
+        url: '/supported-tokens',
+        id: 'supported-tokens',
+        className: 'nav_menu-links w-nav-menu',
+        hasLine: false,
+        footer: true,
+        submenu: []
+    },
+    {
+        title: 'About',
+        url: '/about',
+        id: 'about',
+        className: 'nav_menu-links w-nav-menu',
+        hasLine: false,
+        submenu: []
+    }
+];
