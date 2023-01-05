@@ -617,6 +617,13 @@ figcaption {
     margin: auto;
 }
 
+.text-weight-small {
+    font-weight: 400;
+    font-size: 16px;
+    color: #141414;
+    margin: auto;
+}
+
 .padding-section-small {
 
 }
@@ -1589,7 +1596,7 @@ a:focus, a:hover {
 .title_wrapper_hero {
     align-self: center;
     height: 100%;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .title_wrapper_hero .heading-style-h1 {
@@ -2041,7 +2048,6 @@ a:focus, a:hover {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    margin: inherit;
     position: relative;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -4355,6 +4361,7 @@ a:focus, a:hover {
 
 @media screen and (max-width: 479px) {
 
+
     .infoInnerWrapper {
         display: inline-grid !important;
     }
@@ -4695,6 +4702,25 @@ a:focus, a:hover {
 
     .button.is-store {
         height: 45px;
+    }
+
+    .aboutPage {
+    }
+
+    .bankPage {
+        background-image: url("/images/bank/bank-hero-mobile-bg.png") !important;
+    }
+
+    .tokenPage {
+        background-image: url("/images/token-hero-mobile-bg.png") !important;
+    }
+
+    .wealthPage {
+        background-image: url("/images/wealth/wealth-hero-bg-mobile.png") !important;
+    }
+
+    .walletPage {
+        background-image: url("/images/wallet/wallet-hero-bg.png") !important;
     }
 }
 
@@ -5441,6 +5467,8 @@ w-nav-menu-mobile
     position: relative;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .bankPage {
@@ -5449,27 +5477,34 @@ w-nav-menu-mobile
     border-top: 1px solid #e0e5e9;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
 }
 
 .tokenPage {
     background-image: url("/images/Token-hero-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .wealthPage {
-    background-image: url("/images/wealth-hero-bg.png");
+    background-image: url("/images/wealth/Welth-hero-bg.png");
+    position: relative;
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
 }
 
 .walletPage {
-    background-image: url("/images/wallet/walletBackground2.png");
+    background-image: url("/images/wallet/wallet-hero-bg.png");
+    position: relative;
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
 }
 
 .aboutImage {
@@ -5664,4 +5699,16 @@ w-nav-menu-mobile
     100% {
         max-height: available;
     }
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.vh {
+    height: 100vh;
 }

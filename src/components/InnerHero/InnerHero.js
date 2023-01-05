@@ -62,10 +62,10 @@ export default function InnerHero( { heroObj } ){
     },[])
 
     return (
-        <section id="inner-hero" className={`${heroObj.class}`}>
-            <div className={`padding-global`}>
-                <div className="container-large">
-                    <div className="hero_content-wrapper padding-vertical padding-large">
+        <section id="inner-hero" className={`${heroObj.class === 'tokenPage' ? '' : 'vh'}`}>
+            <div className="padding-global relative">
+                <div className="container-large ">
+                    <div id="inner-hero-title" className="hero_content-wrapper padding-vertical padding-large">
                         <div className="title_wrapper_hero max-width-large" >
                             <div className="center-content z-index-1">
                                 <div className="">
@@ -130,11 +130,12 @@ export default function InnerHero( { heroObj } ){
                                     </div>
                             </div>
                         </div>
+                        <div className={`${heroObj.class === "tokenPage" ? '' : "hide"}`}>
+                            <Advantages className={`infoWrapper`} classGrid={'card-grid-token'} title={'A community-centric token'} advantages={ advantages }/>
+                        </div>
                     </div>
                 </div>
-                <div className={`${heroObj.class === "tokenPage" ? '' : "hide"}`}>
-                    <Advantages className={`infoWrapper`} classGrid={'card-grid-token'} title={'A community-centric token'} advantages={ advantages }/>
-                </div>
+                <div className={`${heroObj.class} absolute`}></div>
             </div>
             <Modal open={showModal}>
                 <ScanQrModal className="section-scanpopup wf-section"
