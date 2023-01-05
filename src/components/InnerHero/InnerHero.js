@@ -66,10 +66,10 @@ export default function InnerHero( { heroObj } ){
             <div className="padding-global relative">
                 <div className="container-large ">
                     <div id="inner-hero-title" className="hero_content-wrapper padding-vertical padding-large">
-                        <div className="title_wrapper_hero max-width-large" >
+                        <div className="title_wrapper_hero max-width-large animate__animated animate__fadeInUp animate__delay-1s" >
                             <div className="center-content z-index-1">
                                 <div className="">
-                                    <h6 className="heading-style-h6 text-align-center text-color-primary text-left-mobile animate__animated animate__fadeInUp animate__delay-1s">
+                                    <h6 className="heading-style-h6 text-align-center text-color-primary text-left-mobile">
                                         {heroObj.titleObj.h1}
                                     </h6>
                                 </div>
@@ -85,8 +85,7 @@ export default function InnerHero( { heroObj } ){
                                         {heroObj.titleObj.h3}
                                     </div>
                                 </div>
-                                {heroObj.appBtnsVisible &&
-                                    <div className="animate__animated animate__zoomIn animate__delay-1s button-group centered-items margin-top margin-large spread max-width-full-mobile-landscape">
+                                    <div className={`${heroObj.appBtnsVisible ? '' : 'hide'} animate__animated animate__zoomIn animate__delay-1s button-group centered-items margin-top margin-large spread max-width-full-mobile-landscape`}>
                                         <a target="_blank"  rel="noreferrer" href="https://apps.apple.com/bg/app/changex-wallet/id1613309180"
                                            className="button is-store max-width-full-mobile-landscape w-inline-block">
                                             <img src={DownloadApple} alt="Apple" loading="lazy" width="150"></img>
@@ -95,17 +94,14 @@ export default function InnerHero( { heroObj } ){
                                            className="button is-store max-width-full-mobile-landscape w-inline-block">
                                             <img src={DownloadGoogle} alt="Google" loading="lazy" width="150"></img>
                                         </a>
-                                        {heroObj.appBtnsVisible && heroObj.class === "walletPage" &&
                                             <button onClick={openModal}
-                                                    className="button is-qr-hero w-inline-block">
+                                                    className={`${heroObj.appBtnsVisible && heroObj.class === "walletPage" ? "" : "hide"} button is-qr-hero w-inline-block`}>
                                                 <img src={QRWhite} loading="lazy" width="75"
                                                      alt="Changex QR code"
                                                      className="qr-big">
                                                 </img>
                                             </button>
-                                        }
                                     </div>
-                                }
                                     <div className={`${heroObj.scrollBtnText && heroObj.class === "tokenPage" ? '' : "hide"} infoWrapper`}>
                                         <div className="infoInnerWrapper">
                                             <div className="padding-small">
