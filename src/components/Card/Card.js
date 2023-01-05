@@ -114,7 +114,8 @@ export default function Card( { cardContent } ) {
                                 </div>
                             </AnimationOnScroll>
                         </div>
-                        <div className={`${cardContent.page === "Home" ? "" : "hide"  }`}  >
+                        <div className="margin-large"></div>
+                        <div className={`${cardContent.page === "Home" ? "" : "hide"  } margin-top-large`}  >
                             <Advantages classGrid={'card-grid'} title={'More Than A card - It’s Freedom'} advantages={ cardItems }/>
                         </div>
                     </div>

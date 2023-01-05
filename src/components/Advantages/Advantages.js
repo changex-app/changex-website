@@ -2,7 +2,7 @@ import * as React from "react"
 
 export default function Advantages( { classGrid, title, advantages } ) {
     return (
-        <div id="advantages" className="margin-top-bottom">
+        <div id="advantages">
             <div className="padding-global">
              <div className="container-large">
                 <div className="main-container-block">
