@@ -56,7 +56,7 @@ export default function Navigation() {
 
     return (
         <div id="navigation" className="nav_bar w-nav animate__animated animate__fadeInDown">
-            <div className="padding-global is-nav">
+            <div className="is-nav">
                 <div className={'container-large'} >
                     <div className="is-nav navHeight">
                         <div className="nav_full-wrapper">

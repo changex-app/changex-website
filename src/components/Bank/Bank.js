@@ -25,7 +25,6 @@ export default function Bank(){
                                 </div>*/}
                             </div>
                         </div>
-                        <div className="spacer spacer-huge"></div>
                     </div>
                 </div>
             </div>

@@ -21,7 +21,7 @@ export default function Footer(){
 
     return(
         <div className="section_footer wf-section">
-            <div className="padding-global">
+            <div className="padding-top">
                 <div className="container-large-footer">
                     <Link to="hero" smooth={true} className="footer_logo-wrapper w-inline-block">
                         <img src={ChangeXLogoColor} alt="changex logo" loading="lazy"></img>

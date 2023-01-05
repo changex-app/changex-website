@@ -106,8 +106,7 @@ export default function InnerHero( { heroObj } ){
                                         }
                                     </div>
                                 }
-                                {heroObj.scrollBtnText && heroObj.class === "tokenPage" &&
-                                    <div className="infoWrapper">
+                                    <div className={`${heroObj.scrollBtnText && heroObj.class === "tokenPage" ? '' : "hide"} infoWrapper`}>
                                         <div className="infoInnerWrapper">
                                             <div className="padding-small">
                                                 <div id="changexPrice" className="text-size-tiny changexprice">$CHANGE:&nbsp;
@@ -122,23 +121,20 @@ export default function InnerHero( { heroObj } ){
                                             <DropDownButton dropDownData={dropDownObj}/>
                                         </div>
                                     </div>
-                                }
-                                {heroObj.scrollBtnText && heroObj.class !== "tokenPage"  &&
-                                    <div className="tabs-menu goToLink w-tab-menu">
+                                    <div className={`${heroObj.scrollBtnText && heroObj.class !== "tokenPage" ? '' : 'hide'} tabs-menu goToLink w-tab-menu`}>
                                         <span className="tab-nav w-inline-block w--current">
                                             <div>
                                                 {heroObj.scrollBtnText} <BsArrowDown/>
                                             </div>
                                         </span>
                                     </div>
-                                }
                             </div>
                         </div>
                     </div>
                 </div>
-                {heroObj.class === "tokenPage" &&
-                    <Advantages classGrid={'card-grid-token'} title={'A community-centric token'} advantages={ advantages }/>
-                }
+                <div className={`${heroObj.class === "tokenPage" ? '' : "hide"}`}>
+                    <Advantages className={`infoWrapper`} classGrid={'card-grid-token'} title={'A community-centric token'} advantages={ advantages }/>
+                </div>
             </div>
             <Modal open={showModal}>
                 <ScanQrModal className="section-scanpopup wf-section"

@@ -12,7 +12,7 @@ export default function Faq( { background, title,  faqContent } ) {
         <section id="faqs" className="section_faq">
             <div className={`padding-global ${background}`}>
                 <div className="container-large">
-                    <div className="margin-section-medium">
+                    <div>
                         <AnimationOnScroll className="grid-2" animateIn="animate__fadeInUp" animateOnce={true}>
                             <div>
                                 <div className="slide-from-bottom">

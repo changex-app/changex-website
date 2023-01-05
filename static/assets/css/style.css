@@ -402,7 +402,7 @@ figcaption {
 }
 
 .padding-top {
-    padding-top: 2rem;
+    padding-top: 5rem;
     padding-right: 0rem;
     padding-left: 0rem;
 }
@@ -588,8 +588,19 @@ figcaption {
 }
 
 .padding-global {
-    padding-right: 2.5rem;
-    padding-left: 2.5rem;
+    padding: 5rem 2.5rem;
+    height: 100%;
+    display: grid;
+}
+
+.padding-global-small {
+    padding: 2.5rem 2.5rem;
+    height: 100%;
+    display: grid;
+}
+
+.padding-global-sides {
+    padding: 0 2.5rem;
     height: 100%;
     display: grid;
 }
@@ -607,8 +618,7 @@ figcaption {
 }
 
 .padding-section-small {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+
 }
 
 .is-footer {
@@ -782,7 +792,6 @@ figcaption {
 }
 
 .padding-section-large.is-cta-section {
-    margin: 5rem 0 0 0;
     padding: 1rem 0 0 4rem !important;
     display: flex;
     background-color: #3418D8;
@@ -1642,7 +1651,6 @@ a:focus, a:hover {
 }
 
 .section_footer {
-    padding: 0 0 5rem 0;
 }
 
 .div-block {
@@ -1841,7 +1849,6 @@ a:focus, a:hover {
     background-repeat: no-repeat, repeat;
     background-position-x: right;
     border-radius: 30px;
-    margin-top: 6rem;
 }
 
 .image-holder.overflow-hidden {
@@ -2631,6 +2638,7 @@ a:focus, a:hover {
     left: auto;
     right: 5%;
     object-fit: scale-down;
+    top: 7rem;
 }
 
 .bank_wrapper .bank_wrapper-left {
@@ -3319,7 +3327,7 @@ a:focus, a:hover {
     }
 
     .padding-top {
-        padding-right: 1rem;
+        padding-right: 5rem;
         padding-bottom: 0rem;
         padding-left: 0rem;
     }
@@ -3778,7 +3786,7 @@ a:focus, a:hover {
     }
 
     .padding-top {
-        padding-right: 1rem;
+        padding-right: 5rem;
         padding-bottom: 0rem;
         padding-left: 0rem;
     }
@@ -4274,7 +4282,6 @@ a:focus, a:hover {
     .main-container-wallet {
         display: grid !important;
         grid-template-columns: none !important;
-        padding: 5rem 0 0 0 !important;
     }
 
     .carousel-control-next, .carousel-control-prev {
@@ -4409,7 +4416,7 @@ a:focus, a:hover {
     }
 
     .padding-top {
-        padding-right: 1rem;
+        padding-right: 5rem;
         padding-bottom: 0rem;
         padding-left: 0rem;
     }
@@ -5172,13 +5179,11 @@ a:focus, a:hover {
 
 .main-container {
     display: flex;
-    padding: 5rem 0 5rem 0;
 }
 
 .main-container-wallet {
     display: inline-grid;
     grid-template-columns: 1.8fr 1fr;
-    padding: 5rem 0 5rem 0;
 }
 
 .max-width-small-slider {
@@ -5265,11 +5270,6 @@ a:focus, a:hover {
     -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
 }
 
-#section_team {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
-
 .container-wealth .card-slide {
     background-color: transparent;
     color: var(--white);
@@ -5293,7 +5293,7 @@ a:focus, a:hover {
 }
 
 .goToLink {
-    margin: 5rem auto 5rem auto;
+    margin: 4rem auto 5rem auto;
 }
 
 .features {
