@@ -122,3 +122,16 @@ export const aboutBoard = [
 
     }
 ]
+
+export const perksArray = [
+    {
+        src: '/images/bank/CeDeFi.svg',
+        title: 'CeDeFI Model',
+        text: 'We’re employing a CeDeFi model, which takes the best sides of traditional finance and the incredible opportunities of blockchain technology.'
+    },
+    {
+        src: '/images/bank/your_monney.svg',
+        title: 'Simple, yet Powerful',
+        text: 'Tool to manage, invest, and grow your wealth on your own terms, so that you can focus on what matters most - your financial wellbeing and your vision for the future.'
+    }
+]

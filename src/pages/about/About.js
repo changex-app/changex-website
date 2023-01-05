@@ -3,9 +3,9 @@ import Cta from "../../components/Cta/Cta";
 import { heroObj } from "../../components/aboutItems";
 import {teamAdvisorsData, teamExpertsData, titleAdvisorsObj, titleExpertsObj} from "../../components/Team/teamItems";
 import MetaDecorator from "../../Utils/MetaDecorator";
-import InnerHero from "../../components/InnerHero/InnerHero";
 import ThoughtWall from "../../components/ThoughtWall";
 import Team from "../../components/Team/Team";
+import AboutHero from "../../components/InnerHero/AboutHero";
 
 const imageUrl = "/images/Changex-OG.jpeg";
 
@@ -27,7 +27,7 @@ export default function About(){
                 imageAlt="Changex Bank"
                 imageUrl={imageUrl}
             />
-            <InnerHero heroObj={ heroObj }/>
+            <AboutHero heroObj={ heroObj }/>
             <section id="about">
                 <ThoughtWall thoughtObj={ thoughtObj }/>
                 <Team titleObj={titleExpertsObj} teamData={teamExpertsData} background={'background-color-off-white'} />

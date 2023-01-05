@@ -611,6 +611,7 @@ figcaption {
 
 
 .text-weight-normal {
+    font-family: var(--font-paragraph);
     font-weight: 400;
     font-size: 24px;
     color: #141414;
@@ -1605,6 +1606,10 @@ a:focus, a:hover {
 
 #hero {
     background-color: #F2FBFB !important;
+}
+
+.hero_about_content-wrapper {
+
 }
 
 .hero_content-wrapper {
