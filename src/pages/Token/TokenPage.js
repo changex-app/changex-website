@@ -2,8 +2,9 @@ import * as React from "react";
 import MetaDecorator from "../../Utils/MetaDecorator";
 import InnerHero from "../../components/InnerHero/InnerHero";
 import Faq from "../../components/Faq/Faq";
+import { heroObj } from "../../components/Token/tokenPageItems"
+import { faqBankContent } from "../../components/Faq/faqItems";
 const imageUrl = "/assets/images/Changex-OG.jpeg";
-
 export default function TokenPage(){
     return (
         <>

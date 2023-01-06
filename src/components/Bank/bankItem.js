@@ -33,7 +33,24 @@ export const heroObj = {
     appBtnsVisible: false,
     scrollBtnText: "Discover Bank",
     backgroundImage: '../../images/bank/bank-hero-bg.png',
-    class: 'bankPage'
+    class: 'bankPage',
+    perksArray: [
+            {
+                src: '/images/bank/Banking.svg',
+                title: 'Banking in the Wallet',
+                text: 'Simplify life with the world’s first true bank account integrated into a DeFi wallet.'
+            },
+            {
+                src: '/images/bank/SEPA.svg',
+                title: 'Easy SEPA transactions',
+                text: 'Receive your salary, send money to your family, or transact in 36 countries across Europe.'
+            },
+            {
+                src: '/images/bank/Safety.svg',
+                title: 'Security first',
+                text: 'Changex will act as a licensed agent of one of the best Electronic Money Institutions in the space.'
+            }
+        ]
 }
 
 export const sliderTextData = {

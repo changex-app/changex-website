@@ -12,7 +12,8 @@ import WealthPage from "./wealth/WealthPage";
 import TokenPage from "./Token/TokenPage";
 import About from "./about/About";
 import WalletPage from "./wallet/WalletPage";
-import Tokens from "./partner/Partner";
+import Tokens from "./Token/Tokens";
+import Partner from "./partner/Partner";
 const imageUrl = "/assets/images/Changex-OG.jpeg";
 
 const IndexPage = () => {
@@ -36,6 +37,7 @@ const IndexPage = () => {
                           <Route path="/token-page" element={ <TokenPage/> } />
                           <Route path="/supported-tokens" element={ <Tokens/> } />
                           <Route path="/about" element={ <About/> } />
+                          <Route path="/partner" element={ <Partner/> } />
                           <Route path="*" element={ <NotFoundPage/> }/>
                   </Routes>
               </main>

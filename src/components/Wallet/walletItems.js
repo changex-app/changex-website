@@ -1,5 +1,3 @@
-import * as React from "react";
-
 export const scrollImages = [
     {
         src: '/images/wallet/icn-40x40-wallet.svg',

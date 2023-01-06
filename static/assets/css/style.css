@@ -727,6 +727,12 @@ figcaption {
     font-weight: 400;
 }
 
+.max-width-slarge {
+    width: 100%;
+    max-width: 60rem;
+    font-weight: 400;
+}
+
 .background-color-white {
     background-color: #fff;
 }
