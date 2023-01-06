@@ -1,6 +1,6 @@
 import * as React from "react";
-import MetaDecorator from "../Utils/MetaDecorator";
 import { Link } from 'react-router-dom';
+import MetaDecorator from "../../Utils/MetaDecorator";
 const imageUrl = "/assets/images/Changex-OG.jpeg";
 
 const titleObj = {
@@ -26,7 +26,7 @@ export default function Tokens(){
                 imageAlt="Supported Changex Tokens"
                 imageUrl={imageUrl}
             />
-            <section className="vh">
+            <section id="supported-tokens" className="vh">
                 <div className="padding-global">
                     <div className="container-large">
                         <div className="">

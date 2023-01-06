@@ -1,11 +1,11 @@
 import * as React from "react";
-import InnerHero from "../components/InnerHero/InnerHero";
-import Advantages from "../components/Advantages/Advantages";
-import { heroObj ,advantages } from "../components/Wallet/walletItems";
-import SliderSection from "../components/SliderSection/SliderSection";
-import {responsiveWalletPageSlider, sliderDataWalletPage, textData} from "../components/Wallet/walletItems";
-import Card from "../components/Card/Card";
-import SwapCrypto from "../components/SwapCrypto/SwapCrypto";
+import InnerHero from "../../components/InnerHero/InnerHero";
+import Advantages from "../../components/Advantages/Advantages";
+import { heroObj ,advantages } from "../../components/Wallet/walletItems";
+import SliderSection from "../../components/SliderSection/SliderSection";
+import {responsiveWalletPageSlider, sliderDataWalletPage, textData} from "../../components/Wallet/walletItems";
+import Card from "../../components/Card/Card";
+import SwapCrypto from "../../components/SwapCrypto/SwapCrypto";
 
 
 const cardContent = {

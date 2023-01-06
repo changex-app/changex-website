@@ -7,12 +7,12 @@ import Navigation from "../components/Navbar/Nav";
 import Footer from "../components/Footer";
 import content from "../../static/assets/content/content.json";
 import NotFoundPage from "./404";
-import BankPage from "./BankPage";
-import WealthPage from "./WealthPage";
-import TokenPage from "./TokenPage";
-import About from "./About";
-import WalletPage from "./WalletPage";
-import Tokens from "./Tokens";
+import BankPage from "./bank/BankPage";
+import WealthPage from "./wealth/WealthPage";
+import TokenPage from "./Token/TokenPage";
+import About from "./about/About";
+import WalletPage from "./wallet/WalletPage";
+import Tokens from "./partner/Partner";
 const imageUrl = "/assets/images/Changex-OG.jpeg";
 
 const IndexPage = () => {

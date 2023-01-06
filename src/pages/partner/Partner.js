@@ -1,12 +1,12 @@
 import * as React from "react";
-import MetaDecorator from "../Utils/MetaDecorator";
-import InnerHero from "../components/InnerHero/InnerHero";
-import { heroObj } from "../components/Token/tokenPageItems";
-import {faqBankContent} from "../components/Faq/faqItems";
-import Faq from "../components/Faq/Faq";
+import MetaDecorator from "../../Utils/MetaDecorator";
+import InnerHero from "../../components/InnerHero/InnerHero";
+import { heroObj } from "../../components/Token/tokenPageItems";
+import {faqBankContent} from "../../components/Faq/faqItems";
+import Faq from "../../components/Faq/Faq";
 const imageUrl = "/assets/images/Changex-OG.jpeg";
 
-export default function TokenPage(){
+export default function Partner(){
     return (
         <>
             <MetaDecorator
