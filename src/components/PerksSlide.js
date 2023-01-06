@@ -4,6 +4,10 @@ import {useState} from "react";
 export default function PerksSlide( { perksObj } ) {
     const [perksIndex, setPerksIndex] = useState(0)
 
+    function changeGrid(index) {
+        setPerksIndex(index);
+    }
+
     return (
         <section id="perks-slide">
             <div className="padding-global-top">
@@ -14,16 +18,16 @@ export default function PerksSlide( { perksObj } ) {
                     <div className="perksBtns">
                         {perksObj.perksBtns.map((item, index) => {
                             return (
-                                <div className={`${perksIndex === index ? 'goToLink' : ''} `}>
-                                    <span className="tab-nav w-inline-block w--current">
+                                <div onClick={() => changeGrid(index)} className={`${perksIndex === index ? 'button-lime-slide' : ''} margin-button-slide button is-middle `}>
+                                    <span className="text-color-primary wallet-text text-size-large slide-from-bottom">
                                         {item.text}
                                     </span>
                                 </div>
                             )
                         })}
                     </div>
-                    <div className={`${perksIndex === 0 ? '' : 'hide'} w-layout-grid grid-3 margin-top-small`}>
-                        {perksObj.perksArray.map((item,index) => {
+                    <div className="w-layout-grid grid-3 margin-top-small">
+                        {perksObj[`perks${perksIndex}`].map((item,index) => {
                             return(
                                 <div id={index.toString()} className="box-container-bank">
                                     <div className="padding-medium">
@@ -39,25 +43,6 @@ export default function PerksSlide( { perksObj } ) {
                             )})
                         }
                     </div>
-
-                    <div className={`${perksIndex === 1 ? '' : 'hide'} w-layout-grid grid-3 margin-top-small`}>
-                        {perksObj.perksArray2.map((item,index) => {
-                            return(
-                                <div id={index.toString()} className="box-container-bank">
-                                    <div className="padding-medium">
-                                        <div className="icon-wrapper icon-card margin-bottom margin-large">
-                                            <img src={item.src} loading="lazy" alt={item.title} className="icon" />
-                                        </div>
-                                        <h4 className="heading-style-h5 card-title-perks margin-top margin-large">
-                                            <strong>{item.title}</strong>
-                                        </h4>
-                                        <p className="text-color-darkgrey card-text">{item.text}</p>
-                                    </div>
-                                </div>
-                            )})
-                        }
-                    </div>
-
                 </div>
             </div>
         </section>

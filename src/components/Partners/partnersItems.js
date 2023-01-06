@@ -61,7 +61,7 @@ export const heroPartnerObj = {
                     text: "For Your Customers"
                 }
             ],
-            perksArray: [
+            perks0: [
                 {
                     src: '/images/bank/CeDeFi.svg',
                     title: 'CeDeFI Model',
@@ -78,7 +78,7 @@ export const heroPartnerObj = {
                     text: 'Tool to manage, invest, and grow your wealth on your own terms, so that you can focus on what matters most - your financial wellbeing and your vision for the future.'
                 }
             ],
-            perksArray2: [
+            perks1: [
                 {
                     src: '/images/bank/CeDeFi.svg',
                     title: 'Staking in a Non-custodial DeFi Wallet',
