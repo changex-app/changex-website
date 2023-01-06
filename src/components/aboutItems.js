@@ -17,7 +17,7 @@ export const heroObj = {
         img: '/images/about/icon-quote.svg'
     },
     perksTitle: "",
-    perksArray: [
+    perks: [
         {
             src: '/images/bank/CeDeFi.svg',
             title: 'CeDeFI Model',

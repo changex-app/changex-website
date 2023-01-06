@@ -7,9 +7,7 @@ export default function CryptoBank() {
         <div className="padding-global">
             <div className="container-large">
             <h3 className="heading-style-h3 margin-vertical margin-large">{bankContent.head3}</h3>
-                <div className="w-layout-grid grid-3">
-                    <Perks perksArray={bankItems} />
-                </div>
+                <Perks perksArray={bankItems} component={bankContent.component} />
             </div>
         </div>
     )

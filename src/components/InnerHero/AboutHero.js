@@ -1,5 +1,4 @@
 import * as React from 'react'
-import Perks from "../Perks";
 import Quote from "../Quote";
 
 export default function AboutHero( { heroObj } ){
@@ -37,9 +36,6 @@ export default function AboutHero( { heroObj } ){
                         <div className="text-weight-normal animate__animated animate__fadeInUp animate__delay-1s">
                             {heroObj.titleObj.h4}
                         </div>
-                    </div>
-                    <div className="w-layout-grid grid-2 margin-top-medium">
-                        <Perks perksArray={heroObj.perksArray}/>
                     </div>
                 </div>
             </div>

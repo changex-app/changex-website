@@ -6,6 +6,7 @@ import MetaDecorator from "../../Utils/MetaDecorator";
 import ThoughtWall from "../../components/ThoughtWall";
 import Team from "../../components/Team/Team";
 import AboutHero from "../../components/InnerHero/AboutHero";
+import Perks from "../../components/Perks";
 
 const imageUrl = "/images/Changex-OG.jpeg";
 
@@ -28,6 +29,11 @@ export default function About(){
                 imageUrl={imageUrl}
             />
             <AboutHero heroObj={ heroObj }/>
+            <div className="padding-global-top">
+                <div className="container-large ">
+                    <Perks perksArray={heroObj.perks}/>
+                </div>
+            </div>
             <section id="about">
                 <ThoughtWall thoughtObj={ thoughtObj }/>
                 <Team titleObj={titleExpertsObj} teamData={teamExpertsData} background={'background-color-off-white'} />

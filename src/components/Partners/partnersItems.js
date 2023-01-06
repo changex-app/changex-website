@@ -43,42 +43,57 @@ export const heroPartnerObj = {
         appBtnsVisible: false,
         scrollBtnText: "",
         backgroundImage: '',
+        quoteObject: {
+            author: '',
+            quote: '',
+            role: '',
+            img: ''
+        },
         class: 'partnerPage',
-        quoteObject: {},
-        perksTitle: "Benefits of integrating",
-        perksArray: [
-            {
-                src: '/images/bank/CeDeFi.svg',
-                title: 'CeDeFI Model',
-                text: 'We’re employing a CeDeFi model, which takes the best sides of traditional finance and the incredible opportunities of blockchain technology.'
-            },
-            {
-                src: '/images/bank/your_monney.svg',
-                title: 'Simple, yet Powerful',
-                text: 'Tool to manage, invest, and grow your wealth on your own terms, so that you can focus on what matters most - your financial wellbeing and your vision for the future.'
-            },
-            {
-                src: '/images/bank/your_monney.svg',
-                title: 'Simple, yet Powerful',
-                text: 'Tool to manage, invest, and grow your wealth on your own terms, so that you can focus on what matters most - your financial wellbeing and your vision for the future.'
-            }
-        ],
-        perksArrayBusiness: [
-            {
-                src: '/images/bank/CeDeFi.svg',
-                title: 'Staking in a Non-custodial DeFi Wallet',
-                text: 'Staking has never been so easy: enable your users to stake their tokens from their mobile devices in a few clicks.'
-            },
-            {
-                src: '/images/bank/your_monney.svg',
-                title: 'Marketing Support',
-                text: 'Changex will promote your token to a savvy-defi community through our social media channels.'
-            },
-            {
-                src: '/images/bank/your_monney.svg',
-                title: 'Listing in top 20',
-                text: 'Get maximum attention for your token by placing it among the top 20 in our rankings on the “Buy” & “Stake” screens.'
-            }
-        ],
 
+        perks: {
+            perksTitle: "Benefits Of Integrating",
+            perksBtns: [
+                {
+                    text: "For Your Business"
+                },
+                {
+                    text: "For Your Customers"
+                }
+            ],
+            perksArray: [
+                {
+                    src: '/images/bank/CeDeFi.svg',
+                    title: 'CeDeFI Model',
+                    text: 'We’re employing a CeDeFi model, which takes the best sides of traditional finance and the incredible opportunities of blockchain technology.'
+                },
+                {
+                    src: '/images/bank/your_monney.svg',
+                    title: 'Simple, yet Powerful',
+                    text: 'Tool to manage, invest, and grow your wealth on your own terms, so that you can focus on what matters most - your financial wellbeing and your vision for the future.'
+                },
+                {
+                    src: '/images/bank/your_monney.svg',
+                    title: 'Simple, yet Powerful',
+                    text: 'Tool to manage, invest, and grow your wealth on your own terms, so that you can focus on what matters most - your financial wellbeing and your vision for the future.'
+                }
+            ],
+            perksArray2: [
+                {
+                    src: '/images/bank/CeDeFi.svg',
+                    title: 'Staking in a Non-custodial DeFi Wallet',
+                    text: 'Staking has never been so easy: enable your users to stake their tokens from their mobile devices in a few clicks.'
+                },
+                {
+                    src: '/images/bank/your_monney.svg',
+                    title: 'Marketing Support',
+                    text: 'Changex will promote your token to a savvy-defi community through our social media channels.'
+                },
+                {
+                    src: '/images/bank/your_monney.svg',
+                    title: 'Listing in top 20',
+                    text: 'Get maximum attention for your token by placing it among the top 20 in our rankings on the “Buy” & “Stake” screens.'
+                }
+            ],
+        }
 }
