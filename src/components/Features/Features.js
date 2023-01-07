@@ -15,7 +15,7 @@ export default function Feature({ background, content }) {
                                         <div data-current="Tabs"  data-easing="ease-out" data-duration-in="300"
                                              data-duration-out="100" className="tabs tabs-wealth-feature w-tabs">
                                             <div className="max-width-small-slider">
-                                                <div className={`${item.commingSoon ? '' : 'hide'} bank-image-comming-soon`}>COMMING SOON</div>
+                                                <div className={`${item.commingSoon ? '' : 'hide'} bank-image-comming-soon`}>{item.offerText}</div>
                                                 <div className="money">
                                                     <h2 className="heading-style-h2 margin-bottom margin-small">{item.h1}&nbsp;
                                                         <span className={`${item.commingSoon ? 'is-blue' : 'is-lime'}  heading-style-h2`}>{item.h2}</span>
@@ -35,7 +35,7 @@ export default function Feature({ background, content }) {
                                             </div>
                                         </div>
                                         <div className={item.alignImage === "left" ? "wrapper-left-image" : "wallet_wrapper-right"} >
-                                            <img className="centerImage" src={item.imageUrl}/>
+                                            <img className={item.imageClass} src={item.imageUrl}/>
                                         </div>
                                     </div>
                                 )

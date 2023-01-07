@@ -63,37 +63,56 @@ export const heroPartnerObj = {
             ],
             perks0: [
                 {
-                    src: '/images/bank/CeDeFi.svg',
+                    src: '/images/partners/icn-staking-noncustodial.svg',
                     title: 'CeDeFI Model',
                     text: 'We’re employing a CeDeFi model, which takes the best sides of traditional finance and the incredible opportunities of blockchain technology.'
                 },
                 {
-                    src: '/images/bank/your_monney.svg',
+                    src: '/images/partners/icn-marketingsupport.svg',
                     title: 'Simple, yet Powerful',
                     text: 'Tool to manage, invest, and grow your wealth on your own terms, so that you can focus on what matters most - your financial wellbeing and your vision for the future.'
                 },
                 {
-                    src: '/images/bank/your_monney.svg',
+                    src: '/images/partners/icn-listingtop.svg',
                     title: 'Simple, yet Powerful',
                     text: 'Tool to manage, invest, and grow your wealth on your own terms, so that you can focus on what matters most - your financial wellbeing and your vision for the future.'
                 }
             ],
             perks1: [
                 {
-                    src: '/images/bank/CeDeFi.svg',
+                    src: '/images/partners/icn-zerocommision.svg',
                     title: 'Staking in a Non-custodial DeFi Wallet',
                     text: 'Staking has never been so easy: enable your users to stake their tokens from their mobile devices in a few clicks.'
                 },
                 {
-                    src: '/images/bank/your_monney.svg',
+                    src: '/images/partners/icn-debitcard.svg',
                     title: 'Marketing Support',
                     text: 'Changex will promote your token to a savvy-defi community through our social media channels.'
                 },
                 {
-                    src: '/images/bank/your_monney.svg',
+                    src: '/images/partners/icn-leveragedstaking.svg',
                     title: 'Listing in top 20',
                     text: 'Get maximum attention for your token by placing it among the top 20 in our rankings on the “Buy” & “Stake” screens.'
                 }
             ],
         }
+}
+
+export const featureContent = {
+    feature: [
+        {
+            h1: "Integrate your token for less.",
+            h2: "",
+            h3: "No integration fees. Changex requires a small investment of 2000 USD worth of CHANGE tokens. The CHANGE will then be automatically staked and vested for a period of 45 days. Once the vesting period is over partners can redeem their tokens with a hefty reward for their staking.",
+            h4: "",
+            buttonTxt: "Read Whitepaper",
+            buttonUrl: "https://firebasestorage.googleapis.com/v0/b/changex-io.appspot.com/o/changex-whitepaper-v4.pdf?alt=media&amp;token=85d7033d-ce62-4fd2-aefd-b50f2a758530",
+            buttonClass: "background-color-blue",
+            imageUrl: "/images/partners/integrate-illustration.svg",
+            imageClass: "centerImage",
+            alignImage: 'right',
+            commingSoon: true,
+            offerText: 'Unique offer until 31.03.2023'
+        }
+    ]
 }

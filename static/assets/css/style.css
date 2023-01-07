@@ -413,8 +413,8 @@ figcaption {
 
 .padding-top {
     padding-top: 5rem;
-    padding-right: 0rem;
-    padding-left: 0rem;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
 }
 
 .form_checkbox {
@@ -614,6 +614,11 @@ figcaption {
     display: grid;
 }
 
+.padding-global-large {
+    padding: 10rem 5rem;
+    height: 100%;
+    display: grid;
+}
 
 .padding-global-small {
     padding: 2.5rem 2.5rem;
@@ -1767,10 +1772,16 @@ a:focus, a:hover {
     align-self: center;
 }
 
-.centerImage {
+.centerImageScaleDown {
     display: block;
     margin: auto;
     transform: scale(0.8);
+}
+
+.centerImage {
+    display: block;
+    margin: auto;
+    transform: scale(1.2);
 }
 
 .wrapper-left-image {
@@ -1780,8 +1791,6 @@ a:focus, a:hover {
 
 .container-feature {
     display: flex;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
 }
 
 .left-arrow {
@@ -3119,6 +3128,10 @@ a:focus, a:hover {
         max-width: 80px !important;
     }
 
+    .centerImage {
+        transform: scale(1) !important;
+    }
+
     .carousel-button-group-wallet {
         right: 14% !important;
     }
@@ -3202,13 +3215,13 @@ a:focus, a:hover {
     }
 
     .padding-global {
-        padding-right: 0.5rem;
-        padding-left: 0.5rem;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
     }
 
     .padding-global-top {
-        padding-right: 0.5rem;
-        padding-left: 0.5rem;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
     }
 
     .dotListClass {
@@ -3343,7 +3356,6 @@ a:focus, a:hover {
 
 }
 
-
 @media screen and (max-width: 991px) {
     .padding-xlarge {
         padding: 3rem;
@@ -3364,13 +3376,13 @@ a:focus, a:hover {
     }
 
     .padding-global {
-        padding-right: 0.5rem;
-        padding-left: 0.5rem;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
     }
 
     .padding-global-top {
-        padding-right: 0.5rem;
-        padding-left: 0.5rem;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
     }
 
     .cookiesText{
@@ -3435,9 +3447,9 @@ a:focus, a:hover {
     }
 
     .padding-top {
-        padding-right: 5rem;
-        padding-bottom: 0rem;
-        padding-left: 0rem;
+        padding-right: 1.5rem;
+        padding-bottom: 0;
+        padding-left: 1.5rem;
     }
 
     .margin-vertical {
@@ -3777,6 +3789,14 @@ a:focus, a:hover {
         display: table;
     }
 
+    .features {
+        padding: 0 !important;
+    }
+
+    .centerImage {
+        transform: scale(1) !important;
+    }
+
     .wrapper-left-image {
         margin: 2rem auto !important;
     }
@@ -3899,9 +3919,9 @@ a:focus, a:hover {
     }
 
     .padding-top {
-        padding-right: 5rem;
-        padding-bottom: 0rem;
-        padding-left: 0rem;
+        padding-right: 1.25rem;
+        padding-bottom: 5rem;
+        padding-left: 1.25rem;
     }
 
     .margin-vertical {
@@ -4205,7 +4225,7 @@ a:focus, a:hover {
     }
 
     .bank-image-comming-soon {
-        width: 40% !important;
+        width: fit-content !important;
     }
 
     .image-holder.card-image {
@@ -4546,9 +4566,9 @@ a:focus, a:hover {
     }
 
     .padding-top {
-        padding-right: 5rem;
-        padding-bottom: 0rem;
-        padding-left: 0rem;
+        padding-right: 1.25rem;
+        padding-bottom: 5rem;
+        padding-left: 1.25rem;
     }
 
     .margin-vertical {
@@ -5163,10 +5183,10 @@ a:focus, a:hover {
 
 .bank-image-comming-soon {
     top: 0;
-    width: 31%;
+    width: fit-content;
     font-family: var(--font-header);
     font-weight: 600;
-    font-size: 13px;
+    font-size: 16px;
     line-height: 145%;
     text-align: center;
     padding: 5px;
@@ -5451,7 +5471,7 @@ a:focus, a:hover {
 }
 
 .features {
-    margin: 5rem auto 5rem auto;
+    padding: 4rem 0;
 }
 
 .features > h2:first-of-type {
