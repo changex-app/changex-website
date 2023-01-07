@@ -1764,7 +1764,6 @@ a:focus, a:hover {
 .wallet_wrapper-right {
     z-index: 0;
     width: 100%;
-    margin-top: 2rem;
     align-self: center;
 }
 
@@ -3187,6 +3186,10 @@ a:focus, a:hover {
         max-width: 89rem !important;
     }
 
+    .container-large-wallet-slider {
+        max-width: 113rem !important;
+    }
+
     .container-hero {
         max-width: 89rem !important;
     }
@@ -3270,12 +3273,21 @@ a:focus, a:hover {
     .simpleImageSlider {
         margin-top: -1.5rem !important;
     }
+
+    .section_card .padding-global {
+        padding-top: 0rem !important;
+    }
 }
 
 @media screen and ( max-width: 1024px) and (min-height: 1366px) {
     .title_wrapper.max-width-large {
         margin: auto !important;
     }
+
+    .section_card .padding-global {
+        padding-top: 0rem !important;
+    }
+
     .container-hero {
         grid-template-columns: none !important;
         margin-top: 0 !important;
@@ -3295,6 +3307,10 @@ a:focus, a:hover {
 @media screen and (max-width: 1024px) {
     .container-wealth {
         padding-left: 6.3rem !important;
+    }
+
+    .section_card .padding-global {
+        padding-top: 0rem !important;
     }
 
     .card_wrapper {
@@ -5089,6 +5105,11 @@ a:focus, a:hover {
     max-width: var(--containerLargeWidth);
     margin-right: auto;
     margin-left: auto;
+}
+.container-large-wallet-slider {
+    width: 100%;
+    max-width: 100rem;
+    margin-right: auto;
     margin-top: 60px;
 }
 

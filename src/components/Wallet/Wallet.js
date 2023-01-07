@@ -31,7 +31,7 @@ export default function Wallet() {
         <section id="wallet-section" className="section_wallet">
             <div className="background-color-black">
                 <div className="padding-global">
-                    <div className="container-large">
+                    <div className="container-large-wallet-slider">
                         <div className="main-container-wallet">
                                 <div className="max-width-full waller-slider  margin-slider w-tab-content">
                                     <WalletSlider onClickNav={onClickNav} responsiveSliderData={responsiveSliderData} sliderData={slideImages}/>
@@ -48,7 +48,7 @@ export default function Wallet() {
                                                 </div>
                                             </div>
 
-                                            <h2 className="heading-style-h2 wallet-header margin-bottom margin-large slide-from-bottom">
+                                            <h2 className="heading-style-h2 margin-bottom margin-large slide-from-bottom">
                                                 {scrollImages[itemIndex].caption}
                                             </h2>
                                             <p className="text-color-grey wallet-text text-size-large slide-from-bottom">{scrollImages[itemIndex].text}
