@@ -1,13 +1,34 @@
 import * as React from 'react'
+import {useState} from "react";
 import {Box} from "@mui/system";
 import {FormControlLabel, TextField} from "@mui/material";
 import {Button, Checkbox} from "rsuite";
 import Typography from "@mui/material/Typography";
 
+
 export default function Contact({ content, formContent, background }) {
 
-    function handleSubmit() {
+    const [organizationName, setOrganizationName] = useState("")
+    const [communityLink, setCommunityLink] = useState("")
+    const [websiteLink, setWebsiteLink] = useState("")
+    const [information, setInfomration] = useState("")
+    const [checked, setChecked] = useState('false')
 
+    const responseBody = {}
+
+    const inputChangeHandler = (setFunction, event) => {
+        setFunction(event.target.value)
+    }
+
+    function handleSubmit(event) {
+        event.preventDefault();
+        responseBody.organizationName = organizationName
+        responseBody.communityLink = communityLink
+        responseBody.websiteLink = websiteLink
+        responseBody.information = information
+        responseBody.checked = checked
+        console.log(JSON.stringify(responseBody))
+        console.log(checked)
     }
 
     return (
@@ -20,12 +41,12 @@ export default function Contact({ content, formContent, background }) {
                             {content.feature.map((item, index) => {
                                 return (
                                     <>
-                                        <div className={item.alignImage === "left" ? "container-feature rowReverse" : "container-feature"}>
-                                            <div data-current="Tabs" className="tabs tabs-wealth-feature w-tabs">
-                                                <div className="max-width-small-slider">
+                                        <div className={item.alignImage === "left" ? "container-form rowReverse" : "container-form"}>
+                                            <div data-current="Tabs" className="tabs tabs-partner-form w-tabs">
+                                                <div className="">
                                                     <div className={`${item.commingSoon ? '' : 'hide'} bank-image-comming-soon`}>{item.offerText}</div>
                                                     <div className="money">
-                                                        <h2 className="heading-style-h2 margin-bottom margin-small">{item.h1}&nbsp;
+                                                        <h2 className="heading-style-h2 white margin-bottom margin-small">{item.h1}
                                                             <span className={`${item.commingSoon ? 'is-blue' : 'is-lime'}  heading-style-h2`}>{item.h2}</span>
                                                         </h2>
                                                         <p className={`${item.commingSoon ? '' : 'text-color-grey'} text-size-large `}>
@@ -41,6 +62,7 @@ export default function Contact({ content, formContent, background }) {
                                                 <form
                                                     onSubmit={handleSubmit}
                                                     noValidate
+                                                    className="formPartner"
                                                 >
                                                     <Typography className="formLabel" variant="h6" gutterBottom>
                                                         {formContent.field1}
@@ -48,6 +70,7 @@ export default function Contact({ content, formContent, background }) {
                                                     <TextField
                                                         className="formInput"
                                                         margin="normal"
+                                                        defaultValue=""
                                                         required
                                                         fullWidth
                                                         id="organization"
@@ -55,6 +78,7 @@ export default function Contact({ content, formContent, background }) {
                                                         name="organization"
                                                         autoComplete="organization"
                                                         autoFocus
+                                                        onChange={(e)=>inputChangeHandler(setOrganizationName, e)}
                                                     />
                                                     <Typography className="formLabel" variant="h6" gutterBottom>
                                                         {formContent.field2}
@@ -62,6 +86,7 @@ export default function Contact({ content, formContent, background }) {
                                                     <TextField
                                                         className="formInput"
                                                         margin="normal"
+                                                        defaultValue=""
                                                         required
                                                         fullWidth
                                                         name="link"
@@ -69,6 +94,7 @@ export default function Contact({ content, formContent, background }) {
                                                         type="link"
                                                         id="community"
                                                         autoComplete="current-password"
+                                                        onChange={(e)=>inputChangeHandler(setCommunityLink, e)}
                                                     />
                                                     <Typography className="formLabel" variant="h6" gutterBottom>
                                                         {formContent.field3}
@@ -76,12 +102,14 @@ export default function Contact({ content, formContent, background }) {
                                                     <TextField
                                                         className="formInput"
                                                         margin="normal"
+                                                        defaultValue=""
                                                         required
                                                         fullWidth
                                                         id="website"
                                                         label="paste link here"
                                                         name="website"
                                                         autoComplete="website"
+                                                        onChange={(e)=>inputChangeHandler(setWebsiteLink, e)}
                                                     />
                                                     <Typography className="formLabel" variant="h6" gutterBottom>
                                                         {formContent.field4}
@@ -89,6 +117,7 @@ export default function Contact({ content, formContent, background }) {
                                                     <TextField
                                                         className="formInput message"
                                                         margin="normal"
+                                                        defaultValue=""
                                                         required
                                                         fullWidth
                                                         size="medium"
@@ -98,16 +127,18 @@ export default function Contact({ content, formContent, background }) {
                                                         multiline={true}
                                                         rows={6}
                                                         select={false}
-                                                        autoComplete="website"
+                                                        autoComplete="information"
+                                                        onChange={(e)=>inputChangeHandler(setInfomration, e)}
                                                     />
                                                     <FormControlLabel
-                                                        control={<Checkbox value="remember" color="secondary" />}
+                                                        control={<Checkbox value={checked} onChange={(e)=>setChecked(checked)} className="formCheckbox" />}
                                                         label={formContent.checkbox}
                                                     />
                                                     <Button
                                                         type="text"
+                                                        className="formBtn"
                                                         fullWidth
-                                                        variant="contained"
+                                                        variant=""
                                                         sx={{ mt: 3, mb: 2 }}
                                                     >
                                                         {formContent.buttonTxt}

@@ -523,6 +523,24 @@ figcaption {
     border-radius: 16px;
 }
 
+.formPartner {
+    display: grid;
+}
+
+.formPartner > label > span {
+    color: var(--white);
+    font-weight: 400;
+    font-family: var(--font-paragraph);
+}
+
+.formBtn {
+    background-color: #8366F4 !important;
+    color: var(--white) !important;
+    font-weight: 600;
+    width: 35%;
+    padding: 10px 5px
+}
+
 .formInput:hover {
     border-color: red !important;
 }
@@ -1880,6 +1898,11 @@ a:focus, a:hover {
     display: flex;
 }
 
+.container-form {
+    display: flex;
+    gap: 6rem;
+}
+
 .left-arrow {
     display: none;
     opacity: 0;
@@ -2568,6 +2591,10 @@ a:focus, a:hover {
     text-transform: uppercase;
 }
 
+.white {
+   color: var(--white) !important;
+}
+
 .tagline.white {
     color: #fff;
 }
@@ -2695,6 +2722,10 @@ a:focus, a:hover {
     margin-right: 8rem;
 }
 
+
+.tabs-partner-form {
+    width: 100%;
+}
 .tabs-wallet {
     min-height: 590px;
     max-width: 35rem;
@@ -3878,6 +3909,10 @@ a:focus, a:hover {
 
 
     .container-feature {
+        display: table;
+    }
+
+    .container-form {
         display: table;
     }
 
