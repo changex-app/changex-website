@@ -499,6 +499,86 @@ figcaption {
     background-color: #EBE8FC;
 }
 
+.becomePartner {
+    position: relative;
+    border-top: 1px solid #e0e5e9;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+    background-image: url("/images/partners/superhero-backgroundfull_1920-1311.png");
+}
+
+.formLabel {
+    font-weight: 600;
+    color: var(--white);
+    font-size: 1.5rem;
+    font-family: var(--font-header);
+}
+
+.formInput {
+    align-items: center;
+    width: 584px;
+    background: rgba(235, 232, 252, 0.16);
+    border-radius: 16px;
+}
+
+.formInput:hover {
+    border-color: red !important;
+}
+
+.formInput > div input {
+    border: 0 transparent !important;
+}
+
+.formInput > div {
+    border: 0px transparent !important;
+    border-radius: 16px !important;
+}
+
+.message > div {
+    height: 200px !important;
+    border: 0 solid transparent  !important;
+    border-radius: 16px !important;
+}
+
+.formInput > div:hover {
+    border: 0 transparent !important;
+}
+
+.formInput > div:focus:focus-visible {
+     border: 0 transparent !important;
+ }
+
+.formInput > div:focus-visible {
+    border: 0 transparent !important;
+}
+
+.formInput > div:active {
+    border: 0 transparent !important;
+}
+
+.formInput > div input:focus {
+    border: none !important;
+}
+
+.formInput label {
+    font-family: var(--font-paragraph);
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--white);
+    opacity: 0.5;
+}
+
+.formInput label:focus {
+    color: red !important;
+    border: none;
+}
+
+.formInput input:hover {
+    border: none !important;
+}
+
 .z-index-1 {
     position: relative;
     z-index: 1;
@@ -1774,13 +1854,20 @@ a:focus, a:hover {
 
 .centerImageScaleDown {
     display: block;
-    margin: auto;
+    margin: auto 4rem auto auto;
     transform: scale(0.8);
 }
 
 .centerImage {
     display: block;
-    margin: auto;
+    margin: auto 0 auto auto;
+    transform: scale(1);
+}
+
+
+.centerImageScaleUp {
+    display: block;
+    margin: auto 4rem auto auto;
     transform: scale(1.2);
 }
 
@@ -1939,6 +2026,11 @@ a:focus, a:hover {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     -ms-grid-rows: auto;
     grid-template-rows: auto;
+}
+
+.grid-row-gap {
+    grid-row-gap: 10rem;
+    display: grid;
 }
 
 
@@ -5472,6 +5564,8 @@ a:focus, a:hover {
 
 .features {
     padding: 4rem 0;
+    display: grid;
+    grid-row-gap: 5rem;
 }
 
 .features > h2:first-of-type {

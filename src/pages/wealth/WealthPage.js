@@ -44,8 +44,11 @@ const featureContent = {
             buttonUrl: "https://urlgeni.us/changexapp",
             buttonClass: "button-lime",
             imageUrl: "/images/wealth/leverage_staking.svg",
-            imageClass: "centerImageScaleDown",
-            alignImage: 'right'
+            imageClass: "centerImage",
+            alignImage: 'right',
+            commingSoon: false,
+            offerText: '',
+            bottomText: ''
         },
         {
             h1: "Discover",
@@ -56,8 +59,11 @@ const featureContent = {
             buttonUrl: "https://firebasestorage.googleapis.com/v0/b/changex-io.appspot.com/o/changex-whitepaper-v4.pdf?alt=media&amp;token=85d7033d-ce62-4fd2-aefd-b50f2a758530",
             buttonClass: "button-lime",
             imageUrl: "/images/wealth/lending.svg",
-            imageClass: "centerImageScaleDown",
-            alignImage: 'left'
+            imageClass: "centerImage",
+            alignImage: 'left',
+            commingSoon: false,
+            offerText: '',
+            bottomText: ''
         }
     ]
 }
@@ -73,9 +79,11 @@ const featureContent2 = {
             buttonUrl: "https://firebasestorage.googleapis.com/v0/b/changex-io.appspot.com/o/changex-whitepaper-v4.pdf?alt=media&amp;token=85d7033d-ce62-4fd2-aefd-b50f2a758530",
             buttonClass: "background-color-blue",
             imageUrl: "/images/savings/Savings_Rainy_Day.png",
+            imageClass: "centerImageScaleDown",
             alignImage: 'right',
             commingSoon: true,
-            offerText: 'Coming Soon'
+            offerText: 'Coming Soon',
+            bottomText: ''
         }
     ]
 }

@@ -112,7 +112,38 @@ export const featureContent = {
             imageClass: "centerImage",
             alignImage: 'right',
             commingSoon: true,
-            offerText: 'Unique offer until 31.03.2023'
+            offerText: 'Unique offer until 31.03.2023',
+            bottomText: 'Please note that the special promo will last until 31 March 2023 so make sure to get in touch and claim your spot in Changex.'
         }
     ]
+}
+
+export const becomeAPartner = {
+    feature: [
+        {
+            h1: "Become our ",
+            h2: "Partner",
+            h3: "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            h4: "",
+            buttonTxt: "",
+            buttonUrl: "",
+            buttonClass: "",
+            imageUrl: "/images/partners/superhero-backgroundfull_1920-1311.png",
+            imageClass: "",
+            alignImage: 'right',
+            commingSoon: false,
+            offerText: '',
+            bottomText: ''
+        }
+    ]
+}
+
+export const becomeAPartnerForm = {
+    field1: "Token/Organization name",
+    field2: "Community Link",
+    field3: "Website Link",
+    field4: "Additional information",
+    checkbox: "I agree to receive emails",
+    buttonTxt: "Apply To Be A Partner",
+    buttonClass: "background-color-off-white"
 }
