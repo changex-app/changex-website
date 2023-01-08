@@ -1,9 +1,10 @@
 import * as React from 'react'
 import {useState} from "react";
 import {Box} from "@mui/system";
-import {FormControlLabel, TextField} from "@mui/material";
+import { FormControlLabel, TextField } from "@mui/material";
 import {Button, Checkbox} from "rsuite";
 import Typography from "@mui/material/Typography";
+import isURL from "validator/es/lib/isURL";
 
 
 export default function Contact({ content, formContent, background }) {
@@ -12,7 +13,11 @@ export default function Contact({ content, formContent, background }) {
     const [communityLink, setCommunityLink] = useState("")
     const [websiteLink, setWebsiteLink] = useState("")
     const [information, setInfomration] = useState("")
-    const [checked, setChecked] = useState('false')
+    const [formDisabled, setFormDisabled] = useState(false)
+    const [isSent, setSent] = useState(false)
+    const [checked, setChecked] = useState(false)
+    const [isWebsiteLinkValid, setIsWebsiteLinkValid] = useState(true)
+    const [isComunityLinkValid, setIsComunityLinkValid] = useState(true)
 
     const responseBody = {}
 
@@ -20,15 +25,35 @@ export default function Contact({ content, formContent, background }) {
         setFunction(event.target.value)
     }
 
+
     function handleSubmit(event) {
         event.preventDefault();
+        if(isURL(websiteLink)) {
+            setIsWebsiteLinkValid(true)
+        } else {
+            setIsWebsiteLinkValid(false)
+        }
+
+        if(isURL(communityLink)) {
+            setIsComunityLinkValid(true)
+        } else {
+            setIsComunityLinkValid(false)
+        }
+
         responseBody.organizationName = organizationName
         responseBody.communityLink = communityLink
         responseBody.websiteLink = websiteLink
         responseBody.information = information
         responseBody.checked = checked
-        console.log(JSON.stringify(responseBody))
-        console.log(checked)
+
+        console.log(JSON.stringify(responseBody));
+
+        setOrganizationName('');
+        setCommunityLink('');
+        setWebsiteLink('');
+        setInfomration('');
+        setChecked(false);
+        setSent(true);
     }
 
     return (
@@ -58,10 +83,9 @@ export default function Contact({ content, formContent, background }) {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className={item.alignImage === "left" ? "wrapper-left-image" : "wallet_wrapper-right"} >
+                                            <div className={item.alignImage === "left" ? "wrapper-left-image" : "wrapper-right"} >
                                                 <form
                                                     onSubmit={handleSubmit}
-                                                    noValidate
                                                     className="formPartner"
                                                 >
                                                     <Typography className="formLabel" variant="h6" gutterBottom>
@@ -71,13 +95,11 @@ export default function Contact({ content, formContent, background }) {
                                                         className="formInput"
                                                         margin="normal"
                                                         defaultValue=""
+                                                        value={organizationName}
                                                         required
                                                         fullWidth
                                                         id="organization"
-                                                        label="Organization name"
                                                         name="organization"
-                                                        autoComplete="organization"
-                                                        autoFocus
                                                         onChange={(e)=>inputChangeHandler(setOrganizationName, e)}
                                                     />
                                                     <Typography className="formLabel" variant="h6" gutterBottom>
@@ -87,11 +109,12 @@ export default function Contact({ content, formContent, background }) {
                                                         className="formInput"
                                                         margin="normal"
                                                         defaultValue=""
+                                                        value={communityLink}
                                                         required
+                                                        error={!isComunityLinkValid}
                                                         fullWidth
                                                         name="link"
-                                                        label="paste link here"
-                                                        type="link"
+                                                        type="url"
                                                         id="community"
                                                         autoComplete="current-password"
                                                         onChange={(e)=>inputChangeHandler(setCommunityLink, e)}
@@ -104,9 +127,11 @@ export default function Contact({ content, formContent, background }) {
                                                         margin="normal"
                                                         defaultValue=""
                                                         required
+                                                        error={!isWebsiteLinkValid}
+                                                        value={websiteLink}
                                                         fullWidth
+                                                        type="url"
                                                         id="website"
-                                                        label="paste link here"
                                                         name="website"
                                                         autoComplete="website"
                                                         onChange={(e)=>inputChangeHandler(setWebsiteLink, e)}
@@ -118,11 +143,11 @@ export default function Contact({ content, formContent, background }) {
                                                         className="formInput message"
                                                         margin="normal"
                                                         defaultValue=""
+                                                        value={information}
                                                         required
                                                         fullWidth
                                                         size="medium"
                                                         id="info"
-                                                        label="Write down your message..."
                                                         name="info"
                                                         multiline={true}
                                                         rows={6}
@@ -130,11 +155,18 @@ export default function Contact({ content, formContent, background }) {
                                                         autoComplete="information"
                                                         onChange={(e)=>inputChangeHandler(setInfomration, e)}
                                                     />
-                                                    <FormControlLabel
-                                                        control={<Checkbox value={checked} onChange={(e)=>setChecked(checked)} className="formCheckbox" />}
-                                                        label={formContent.checkbox}
-                                                    />
+
+                                                    <FormControlLabel disabled={formDisabled} control=
+                                                      {<Checkbox
+
+                                                          checked={checked}
+                                                          onChange={(e)=> setChecked(!checked)}
+                                                          inputProps={{ 'aria-label': 'controlled' }} label={formContent.checkbox}
+                                                      />
+                                                    } label={formContent.checkbox} />
+
                                                     <Button
+                                                        disabled={formDisabled}
                                                         type="text"
                                                         className="formBtn"
                                                         fullWidth
@@ -143,6 +175,9 @@ export default function Contact({ content, formContent, background }) {
                                                     >
                                                         {formContent.buttonTxt}
                                                     </Button>
+                                                    <Typography className={`${isSent ? '' : 'hide'} formLabel`}>
+                                                        Application successfully sent!
+                                                    </Typography>
                                                 </form>
                                             </div>
                                         </div>

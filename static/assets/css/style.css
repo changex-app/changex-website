@@ -509,6 +509,14 @@ figcaption {
     background-image: url("/images/partners/superhero-backgroundfull_1920-1311.png");
 }
 
+.Mui-disabled {
+
+}
+
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input.Mui-disabled {
+    opacity: 0.5 !important;
+}
+
 .formLabel {
     font-weight: 600;
     color: var(--white);
@@ -525,6 +533,7 @@ figcaption {
 
 .formPartner {
     display: grid;
+    margin-top: 2rem !important;
 }
 
 .formPartner > label > span {
@@ -541,12 +550,35 @@ figcaption {
     padding: 10px 5px
 }
 
+.formBtn:focus {
+    outline: none !important;
+}
+
 .formInput:hover {
     border-color: red !important;
 }
 
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 50px #8366F4 inset !important; ;
+    -webkit-text-fill-color: var(--white);
+}
+
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 50px #8366F4 inset !important; /*your box-shadow*/
+    -webkit-text-fill-color: var(--white);
+}
+
+input:focus {
+    background-position: 0 0;
+}
+
 .formInput > div input {
     border: 0 transparent !important;
+    color: var(--white) !important;
+}
+
+.formInput > div fieldset {
+    background-color: transparent !important;
 }
 
 .formInput > div {
@@ -554,11 +586,27 @@ figcaption {
     border-radius: 16px !important;
 }
 
+.rs-checkbox-checker {
+    margin-left: 2px;
+}
+
+.formCheckbox .rs-checkbox-inner:before {
+    background-color: transparent !important;
+    border: 1px solid #8366F4 !important;
+/*    width: 25px;
+    height: 25px;*/
+}
+
 .message > div {
     height: 200px !important;
     border: 0 solid transparent  !important;
     border-radius: 16px !important;
 }
+
+.message > div > textarea {
+    color: var(--white) !important;
+}
+
 
 .formInput > div:hover {
     border: 0 transparent !important;
@@ -1865,6 +1913,12 @@ a:focus, a:hover {
 }
 
 .wallet_wrapper-right {
+    z-index: 0;
+    width: 100%;
+    align-self: center;
+}
+
+.rapper-right {
     z-index: 0;
     width: 100%;
     align-self: center;
@@ -3333,6 +3387,16 @@ a:focus, a:hover {
 
 @media screen and (max-width: 1025px) {
 
+    .walletPage {
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover !important;
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        background-position-x: center;
+    }
+
     .image-holder.card-image {
         top: -6% !important;
     }
@@ -3351,10 +3415,10 @@ a:focus, a:hover {
         left: -8% !important;
     }
 
-    .is-qr-hero {
+/*    .is-qr-hero {
         width: 77px !important;
         height: 77px !important;
-    }
+    }*/
 
     .videoTag {
         transform: scale(1.5) !important;
@@ -3918,6 +3982,12 @@ a:focus, a:hover {
 
     .features {
         padding: 0 !important;
+        grid-row-gap: 0 !important;
+    }
+
+    .formItems {
+        padding: 0 !important;
+        grid-row-gap: 0 !important;
     }
 
     .centerImage {
@@ -4545,6 +4615,14 @@ a:focus, a:hover {
         margin-left: -1rem !important;
     }
 
+    .formItems {
+
+    }
+
+    .becomePartner {
+        background-image: url("/images/partners/superman-mobile-illustrationBg_640.png") !important;
+    }
+
     .waller-slider {
         display: block  !important;
     }
@@ -4595,12 +4673,22 @@ a:focus, a:hover {
         margin: 2rem auto 0 auto;
     }
 
+    .wrapper-right {
+        width: 100%;
+        margin: 2rem auto 0 auto;
+    }
+
     .btn-wallet {
         width: auto;
     }
 }
 
 @media screen and (max-width: 600px) {
+
+    .walletPage {
+        background-image: url("/images/wallet/wallet-hero-mobile-bg_640.png") !important;
+        background-size: 100% 100% !important;
+    }
 
     .carousel-control-next, .carousel-control-prev {
         color: var(--backgroundColorBlack) !important;
@@ -4611,6 +4699,9 @@ a:focus, a:hover {
         width: 100%;
     }
 
+    .wrapper-right {
+        width: 100%;
+    }
 
     .main-container {
         display: grid !important;
@@ -4966,6 +5057,11 @@ a:focus, a:hover {
     .wallet_wrapper-right {
         width: 100%;
     }
+
+    .wrapper-right {
+        width: 100%;
+    }
+
     .btn-wallet {
         width: auto;
     }
@@ -4987,10 +5083,6 @@ a:focus, a:hover {
 
     .wealthPage {
         background-image: url("/images/wealth/wealth-hero-bg-mobile.png") !important;
-    }
-
-    .walletPage {
-        background-image: url("/images/wallet/wallet-hero-bg.png") !important;
     }
 }
 
@@ -5595,6 +5687,18 @@ a:focus, a:hover {
 
 .goToLink {
     margin: 4rem auto 5rem auto;
+}
+
+.formItems {
+    padding: 4rem 0;
+    display: grid;
+    grid-row-gap: 5rem;
+}
+
+.formItems > h2:first-of-type {
+    text-align: center;
+    margin: auto;
+    position: relative;
 }
 
 .features {

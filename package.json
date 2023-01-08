@@ -62,7 +62,8 @@
     "react-spinners": "^0.13.6",
     "rsuite": "^5.20.0",
     "scrollable-component": "^1.2.1",
-    "styled-components": "^5.3.6"
+    "styled-components": "^5.3.6",
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "@types/jquery": "^3.5.14",
