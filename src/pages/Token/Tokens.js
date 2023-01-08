@@ -42,22 +42,14 @@ export default function Tokens(){
                                 </div>
                             </div>
                         </div>
-                        <div className="background-color-blue grid-2-1">
-                            <div className="padding-small quoteImage">
-                                {/* <img src={} />*/}
-                            </div>
-                            <div className="">
-                                <div className="quoteText">
-                                    <div className="padding-small margin-large">
-                                        <h3 className="heading-style-h3"> Want to get your project listed?</h3>
-                                        <div className="spacer-middle"></div>
-                                        <div >
-                                            <Link to={"/partner"}
-                                               className="button w-button background-color-off-blue">Become A Partner
-                                            </Link>
-                                        </div>
-                                    </div>
-
+                        <div className="background-color-blue quoteImage">
+                            <div className="quoteText padding-global">
+                                <h3 className="heading-style-h3"> Want to get your project listed?</h3>
+                                <div className="spacer-middle"></div>
+                                <div >
+                                    <Link to={"/partner"}
+                                          className="button w-button background-color-off-blue">Become A Partner
+                                    </Link>
                                 </div>
                             </div>
                         </div>
