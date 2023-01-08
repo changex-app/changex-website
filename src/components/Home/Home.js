@@ -1,4 +1,4 @@
-import * as React from 'react'
+import * as React from "react";
 import Hero from "../Hero/Hero";
 import Wallet from "../Wallet/Wallet";
 import Bank from "../Bank/Bank";
@@ -15,34 +15,34 @@ const heroObj = {
         h2: "Decentralized Personal Finance",
         h3: "For All",
         h4: "Manage, invest, and grow your wealth with a Euro bank account, access to crypto, and DeFi investment tools. Spend anywhere with the Changex",
-        titleWithLink: "Crypto Debit Card."
+        titleWithLink: "Crypto Debit Card.",
     },
     text: "",
     appBtnsVisible: true,
     scrollBtnText: "",
-    backgroundImage: "../../../static/images/Hero-BGimg-mobile.png"
-}
+    backgroundImage: "../../../static/images/Hero-BGimg-mobile.png",
+};
 
 const cardContent = {
-    head1: 'Meet The',
-    head2: 'ChangeX',
-    head3: 'Debit Card',
-    paragraph: '',
-    page: 'Home'
-}
+    head1: "Meet The",
+    head2: "ChangeX",
+    head3: "Debit Card",
+    paragraph: "",
+    page: "Home",
+};
 
 export default function Home() {
     return (
         <>
-            <Hero heroObj={ heroObj }/>
-            <Wallet/>
-            <Bank/>
-            <CryptoBank/>
-            <Partners/>
-            <Card cardContent={ cardContent }/>
-            <Wealth/>
-            <Cta/>
-            <Press/>
+            <Hero heroObj={heroObj} />
+            <Wallet />
+            <Bank />
+            <CryptoBank />
+            <Partners />
+            <Card cardContent={cardContent} />
+            <Wealth />
+            <Cta />
+            <Press />
         </>
-    )
+    );
 }

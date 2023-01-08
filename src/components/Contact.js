@@ -1,57 +1,54 @@
-import * as React from 'react'
-import {useState} from "react";
-import {Box} from "@mui/system";
+import * as React from "react";
+import { useState } from "react";
+import { Box } from "@mui/system";
 import { FormControlLabel, TextField } from "@mui/material";
-import {Button, Checkbox} from "rsuite";
+import { Button, Checkbox } from "rsuite";
 import Typography from "@mui/material/Typography";
 import isURL from "validator/es/lib/isURL";
 
-
 export default function Contact({ content, formContent, background }) {
+    const [organizationName, setOrganizationName] = useState("");
+    const [communityLink, setCommunityLink] = useState("");
+    const [websiteLink, setWebsiteLink] = useState("");
+    const [information, setInfomration] = useState("");
+    const [formDisabled, setFormDisabled] = useState(false);
+    const [isSent, setSent] = useState(false);
+    const [checked, setChecked] = useState(false);
+    const [isWebsiteLinkValid, setIsWebsiteLinkValid] = useState(true);
+    const [isComunityLinkValid, setIsComunityLinkValid] = useState(true);
 
-    const [organizationName, setOrganizationName] = useState("")
-    const [communityLink, setCommunityLink] = useState("")
-    const [websiteLink, setWebsiteLink] = useState("")
-    const [information, setInfomration] = useState("")
-    const [formDisabled, setFormDisabled] = useState(false)
-    const [isSent, setSent] = useState(false)
-    const [checked, setChecked] = useState(false)
-    const [isWebsiteLinkValid, setIsWebsiteLinkValid] = useState(true)
-    const [isComunityLinkValid, setIsComunityLinkValid] = useState(true)
-
-    const responseBody = {}
+    const responseBody = {};
 
     const inputChangeHandler = (setFunction, event) => {
-        setFunction(event.target.value)
-    }
-
+        setFunction(event.target.value);
+    };
 
     function handleSubmit(event) {
         event.preventDefault();
-        if(isURL(websiteLink)) {
-            setIsWebsiteLinkValid(true)
+        if (isURL(websiteLink)) {
+            setIsWebsiteLinkValid(true);
         } else {
-            setIsWebsiteLinkValid(false)
+            setIsWebsiteLinkValid(false);
         }
 
-        if(isURL(communityLink)) {
-            setIsComunityLinkValid(true)
+        if (isURL(communityLink)) {
+            setIsComunityLinkValid(true);
         } else {
-            setIsComunityLinkValid(false)
+            setIsComunityLinkValid(false);
         }
 
-        responseBody.organizationName = organizationName
-        responseBody.communityLink = communityLink
-        responseBody.websiteLink = websiteLink
-        responseBody.information = information
-        responseBody.checked = checked
+        responseBody.organizationName = organizationName;
+        responseBody.communityLink = communityLink;
+        responseBody.websiteLink = websiteLink;
+        responseBody.information = information;
+        responseBody.checked = checked;
 
         console.log(JSON.stringify(responseBody));
 
-        setOrganizationName('');
-        setCommunityLink('');
-        setWebsiteLink('');
-        setInfomration('');
+        setOrganizationName("");
+        setCommunityLink("");
+        setWebsiteLink("");
+        setInfomration("");
         setChecked(false);
         setSent(true);
     }
@@ -66,15 +63,41 @@ export default function Contact({ content, formContent, background }) {
                             {content.feature.map((item, index) => {
                                 return (
                                     <>
-                                        <div className={item.alignImage === "left" ? "container-form rowReverse" : "container-form"}>
-                                            <div data-current="Tabs" className="tabs tabs-partner-form w-tabs">
+                                        <div
+                                            className={
+                                                item.alignImage === "left"
+                                                    ? "container-form rowReverse"
+                                                    : "container-form"
+                                            }
+                                        >
+                                            <div
+                                                data-current="Tabs"
+                                                className="tabs tabs-partner-form w-tabs"
+                                            >
                                                 <div className="">
-                                                    <div className={`${item.commingSoon ? '' : 'hide'} bank-image-comming-soon`}>{item.offerText}</div>
+                                                    <div
+                                                        className={`${
+                                                            item.commingSoon ? "" : "hide"
+                                                        } bank-image-comming-soon`}
+                                                    >
+                                                        {item.offerText}
+                                                    </div>
                                                     <div className="money">
-                                                        <h2 className="heading-style-h2 white margin-bottom margin-small">{item.h1}
-                                                            <span className={`${item.commingSoon ? 'is-blue' : 'is-lime'}  heading-style-h2`}>{item.h2}</span>
+                                                        <h2 className="heading-style-h2 white margin-bottom margin-small">
+                                                            {item.h1}
+                                                            <span
+                                                                className={`${
+                                                                    item.commingSoon ? "is-blue" : "is-lime"
+                                                                }  heading-style-h2`}
+                                                            >
+                                {item.h2}
+                              </span>
                                                         </h2>
-                                                        <p className={`${item.commingSoon ? '' : 'text-color-grey'} text-size-large `}>
+                                                        <p
+                                                            className={`${
+                                                                item.commingSoon ? "" : "text-color-grey"
+                                                            } text-size-large `}
+                                                        >
                                                             {item.h3}
                                                         </p>
                                                         <p className="text-size-large text-color-grey">
@@ -83,12 +106,19 @@ export default function Contact({ content, formContent, background }) {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className={item.alignImage === "left" ? "wrapper-left-image" : "wrapper-right"} >
-                                                <form
-                                                    onSubmit={handleSubmit}
-                                                    className="formPartner"
-                                                >
-                                                    <Typography className="formLabel" variant="h6" gutterBottom>
+                                            <div
+                                                className={
+                                                    item.alignImage === "left"
+                                                        ? "wrapper-left-image"
+                                                        : "wrapper-right"
+                                                }
+                                            >
+                                                <form onSubmit={handleSubmit} className="formPartner">
+                                                    <Typography
+                                                        className="formLabel"
+                                                        variant="h6"
+                                                        gutterBottom
+                                                    >
                                                         {formContent.field1}
                                                     </Typography>
                                                     <TextField
@@ -100,9 +130,15 @@ export default function Contact({ content, formContent, background }) {
                                                         fullWidth
                                                         id="organization"
                                                         name="organization"
-                                                        onChange={(e)=>inputChangeHandler(setOrganizationName, e)}
+                                                        onChange={(e) =>
+                                                            inputChangeHandler(setOrganizationName, e)
+                                                        }
                                                     />
-                                                    <Typography className="formLabel" variant="h6" gutterBottom>
+                                                    <Typography
+                                                        className="formLabel"
+                                                        variant="h6"
+                                                        gutterBottom
+                                                    >
                                                         {formContent.field2}
                                                     </Typography>
                                                     <TextField
@@ -117,9 +153,15 @@ export default function Contact({ content, formContent, background }) {
                                                         type="url"
                                                         id="community"
                                                         autoComplete="current-password"
-                                                        onChange={(e)=>inputChangeHandler(setCommunityLink, e)}
+                                                        onChange={(e) =>
+                                                            inputChangeHandler(setCommunityLink, e)
+                                                        }
                                                     />
-                                                    <Typography className="formLabel" variant="h6" gutterBottom>
+                                                    <Typography
+                                                        className="formLabel"
+                                                        variant="h6"
+                                                        gutterBottom
+                                                    >
                                                         {formContent.field3}
                                                     </Typography>
                                                     <TextField
@@ -134,9 +176,15 @@ export default function Contact({ content, formContent, background }) {
                                                         id="website"
                                                         name="website"
                                                         autoComplete="website"
-                                                        onChange={(e)=>inputChangeHandler(setWebsiteLink, e)}
+                                                        onChange={(e) =>
+                                                            inputChangeHandler(setWebsiteLink, e)
+                                                        }
                                                     />
-                                                    <Typography className="formLabel" variant="h6" gutterBottom>
+                                                    <Typography
+                                                        className="formLabel"
+                                                        variant="h6"
+                                                        gutterBottom
+                                                    >
                                                         {formContent.field4}
                                                     </Typography>
                                                     <TextField
@@ -153,17 +201,23 @@ export default function Contact({ content, formContent, background }) {
                                                         rows={6}
                                                         select={false}
                                                         autoComplete="information"
-                                                        onChange={(e)=>inputChangeHandler(setInfomration, e)}
+                                                        onChange={(e) =>
+                                                            inputChangeHandler(setInfomration, e)
+                                                        }
                                                     />
 
-                                                    <FormControlLabel disabled={formDisabled} control=
-                                                      {<Checkbox
-
-                                                          checked={checked}
-                                                          onChange={(e)=> setChecked(!checked)}
-                                                          inputProps={{ 'aria-label': 'controlled' }} label={formContent.checkbox}
-                                                      />
-                                                    } label={formContent.checkbox} />
+                                                    <FormControlLabel
+                                                        disabled={formDisabled}
+                                                        control={
+                                                            <Checkbox
+                                                                checked={checked}
+                                                                onChange={(e) => setChecked(!checked)}
+                                                                inputProps={{ "aria-label": "controlled" }}
+                                                                label={formContent.checkbox}
+                                                            />
+                                                        }
+                                                        label={formContent.checkbox}
+                                                    />
 
                                                     <Button
                                                         disabled={formDisabled}
@@ -175,19 +229,21 @@ export default function Contact({ content, formContent, background }) {
                                                     >
                                                         {formContent.buttonTxt}
                                                     </Button>
-                                                    <Typography className={`${isSent ? '' : 'hide'} formLabel`}>
+                                                    <Typography
+                                                        className={`${isSent ? "" : "hide"} formLabel`}
+                                                    >
                                                         Application successfully sent!
                                                     </Typography>
                                                 </form>
                                             </div>
                                         </div>
                                     </>
-                                )
+                                );
                             })}
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-    )
+    );
 }

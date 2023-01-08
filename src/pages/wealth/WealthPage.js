@@ -1,7 +1,10 @@
 import * as React from "react";
 import MetaDecorator from "../../Utils/MetaDecorator";
 import SliderSection from "../../components/SliderSection/SliderSection";
-import { responsiveSliderData, sliderDataWealthPage } from "../../components/Wealth/wealthItems";
+import {
+    responsiveSliderData,
+    sliderDataWealthPage,
+} from "../../components/Wealth/wealthItems";
 import InnerHero from "../../components/InnerHero/InnerHero";
 import Faq from "../../components/Faq/Faq";
 import { faqWealthContent } from "../../components/Faq/faqItems";
@@ -12,28 +15,28 @@ const heroObj = {
     titleObj: {
         h1: "Grow with Changex",
         h2: "Put Your Money to Work and Grow Your Wealth",
-        h3: "Access a suite of DeFi investment and passive income products and take control of your financial future."
+        h3: "Access a suite of DeFi investment and passive income products and take control of your financial future.",
     },
     text: "",
     appBtnsVisible: false,
     scrollBtnText: "Discover Wealth",
-    backgroundImage: '',
-    class: 'wealthPage'
-}
+    backgroundImage: "",
+    class: "wealthPage",
+};
 
 const textData = {
-    background: 'background-color-black',
-    head: '',
+    background: "background-color-black",
+    head: "",
     h1: "Discover",
     h2: "Staking",
     h3: "Don't just hold your crypto - stake it and earn on your investments passively, while retaining access to your coins",
     h4: "",
     buttonTxt: "Stake CHANGE",
-    buttonUrl: "https://urlgeni.us/changexapp"
-}
+    buttonUrl: "https://urlgeni.us/changexapp",
+};
 
 const featureContent = {
-    head: 'More Features Coming Soon',
+    head: "More Features Coming Soon",
     feature: [
         {
             h1: "Pioneering Leveraged",
@@ -45,10 +48,10 @@ const featureContent = {
             buttonClass: "button-lime",
             imageUrl: "/images/wealth/leverage_staking.svg",
             imageClass: "centerImage",
-            alignImage: 'right',
+            alignImage: "right",
             commingSoon: false,
-            offerText: '',
-            bottomText: ''
+            offerText: "",
+            bottomText: "",
         },
         {
             h1: "Discover",
@@ -56,17 +59,18 @@ const featureContent = {
             h3: "Earn on stablecoins like USDT and USDC while powering up the Leveraged Staking economy. ",
             h4: "Users who use leveraged staking borrow your stablecoins to acquire more of their asset, and pay you back the interest. Everything is completely decentralized, and your coins play a vital role in the ecosystem.",
             buttonTxt: "Read Whitepaper",
-            buttonUrl: "https://firebasestorage.googleapis.com/v0/b/changex-io.appspot.com/o/changex-whitepaper-v4.pdf?alt=media&amp;token=85d7033d-ce62-4fd2-aefd-b50f2a758530",
+            buttonUrl:
+                "https://firebasestorage.googleapis.com/v0/b/changex-io.appspot.com/o/changex-whitepaper-v4.pdf?alt=media&amp;token=85d7033d-ce62-4fd2-aefd-b50f2a758530",
             buttonClass: "button-lime",
             imageUrl: "/images/wealth/lending.svg",
             imageClass: "centerImage",
-            alignImage: 'left',
+            alignImage: "left",
             commingSoon: false,
-            offerText: '',
-            bottomText: ''
-        }
-    ]
-}
+            offerText: "",
+            bottomText: "",
+        },
+    ],
+};
 
 const featureContent2 = {
     feature: [
@@ -76,34 +80,50 @@ const featureContent2 = {
             h3: "Deposit idle stablecoin assets for a fixed interest rate and remain decentralized: Changex relies on smart contracts and can never access your assets.",
             h4: "",
             buttonTxt: "Read Whitepaper",
-            buttonUrl: "https://firebasestorage.googleapis.com/v0/b/changex-io.appspot.com/o/changex-whitepaper-v4.pdf?alt=media&amp;token=85d7033d-ce62-4fd2-aefd-b50f2a758530",
+            buttonUrl:
+                "https://firebasestorage.googleapis.com/v0/b/changex-io.appspot.com/o/changex-whitepaper-v4.pdf?alt=media&amp;token=85d7033d-ce62-4fd2-aefd-b50f2a758530",
             buttonClass: "background-color-blue",
             imageUrl: "/images/savings/Savings_Rainy_Day.png",
             imageClass: "centerImageScaleDown",
-            alignImage: 'right',
+            alignImage: "right",
             commingSoon: true,
-            offerText: 'Coming Soon',
-            bottomText: ''
-        }
-    ]
-}
+            offerText: "Coming Soon",
+            bottomText: "",
+        },
+    ],
+};
 
-export default function WealthPage(){
+export default function WealthPage() {
     return (
         <>
             <MetaDecorator
                 description={heroObj.titleObj.h3}
                 title={heroObj.titleObj.h2}
-                imageAlt= "Changex Wealth"
+                imageAlt="Changex Wealth"
                 imageUrl={imageUrl}
             />
-            <InnerHero heroObj={ heroObj }/>
+            <InnerHero heroObj={heroObj} />
             <section id="wealth" className="section_invest">
-                <SliderSection textData={ textData } sliderData={ sliderDataWealthPage } responsiveSliderData={ responsiveSliderData } menuTabs={ null }/>
-                <Feature background={'background-color-blue'} content={featureContent}/>
-                <Feature background={'background-color-off-pink'} content={featureContent2}/>
-                <Faq background={'background-color-off-white'} title={'Wealth FAQ'} faqContent={faqWealthContent}/>
+                <SliderSection
+                    textData={textData}
+                    sliderData={sliderDataWealthPage}
+                    responsiveSliderData={responsiveSliderData}
+                    menuTabs={null}
+                />
+                <Feature
+                    background={"background-color-blue"}
+                    content={featureContent}
+                />
+                <Feature
+                    background={"background-color-off-pink"}
+                    content={featureContent2}
+                />
+                <Faq
+                    background={"background-color-off-white"}
+                    title={"Wealth FAQ"}
+                    faqContent={faqWealthContent}
+                />
             </section>
         </>
-    )
+    );
 }

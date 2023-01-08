@@ -1,13 +1,16 @@
-import * as React from 'react'
+import * as React from "react";
 import Quote from "../Quote";
 
-export default function AboutHero( { heroObj } ){
+export default function AboutHero({ heroObj }) {
     return (
         <section id="inner-hero">
             <div className="padding-global relative">
                 <div className="container-large ">
-                    <div id="inner-hero-title" className="hero_about_content-wrapper padding-vertical padding-small animate__animated animate__fadeInUp animate__delay-1s">
-                        <div className="title_wrapper_hero_about max-width-slarge" >
+                    <div
+                        id="inner-hero-title"
+                        className="hero_about_content-wrapper padding-vertical padding-small animate__animated animate__fadeInUp animate__delay-1s"
+                    >
+                        <div className="title_wrapper_hero_about max-width-slarge">
                             <div className="center-content z-index-1">
                                 <div className="">
                                     <h6 className="heading-style-h6  text-color-primary text-left-mobile">
@@ -29,8 +32,8 @@ export default function AboutHero( { heroObj } ){
                             </div>
                         </div>
                     </div>
-                    <div className={`${heroObj.quoteObject.img ? '' : 'hide'}`}>
-                        <Quote quoteObject={heroObj.quoteObject}/>
+                    <div className={`${heroObj.quoteObject.img ? "" : "hide"}`}>
+                        <Quote quoteObject={heroObj.quoteObject} />
                     </div>
                     <div className="margin-top-small">
                         <div className="text-weight-normal animate__animated animate__fadeInUp animate__delay-1s">
@@ -40,5 +43,5 @@ export default function AboutHero( { heroObj } ){
                 </div>
             </div>
         </section>
-    )
+    );
 }

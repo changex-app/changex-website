@@ -881,7 +881,7 @@ input:focus {
 
 .max-width-large {
     width: 100%;
-    max-width: 43rem;
+    max-width: 48rem;
     font-weight: 400;
 }
 
@@ -1949,7 +1949,7 @@ a:focus, a:hover {
 
 .centerImageScaleDown {
     display: block;
-    margin: 4rem;
+    margin-left: 5rem;
     transform: scale(0.8);
 }
 
@@ -3399,6 +3399,10 @@ a:focus, a:hover {
         max-width: 89rem !important;
     }
 
+    .container-large-footer {
+        max-width: 89rem !important;
+    }
+
     .container-large-wallet-slider {
         max-width: 113rem !important;
     }
@@ -4007,7 +4011,7 @@ a:focus, a:hover {
 
     .features {
         padding: 0 !important;
-        grid-row-gap: 0 !important;
+/*        grid-row-gap: 5rem !important;*/
     }
 
     .formItems {
@@ -6096,7 +6100,6 @@ w-nav-menu-mobile
     animation-direction: reverse;
     animation-fill-mode: forwards;
 }
-
 
 @keyframes card-closed {
     0% {

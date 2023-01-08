@@ -1,5 +1,5 @@
 import * as React from "react";
-import Card from "../../components/Card/Card"
+import Card from "../../components/Card/Card";
 import SliderSection from "../../components/SliderSection/SliderSection";
 import Cta from "../../components/Cta/Cta";
 import {
@@ -8,7 +8,7 @@ import {
     heroObj,
     sliderTextData,
     cardContent,
-    thoughtObj
+    thoughtObj,
 } from "../../components/Bank/bankItem";
 import MetaDecorator from "../../Utils/MetaDecorator";
 import InnerHero from "../../components/InnerHero/InnerHero";
@@ -17,8 +17,7 @@ import { faqBankContent } from "../../components/Faq/faqItems";
 import ThoughtWall from "../../components/ThoughtWall";
 const imageUrl = "/assets/images/Changex-OG.jpeg";
 
-
-export default function BankPage(){
+export default function BankPage() {
     return (
         <>
             <MetaDecorator
@@ -27,14 +26,23 @@ export default function BankPage(){
                 imageAlt="Changex Bank"
                 imageUrl={imageUrl}
             />
-            <InnerHero heroObj={ heroObj }/>
+            <InnerHero heroObj={heroObj} />
             <section id="bank" className="section_bank">
-                <SliderSection textData={ sliderTextData } sliderData={sliderData} responsiveSliderData={ responsiveSliderData } menuTabs={null}/>
-                <Card cardContent={ cardContent }/>
+                <SliderSection
+                    textData={sliderTextData}
+                    sliderData={sliderData}
+                    responsiveSliderData={responsiveSliderData}
+                    menuTabs={null}
+                />
+                <Card cardContent={cardContent} />
                 <ThoughtWall thoughtObj={thoughtObj} />
-                <Faq background={'background-color-black'} title={'Banking FAQ'} faqContent={faqBankContent }/>
-                <Cta/>
+                <Faq
+                    background={"background-color-black"}
+                    title={"Banking FAQ"}
+                    faqContent={faqBankContent}
+                />
+                <Cta />
             </section>
         </>
-    )
+    );
 }

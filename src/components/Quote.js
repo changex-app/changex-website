@@ -1,11 +1,11 @@
 import * as React from "react";
 
-export default function Quote( { quoteObject } ) {
+export default function Quote({ quoteObject }) {
     return (
         <>
             <div className="margin-top-medium quote">
                 <div className="padding-small quoteImage">
-                    <img src={quoteObject.img} />
+                    <img alt={quoteObject.quote} src={quoteObject.img} />
                 </div>
                 <div className="quoteText">
                     <div className="padding-small">
@@ -15,9 +15,8 @@ export default function Quote( { quoteObject } ) {
                             <strong>{quoteObject.author}</strong>, {quoteObject.role}
                         </p>
                     </div>
-
                 </div>
             </div>
         </>
-    )
+    );
 }

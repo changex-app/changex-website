@@ -2,10 +2,10 @@ import * as React from "react";
 import MetaDecorator from "../../Utils/MetaDecorator";
 import InnerHero from "../../components/InnerHero/InnerHero";
 import Faq from "../../components/Faq/Faq";
-import { heroObj } from "../../components/Token/tokenPageItems"
+import { heroObj } from "../../components/Token/tokenPageItems";
 import { faqBankContent } from "../../components/Faq/faqItems";
 const imageUrl = "/assets/images/Changex-OG.jpeg";
-export default function TokenPage(){
+export default function TokenPage() {
     return (
         <>
             <MetaDecorator
@@ -14,10 +14,14 @@ export default function TokenPage(){
                 imageAlt="Changex Bank"
                 imageUrl={imageUrl}
             />
-            <InnerHero heroObj={ heroObj }/>
+            <InnerHero heroObj={heroObj} />
             <section id="token-page">
-                <Faq background={'background-color-off-white'} title={'FAQ'} faqContent={faqBankContent}/>
+                <Faq
+                    background={"background-color-off-white"}
+                    title={"FAQ"}
+                    faqContent={faqBankContent}
+                />
             </section>
         </>
-    )
+    );
 }

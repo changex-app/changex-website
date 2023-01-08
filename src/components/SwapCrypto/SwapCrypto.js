@@ -1,19 +1,19 @@
-import * as React from 'react'
-import {Link} from "react-router-dom";
+import * as React from "react";
+import { Link } from "react-router-dom";
 
 const titleObj = {
     titleObj: {
         h1: "",
         h2: "Swap Crypto",
-        h3: "Get your hands on a variety of tokens on multiple blockchains, including HydraChain and Ethereum, with Binance Smart Chain and more coming soon."
+        h3: "Get your hands on a variety of tokens on multiple blockchains, including HydraChain and Ethereum, with Binance Smart Chain and more coming soon.",
     },
     text: "",
     appBtnsVisible: false,
     buttonUrl: "/swap",
     scrollBtnText: "View All",
-    backgroundImage: '',
-    class: 'walletPage'
-}
+    backgroundImage: "",
+    class: "walletPage",
+};
 
 export default function SwapCrypto() {
     return (
@@ -21,7 +21,7 @@ export default function SwapCrypto() {
             <div className="padding-global">
                 <div className="container-large">
                     <div className="hero_content-wrapper padding-vertical padding-large">
-                        <div className="title_wrapper_hero max-width-large" >
+                        <div className="title_wrapper_hero max-width-large">
                             <div className="center-content z-index-1">
                                 <div className="margin-vertical margin-small ">
                                     <div className="">
@@ -35,18 +35,24 @@ export default function SwapCrypto() {
                                         {titleObj.titleObj.h3}
                                     </div>
                                 </div>
-                                    <div className={`${titleObj.scrollBtnText && titleObj.class !== "tokenPage" ? '' : 'hide'} tabs-menu goToLink w-tab-menu`}>
-                                        <span className="tab-nav w-inline-block w--current">
-                                            <Link to={titleObj.buttonUrl}>
-                                                                {titleObj.scrollBtnText}
-                                            </Link>
-                                        </span>
-                                    </div>
+                                <div
+                                    className={`${
+                                        titleObj.scrollBtnText && titleObj.class !== "tokenPage"
+                                            ? ""
+                                            : "hide"
+                                    } tabs-menu goToLink w-tab-menu`}
+                                >
+                  <span className="tab-nav w-inline-block w--current">
+                    <Link to={titleObj.buttonUrl}>
+                      {titleObj.scrollBtnText}
+                    </Link>
+                  </span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-    )
+    );
 }

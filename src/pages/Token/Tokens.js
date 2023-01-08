@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import MetaDecorator from "../../Utils/MetaDecorator";
 const imageUrl = "/assets/images/Changex-OG.jpeg";
 
@@ -7,17 +7,17 @@ const titleObj = {
     titleObj: {
         h1: "",
         h2: "Tokens on Changex",
-        h3: ""
+        h3: "",
     },
     text: "",
     appBtnsVisible: false,
     buttonUrl: "",
     scrollBtnText: "",
-    backgroundImage: '',
-    class: 'supportedTokensPage'
-}
+    backgroundImage: "",
+    class: "supportedTokensPage",
+};
 
-export default function Tokens(){
+export default function Tokens() {
     return (
         <>
             <MetaDecorator
@@ -30,7 +30,7 @@ export default function Tokens(){
                 <div className="padding-global">
                     <div className="container-large">
                         <div className="">
-                            <div className="title_wrapper_hero max-width-large" >
+                            <div className="title_wrapper_hero max-width-large">
                                 <div className="center-content z-index-1">
                                     <div className="margin-vertical margin-small ">
                                         <div className="">
@@ -44,11 +44,17 @@ export default function Tokens(){
                         </div>
                         <div className="background-color-blue quoteImagePartner">
                             <div className="quoteTextPatner padding-global">
-                                <h3 className="heading-style-h3"> Want to get your project listed?</h3>
+                                <h3 className="heading-style-h3">
+                                    {" "}
+                                    Want to get your project listed?
+                                </h3>
                                 <div className="spacer-middle"></div>
-                                <div >
-                                    <Link to={"/partner"}
-                                          className="button w-button background-color-off-blue">Become A Partner
+                                <div>
+                                    <Link
+                                        to={"/partner"}
+                                        className="button w-button background-color-off-blue"
+                                    >
+                                        Become A Partner
                                     </Link>
                                 </div>
                             </div>
@@ -57,5 +63,5 @@ export default function Tokens(){
                 </div>
             </section>
         </>
-    )
+    );
 }

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import CookieConsentModal from "../Utils/CookieConsent";
 import MetaDecorator from "../Utils/MetaDecorator";
 import Home from "../components/Home/Home";
@@ -17,33 +17,32 @@ import Partner from "./partner/Partner";
 const imageUrl = "/assets/images/Changex-OG.jpeg";
 
 const IndexPage = () => {
-
     return (
         <Router>
-          <CookieConsentModal/>
+            <CookieConsentModal />
             <MetaDecorator
                 description={content.pageDescription}
                 title={content.pageTitle}
                 imageAlt={content.metaImageAlt}
                 imageUrl={imageUrl}
             />
-              <Navigation/>
-              <main className="pages">
-                  <Routes >
-                          <Route path="/" element={ <Home/> } />
-                          <Route path="/bank" element={ <BankPage/> } />
-                          <Route path="/wealth" element={ <WealthPage/> } />
-                          <Route path="/wallet" element={ <WalletPage/> } />
-                          <Route path="/token-page" element={ <TokenPage/> } />
-                          <Route path="/supported-tokens" element={ <Tokens/> } />
-                          <Route path="/about" element={ <About/> } />
-                          <Route path="/partner" element={ <Partner/> } />
-                          <Route path="*" element={ <NotFoundPage/> }/>
-                  </Routes>
-              </main>
-              <Footer/>
+            <Navigation />
+            <main className="pages">
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/bank" element={<BankPage />} />
+                    <Route path="/wealth" element={<WealthPage />} />
+                    <Route path="/wallet" element={<WalletPage />} />
+                    <Route path="/token-page" element={<TokenPage />} />
+                    <Route path="/supported-tokens" element={<Tokens />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/partner" element={<Partner />} />
+                    <Route path="*" element={<NotFoundPage />} />
+                </Routes>
+            </main>
+            <Footer />
         </Router>
-    )
+    );
 };
 
 export default IndexPage;
