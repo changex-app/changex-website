@@ -24,7 +24,7 @@ export function TitleHero({ contentObj }) {
 
                         </div>
                     </div>
-                    <div className={`${contentObj.appBtnsVisible ? '' : 'hide'} animate__animated animate__zoomIn animate__delay-1s button-group  margin-top margin-large spread max-width-full-mobile-landscape`}>
+                    <div className={`${contentObj.appBtnsVisible ? '' : 'hide'} animate__animated animate__zoomIn animate__delay-1s button-group-hero  margin-top margin-large spread max-width-full-mobile-landscape`}>
                         <a target="_blank"  rel="noreferrer" href="https://apps.apple.com/bg/app/changex-wallet/id1613309180"
                            className="button is-store max-width-full-mobile-landscape w-inline-block">
                             <img src={DownloadApple} alt="Apple" loading="lazy" width="150"></img>

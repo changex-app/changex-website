@@ -71,7 +71,7 @@ export default function Card( { cardContent } ) {
                                     <h2 className="heading-style-h2 margin-bottom">{cardContent.head1}<br/> {cardContent.head2} <br/></h2>
                                     <h2 className="heading-style-h2 debitCard"> {cardContent.head3} </h2>
                                     <p className="paragraph-style">{cardContent.paragraph}</p>
-                                    <h4 className="padding-top heading-style-h4">{waitlistItems.head1}</h4>
+                                    <h4 className="heading-style-h4">{waitlistItems.head1}</h4>
                                     <div className="form-wrapper">
                                         {isShown && (
                                             <div className="sendgrid-subscription-widget widget-2368"

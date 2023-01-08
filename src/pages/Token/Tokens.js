@@ -42,8 +42,8 @@ export default function Tokens(){
                                 </div>
                             </div>
                         </div>
-                        <div className="background-color-blue quoteImage">
-                            <div className="quoteText padding-global">
+                        <div className="background-color-blue quoteImagePartner">
+                            <div className="quoteTextPatner padding-global">
                                 <h3 className="heading-style-h3"> Want to get your project listed?</h3>
                                 <div className="spacer-middle"></div>
                                 <div >
