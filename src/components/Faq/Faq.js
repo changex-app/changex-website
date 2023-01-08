@@ -19,7 +19,7 @@ export default function Faq({ background, title, faqContent }) {
                         >
                             <div>
                                 <div className="slide-from-bottom">
-                                    <h2 className="heading-style-h2 text-align-center margin-vertical margin-medium">
+                                    <h2 className="heading-style-h2 margin-vertical margin-medium">
                                         {title}
                                     </h2>
                                 </div>

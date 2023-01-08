@@ -54,6 +54,23 @@ body {
     margin: 0;
 }
 
+/*SCROLLBAR*/
+::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #393812;
+    -webkit-border-radius: 1ex;
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+::-webkit-scrollbar-corner {
+    background: #000;
+}
+
 .wrap {
     overflow: hidden;
 }
@@ -2696,7 +2713,12 @@ a:focus, a:hover {
     max-width: 1120px;
     margin-right: auto;
     margin-left: auto;
-    padding-left: 30px;
+/*    padding-left: 30px;*/
+}
+
+.container-wallet .react-multi-carousel-item {
+    margin: auto 5% auto auto !important;
+    width: 580px !important;
 }
 
 .container-wealth {
@@ -2806,7 +2828,6 @@ a:focus, a:hover {
 .tabs-wallet {
     min-height: 590px;
     max-width: 35rem;
-    margin-right: 5rem;
 }
 
 .tabs.margin-top.margin-huge {
@@ -3021,7 +3042,7 @@ a:focus, a:hover {
     padding: 2rem;
     align-items: flex-start;
     width: 75%;
-    margin: 5rem auto 0 auto;
+    margin: 5rem 0 0 auto;
 }
 
 .contact-border-blue {
@@ -5254,7 +5275,7 @@ a:focus, a:hover {
 }
 
 .declineBtn {
-    width: 100px !important;
+    width: 120px !important;
     height: 50px !important;
     color: var(--white) !important;
     font-size: 17px;
@@ -5376,9 +5397,8 @@ a:focus, a:hover {
 }
 .container-large-wallet-slider {
     width: 100%;
-    max-width: 100rem;
-    margin-right: auto;
-    margin-top: 60px;
+    max-width: 76rem;
+    margin: 60px auto auto auto;
 }
 
 .is-qr.footer {
@@ -5605,7 +5625,7 @@ a:focus, a:hover {
 
 .main-container-wallet {
     display: inline-grid;
-    grid-template-columns: 1.8fr 1fr;
+    grid-template-columns: 1.2fr 1fr;
 }
 
 .max-width-small-slider {
@@ -5995,6 +6015,12 @@ w-nav-menu-mobile
 
 .bankThought {
     width: 100%;
+     animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 .slider-header {

@@ -10,6 +10,8 @@ import {
 } from "../../components/Wallet/walletItems";
 import Card from "../../components/Card/Card";
 import SwapCrypto from "../../components/SwapCrypto/SwapCrypto";
+import Faq from "../../components/Faq/Faq";
+import {faqBankContent} from "../../components/Faq/faqItems";
 
 const cardContent = {
     head1: "Meet The",
@@ -37,6 +39,11 @@ export default function WalletPage() {
                     menuTabs={null}
                 />
                 <Card cardContent={cardContent} />
+                <Faq
+                    background={"background-color-black"}
+                    title={"Wallet FAQ"}
+                    faqContent={faqBankContent}
+                />
             </section>
         </>
     );

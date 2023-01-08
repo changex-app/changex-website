@@ -30,7 +30,7 @@ export default function Wallet() {
             <div className="background-color-black">
                 <div className="padding-global">
                     <div className="container-large-wallet-slider">
-                        <div className="main-container-wallet">
+                        <div className="main-container-wallet grid-2">
                             <div className="max-width-full waller-slider  margin-slider w-tab-content">
                                 <WalletSlider
                                     onClickNav={onClickNav}
