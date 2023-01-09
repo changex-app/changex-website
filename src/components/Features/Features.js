@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Link as SmoothLink } from "react-scroll";
 
 export default function Feature({ background, content }) {
     return (
@@ -73,7 +72,7 @@ export default function Feature({ background, content }) {
                                                         : "wallet_wrapper-right"
                                                 }
                                             >
-                                                <img className={item.imageClass} src={item.imageUrl} />
+                                                <img alt={item.h2} className={item.imageClass} src={item.imageUrl} />
                                             </div>
                                         </div>
                                     </>

@@ -59,7 +59,7 @@ export default function InnerHero( { heroObj } ){
 
             setTimeout(fetchPrice,fetchApy, 30000);
         }
-    },[])
+    })
 
     return (
         <section id="inner-hero" className={`${heroObj.class === 'tokenPage' ? '' : 'vh'}`}>

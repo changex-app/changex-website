@@ -1,6 +1,5 @@
 import * as React from "react";
 import { useState } from "react";
-import { Box } from "@mui/system";
 import { FormControlLabel, TextField } from "@mui/material";
 import { Button, Checkbox } from "rsuite";
 import Typography from "@mui/material/Typography";

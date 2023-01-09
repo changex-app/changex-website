@@ -6,7 +6,7 @@ import TwitterLogo from "/static/images/social/twitter.svg";
 import FacebookLogo from "/static/images/social/facebook.svg";
 import LinkedinLogo from "/static/images/social/linkedIn.svg";
 import { Link } from "react-router-dom";
-import { menuItems, menuItemsFooter } from "./Navbar/navItems";
+import { menuItemsFooter } from "./Navbar/navItems";
 import { useState } from "react";
 import { Modal } from "@mui/material";
 import { ScanQrModal } from "../Utils/ScanQrCode";

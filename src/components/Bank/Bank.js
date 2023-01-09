@@ -1,7 +1,7 @@
 import * as React from "react";
 import "../../../node_modules/animate.css/animate.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import { bankContent, bankItems } from "./bankItem";
+import { bankContent } from "./bankItem";
 
 export default function Bank() {
     return (

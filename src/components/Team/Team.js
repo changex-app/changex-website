@@ -2,7 +2,7 @@ import * as React from "react";
 import LinkedinLogo from "../../../static/images/social/linkedIn.svg";
 import { CardActions, CardHeader, Collapse } from "@mui/material";
 import Card from "@mui/material/Card";
-import { Avatar, IconButton } from "rsuite";
+import { Avatar } from "rsuite";
 import Typography from "@mui/material/Typography";
 import CardContent from "@mui/material/CardContent";
 import ExpandableItem from "../ExpandableItem";
@@ -39,7 +39,7 @@ export default function Team({ titleObj, teamData, background }) {
                                                     className="cardHeader"
                                                     avatar={
                                                         <Avatar className="teamAvatar" aria-label="avatar">
-                                                            <img src={item.src} />
+                                                            <img alt={item.name} src={item.src} />
                                                         </Avatar>
                                                     }
                                                     title={item.name}

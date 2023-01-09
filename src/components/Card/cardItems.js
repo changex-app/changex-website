@@ -1,5 +1,3 @@
-import * as React from "react";
-
 export const cardItems = [
     {
         src: '/images/card/Mini/2.0/stack.svg',
