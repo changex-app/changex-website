@@ -29,6 +29,7 @@
     --headingTextSize: 1.688rem;
     --themeBlueBackgroundColor: #3418D8;
     --labelLime: #E0FB92;
+    --purpleBackgroundColor: #8366F4;
 }
 
 
@@ -206,12 +207,8 @@ blockquote {
     outline: 0;
 }
 
-figure {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
 
-figcaption {
+.margin-bottom {
     margin-top: 0.25rem;
     text-align: center;
 }
@@ -367,6 +364,10 @@ figcaption {
     margin-top: 0rem;
     margin-right: 0rem;
     margin-left: 0rem;
+}
+
+.margin-bottom-large {
+    margin-bottom: 5rem !important;
 }
 
 .padding-left {
@@ -565,7 +566,7 @@ figcaption {
 }
 
 .formBtn {
-    background-color: #8366F4 !important;
+    background-color: var(--purpleBackgroundColor) !important;
     color: var(--white) !important;
     font-weight: 600;
     width: 35%;
@@ -581,12 +582,12 @@ figcaption {
 }
 
 input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 50px #8366F4 inset !important; ;
+    -webkit-box-shadow: 0 0 0 50px var(--purpleBackgroundColor) inset !important; ;
     -webkit-text-fill-color: var(--white);
 }
 
 input:-webkit-autofill:focus {
-    -webkit-box-shadow: 0 0 0 50px #8366F4 inset !important; /*your box-shadow*/
+    -webkit-box-shadow: 0 0 0 50px var(--purpleBackgroundColor) inset !important; /*your box-shadow*/
     -webkit-text-fill-color: var(--white);
 }
 
@@ -614,7 +615,7 @@ input:focus {
 
 .formCheckbox .rs-checkbox-inner:before {
     background-color: transparent !important;
-    border: 1px solid #8366F4 !important;
+    border: 1px solid var(--purpleBackgroundColor) !important;
 /*    width: 25px;
     height: 25px;*/
 }
@@ -6265,4 +6266,39 @@ w-nav-menu-mobile
     display: grid;
     grid-template-columns: 1fr 2fr;
 
+}
+
+.roadmap-date {
+    background-color: var(--purpleBackgroundColor);
+    color: var(--white);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin: 1rem 0 1rem 0;
+}
+
+.roadmap-item {
+    text-align: -webkit-left;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-left: 1rem;
+}
+
+.roadmap-text {
+    color: var(--white);
+    font-family: var(--font-paragraph);
+}
+
+.ant-timeline-item-label {
+    color: var(--white);
+    font-size: var(--headingTextSize);
+    font-weight: 600;
+    margin-right: 3rem;
+}
+
+.roadmap-timeline {
+    padding: 0 1rem 5rem 0 !important;
+}
+
+.ant-timeline-item-tail {
+    background-color: var(--purpleBackgroundColor);
 }

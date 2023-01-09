@@ -1,12 +1,13 @@
 import * as React from "react";
 import Cta from "../../components/Cta/Cta";
-import { heroObj } from "../../components/aboutItems";
+import {heroObj, roadMapAboutData} from "../../components/aboutItems";
 import {teamAdvisorsData, teamExpertsData, titleAdvisorsObj, titleExpertsObj} from "../../components/Team/teamItems";
 import MetaDecorator from "../../Utils/MetaDecorator";
 import ThoughtWall from "../../components/ThoughtWall";
 import Team from "../../components/Team/Team";
 import AboutHero from "../../components/InnerHero/AboutHero";
 import Perks from "../../components/Perks";
+import Roadmap from "../../components/Roadmap";
 
 const imageUrl = "/images/Changex-OG.jpeg";
 
@@ -38,6 +39,7 @@ export default function About(){
                 <ThoughtWall thoughtObj={ thoughtObj }/>
                 <Team titleObj={titleExpertsObj} teamData={teamExpertsData} background={'background-color-off-white'} />
                 <Team titleObj={titleAdvisorsObj} teamData={teamAdvisorsData} background={'background-color-off-white'} />
+                <Roadmap background={'background-color-black'} roadmapData={roadMapAboutData}/>
                 <Cta/>
             </section>
         </>

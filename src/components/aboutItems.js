@@ -137,3 +137,77 @@ export const aboutQuoteObject = {
     role: "CEO @Changex",
     img: "/images/about/icon-quote.svg",
 };
+
+
+export const roadMapAboutData = {
+    head: 'Project roadmap',
+    head2: 'Our progress',
+    data: [
+            {
+                date: 'Q4 2021',
+                goals: ['Research for Leveraged Staking & DeFi', 'Products MVP - Non-custodial wallet with a few supported cryptocurrencies', 'Prototyping composable earn products'],
+                dates: []
+            },
+            {
+                date: 'Q1 2022',
+                goals: ['Legal Setup', 'Establish Legal entity', 'Secure Seed Investment from HYDRA & LockTrip', 'Team Structuring', 'HYDRA SDKs for Swift, Kotlin and Go'],
+                dates: [
+                    {
+                        date: 'Feb 28 - May 31',
+                        text: ['Subscription start with 3% deposit']
+                    },
+                    {
+                        date: 'Mar 28',
+                        text: ['100% subscription reached']
+                    }
+                ]
+            },
+            {
+                date: 'Q2 2022',
+                goals: ['Stage 1: Start Process for Obtaining Crypto License in Lithuania', 'Sign agreement for AML Services with Tier 1 Partner', 'Conduct Private and Public Sales'],
+                dates: [
+                    {
+                        date: 'May',
+                        text: ['Open Beta of ChangeX wallet']
+                    },
+                    {
+                        date: 'Jun',
+                        text: ['Official release of ChangeX v1 wallet']
+                    },
+                    {
+                        date: 'Jun 1 - Jun 30',
+                        text: ['Subscription quota calculation & settlement']
+                    },
+                    {
+                        date: 'July',
+                        text: ['Crowdfunding Phase 3', 'HydraDEX Launch', 'CHANGE staking begins', 'Launchpad Events']
+                    }
+                ]
+            },
+            {
+                date: 'Q3 2022',
+                goals: ['Delegated Staking on HYDRA', 'In-wallet DeFi swaps', 'Support for min. 10 coins and tokens in wallet'],
+                dates: []
+            },
+            {
+                date: 'Q4 2022',
+                goals: ['ChangeX Crypto Visa Card', 'Support for additional chains and tokens', 'Fiat Trading', 'Third-party fiat on-ramp with direct fiat purchases'],
+                dates: []
+            },
+            {
+                date: 'Q1 2023',
+                goals: ['Research for Leveraged Staking & DeFi', 'Products MVP - Non-custodial wallet with a few supported cryptocurrencies', 'Prototyping composable earn products'],
+                dates: []
+            },
+            {
+                date: 'Q1-Q2 2023',
+                goals: ['Leveraged Staking and Earn product: Leveraged Staking functionality', 'Integrate HYDRA, CAKE, BNT and other high APR assets', 'Launch open lending market'],
+                dates: []
+            },
+            {
+                date: 'Q3+ 2023',
+                goals: ['Hybrid Earn Product with high APR for Stablecoins and Fiat'],
+                dates:[]
+            }
+    ]
+}

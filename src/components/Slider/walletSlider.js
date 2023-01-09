@@ -2,7 +2,6 @@ import * as React from "react";
 import { useRef, useEffect, useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import "react-multi-carousel/lib/styles.css";
 
