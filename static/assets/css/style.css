@@ -2845,7 +2845,7 @@ a:focus, a:hover {
     width: 100%;
 }
 .tabs-wallet {
-    min-height: 590px;
+    min-height: fit-content;
     max-width: 35rem;
 }
 
@@ -3454,6 +3454,10 @@ a:focus, a:hover {
 
 @media screen and (max-width: 1025px) {
 
+   /* .container-wallet .react-multi-carousel-item {
+        width: 465px !important;
+    }*/
+
     .walletPage {
         position: relative;
         background-repeat: no-repeat;
@@ -3547,6 +3551,10 @@ a:focus, a:hover {
 }
 
 @media screen and ( max-width: 1024px) and (min-height: 1366px) {
+     .container-wallet .react-multi-carousel-item {
+        width: 465px !important;
+    }
+
     .title_wrapper.max-width-large {
         margin: auto !important;
     }
@@ -3572,6 +3580,11 @@ a:focus, a:hover {
 }
 
 @media screen and (max-width: 1024px) {
+
+    .container-wallet .react-multi-carousel-item {
+        width: 465px !important;
+    }
+
     .container-wealth {
         padding-left: 6.3rem !important;
     }
@@ -4037,6 +4050,11 @@ a:focus, a:hover {
 }
 
 @media screen and (max-width: 845px) {
+
+    .container-wallet .react-multi-carousel-item {
+        width: 395px !important;
+    }
+
 
     .quoteTextPatner {
         width: 100% !important;
@@ -4680,6 +4698,11 @@ a:focus, a:hover {
 }
 
 @media screen and (max-width: 768px) {
+
+    .container-wallet .react-multi-carousel-item {
+        width: 768px !important;
+    }
+
     .react-multi-carousel-item {
         margin-left: -1rem !important;
     }
@@ -4738,8 +4761,20 @@ a:focus, a:hover {
     }
 
     .wallet_wrapper-right {
-        width: 50%;
+        width: 100%;
         margin: 2rem auto 0 auto;
+    }
+
+    .max-width-small-slider {
+        margin: 0 !important;
+    }
+
+    .container-large-wallet-slider {
+        margin: 0 auto auto auto !important;
+    }
+
+    .tabs-wallet {
+        margin: auto !important;
     }
 
     .wrapper-right {
@@ -4792,6 +4827,10 @@ a:focus, a:hover {
 }
 
 @media screen and (max-width: 479px) {
+    .container-wallet .react-multi-carousel-item {
+        width: 376px !important;
+    }
+
     .infoInnerWrapper {
         display: inline-grid !important;
     }
@@ -5156,6 +5195,14 @@ a:focus, a:hover {
 }
 
 @media screen and (max-width: 390px) {
+
+    .dotListClass {
+        margin-top: 0;
+    }
+    .container-wallet .react-multi-carousel-item {
+        width: 345px !important;
+    }
+
     .heading-style-h1 {
         font-size: 2.5rem !important;
     }

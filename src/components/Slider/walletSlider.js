@@ -56,32 +56,7 @@ export default function WalletSlider({
             pauseOnHover={responsiveSliderData.pauseOnHover}
             renderArrowsWhenDisabled={responsiveSliderData.renderArrowsWhenDisabled}
             renderDotsOutside={responsiveSliderData.renderDotsOutside}
-            responsive={{
-                desktop: {
-                    breakpoint: {
-                        max: 3000,
-                        min: 1024,
-                    },
-                    items: 1,
-                    partialVisibilityGutter: 40,
-                },
-                mobile: {
-                    breakpoint: {
-                        max: 464,
-                        min: 0,
-                    },
-                    items: 1,
-                    partialVisibilityGutter: 30,
-                },
-                tablet: {
-                    breakpoint: {
-                        max: 1024,
-                        min: 464,
-                    },
-                    items: 1,
-                    partialVisibilityGutter: 30,
-                },
-            }}
+            responsive={responsiveSliderData.responsive}
             rewind={responsiveSliderData.rewind}
             rewindWithAnimation={responsiveSliderData.rewindWithAnimation}
             rtl={responsiveSliderData.rtl}
@@ -94,14 +69,12 @@ export default function WalletSlider({
         >
             {sliderData.map((item, index) => {
                 return (
-                    <Card className="wallet-card" id={index.toString()}>
                         <CardMedia
                             className="wallet-card-image"
                             component="img"
                             height="400"
                             image={item.url}
                         />
-                    </Card>
                 );
             })}
         </Carousel>
