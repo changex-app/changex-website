@@ -3624,6 +3624,10 @@ a:focus, a:hover {
 }
 
 @media screen and (max-width: 991px) {
+    .contact {
+        margin: auto !important;
+    }
+
     .padding-xlarge {
         padding: 3rem;
     }
