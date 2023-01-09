@@ -210,7 +210,6 @@ blockquote {
 
 .margin-bottom {
     margin-top: 0.25rem;
-    text-align: center;
 }
 
 .margin-section-medium {
@@ -1969,7 +1968,7 @@ a:focus, a:hover {
 }
 
 .rowReverse {
-    flex-direction: row-reverse;
+    order: -1;
 }
 
 .wallet_wrapper-right {
@@ -2005,7 +2004,7 @@ a:focus, a:hover {
 
 .wrapper-left-image {
     margin: auto auto auto 0;
-    display: flex;
+    display: grid;
 }
 
 .container-feature {
@@ -3613,9 +3612,9 @@ a:focus, a:hover {
         margin-right: 1rem !important;
     }
 
-    .wrapper-left-image {
+  /*  .wrapper-left-image {
         margin: auto auto auto 5rem;
-    }
+    }*/
 
     .grid-4 {
         -ms-grid-columns: 1fr 1fr;
@@ -4055,11 +4054,13 @@ a:focus, a:hover {
 }
 
 @media screen and (max-width: 845px) {
-
     .container-wallet .react-multi-carousel-item {
         width: 395px !important;
     }
 
+    .centerImageScaleDown {
+        margin-left: 0 !important;
+    }
 
     .quoteTextPatner {
         width: 100% !important;
@@ -4084,6 +4085,7 @@ a:focus, a:hover {
 
     .centerImage {
         transform: scale(1) !important;
+        margin: 5rem auto auto auto !important;
     }
 
     .wrapper-left-image {

@@ -12,18 +12,11 @@ export default function Feature({ background, content }) {
                                 return (
                                     <>
                                         <div
-                                            className={
-                                                item.alignImage === "left"
-                                                    ? "container-feature rowReverse"
-                                                    : "container-feature"
-                                            }
+                                            className="container-feature grid-2"
                                         >
                                             <div
                                                 data-current="Tabs"
-                                                data-easing="ease-out"
-                                                data-duration-in="300"
-                                                data-duration-out="100"
-                                                className="tabs tabs-wealth-feature w-tabs"
+                                                 className="tabs tabs-wealth-feature w-tabs"
                                             >
                                                 <div className="max-width-small-slider">
                                                     <div
@@ -68,7 +61,7 @@ export default function Feature({ background, content }) {
                                             <div
                                                 className={
                                                     item.alignImage === "left"
-                                                        ? "wrapper-left-image"
+                                                        ? "wrapper-left-image rowReverse"
                                                         : "wallet_wrapper-right"
                                                 }
                                             >
