@@ -22,7 +22,7 @@ export default function PerksSlide({ perksObj }) {
                                     onClick={() => changeGrid(index)}
                                     className={`${
                                         perksIndex === index ? "button-lime-slide" : ""
-                                    } margin-button-slide button is-middle `}
+                                    } margin-button-slide is-middle button-transparent `}
                                 >
                   <span className="text-color-primary wallet-text text-size-large slide-from-bottom">
                     {item.text}

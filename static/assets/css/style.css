@@ -1153,6 +1153,7 @@ input:focus {
 .button {
     padding: 0.6rem 1.4rem;
     border-radius: 8px;
+    width: fit-content;
     background-color: var(--btnBackground);
     -webkit-transition: all 200ms ease;
     transition: all 200ms ease;
@@ -1162,37 +1163,52 @@ input:focus {
     cursor: pointer;
 }
 
-.button.is-text {
-    border: 2px solid transparent;
+.button-transparent {
+    padding: 0.6rem 1.4rem;
+    border-radius: 8px;
     background-color: transparent;
-    color: #000;
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease;
+    color: var(--current);
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
 }
 
-.button.is-middle {
+.is-middle {
     padding: 0.4rem 3rem;
     border-radius: 6px;
     font-size: 0.925rem;
 }
 
-.button.is-small {
+.is-text {
+    border: 2px solid transparent;
+    background-color: transparent;
+    color: #000;
+}
+
+
+
+.is-small {
     padding: 0.4rem 1.15rem;
     border-radius: 6px;
     font-size: 0.925rem;
 }
 
-.button.is-large {
+.is-large {
     padding: 0.8rem 1.8rem;
     border-radius: 10px;
+    font-size: 1.2rem;
 }
 
-.button.is-secondary {
+.is-secondary {
     border: 1px solid #8888fc;
     background-color: transparent;
     color: #000;
     padding: 1px 5px 1px 5px !important;
 }
 
-.button.is-icon {
+.is-icon {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1218,27 +1234,23 @@ input:focus {
     color: #3418D8;
 }
 
-.button.is-link {
+.is-link {
     padding: 1rem 0rem;
     background-color: transparent;
     text-decoration: none;
 }
 
-.button.is-secondary {
+.is-secondary {
     color: var(--current);
     text-decoration: none;
 }
 
-.button.is-secondary.gray {
+.is-secondary.gray {
     border-color: #d4d7da;
     color: #323f4b;
 }
 
-.button.is-large {
-    font-size: 1.2rem;
-}
-
-.button.is-large.with-icon {
+.is-large.with-icon {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1253,19 +1265,21 @@ input:focus {
     text-decoration: none;
 }
 
-.button.is-large.with-icon.width-200 {
+/*
+.is-large.with-icon.width-200 {
     width: 200px;
 }
 
-.button.is-large.with-icon.width-300 {
+.is-large.with-icon.width-300 {
     width: 300px;
 }
 
-.button.is-large.with-icon.width-260 {
+.is-large.with-icon.width-260 {
     width: fit-content;
 }
+*/
 
-.button.social-link {
+.social-link {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1286,11 +1300,11 @@ input:focus {
     transition: opacity 200ms ease;
 }
 
-.button.social-link:hover {
+.social-link:hover {
     opacity: 0.62;
 }
 
-.button.is-store {
+.is-store {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1303,26 +1317,26 @@ input:focus {
     transition: opacity 200ms ease;
 }
 
-.button.is-store-cta {
+.is-store-cta {
     height: auto !important;
     background-color: var(--labelLime);
     padding: 0 !important;
 }
 
-.button.is-store-cta > img {
+.is-store-cta > img {
     width: 170px;
 }
 
-.button.is-store:hover {
+.is-store:hover {
     opacity: 0.9;
 }
 
-.button.is-store.max-width-full-mobile-portrait {
+.is-store.max-width-full-mobile-portrait {
     padding-right: 1rem;
     padding-left: 1rem;
 }
 
-.button.is-store-footer {
+.is-store-footer {
     height: 42px;
     width: 150px;
     background-color:var(--backgroundColorBlack);
@@ -1330,27 +1344,27 @@ input:focus {
     transition: opacity 200ms ease;
 }
 
-.button.is-store-footer.google {
+.is-store-footer.google {
     padding: 0.3rem 1.6rem 0.6rem 1.6rem;
 }
-.button.is-store-footer.google:hover {
+.is-store-footer.google:hover {
     opacity: 0.82;
 }
 
 
-.button.is-store-footer.apple {
+.is-store-footer.apple {
     padding: 0.2rem 0.6rem 0.6rem 0.6rem;
 }
 
-.button.is-store-footer.apple:hover {
+.is-store-footer.apple:hover {
     opacity: 0.82;
 }
 
-.button.is-store-footer.apple > img {
+.is-store-footer.apple > img {
     height: 37px !important;
 }
 
-.button.is-qr-footer {
+.is-qr-footer {
     padding: 8px !important;
     border-style: solid;
     border-width: 1px;
@@ -1359,7 +1373,7 @@ input:focus {
     background-color: transparent;
 }
 
-.button.is-qr-cta {
+.is-qr-cta {
     width: 141px;
     height: 141px;
     position: absolute;
@@ -1381,7 +1395,7 @@ input:focus {
     position: relative;
 }
 
-.button.is-qr {
+.is-qr {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -3350,7 +3364,7 @@ a:focus, a:hover {
 }
 
 @media screen and (max-width: 1280px) {
-    .button.is-qr {
+    .is-qr {
         max-width: 80px !important;
     }
 
@@ -3601,7 +3615,7 @@ a:focus, a:hover {
         padding: 3rem;
     }
 
-    .button.is-qr-cta {
+    .is-qr-cta {
         display: none;
     }
 
@@ -4317,26 +4331,26 @@ a:focus, a:hover {
         letter-spacing: 0;
     }
 
-    .button.is-small {
+    .is-small {
         font-size: 0.885rem;
     }
 
-    .button.is-middle {
+    .is-middle {
         font-size: 1.1rem;
     }
 
-    .button.is-large {
+    .is-large {
         font-size: 1.1rem;
     }
 
-    .button.is-store.max-width-full-mobile-landscape {
+    .is-store.max-width-full-mobile-landscape {
         -webkit-box-pack: center;
         -webkit-justify-content: center;
         -ms-flex-pack: center;
         justify-content: center;
     }
 
-    .button.is-qr {
+    .is-qr {
         display: none;
     }
 
@@ -4767,7 +4781,7 @@ a:focus, a:hover {
         position: relative !important;
     }
 
-    .button.is-store {
+    .is-store {
         height: 2.813rem !important;
     }
 
@@ -4825,7 +4839,7 @@ a:focus, a:hover {
         display: grid;
     }
 
-    .button.is-large.with-icon.width-260 {
+    .is-large.with-icon.width-260 {
         width: 100%;
     }
 
@@ -4963,21 +4977,21 @@ a:focus, a:hover {
         font-weight: 500;
     }
 
-    .button.is-store {
+    .is-store {
         -webkit-box-pack: center;
         -webkit-justify-content: center;
         -ms-flex-pack: center;
         justify-content: center;
     }
 
-    .button.is-store.max-width-full-mobile-portrait {
+    .is-store.max-width-full-mobile-portrait {
         -webkit-box-pack: center;
         -webkit-justify-content: center;
         -ms-flex-pack: center;
         justify-content: center;
     }
 
-    .button.is-qr {
+    .is-qr {
         display: none;
     }
 
@@ -5121,7 +5135,7 @@ a:focus, a:hover {
         width: auto;
     }
 
-    .button.is-store {
+    .is-store {
         height: 45px;
     }
 
@@ -5151,7 +5165,7 @@ a:focus, a:hover {
         position: relative !important;
     }
 
-    .button.is-store {
+    .is-store {
         height: 45px;
     }
 
