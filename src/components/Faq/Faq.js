@@ -66,7 +66,7 @@ export default function Faq({ background, title, faqContent }) {
                                     className={`slide-from-bottom contact ${
                                         background === "background-color-off-white"
                                             ? "contact-border-blue"
-                                            : "contact-border-lime"
+                                            : "contact-border-lime background-color-off-green"
                                     }`}
                                 >
                                     <h5 className="heading-style-h5">Still got questions?</h5>

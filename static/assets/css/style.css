@@ -516,6 +516,11 @@ figcaption {
     background-color: #EBE8FC;
 }
 
+.background-color-off-green {
+    background-color: #1B242C !important;
+}
+
+
 .becomePartner {
     position: relative;
     border-top: 1px solid #e0e5e9;
