@@ -4691,9 +4691,16 @@ a:focus, a:hover {
 }
 
 @media screen and (max-width: 768px) {
+    .bannerLogos {
+        display: grid !important;
+    }
 
-    canvas {
-        width: 370px !important;
+    .pieChart {
+        max-width: 800px !important;
+    }
+
+    .canvas {
+        width: fit-content !important;
     }
 
     .react-multi-carousel-item {
@@ -4781,6 +4788,11 @@ a:focus, a:hover {
 }
 
 @media screen and (max-width: 600px) {
+
+    .pieChart {
+        width: 350px !important;
+    }
+
 
     .walletPage {
         background-image: url("/images/wallet/wallet-hero-mobile-bg_640.png") !important;
@@ -6227,6 +6239,16 @@ w-nav-menu-mobile
     background-repeat: no-repeat;
 
 }
+
+.tokenomicsImgBanner {
+    background-image: url("/images/partners/buy-tokens-bg.png");
+    border: 1px solid #3418D8;
+    border-radius: 2rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
 .quoteText {
 }
 
@@ -6288,10 +6310,11 @@ w-nav-menu-mobile
 
 canvas {
     height: 450px !important;
+    width: fit-content;
 }
 
 .pieChart {
-    width: 450px !important;
+    max-width: 400px;
 }
 
 .tableType {
@@ -6310,4 +6333,10 @@ canvas {
 
 .tableCellIcon {
     padding: 0 !important;
+}
+
+.contentWrapper {
+    text-align: center;
+    margin: auto;
+    padding: 2.5rem;
 }

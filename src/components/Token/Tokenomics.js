@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { Pie } from '@ant-design/plots';
 import TokenomicsTable from "./TokenomicsTable";
+import Banner from "../Banner";
+import {bannerLogos, bannerTitleTokenomics} from "./tokenPageItems";
 
 export default function Tokenomics({ background, tokenData}) {
     const data = tokenData.chart;
@@ -35,8 +37,9 @@ export default function Tokenomics({ background, tokenData}) {
                 offsetY: -4
             },
             content: {
+                title: 'Supply',
                 style: {
-                    color: '#fff',
+                    color: '#fff'
                 },
                 offsetY: -4,
             },
@@ -64,7 +67,9 @@ export default function Tokenomics({ background, tokenData}) {
                             <TokenomicsTable />
                         </div>
                     </div>
-
+                    <div className="margin-top-medium">
+                        <Banner  title={bannerTitleTokenomics} backgroundClass={'tokenomicsImgBanner'} logos={bannerLogos} />
+                    </div>
                 </div>
             </div>
         </section>

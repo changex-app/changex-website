@@ -1,3 +1,7 @@
+import hydrachain from "../../../static/images/partners/hydra-logo.webp";
+import uniswap from "../../../static/images/partners/uniswap-logo.svg";
+import mexc from "../../../static/images/partners/logo-btg-1.png";
+
 export const heroObj = {
     titleObj: {
         h1: "Introducing",
@@ -87,7 +91,33 @@ export const tokenPageTokenomicsData = {
         },
         {
             type: 'Airdrop',
-            value: 10,
+            value: 5,
             color: '#E69F34'
         }]
 };
+
+export const bannerLogos = [
+
+    {
+        href: 'https://www.mexc.com/',
+        src: mexc,
+        name: 'mexc'
+    },
+    {
+        href: 'https://locktrip.com/',
+        src: uniswap,
+        name: 'uniswap'
+    },
+    {
+        href: 'https://hydrachain.org/',
+        src: hydrachain,
+        name: 'hydrachain'
+    }
+
+]
+
+export const bannerTitleTokenomics = {
+    head: 'Buy',
+    head2: 'CHANGE',
+    head3: 'discover decentralized finance'
+}
