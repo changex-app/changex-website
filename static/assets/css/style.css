@@ -4836,6 +4836,10 @@ a:focus, a:hover {
         height: 150vh !important;
     }
 
+    .vh-responsive-token {
+        height: 410vh !important;
+    }
+
     .infoInnerWrapper {
         display: inline-grid !important;
     }
@@ -5191,7 +5195,8 @@ a:focus, a:hover {
     }
 
     .tokenPage {
-        background-image: url("/images/token/token-bg-long_640.png") !important;
+        background-image: url("/images/token/token-bg-long.png") !important;
+        background-size: 100% 100% !important;
     }
 
     .wealthPage {
@@ -5200,6 +5205,14 @@ a:focus, a:hover {
 }
 
 @media screen and (max-width: 390px) {
+
+    .vh-responsive {
+        height: 165vh !important;
+    }
+
+    .vh-responsive-token {
+        height: 590vh !important;
+    }
 
     .dotListClass {
         margin-top: 0;
@@ -6219,6 +6232,10 @@ w-nav-menu-mobile
 
 .vh-responsive {
     height: 100vh;
+}
+
+.vh-responsive-token {
+    height: auto;
 }
 
 #advantages {
