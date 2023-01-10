@@ -28,7 +28,7 @@ export default function WalletPage() {
             <section id="wallet">
                 <Advantages
                     classGrid={"card-grid-wallet"}
-                    title={"The DeFI Wallet that brings change"}
+                    title={"The DeFi Wallet That Changes Everything"}
                     advantages={advantages}
                 />
                 <SwapCrypto />

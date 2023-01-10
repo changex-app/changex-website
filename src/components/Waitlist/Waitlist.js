@@ -98,7 +98,7 @@ export default function Waitlist() {
                                     )}
                                 </div>
                                 <div className="text-size-small">
-                                    By subscribing you agree to ChangeX&nbsp;
+                                    By subscribing you agree to Changex's&nbsp;
                                     <a
                                         target="_blank"
                                         rel="noreferrer"

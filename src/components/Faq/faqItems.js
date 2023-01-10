@@ -116,12 +116,12 @@ export const faqWealthContent = [
 
 export const faqWalletContent = [
     {
-        title: 'What chain is the ChangeX wallet on?',
+        title: 'What chain is the Changex wallet on?',
         content: 'The Changex wallet is a non-custodial wallet, which was originally built on HydraChain. However, being multi-chain by design, Changex also allows you access different chains like Hydra, Ethereum, BSC, Polygon, and more. The app will also let you stake CHANGE on the Hydra and Ethereum networks, and will provide access to decentralized exchanges like UniSwap (Ethereum) and PancakeSwap (Binance Smart Chain). We will continue to enable simple access to other decentralized applications and exchanges in the future as well.',
         img: '/images/plus.svg'
     },
     {
-        title: 'Which tokens can currently be bought with Euro?',
+        title: 'Which tokens can currently be bought with fiat?',
         content: 'Initially, users will be able to buy several tokens via the fiat on-ramp. They are BTC, ETH, LTC, USDT, USDC, DOGE, and LINK, but the lineup expands consistently and more tokens will be available for fiat purchases in the near future.',
         img: '/images/plus.svg'
     },

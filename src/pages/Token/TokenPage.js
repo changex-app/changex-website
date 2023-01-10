@@ -2,8 +2,9 @@ import * as React from "react";
 import MetaDecorator from "../../Utils/MetaDecorator";
 import InnerHero from "../../components/InnerHero/InnerHero";
 import Faq from "../../components/Faq/Faq";
-import { heroObj } from "../../components/Token/tokenPageItems";
+import {heroObj, tokenPageTokenomicsData} from "../../components/Token/tokenPageItems";
 import { faqBankContent } from "../../components/Faq/faqItems";
+import Tokenomics from "../../components/Token/Tokenomics";
 const imageUrl = "/assets/images/Changex-OG.jpeg";
 export default function TokenPage() {
     return (
@@ -15,6 +16,7 @@ export default function TokenPage() {
                 imageUrl={imageUrl}
             />
             <InnerHero heroObj={heroObj} />
+            <Tokenomics background={'background-color-black'} tokenData={tokenPageTokenomicsData} />
             <section id="token-page">
                 <Faq
                     background={"background-color-off-white"}

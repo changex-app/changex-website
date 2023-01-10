@@ -982,6 +982,7 @@ input:focus {
 
 .heading-style-h6 {
     font-size: 1.312rem;
+    font-family: var(--font-header);
     line-height: 1.5;
     font-weight: 600;
     letter-spacing: 0;
@@ -3889,10 +3890,10 @@ a:focus, a:hover {
         padding-left: 10px;
     }
 
-    .faq-grid {
+/*    .faq-grid {
         -ms-grid-columns: 1fr 4fr;
         grid-template-columns: 1fr 4fr;
-    }
+    }*/
 
     .faq-grid.margin-vertical.margin-huge {
         -ms-grid-columns: 1fr;
@@ -4690,6 +4691,11 @@ a:focus, a:hover {
 }
 
 @media screen and (max-width: 768px) {
+
+    canvas {
+        width: 370px !important;
+    }
+
     .react-multi-carousel-item {
         margin-left: -1rem !important;
     }
@@ -6278,4 +6284,30 @@ w-nav-menu-mobile
 
 .ant-timeline-item-tail {
     background-color: var(--purpleBackgroundColor);
+}
+
+canvas {
+    height: 450px !important;
+}
+
+.pieChart {
+    width: 450px !important;
+}
+
+.tableType {
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.tableValue {
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.tableCellIcon {
+    padding: 0 !important;
 }

@@ -15,6 +15,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@ant-design/plots": "^1.2.3",
     "@coreui/react": "^4.4.0",
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
@@ -47,6 +48,7 @@
     "react-adaptive-image": "^1.8.0",
     "react-animation-on-scroll": "^5.1.0",
     "react-animations": "^1.0.0",
+    "react-apexcharts": "^1.4.0",
     "react-bootstrap": "^2.6.0",
     "react-cookie-consent": "^8.0.1",
     "react-dom": "^18.1.0",
@@ -62,6 +64,7 @@
     "react-simple-image-slider": "^2.4.1",
     "react-slideshow-image": "^4.0.5",
     "react-spinners": "^0.13.6",
+    "recharts": "^0.22.5",
     "rsuite": "^5.20.0",
     "scrollable-component": "^1.2.1",
     "styled-components": "^5.3.6",

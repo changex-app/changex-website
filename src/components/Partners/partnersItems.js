@@ -35,8 +35,8 @@ export const logosParners = [
 export const heroPartnerObj = {
         titleObj: {
             h1: "Become a partner",
-            h2: "Set up your token for success with Changex!",
-            h3: "Streamline the entire process of staking your token inside an intuitive, non-custodial DeFi wallet, and expand your user base with our DeFi-savvy community.",
+            h2: "Set Your Token Up For Success With Changex!",
+            h3: "Streamline how users stake your token with Changex's intuitive, non-custodial DeFi wallet, and expand your user base with our DeFi-savvy community.",
             h4: ""
         },
         text: "",
@@ -87,11 +87,11 @@ export const heroPartnerObj = {
                 {
                     src: '/images/partners/icn-debitcard.svg',
                     title: 'Marketing Support',
-                    text: 'Changex will promote your token to a savvy-defi community through our social media channels.'
+                    text: 'We will promote your token to a DeFi-savvy community through our social media channels.'
                 },
                 {
                     src: '/images/partners/icn-leveragedstaking.svg',
-                    title: 'Listing in top 20',
+                    title: 'Top 20 Listing',
                     text: 'Get maximum attention for your token by placing it among the top 20 in our rankings on the “Buy” & “Stake” screens.'
                 }
             ],
@@ -123,7 +123,7 @@ export const becomeAPartner = {
         {
             h1: "Become our ",
             h2: "Partner",
-            h3: "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            h3: "Fill out the form and apply to become our partner - we'll get in touch with you to take it from there.",
             h4: "",
             buttonTxt: "",
             buttonUrl: "",

@@ -28,7 +28,7 @@ export const heroObj = {
     titleObj: {
         h1: "Banking For The Dgital Age",
         h2: "A Crypto-Friendly Bank With a DeFi Core",
-        h3: "Changex simplifies your entry into the digital economy with a uniquely functional debit card - key elements of banking inside a non-custodial crypto wallet"
+        h3: "Changex simplifies your entry into the digital economy with fiat accounts and a uniquely functional debit card - key elements of banking inside a non-custodial crypto wallet"
     },
     text: "",
     appBtnsVisible: false,

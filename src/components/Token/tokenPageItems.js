@@ -44,3 +44,50 @@ export const advantages = [
         title: 'Get Benefits'
     }
 ]
+
+export const tokenPageTokenomicsData = {
+    head: 'CHANGE Tokenomics',
+    head2: 'Explore the numbers',
+    paragraph: '',
+    chart: [
+        {
+            type: 'Public Sale',
+            value: 150,
+            color: '#3418D8'
+        },
+        {
+            type: 'Treasury',
+            value: 97.5,
+            color: '#E0FB92'
+        },
+        {
+            type: 'Tier 1 Institutional Investors',
+            value: 50,
+            color: '#11D48E'
+        },
+        {
+            type: 'Launchpad Supply',
+            value: 50,
+            color: '#8366F4'
+        },
+        {
+            type: 'Liquidity',
+            value: 30,
+            color: '#303D48'
+        },
+        {
+            type: 'Founders & Team',
+            value: 22.5,
+            color: '#F3FBFD'
+        },
+        {
+            type: 'Staking Pool for first 9 months',
+            value: 20,
+            color: '#F4DF22'
+        },
+        {
+            type: 'Airdrop',
+            value: 10,
+            color: '#E69F34'
+        }]
+};
