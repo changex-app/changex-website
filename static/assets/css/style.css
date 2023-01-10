@@ -2126,6 +2126,7 @@ a:focus, a:hover {
     background-image: url('/images/card/BankImage_1220x691.png'),linear-gradient(180deg,#ebedf0,#ebedf0);
     background-repeat: no-repeat, repeat;
     background-position-x: right;
+    background-size: 100% auto;
     border-radius: 30px;
 }
 
@@ -3559,6 +3560,10 @@ a:focus, a:hover {
                 "head"
                 "bottom"
                 "footer";
+    }
+
+    .image-holder {
+        background-size: auto;
     }
 
     .videoTag {
