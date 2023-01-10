@@ -2732,12 +2732,10 @@ a:focus, a:hover {
     max-width: 1120px;
     margin-right: auto;
     margin-left: auto;
-/*    padding-left: 30px;*/
 }
 
 .container-wallet .react-multi-carousel-item {
     margin: auto 5% auto auto !important;
-    width: 580px !important;
 }
 
 .container-wealth {
@@ -3453,11 +3451,6 @@ a:focus, a:hover {
 }
 
 @media screen and (max-width: 1025px) {
-
-   /* .container-wallet .react-multi-carousel-item {
-        width: 465px !important;
-    }*/
-
     .walletPage {
         position: relative;
         background-repeat: no-repeat;
@@ -3551,10 +3544,6 @@ a:focus, a:hover {
 }
 
 @media screen and ( max-width: 1024px) and (min-height: 1366px) {
-     .container-wallet .react-multi-carousel-item {
-        width: 465px !important;
-    }
-
     .title_wrapper.max-width-large {
         margin: auto !important;
     }
@@ -3580,11 +3569,6 @@ a:focus, a:hover {
 }
 
 @media screen and (max-width: 1024px) {
-
-    .container-wallet .react-multi-carousel-item {
-        width: 465px !important;
-    }
-
     .container-wealth {
         padding-left: 6.3rem !important;
     }
@@ -4054,10 +4038,6 @@ a:focus, a:hover {
 }
 
 @media screen and (max-width: 845px) {
-    .container-wallet .react-multi-carousel-item {
-        width: 395px !important;
-    }
-
     .centerImageScaleDown {
         margin-left: 0 !important;
     }
@@ -4705,11 +4685,6 @@ a:focus, a:hover {
 }
 
 @media screen and (max-width: 768px) {
-
-    .container-wallet .react-multi-carousel-item {
-        width: 768px !important;
-    }
-
     .react-multi-carousel-item {
         margin-left: -1rem !important;
     }
@@ -4834,9 +4809,7 @@ a:focus, a:hover {
 }
 
 @media screen and (max-width: 479px) {
-    .container-wallet .react-multi-carousel-item {
-        width: 376px !important;
-    }
+
 
     .infoInnerWrapper {
         display: inline-grid !important;
@@ -5205,9 +5178,6 @@ a:focus, a:hover {
 
     .dotListClass {
         margin-top: 0;
-    }
-    .container-wallet .react-multi-carousel-item {
-        width: 345px !important;
     }
 
     .heading-style-h1 {
@@ -5640,7 +5610,7 @@ a:focus, a:hover {
 }
 
 .wallet-wrapper-left .react-multi-carousel-item {
-    width: auto !important;
+    width: fit-content !important;
 }
 
 .dotListClass {

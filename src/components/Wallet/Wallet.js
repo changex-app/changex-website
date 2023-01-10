@@ -6,6 +6,7 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 import { responsiveSliderData, scrollImages, slideImages } from "./walletItems";
 import WalletSlider from "../Slider/walletSlider";
 import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
+import CardSlider from "../Slider/cardSlider";
 
 let carouselRef2;
 
@@ -29,7 +30,7 @@ export default function Wallet() {
         <section id="wallet-section" className="section_wallet">
             <div className="background-color-black">
                 <div className="padding-global">
-                    <div className="container-large-wallet-slider">
+                    <div className="container-large">
                         <div className="main-container-wallet grid-2">
                             <div className="max-width-full waller-slider  margin-slider w-tab-content">
                                 <WalletSlider
