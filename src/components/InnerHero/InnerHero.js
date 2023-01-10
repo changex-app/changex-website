@@ -62,7 +62,7 @@ export default function InnerHero( { heroObj } ){
     })
 
     return (
-        <section id="inner-hero" className={`${heroObj.class === 'tokenPage' ? '' : 'vh'}`}>
+        <section id="inner-hero" className={`${heroObj.class === 'tokenPage' ? '' : 'vh-responsive'}`}>
             <div className="padding-global relative">
                 <div className="container-large ">
                     <div id="inner-hero-title" className="hero_content-wrapper padding-vertical padding-large">

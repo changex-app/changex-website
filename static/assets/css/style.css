@@ -4832,7 +4832,9 @@ a:focus, a:hover {
 }
 
 @media screen and (max-width: 479px) {
-
+    .vh-responsive {
+        height: 150vh !important;
+    }
 
     .infoInnerWrapper {
         display: inline-grid !important;
@@ -5185,15 +5187,15 @@ a:focus, a:hover {
     }
 
     .bankPage {
-        background-image: url("/images/bank/bank-hero-mobile-bg.png") !important;
+        background-image: url("/images/bank/bank-herobg-long_640.png") !important;
     }
 
     .tokenPage {
-        background-image: url("/images/token-hero-mobile-bg.png") !important;
+        background-image: url("/images/token/token-bg-long_640.png") !important;
     }
 
     .wealthPage {
-        background-image: url("/images/wealth/wealth-hero-bg-mobile.png") !important;
+        background-image: url("/images/wealth/weath-herobg-long_640.png") !important;
     }
 }
 
@@ -5978,7 +5980,7 @@ w-nav-menu-mobile
 }
 
 .tokenPage {
-    background-image: url("/images/Token-hero-bg.png");
+    background-image: url("/images/token/Token-hero-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -6211,6 +6213,11 @@ w-nav-menu-mobile
 }
 
 .vh {
+    height: 100vh;
+}
+
+
+.vh-responsive {
     height: 100vh;
 }
 
