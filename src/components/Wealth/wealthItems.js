@@ -152,7 +152,7 @@ export const responsiveSliderData =  {
         },
         tablet: {
             breakpoint: {
-                max: 1024,
+                max: 1025,
                 min: 464
             },
             items: 1,

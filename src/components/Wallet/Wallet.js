@@ -6,7 +6,6 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 import { responsiveSliderData, scrollImages, slideImages } from "./walletItems";
 import WalletSlider from "../Slider/walletSlider";
 import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
-import CardSlider from "../Slider/cardSlider";
 
 let carouselRef2;
 
